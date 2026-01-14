@@ -20,6 +20,61 @@ body {
 .oscars-presentation {
   width: 100%;
   min-height: 100vh;
+  position: relative;
+}
+
+.year-selector {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.year-btn {
+  background-color: transparent;
+  color: var(--oscar-gold);
+  border: 2px solid var(--oscar-gold);
+  padding: 8px 16px;
+  font-family: 'Futura PT Medium', 'Futura', sans-serif;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.year-btn:hover {
+  background-color: var(--oscar-gold);
+  color: var(--oscar-white);
+  transform: scale(1.05);
+}
+
+.year-btn.active {
+  background-color: var(--oscar-gold);
+  color: var(--oscar-white);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+@media (max-width: 768px) {
+  .year-selector {
+    top: 10px;
+    right: 10px;
+    padding: 6px;
+    gap: 6px;
+  }
+
+  .year-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
 }
 
 .intro-section {

@@ -1,32 +1,16 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 import './Presentation.css';
-import oscarsDataJson from './oscars-data.json';
-import { OscarReveal } from './OscarReveal';
+import oscarsData2025Json from './oscars-data-2025.json';
+import oscarsData2026Json from './oscars-data-2026.json';
 import { YouTubeModal } from './YouTubeModal';
 import { MissingPoster } from './MissingPoster';
-
-// Définir les types pour les nominés et les sections
-type Nominee = {
-  actor?: string;
-  film: string;
-  crew?: string;
-  notSeen?: boolean;
-  trailer?: string;
-  photos?: string[];
-};
-
-type Category = {
-  name: string;
-  nominees: Nominee[];
-  my_winner: Nominee | null;
-  official_winner: Nominee | null;
-};
-
-type OscarsData = {
-  year: number;
-  categories: Category[];
-};
+import { YearSelector } from './YearSelector';
+import { IntroSection } from './IntroSection';
+import { CategorySection } from './CategorySection';
+import { ThanksSection } from './ThanksSection';
+import { OscarsData, Nominee } from './types';
+import { getActorImagePathSync, getFilmImagePathSync, isNotSeen, checkImageExists } from './utils';
 
 export const Presentation = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -42,18 +26,25 @@ export const Presentation = () => {
   const scrollTimeout = useRef<number | undefined>(undefined);
   const [selectedVideoId, setSelectedVideoId] = useState<string | null>(null);
   const [language, setLanguage] = useState<'fr' | 'en'>('fr');
+  const [selectedYear, setSelectedYear] = useState<2025 | 2026>(2026);
 
-  const oscarsData: OscarsData = oscarsDataJson;
+  const getOscarsData = (year: 2025 | 2026): OscarsData => {
+    return year === 2025 ? oscarsData2025Json : oscarsData2026Json;
+  };
+
+  const oscarsData: OscarsData = getOscarsData(selectedYear);
   const { year, categories } = oscarsData;
 
-  const checkImageExists = (imagePath: string): Promise<boolean> => {
-    return new Promise((resolve) => {
-      const img = new Image();
-      img.onload = () => resolve(true);
-      img.onerror = () => resolve(false);
-      img.src = imagePath;
-    });
-  };
+  // Réinitialiser les états quand l'année change
+  useEffect(() => {
+    setHighlightedWinners({});
+    setShowingReveal(null);
+    setAnimatedCategories({});
+    setSelectedVideoId(null);
+    setCurrentImageIndices({});
+    setActiveSection(0);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [selectedYear]);
 
   useEffect(() => {
     const preloadImages = async () => {
@@ -97,37 +88,6 @@ export const Presentation = () => {
 
     preloadImages();
   }, [categories]);
-
-  const getActorImagePathSync = (actorName: string | undefined, index: number = 0) => {
-    if (!actorName) return undefined;
-
-    const baseImagePath = `/actors/${actorName
-      .replace(/\s+/g, '-')
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')}`;
-
-    const imagePath = index === 0 ? `${baseImagePath}.jpg` : `${baseImagePath}-${index}.jpg`;
-
-    return imagePath;
-  };
-
-  const getFilmImagePathSync = (filmName: string | undefined) => {
-    console.log(filmName);
-    if (!filmName || !validImagePaths[filmName]) return undefined;
-
-    console.log(filmName);
-    console.log(
-      `/films/${filmName
-        .replace(/\s+/g, '-')
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')}.jpg`
-    );
-
-    return `/films/${filmName
-      .replace(/\s+/g, '-')
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')}.jpg`;
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -237,63 +197,6 @@ export const Presentation = () => {
 
   const assignRef = (index: number) => (el: HTMLElement | null) => {
     sectionRefs.current[index] = el;
-  };
-
-  const getNomineeTitle = (nominee: Nominee) => {
-    if (nominee.actor && nominee.film) return nominee.actor;
-    return nominee.film;
-  };
-
-  const getNomineeDescription = (nominee: Nominee) => {
-    if (nominee.actor) return nominee.film;
-    if (nominee.crew) return nominee.crew;
-    return nominee.actor;
-  };
-
-  const isNotSeen = (film: string): boolean => {
-    return [
-      'A Real Pain',
-      'The Apprentice',
-      'Sing Sing',
-      'Gladiator II',
-      'A Different Man',
-      'Elton John: Never Too Late',
-      'The Six Triple Eight',
-      'Better Man',
-      'September 5',
-      'The Girl with the Needle',
-      'The Seed of the Sacred Fig',
-      'Memoir of a Snail',
-      'Wallace & Gromit',
-      'Like a Bird',
-      'Never Too Late',
-      'The Journey',
-      'Maria',
-    ].includes(film);
-  };
-
-  const searchTrailer = async (movieTitle: string) => {
-    const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
-    if (!apiKey) {
-      console.error('YouTube API key is not configured');
-      return null;
-    }
-
-    try {
-      const response = await fetch(
-        `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${encodeURIComponent(
-          movieTitle + ' trailer official'
-        )}&type=video&key=${apiKey}`
-      );
-      const data = await response.json();
-      if (data.items && data.items.length > 0) {
-        return data.items[0].id.videoId;
-      }
-      return null;
-    } catch (error) {
-      console.error('Error searching YouTube:', error);
-      return null;
-    }
   };
 
   const createFallingHeart = () => {
@@ -472,201 +375,67 @@ export const Presentation = () => {
     }
   };
 
+  const searchTrailer = async (movieTitle: string) => {
+    const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
+    if (!apiKey) {
+      console.error('YouTube API key is not configured');
+      return null;
+    }
+
+    try {
+      const response = await fetch(
+        `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${encodeURIComponent(
+          movieTitle + ' trailer official'
+        )}&type=video&key=${apiKey}`
+      );
+      const data = await response.json();
+      if (data.items && data.items.length > 0) {
+        return data.items[0].id.videoId;
+      }
+      return null;
+    } catch (error) {
+      console.error('Error searching YouTube:', error);
+      return null;
+    }
+  };
+
   return (
     <div className="oscars-presentation">
-      <div className="intro-section" ref={assignRef(0)}>
-        <div className="flex flex-col items-center justify-center mb-12 gap-4">
-          <h1>The {year - 1928}th Academy Awards</h1>
-          <div className="oscars-text-logo" />
-        </div>
-        <div className="relative flex flex-col items-center">
-          {language === 'fr' ? (
-            <p className="text-md">
-              Bienvenue dans ma propre cérémonie de remise des Oscars {year}.
-              <br />
-              Ayant vu une grande partie des films nominés cette année, j'ai fait ça pour vous partager les films que j'ai préféré cette année.
-              <br />
-              Je vous laisse vous balader et explorer le site en défilant vers le bas.
-              <br />
-              J'espère que vous aimerez !
-            </p>
-          ) : (
-            <p className="text-md">
-              Welcome to my very own {year} Oscars ceremony.
-              <br />
-              Having watched a large portion of this year's nominated films, I created this to share my favorite films of the year with you.
-              <br />
-              Feel free to explore by scrolling down.
-              <br />I hope you enjoy it!
-            </p>
-          )}
-          <div className="mt-4">
-            <div className="language-toggle-btn" onClick={() => handleLanguageChange()}>
-              {language === 'fr' ? 'English' : 'Français'}
-            </div>
-          </div>
-        </div>
-
-        <div className="scroll-indicator" onClick={() => navigateToSection(1)}>
-          <span>Scroll</span>
-          <div className="scroll-arrow"></div>
-        </div>
-      </div>
+      <YearSelector selectedYear={selectedYear} onYearChange={setSelectedYear} />
+      <IntroSection
+        year={year}
+        language={language}
+        onLanguageChange={handleLanguageChange}
+        onScrollClick={() => navigateToSection(1)}
+        sectionRef={assignRef(0)}
+      />
 
       {categories.map((category, index) => (
-        <section
+        <CategorySection
           key={category.name}
-          className={`category-section ${activeSection === index + 1 ? 'active' : ''}`}
-          id={`section-${index + 1}`}
-          ref={assignRef(index + 1)}
-        >
-          <div className="category-content">
-            <h2 className="category-title">{category.name}</h2>
-
-            <div
-              className={`${
-                category.name === 'Best Picture' ? 'best-picture-container' : 'nominees-container'
-              }`}
-            >
-              {category.nominees.map((nominee, index) => (
-                <div
-                  key={index}
-                  data-actor={nominee.actor}
-                  className={`nominee-card ${
-                    isWinner(category.name, nominee) ? 'winner-card' : ''
-                  } ${isNotSeen(nominee.film) ? 'not-seen-card' : ''} ${
-                    highlightedWinners[category.name] && !isWinner(category.name, nominee)
-                      ? 'losing-nominee'
-                      : ''
-                  } ${!nominee.actor ? 'with-film-image' : ''}`}
-                  onClick={() => handleNomineeClick(nominee)}
-                >
-                  <div className="nominee-info">
-                    <div className="nominee-title">{getNomineeTitle(nominee)}</div>
-                    <div
-                      className={`${
-                        category.name === 'Sound' ||
-                        category.name === 'Visual Effects' ||
-                        category.name === 'Makeup and Hairstyling' ||
-                        category.name === 'Music (Original Song)'
-                          ? 'nominee-description-sm'
-                          : 'nominee-description'
-                      }`}
-                    >
-                      {getNomineeDescription(nominee)}
-                    </div>
-                  </div>
-                  {isNotSeen(nominee.film) && (
-                    <div
-                      className="not-seen-indicator"
-                      style={{
-                        position: 'absolute',
-                        top: '4px',
-                        left: '50%',
-                        transform: 'translateX(-50%)',
-                        right: 'auto',
-                      }}
-                    >
-                      NOT SEEN
-                    </div>
-                  )}
-                  {isWinner(category.name, nominee) && (
-                    <img
-                      src="/Oscar-Statuette-Logo.png"
-                      alt="Oscar Statuette"
-                      className={`oscar-statuette ${nominee.actor ? 'with-actor' : 'with-film'}`}
-                    />
-                  )}
-                  {nominee.actor &&
-                    getActorImagePathSync(
-                      nominee.actor,
-                      currentImageIndices[nominee.actor] || 0
-                    ) && (
-                      <img
-                        src={getActorImagePathSync(
-                          nominee.actor,
-                          currentImageIndices[nominee.actor] || 0
-                        )}
-                        alt={nominee.actor}
-                        className="nominee-image"
-                        onError={(e) => {
-                          (e.target as HTMLImageElement).style.display = 'none';
-                        }}
-                      />
-                    )}
-                  {!nominee.actor && getFilmImagePathSync(nominee.film) && (
-                    <img
-                      src={getFilmImagePathSync(nominee.film)}
-                      alt={nominee.film}
-                      className="nominee-image film-image"
-                      onError={(e) => {
-                        (e.target as HTMLImageElement).style.display = 'none';
-                      }}
-                    />
-                  )}
-                </div>
-              ))}
-            </div>
-
-            <button
-              className={`reveal-winner-btn ${
-                showingReveal === category.name || highlightedWinners[category.name]
-                  ? 'revealed'
-                  : ''
-              }`}
-              onClick={() => revealWinner(category.name)}
-              disabled={!category.my_winner}
-            >
-              Reaveal my choice
-            </button>
-
-            {showingReveal === category.name && (
-              <OscarReveal isActive={true} onAnimationComplete={handleRevealComplete} />
-            )}
-          </div>
-        </section>
+          category={category}
+          index={index}
+          isActive={activeSection === index + 1}
+          sectionRef={assignRef(index + 1)}
+          isWinner={isWinner}
+          isNotSeen={isNotSeen}
+          highlightedWinners={highlightedWinners}
+          showingReveal={showingReveal}
+          onRevealClick={revealWinner}
+          onRevealComplete={handleRevealComplete}
+          onNomineeClick={handleNomineeClick}
+          getActorImagePath={getActorImagePathSync}
+          getFilmImagePath={(filmName) => getFilmImagePathSync(filmName, validImagePaths)}
+          currentImageIndices={currentImageIndices}
+        />
       ))}
 
-      <section className="thanks-section category-section" ref={assignRef(categories.length + 2)}>
-        <div className="thanks-content">
-          <h2 className="category-title">Thank You</h2>
-          <div className="thanks-text flex flex-col letter-spacing-0">
-            {language === 'fr' ? (
-              <>
-                <p>Merci d'avoir suivi ma propre cérémonie de remise des Oscars {year}.</p>
-                <p>N'hésitez pas à partager vos avis et vos pronostics !</p>
-                <p>
-                  Rendez-vous l'année prochaine pour les Oscars {year + 1}, avec un site encore plus
-                  abouti, c'est promis !
-                </p>
-                <p>Et d'ici là je compte sur vous pour aller au cinéma !</p>
-              </>
-            ) : (
-              <>
-                <p>Thank you for exploring my personal {year} Oscars rewards.</p>
-                <p>Feel free to share your thoughts and predictions!</p>
-                <p>
-                  See you next year for the Oscars {year + 1}, with an improved website this time, i
-                  promise !
-                </p>
-                <p>And i count on you to go to the movies !</p>
-              </>
-            )}
-          </div>
-          <p>
-            {language === 'fr' ? `Ajoutez-moi sur Letterboxd :` : 'Add me on Letterboxd :'}
-            <a href="https://boxd.it/9eI9r" target="_blank" rel="noopener noreferrer">
-              <span className="text-[#FF8000]">https://</span>
-              <span className="text-[#00e054]">boxd.it</span>
-              <span className="text-[#40bcf4]">/9eI9r</span>
-            </a>
-          </p>
-          <p>Eliott</p>
-          <button className="thanks-btn" onClick={createHeartAvalanche}>
-            🫶
-          </button>
-        </div>
-      </section>
+      <ThanksSection
+        year={year}
+        language={language}
+        onHeartClick={createHeartAvalanche}
+        sectionRef={assignRef(categories.length + 2)}
+      />
 
       <YouTubeModal videoId={selectedVideoId} onClose={handleModalClose} />
       <footer className="oscars-footer">
