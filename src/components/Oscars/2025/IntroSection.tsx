@@ -1,6 +1,6 @@
-import './Presentation.css';
-import { LanguageToggle } from './LanguageToggle';
-import { ScrollIndicator } from './ScrollIndicator';
+import '../shared/Presentation.css';
+import { LanguageToggle } from '../shared/LanguageToggle';
+import { ScrollIndicator } from '../shared/ScrollIndicator';
 
 type IntroSectionProps = {
   year: number;
@@ -23,7 +23,6 @@ export const IntroSection = ({
         <h1>The {year - 1928}th Academy Awards</h1>
         <div className="oscars-text-logo-container">
           <div className="oscars-text-logo" />
-          {year === 2026 && <span className="academy-copyright">©A.M.P.A.S.®</span>}
         </div>
       </div>
       <div className="relative flex flex-col items-center">

@@ -1,4 +1,4 @@
-import './Presentation.css';
+import '../shared/Presentation.css';
 import { Nominee } from './types';
 
 type NomineeCardProps = {
@@ -10,7 +10,6 @@ type NomineeCardProps = {
   actorImagePath?: string;
   filmImagePath?: string;
   onClick: () => void;
-  year?: number;
 };
 
 export const NomineeCard = ({
@@ -22,7 +21,6 @@ export const NomineeCard = ({
   actorImagePath,
   filmImagePath,
   onClick,
-  year = 2025,
 }: NomineeCardProps) => {
   const getNomineeTitle = () => {
     if (nominee.actor && nominee.film) return nominee.actor;
@@ -70,16 +68,11 @@ export const NomineeCard = ({
         </div>
       )}
       {isWinner && (
-        <div className="oscar-statuette-wrapper">
-          <img
-            src="/Oscar-Statuette-Logo.png"
-            alt="Oscar Statuette"
-            className={`oscar-statuette ${nominee.actor ? 'with-actor' : 'with-film'}`}
-          />
-          {year === 2026 && (
-            <span className="statuette-copyright">Oscar statuette ©A.M.P.A.S.®</span>
-          )}
-        </div>
+        <img
+          src="/Oscar-Statuette-Logo.png"
+          alt="Oscar Statuette"
+          className={`oscar-statuette ${nominee.actor ? 'with-actor' : 'with-film'}`}
+        />
       )}
       {nominee.actor && actorImagePath && (
         <img

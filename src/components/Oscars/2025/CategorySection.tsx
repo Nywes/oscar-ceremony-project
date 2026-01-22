@@ -1,6 +1,6 @@
-import './Presentation.css';
+import '../shared/Presentation.css';
 import { Category, Nominee } from './types';
-import { OscarReveal } from './OscarReveal';
+import { OscarReveal } from '../shared/OscarReveal';
 import { NomineeCard } from './NomineeCard';
 
 type CategorySectionProps = {
@@ -18,7 +18,6 @@ type CategorySectionProps = {
   getActorImagePath: (actorName: string | undefined, index: number) => string | undefined;
   getFilmImagePath: (filmName: string | undefined) => string | undefined;
   currentImageIndices: { [key: string]: number };
-  year: number;
 };
 
 export const CategorySection = ({
@@ -36,7 +35,6 @@ export const CategorySection = ({
   getActorImagePath,
   getFilmImagePath,
   currentImageIndices,
-  year,
 }: CategorySectionProps) => {
   return (
     <section
@@ -71,7 +69,6 @@ export const CategorySection = ({
                 actorImagePath={actorImagePath}
                 filmImagePath={filmImagePath}
                 onClick={() => onNomineeClick(nominee)}
-                year={year}
               />
             );
           })}
