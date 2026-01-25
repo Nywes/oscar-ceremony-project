@@ -1,4 +1,4 @@
-import '../shared/Presentation.css';
+import './Presentation2025.css';
 import { Nominee } from './types';
 
 type NomineeCardProps = {
@@ -68,11 +68,11 @@ export const NomineeCard = ({
         </div>
       )}
       {isWinner && (
-        <img
-          src="/Oscar-Statuette-Logo.png"
-          alt="Oscar Statuette"
-          className={`oscar-statuette ${nominee.actor ? 'with-actor' : 'with-film'}`}
-        />
+          <img
+            src="/Oscar-Statuette-Logo.png"
+            alt="Oscar Statuette"
+            className={`oscar-statuette ${nominee.actor ? 'with-actor' : 'with-film'}`}
+          />
       )}
       {nominee.actor && actorImagePath && (
         <img

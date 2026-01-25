@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 import '../shared/Presentation.css';
+import './Presentation2025.css';
 import oscarsData2025Json from './oscars-data-2025.json';
 import { YouTubeModal } from '../shared/YouTubeModal';
 import { MissingPoster } from '../shared/MissingPoster';
@@ -49,7 +50,7 @@ export const Presentation2025 = () => {
       const results = await Promise.all([
         ...Array.from(actorNames).map(async (actorName) => {
           const path = await checkImageExists(
-            `/actors/${actorName
+            `/actors/2025/${actorName
               .replace(/\s+/g, '-')
               .normalize('NFD')
               .replace(/[\u0300-\u036f]/g, '')}.jpg`
@@ -58,7 +59,7 @@ export const Presentation2025 = () => {
         }),
         ...Array.from(filmNames).map(async (filmName) => {
           const path = await checkImageExists(
-            `/films/${filmName
+            `/films/2025/${filmName
               .replace(/\s+/g, '-')
               .normalize('NFD')
               .replace(/[\u0300-\u036f]/g, '')}.jpg`

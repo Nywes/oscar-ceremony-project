@@ -1,4 +1,4 @@
-import '../shared/Presentation.css';
+import './Presentation2025.css';
 
 type ThanksSectionProps = {
   year: number;

@@ -1,7 +1,7 @@
 export const getActorImagePathSync = (actorName: string | undefined, index: number = 0) => {
   if (!actorName) return undefined;
 
-  const baseImagePath = `/actors/${actorName
+  const baseImagePath = `/actors/2025/${actorName
     .replace(/\s+/g, '-')
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')}`;
@@ -17,7 +17,7 @@ export const getFilmImagePathSync = (
 ) => {
   if (!filmName || !validImagePaths[filmName]) return undefined;
 
-  return `/films/${filmName
+  return `/films/2025/${filmName
     .replace(/\s+/g, '-')
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')}.jpg`;

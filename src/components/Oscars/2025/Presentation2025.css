@@ -334,7 +334,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   gap: 2vh;
-  padding: 2vh 0;
   position: relative;
 }
 
@@ -366,7 +365,7 @@ body {
   gap: 1.5vh;
   width: 100%;
   max-width: min(600px, 90vw);
-  padding: 16px;
+  padding: 8px;
   margin: 0 auto;
   flex: 1;
   position: relative;
@@ -610,6 +609,7 @@ body {
   border-radius: 50px;
   cursor: pointer;
   margin: 2vh auto;
+  display: block;
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -619,6 +619,16 @@ body {
   opacity: 1;
   visibility: visible;
   transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1), visibility 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+  .reveal-winner-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.85rem;
+    min-width: auto;
+    margin: 2vh auto;
+    display: block;
+  }
 }
 
 .reveal-winner-btn:hover:not(:disabled) {

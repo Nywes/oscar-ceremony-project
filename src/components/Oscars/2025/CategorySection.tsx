@@ -1,4 +1,4 @@
-import '../shared/Presentation.css';
+import './Presentation2025.css';
 import { Category, Nominee } from './types';
 import { OscarReveal } from '../shared/OscarReveal';
 import { NomineeCard } from './NomineeCard';

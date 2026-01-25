@@ -1,4 +1,4 @@
-import '../shared/Presentation.css';
+import './Presentation2026.css';
 import type { Nominee2026 } from './types';
 
 type NomineeCardProps = {
@@ -64,6 +64,7 @@ export const NomineeCard = ({
 
   const cardClasses = [
     'nominee-card',
+    'nominee-card-2026',
     isBothWinnerAndUserChoice && 'winner-user-choice-card',
     !isBothWinnerAndUserChoice && isWinner && 'winner-card',
     !isBothWinnerAndUserChoice && isUserChoice && 'user-choice-card',
@@ -78,11 +79,13 @@ export const NomineeCard = ({
 
   return (
     <div data-actor={nominee.person?.name} className={cardClasses} onClick={handleCardClick}>
-      <div className="nominee-info">
+      <div className="nominee-info-2026 nominee-info-grid-1">
         <div className="nominee-title">{getNomineeTitle()}</div>
         <div className={needsSmallDescription ? 'nominee-description-sm' : 'nominee-description'}>
           {getNomineeDescription()}
         </div>
+      </div>
+      <div className="nominee-votes-2026 nominee-info-grid-2">
         {showVoteCount && (
           <div className="vote-count-badge">
             {voteCount} {voteCount === 1 ? 'vote' : 'votes'}
@@ -103,21 +106,11 @@ export const NomineeCard = ({
           NOT SEEN
         </div>
       )}
-      {isWinner && (
-        <div className="oscar-statuette-wrapper">
-          <img
-            src="/Oscar-Statuette-Logo.png"
-            alt="Oscar Statuette"
-            className={`oscar-statuette ${nominee.person ? 'with-actor' : 'with-film'}`}
-          />
-          <span className="statuette-copyright">Oscar statuette ©A.M.P.A.S.®</span>
-        </div>
-      )}
       {nominee.person && actorImagePath && (
         <img
           src={actorImagePath}
           alt={nominee.person.name}
-          className="nominee-image"
+          className="nominee-image nominee-image-2026 nominee-info-grid-3"
           onError={(e) => {
             (e.target as HTMLImageElement).style.display = 'none';
           }}
@@ -127,7 +120,7 @@ export const NomineeCard = ({
         <img
           src={filmImagePath}
           alt={nominee.film.title}
-          className="nominee-image film-image"
+          className="nominee-image film-image nominee-image-2026 nominee-info-grid-3"
           onError={(e) => {
             (e.target as HTMLImageElement).style.display = 'none';
           }}

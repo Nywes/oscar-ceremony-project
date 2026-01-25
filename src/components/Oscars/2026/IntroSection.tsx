@@ -1,4 +1,4 @@
-import '../shared/Presentation.css';
+import './Presentation2026.css';
 import { LanguageToggle } from '../shared/LanguageToggle';
 import { ScrollIndicator } from '../shared/ScrollIndicator';
 

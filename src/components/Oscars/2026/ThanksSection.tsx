@@ -1,4 +1,4 @@
-import '../shared/Presentation.css';
+import './Presentation2026.css';
 import { LegalNotice } from '../shared/LegalNotice';
 
 type ThanksSectionProps = {
