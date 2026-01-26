@@ -1,4 +1,4 @@
-import './Presentation2025.css';
+import './styles/index.css';
 
 type ThanksSectionProps = {
   year: number;
@@ -9,9 +9,9 @@ type ThanksSectionProps = {
 
 export const ThanksSection = ({ year, language, onHeartClick, sectionRef }: ThanksSectionProps) => {
   return (
-    <section className="thanks-section category-section" ref={sectionRef}>
-      <div className="thanks-content">
-        <h2 className="category-title">Thank You</h2>
+    <section className="thanks-section category-section-2025" ref={sectionRef}>
+      <div className="thanks-content-2025">
+        <h2 className="category-title-2025">Thank You</h2>
         <div className="thanks-text flex flex-col letter-spacing-0">
           {language === 'fr' ? (
             <>
@@ -44,7 +44,7 @@ export const ThanksSection = ({ year, language, onHeartClick, sectionRef }: Than
           </a>
         </p>
         <p>Eliott</p>
-        <button className="thanks-btn" onClick={onHeartClick}>
+        <button className="thanks-btn-2025" onClick={onHeartClick}>
           🫶
         </button>
       </div>

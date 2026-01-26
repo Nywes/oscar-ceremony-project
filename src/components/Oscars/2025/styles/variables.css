@@ -1,0 +1,9 @@
+:root {
+  --oscar-gold: #d4af37;
+  --oscar-dark-gold: #b8860b;
+  --oscar-black: #111111;
+  --oscar-white: #ffffff;
+  --oscar-red: #8b0000;
+  --oscar-charcoal: #55565A;
+  --oscar-winner: var(--oscar-gold);
+}

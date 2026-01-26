@@ -1,0 +1,80 @@
+@media (max-width: 768px) {
+  .nominees-container-2026 {
+    gap: 1.2vh;
+  }
+
+  .nominee-card-2026 {
+    height: min(14vh, 100px);
+    min-height: min(14vh, 100px);
+  }
+
+  .nominee-info-grid-1 {
+    padding: 1vh 3vw;
+  }
+
+  .nominee-info-grid-2 {
+    padding: 0 0.75rem;
+  }
+
+  .best-picture-container-2026 {
+    max-width: min(600px, 90vw);
+    gap: 1.2vh;
+  }
+
+  .best-picture-container-2026 .nominee-title {
+    font-size: min(3.5vw, 1.1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .category-content-2026 {
+    height: 80vh;
+    gap: 1.5vh;
+  }
+
+  .category-title-2026 {
+    font-size: 7vw;
+    margin-bottom: 1.5vh;
+  }
+
+  .nominees-container {
+    gap: 1vh;
+    max-width: 95vw;
+  }
+
+  .nominee-card-2026 {
+    height: min(12vh, 90px);
+    min-height: min(12vh, 90px);
+  }
+
+  .nominee-info-grid-1 {
+    padding: 0.75vh 3vw;
+  }
+
+  .nominee-info-grid-2 {
+    padding: 0 0.5rem;
+  }
+
+  .nominee-title {
+    font-size: min(4vw, 1.1rem);
+  }
+
+  .nominee-description {
+    font-size: min(3.5vw, 0.9rem);
+  }
+}
+
+@media (max-height: 600px) {
+  .category-content-2026 {
+    height: 80vh;
+    gap: 1vh;
+  }
+
+  .nominees-container-2026 {
+    gap: 0.8vh;
+  }
+
+  .category-title-2026 {
+    margin-bottom: 1vh;
+  }
+}

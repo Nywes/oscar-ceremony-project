@@ -1,4 +1,4 @@
-import './Presentation2026.css';
+import './styles/index.css';
 import type { Category2026, Nominee2026 } from './types';
 import { OscarReveal } from '../shared/OscarReveal';
 import { NomineeCard } from './NomineeCard';
@@ -54,16 +54,16 @@ export const CategorySection = ({
 
   return (
     <section
-      className={`category-section ${isActive ? 'active' : ''}`}
+      className={`category-section-2026 ${isActive ? 'active' : ''}`}
       id={`section-${index + 1}`}
       ref={sectionRef}
     >
-      <div className="category-content">
-        <h2 className="category-title">{category.name}</h2>
+      <div className="category-content-2026">
+        <h2 className="category-title-2026">{category.name}</h2>
 
         <div
           className={
-            category.name === 'Best Picture' ? 'best-picture-container' : 'nominees-container'
+            category.name === 'Best Picture' ? 'best-picture-container-2026' : 'nominees-container-2026'
           }
         >
           {category.nominees.map((nominee, nomineeIndex) => {

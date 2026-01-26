@@ -1,4 +1,4 @@
-import './Presentation2025.css';
+import './styles/index.css';
 import { Category, Nominee } from './types';
 import { OscarReveal } from '../shared/OscarReveal';
 import { NomineeCard } from './NomineeCard';
@@ -38,16 +38,16 @@ export const CategorySection = ({
 }: CategorySectionProps) => {
   return (
     <section
-      className={`category-section ${isActive ? 'active' : ''}`}
+      className={`category-section-2025 ${isActive ? 'active' : ''}`}
       id={`section-${index + 1}`}
       ref={sectionRef}
     >
-      <div className="category-content">
-        <h2 className="category-title">{category.name}</h2>
+      <div className="category-content-2025">
+        <h2 className="category-title-2025">{category.name}</h2>
 
         <div
           className={`${
-            category.name === 'Best Picture' ? 'best-picture-container' : 'nominees-container'
+            category.name === 'Best Picture' ? 'best-picture-container-2025' : 'nominees-container-2025'
           }`}
         >
           {category.nominees.map((nominee, nomineeIndex) => {
@@ -75,7 +75,7 @@ export const CategorySection = ({
         </div>
 
         <button
-          className={`reveal-winner-btn ${
+          className={`reveal-winner-btn-2025 ${
             showingReveal === category.name || highlightedWinners[category.name] ? 'revealed' : ''
           }`}
           onClick={() => onRevealClick(category.name)}

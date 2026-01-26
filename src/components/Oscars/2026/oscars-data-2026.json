@@ -1,141 +1,6 @@
 {
-"year": 2026,
-"categories": [
-    {
-            "id": "actor-leading-role",
-            "name": "Actor in a Leading Role",
-    "nominees": [
-        {
-            "id": "nominee-001",
-            "film": {
-                "id": "film-001",
-                        "title": "Marty Supreme",
-                "poster": {
-                            "path": "/films/2026/Marty-Supreme.jpg",
-                            "alt": "Marty Supreme poster"
-                }
-            },
-            "person": {
-                "id": "person-001",
-                        "name": "Timothée Chalamet",
-                "images": {
-                    "primary": {
-                                "path": "/actors/2026/Timothee-Chalamet.jpg",
-                                "alt": "Timothée Chalamet"
-                    },
-                    "secondary": {
-                                "path": "/actors/2026/Timothee-Chalamet-1.jpg",
-                                "alt": "Timothée Chalamet - alternate"
-                    }
-                }
-            }
-        },
-        {
-            "id": "nominee-002",
-            "film": {
-                "id": "film-002",
-                        "title": "One Battle after Another",
-                "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
-                }
-            },
-            "person": {
-                "id": "person-002",
-                        "name": "Leonardo DiCaprio",
-                "images": {
-                    "primary": {
-                                "path": "/actors/2026/Leonardo-DiCaprio.jpg",
-                                "alt": "Leonardo DiCaprio"
-                    },
-                    "secondary": {
-                                "path": "/actors/2026/Leonardo-DiCaprio-1.jpg",
-                                "alt": "Leonardo DiCaprio - alternate"
-                    }
-                }
-            }
-        },
-        {
-            "id": "nominee-003",
-            "film": {
-                "id": "film-003",
-                        "title": "Blue Moon",
-                "poster": {
-                            "path": "/films/2026/Blue-Moon.jpg",
-                            "alt": "Blue Moon poster"
-                }
-            },
-            "person": {
-                "id": "person-003",
-                        "name": "Ethan Hawke",
-                "images": {
-                    "primary": {
-                                "path": "/actors/2026/Ethan-Hawke.jpg",
-                                "alt": "Ethan Hawke"
-                    },
-                    "secondary": {
-                                "path": "/actors/2026/Ethan-Hawke-1.jpg",
-                                "alt": "Ethan Hawke - alternate"
-                    }
-                }
-            }
-        },
-        {
-            "id": "nominee-004",
-            "film": {
-                "id": "film-004",
-                        "title": "Sinners",
-                "poster": {
-                            "path": "/films/2026/Sinners.jpg",
-                            "alt": "Sinners poster"
-                }
-            },
-            "person": {
-                "id": "person-004",
-                        "name": "Michael B. Jordan",
-                "images": {
-                    "primary": {
-                                "path": "/actors/2026/Michael-B-Jordan.jpg",
-                                "alt": "Michael B. Jordan"
-                    },
-                    "secondary": {
-                                "path": "/actors/2026/Michael-B-Jordan-1.jpg",
-                                "alt": "Michael B. Jordan - alternate"
-                    }
-                }
-            }
-        },
-        {
-            "id": "nominee-005",
-            "film": {
-                "id": "film-005",
-                        "title": "The Secret Agent",
-                "poster": {
-                            "path": "/films/2026/The-Secret-Agent.jpg",
-                            "alt": "The Secret Agent poster"
-                }
-            },
-            "person": {
-                "id": "person-005",
-                        "name": "Wagner Moura",
-                "images": {
-                    "primary": {
-                                "path": "/actors/2026/Wagner-Moura.jpg",
-                                "alt": "Wagner Moura"
-                    },
-                    "secondary": {
-                                "path": "/actors/2026/Wagner-Moura-1.jpg",
-                                "alt": "Wagner Moura - alternate"
-                    }
-                }
-            }
-        }
-    ],
-    "winners": {
-                "my_choice": null,
-                "official": null
-            }
-        },
+    "year": 2026,
+    "categories": [
         {
             "id": "actor-supporting-role",
             "name": "Actor in a Supporting Role",
@@ -272,278 +137,8 @@
             }
         },
         {
-            "id": "actress-leading-role",
-            "name": "Actress in a Leading Role",
-            "nominees": [
-                {
-                    "id": "nominee-011",
-                    "film": {
-                        "id": "film-008",
-                        "title": "Hamnet",
-                        "poster": {
-                            "path": "/films/2026/Hamnet.jpg",
-                            "alt": "Hamnet poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-011",
-                        "name": "Jessie Buckley",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Jessie-Buckley.jpg",
-                                "alt": "Jessie Buckley"
-                            },
-                            "secondary": {
-                                "path": "/actors/2026/Jessie-Buckley-1.jpg",
-                                "alt": "Jessie Buckley - alternate"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-012",
-                    "film": {
-                        "id": "film-009",
-                        "title": "If I Had Legs I'd Kick You",
-                        "poster": {
-                            "path": "/films/2026/If-I-Had-Legs-Id-Kick-You.jpg",
-                            "alt": "If I Had Legs I'd Kick You poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-012",
-                        "name": "Rose Byrne",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Rose-Byrne.jpg",
-                                "alt": "Rose Byrne"
-                            },
-                            "secondary": {
-                                "path": "/actors/2026/Rose-Byrne-1.jpg",
-                                "alt": "Rose Byrne - alternate"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-013",
-                    "film": {
-                        "id": "film-010",
-                        "title": "Song Sung Blue",
-                        "poster": {
-                            "path": "/films/2026/Song-Sung-Blue.jpg",
-                            "alt": "Song Sung Blue poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-013",
-                        "name": "Kate Hudson",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Kate-Hudson.jpg",
-                                "alt": "Kate Hudson"
-                            },
-                            "secondary": {
-                                "path": "/actors/2026/Kate-Hudson-1.jpg",
-                                "alt": "Kate Hudson - alternate"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-014",
-                    "film": {
-                        "id": "film-007",
-                        "title": "Sentimental Value",
-                        "poster": {
-                            "path": "/films/2026/Sentimental-Value.jpg",
-                            "alt": "Sentimental Value poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-014",
-                        "name": "Renate Reinsve",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Renate-Reinsve.jpg",
-                                "alt": "Renate Reinsve"
-                            },
-                            "secondary": {
-                                "path": "/actors/2026/Renate-Reinsve-1.jpg",
-                                "alt": "Renate Reinsve - alternate"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-015",
-                    "film": {
-                        "id": "film-011",
-                        "title": "Bugonia",
-                        "poster": {
-                            "path": "/films/2026/Bugonia.jpg",
-                            "alt": "Bugonia poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-015",
-                        "name": "Emma Stone",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Emma-Stone.jpg",
-                                "alt": "Emma Stone"
-                            },
-                            "secondary": {
-                                "path": "/actors/2026/Emma-Stone-1.jpg",
-                                "alt": "Emma Stone - alternate"
-                            }
-                        }
-                    }
-                }
-            ],
-            "winners": {
-                "my_choice": null,
-        "official": null
-    }
-},
-{
-    "id": "actress-supporting-role",
-    "name": "Actress in a Supporting Role",
-            "nominees": [
-                {
-                    "id": "nominee-016",
-                    "film": {
-                        "id": "film-007",
-                        "title": "Sentimental Value",
-                        "poster": {
-                            "path": "/films/2026/Sentimental-Value.jpg",
-                            "alt": "Sentimental Value poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-016",
-                        "name": "Elle Fanning",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Elle-Fanning.jpg",
-                                "alt": "Elle Fanning"
-                            },
-                            "secondary": {
-                                "path": "/actors/2026/Elle-Fanning-1.jpg",
-                                "alt": "Elle Fanning - alternate"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-017",
-                    "film": {
-                        "id": "film-007",
-                        "title": "Sentimental Value",
-                        "poster": {
-                            "path": "/films/2026/Sentimental-Value.jpg",
-                            "alt": "Sentimental Value poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-017",
-                        "name": "Inga Ibsdotter Lilleaas",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Inga-Ibsdotter-Lilleaas.jpg",
-                                "alt": "Inga Ibsdotter Lilleaas"
-                            },
-                            "secondary": {
-                                "path": "/actors/2026/Inga-Ibsdotter-Lilleaas-1.jpg",
-                                "alt": "Inga Ibsdotter Lilleaas - alternate"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-018",
-                    "film": {
-                        "id": "film-012",
-                        "title": "Weapons",
-                        "poster": {
-                            "path": "/films/2026/Weapons.jpg",
-                            "alt": "Weapons poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-018",
-                        "name": "Amy Madigan",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Amy-Madigan.jpg",
-                                "alt": "Amy Madigan"
-                            },
-                            "secondary": {
-                                "path": "/actors/2026/Amy-Madigan-1.jpg",
-                                "alt": "Amy Madigan - alternate"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-019",
-                    "film": {
-                        "id": "film-004",
-                        "title": "Sinners",
-                        "poster": {
-                            "path": "/films/2026/Sinners.jpg",
-                            "alt": "Sinners poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-019",
-                        "name": "Wunmi Mosaku",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Wunmi-Mosaku.jpg",
-                                "alt": "Wunmi Mosaku"
-                            },
-                            "secondary": {
-                                "path": "/actors/2026/Wunmi-Mosaku-1.jpg",
-                                "alt": "Wunmi Mosaku - alternate"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-020",
-                    "film": {
-                        "id": "film-002",
-                        "title": "One Battle after Another",
-                        "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-020",
-                        "name": "Teyana Taylor",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Teyana-Taylor.jpg",
-                                "alt": "Teyana Taylor"
-                            },
-                            "secondary": {
-                                "path": "/actors/2026/Teyana-Taylor-1.jpg",
-                                "alt": "Teyana Taylor - alternate"
-                            }
-                        }
-                    }
-                }
-            ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
-    "id": "animated-feature",
-    "name": "Animated Feature Film",
+            "id": "animated-feature",
+            "name": "Animated Feature Film",
             "nominees": [
                 {
                     "id": "nominee-021",
@@ -701,242 +296,135 @@
                     ]
                 }
             ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
-            "id": "casting",
-            "name": "Casting",
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
+            "id": "animated-short",
+            "name": "Animated Short Film",
             "nominees": [
                 {
-                    "id": "nominee-026",
+                    "id": "nominee-106",
                     "film": {
-                        "id": "film-008",
-                        "title": "Hamnet",
+                        "id": "film-031",
+                        "title": "Butterfly",
                         "poster": {
-                            "path": "/films/2026/Hamnet.jpg",
-                            "alt": "Hamnet poster"
+                            "path": "/films/2026/Butterfly.jpg",
+                            "alt": "Butterfly poster"
                         }
                     },
-                    "person": {
-                        "id": "person-021",
-                        "name": "Nina Gold",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Nina-Gold.jpg",
-                                "alt": "Nina Gold"
-                            }
+                    "crew": [
+                        {
+                            "id": "crew-146",
+                            "name": "Florence Miailhe",
+                            "role": "Director"
+                        },
+                        {
+                            "id": "crew-147",
+                            "name": "Ron Dyens",
+                            "role": "Producer"
                         }
-                    }
+                    ]
                 },
                 {
-                    "id": "nominee-027",
+                    "id": "nominee-107",
                     "film": {
-                        "id": "film-001",
-                        "title": "Marty Supreme",
+                        "id": "film-032",
+                        "title": "Forevergreen",
                         "poster": {
-                            "path": "/films/2026/Marty-Supreme.jpg",
-                            "alt": "Marty Supreme poster"
+                            "path": "/films/2026/Forevergreen.jpg",
+                            "alt": "Forevergreen poster"
                         }
                     },
-                    "person": {
-                        "id": "person-022",
-                        "name": "Jennifer Venditti",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Jennifer-Venditti.jpg",
-                                "alt": "Jennifer Venditti"
-                            }
+                    "crew": [
+                        {
+                            "id": "crew-148",
+                            "name": "Nathan Engelhardt",
+                            "role": "Director"
+                        },
+                        {
+                            "id": "crew-149",
+                            "name": "Jeremy Spears",
+                            "role": "Producer"
                         }
-                    }
+                    ]
                 },
                 {
-                    "id": "nominee-028",
+                    "id": "nominee-108",
                     "film": {
-                        "id": "film-002",
-                        "title": "One Battle after Another",
+                        "id": "film-033",
+                        "title": "The Girl Who Cried Pearls",
                         "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
+                            "path": "/films/2026/The-Girl-Who-Cried-Pearls.jpg",
+                            "alt": "The Girl Who Cried Pearls poster"
                         }
                     },
-                    "person": {
-                        "id": "person-023",
-                        "name": "Cassandra Kulukundis",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Cassandra-Kulukundis.jpg",
-                                "alt": "Cassandra Kulukundis"
-                            }
+                    "crew": [
+                        {
+                            "id": "crew-150",
+                            "name": "Chris Lavis",
+                            "role": "Director"
+                        },
+                        {
+                            "id": "crew-151",
+                            "name": "Maciek Szczerbowski",
+                            "role": "Producer"
                         }
-                    }
+                    ]
                 },
                 {
-                    "id": "nominee-029",
+                    "id": "nominee-109",
                     "film": {
-                        "id": "film-005",
-                        "title": "The Secret Agent",
+                        "id": "film-034",
+                        "title": "Retirement Plan",
                         "poster": {
-                            "path": "/films/2026/The-Secret-Agent.jpg",
-                            "alt": "The Secret Agent poster"
+                            "path": "/films/2026/Retirement-Plan.jpg",
+                            "alt": "Retirement Plan poster"
                         }
                     },
-                    "person": {
-                        "id": "person-024",
-                        "name": "Gabriel Domingues",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Gabriel-Domingues.jpg",
-                                "alt": "Gabriel Domingues"
-                            }
+                    "crew": [
+                        {
+                            "id": "crew-152",
+                            "name": "John Kelly",
+                            "role": "Director"
+                        },
+                        {
+                            "id": "crew-153",
+                            "name": "Andrew Freedman",
+                            "role": "Producer"
                         }
-                    }
+                    ]
                 },
                 {
-                    "id": "nominee-030",
+                    "id": "nominee-110",
                     "film": {
-                        "id": "film-004",
-                        "title": "Sinners",
+                        "id": "film-035",
+                        "title": "The Three Sisters",
                         "poster": {
-                            "path": "/films/2026/Sinners.jpg",
-                            "alt": "Sinners poster"
+                            "path": "/films/2026/The-Three-Sisters.jpg",
+                            "alt": "The Three Sisters poster"
                         }
                     },
                     "person": {
-                        "id": "person-025",
-                        "name": "Francine Maisler",
+                        "id": "person-056",
+                        "name": "Konstantin Bronzit",
                         "images": {
                             "primary": {
-                                "path": "/actors/2026/Francine-Maisler.jpg",
-                                "alt": "Francine Maisler"
+                                "path": "/actors/2026/Konstantin-Bronzit.jpg",
+                                "alt": "Konstantin Bronzit"
                             }
                         }
                     }
                 }
             ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
-            "id": "cinematography",
-            "name": "Cinematography",
-            "nominees": [
-                {
-                    "id": "nominee-031",
-                    "film": {
-                        "id": "film-006",
-                        "title": "Frankenstein",
-                        "poster": {
-                            "path": "/films/2026/Frankenstein.jpg",
-                            "alt": "Frankenstein poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-026",
-                        "name": "Dan Laustsen",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Dan-Laustsen.jpg",
-                                "alt": "Dan Laustsen"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-032",
-                    "film": {
-                        "id": "film-001",
-                        "title": "Marty Supreme",
-                        "poster": {
-                            "path": "/films/2026/Marty-Supreme.jpg",
-                            "alt": "Marty Supreme poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-027",
-                        "name": "Darius Khondji",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Darius-Khondji.jpg",
-                                "alt": "Darius Khondji"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-033",
-                    "film": {
-                        "id": "film-002",
-                        "title": "One Battle after Another",
-                        "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-028",
-                        "name": "Michael Bauman",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Michael-Bauman.jpg",
-                                "alt": "Michael Bauman"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-034",
-                    "film": {
-                        "id": "film-004",
-                        "title": "Sinners",
-                        "poster": {
-                            "path": "/films/2026/Sinners.jpg",
-                            "alt": "Sinners poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-029",
-                        "name": "Autumn Durald Arkapaw",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Autumn-Durald-Arkapaw.jpg",
-                                "alt": "Autumn Durald Arkapaw"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-035",
-                    "film": {
-                        "id": "film-018",
-                        "title": "Train Dreams",
-                        "poster": {
-                            "path": "/films/2026/Train-Dreams.jpg",
-                            "alt": "Train Dreams poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-030",
-                        "name": "Adolpho Veloso",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Adolpho-Veloso.jpg",
-                                "alt": "Adolpho Veloso"
-                            }
-                        }
-                    }
-                }
-            ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
             "id": "costume-design",
             "name": "Costume Design",
             "nominees": [
@@ -1046,42 +534,76 @@
                     }
                 }
             ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
-            "id": "directing",
-            "name": "Directing",
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
+            "id": "writing-original",
+            "name": "Writing (Original Screenplay)",
             "nominees": [
                 {
-                    "id": "nominee-041",
+                    "id": "nominee-101",
                     "film": {
-                        "id": "film-008",
-                        "title": "Hamnet",
+                        "id": "film-003",
+                        "title": "Blue Moon",
                         "poster": {
-                            "path": "/films/2026/Hamnet.jpg",
-                            "alt": "Hamnet poster"
+                            "path": "/films/2026/Blue-Moon.jpg",
+                            "alt": "Blue Moon poster"
                         }
                     },
                     "person": {
-                        "id": "person-036",
-                        "name": "Chloé Zhao",
+                        "id": "person-054",
+                        "name": "Robert Kaplow",
                         "images": {
                             "primary": {
-                                "path": "/actors/2026/Chloe-Zhao.jpg",
-                                "alt": "Chloé Zhao"
-                            },
-                            "secondary": {
-                                "path": "/actors/2026/Chloe-Zhao-1.jpg",
-                                "alt": "Chloé Zhao - alternate"
+                                "path": "/actors/2026/Robert-Kaplow.jpg",
+                                "alt": "Robert Kaplow"
                             }
                         }
                     }
                 },
                 {
-                    "id": "nominee-042",
+                    "id": "nominee-102",
+                    "film": {
+                        "id": "film-021",
+                        "title": "It Was Just an Accident",
+                        "poster": {
+                            "path": "/films/2026/It-Was-Just-an-Accident.jpg",
+                            "alt": "It Was Just an Accident poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-055",
+                        "name": "Jafar Panahi",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Jafar-Panahi.jpg",
+                                "alt": "Jafar Panahi"
+                            }
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-139",
+                            "name": "Nader Saïvar",
+                            "role": "Script Collaborator"
+                        },
+                        {
+                            "id": "crew-140",
+                            "name": "Shadmehr Rastin",
+                            "role": "Script Collaborator"
+                        },
+                        {
+                            "id": "crew-141",
+                            "name": "Mehdi Mahmoudian",
+                            "role": "Script Collaborator"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-103",
                     "film": {
                         "id": "film-001",
                         "title": "Marty Supreme",
@@ -1090,48 +612,21 @@
                             "alt": "Marty Supreme poster"
                         }
                     },
-                    "person": {
-                        "id": "person-037",
-                        "name": "Josh Safdie",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Josh-Safdie.jpg",
-                                "alt": "Josh Safdie"
-                            },
-                            "secondary": {
-                                "path": "/actors/2026/Josh-Safdie-1.jpg",
-                                "alt": "Josh Safdie - alternate"
-                            }
+                    "crew": [
+                        {
+                            "id": "crew-142",
+                            "name": "Ronald Bronstein",
+                            "role": "Screenwriter"
+                        },
+                        {
+                            "id": "crew-143",
+                            "name": "Josh Safdie",
+                            "role": "Screenwriter"
                         }
-                    }
+                    ]
                 },
                 {
-                    "id": "nominee-043",
-                    "film": {
-                        "id": "film-002",
-                        "title": "One Battle after Another",
-                        "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-038",
-                        "name": "Paul Thomas Anderson",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Paul-Thomas-Anderson.jpg",
-                                "alt": "Paul Thomas Anderson"
-                            },
-                            "secondary": {
-                                "path": "/actors/2026/Paul-Thomas-Anderson-1.jpg",
-                                "alt": "Paul Thomas Anderson - alternate"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-044",
+                    "id": "nominee-104",
                     "film": {
                         "id": "film-007",
                         "title": "Sentimental Value",
@@ -1140,23 +635,21 @@
                             "alt": "Sentimental Value poster"
                         }
                     },
-                    "person": {
-                        "id": "person-039",
-                        "name": "Joachim Trier",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Joachim-Trier.jpg",
-                                "alt": "Joachim Trier"
-                            },
-                            "secondary": {
-                                "path": "/actors/2026/Joachim-Trier-1.jpg",
-                                "alt": "Joachim Trier - alternate"
-                            }
+                    "crew": [
+                        {
+                            "id": "crew-144",
+                            "name": "Eskil Vogt",
+                            "role": "Screenwriter"
+                        },
+                        {
+                            "id": "crew-145",
+                            "name": "Joachim Trier",
+                            "role": "Screenwriter"
                         }
-                    }
+                    ]
                 },
                 {
-                    "id": "nominee-045",
+                    "id": "nominee-105",
                     "film": {
                         "id": "film-004",
                         "title": "Sinners",
@@ -1172,70 +665,87 @@
                             "primary": {
                                 "path": "/actors/2026/Ryan-Coogler.jpg",
                                 "alt": "Ryan Coogler"
-                            },
-                            "secondary": {
-                                "path": "/actors/2026/Ryan-Coogler-1.jpg",
-                                "alt": "Ryan Coogler - alternate"
                             }
                         }
                     }
                 }
             ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
-            "id": "film-editing",
-            "name": "Film Editing",
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
+            "id": "writing-adapted",
+            "name": "Writing (Adapted Screenplay)",
             "nominees": [
                 {
-                    "id": "nominee-046",
+                    "id": "nominee-096",
                     "film": {
-                        "id": "film-020",
-                        "title": "F1",
+                        "id": "film-011",
+                        "title": "Bugonia",
                         "poster": {
-                            "path": "/films/2026/F1.jpg",
-                            "alt": "F1 poster"
+                            "path": "/films/2026/Bugonia.jpg",
+                            "alt": "Bugonia poster"
                         }
                     },
                     "person": {
-                        "id": "person-041",
-                        "name": "Stephen Mirrione",
+                        "id": "person-052",
+                        "name": "Will Tracy",
                         "images": {
                             "primary": {
-                                "path": "/actors/2026/Stephen-Mirrione.jpg",
-                                "alt": "Stephen Mirrione"
+                                "path": "/actors/2026/Will-Tracy.jpg",
+                                "alt": "Will Tracy"
                             }
                         }
                     }
                 },
                 {
-                    "id": "nominee-047",
+                    "id": "nominee-097",
                     "film": {
-                        "id": "film-001",
-                        "title": "Marty Supreme",
+                        "id": "film-006",
+                        "title": "Frankenstein",
                         "poster": {
-                            "path": "/films/2026/Marty-Supreme.jpg",
-                            "alt": "Marty Supreme poster"
+                            "path": "/films/2026/Frankenstein.jpg",
+                            "alt": "Frankenstein poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-053",
+                        "name": "Guillermo del Toro",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Guillermo-del-Toro.jpg",
+                                "alt": "Guillermo del Toro"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-098",
+                    "film": {
+                        "id": "film-008",
+                        "title": "Hamnet",
+                        "poster": {
+                            "path": "/films/2026/Hamnet.jpg",
+                            "alt": "Hamnet poster"
                         }
                     },
                     "crew": [
                         {
-                            "id": "crew-019",
-                            "name": "Ronald Bronstein",
-                            "role": "Editor"
+                            "id": "crew-135",
+                            "name": "Chloé Zhao",
+                            "role": "Screenwriter"
                         },
                         {
-                            "id": "crew-020",
-                            "name": "Josh Safdie",
-                            "role": "Editor"
+                            "id": "crew-136",
+                            "name": "Maggie O'Farrell",
+                            "role": "Screenwriter"
                         }
                     ]
                 },
                 {
-                    "id": "nominee-048",
+                    "id": "nominee-099",
                     "film": {
                         "id": "film-002",
                         "title": "One Battle after Another",
@@ -1245,145 +755,46 @@
                         }
                     },
                     "person": {
-                        "id": "person-042",
-                        "name": "Andy Jurgensen",
+                        "id": "person-038",
+                        "name": "Paul Thomas Anderson",
                         "images": {
                             "primary": {
-                                "path": "/actors/2026/Andy-Jurgensen.jpg",
-                                "alt": "Andy Jurgensen"
+                                "path": "/actors/2026/Paul-Thomas-Anderson.jpg",
+                                "alt": "Paul Thomas Anderson"
                             }
                         }
                     }
                 },
                 {
-                    "id": "nominee-049",
+                    "id": "nominee-100",
                     "film": {
-                        "id": "film-007",
-                        "title": "Sentimental Value",
+                        "id": "film-018",
+                        "title": "Train Dreams",
                         "poster": {
-                            "path": "/films/2026/Sentimental-Value.jpg",
-                            "alt": "Sentimental Value poster"
+                            "path": "/films/2026/Train-Dreams.jpg",
+                            "alt": "Train Dreams poster"
                         }
                     },
-                    "person": {
-                        "id": "person-043",
-                        "name": "Olivier Bugge Coutté",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Olivier-Bugge-Coutte.jpg",
-                                "alt": "Olivier Bugge Coutté"
-                            }
+                    "crew": [
+                        {
+                            "id": "crew-137",
+                            "name": "Clint Bentley",
+                            "role": "Screenwriter"
+                        },
+                        {
+                            "id": "crew-138",
+                            "name": "Greg Kwedar",
+                            "role": "Screenwriter"
                         }
-                    }
-                },
-                {
-                    "id": "nominee-050",
-                    "film": {
-                        "id": "film-004",
-                        "title": "Sinners",
-                        "poster": {
-                            "path": "/films/2026/Sinners.jpg",
-                            "alt": "Sinners poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-044",
-                        "name": "Michael P. Shawver",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Michael-P-Shawver.jpg",
-                                "alt": "Michael P. Shawver"
-                            }
-                        }
-                    }
+                    ]
                 }
             ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
-            "id": "international-feature",
-            "name": "International Feature Film",
-            "nominees": [
-                {
-                    "id": "nominee-051",
-                    "film": {
-                        "id": "film-005",
-                        "title": "The Secret Agent",
-                        "poster": {
-                            "path": "/films/2026/The-Secret-Agent.jpg",
-                            "alt": "The Secret Agent poster"
-                        }
-                    },
-                    "metadata": {
-                        "country": "Brazil"
-                    }
-                },
-                {
-                    "id": "nominee-052",
-                    "film": {
-                        "id": "film-021",
-                        "title": "It Was Just an Accident",
-                        "poster": {
-                            "path": "/films/2026/It-Was-Just-an-Accident.jpg",
-                            "alt": "It Was Just an Accident poster"
-                        }
-                    },
-                    "metadata": {
-                        "country": "France"
-                    }
-                },
-                {
-                    "id": "nominee-053",
-                    "film": {
-                        "id": "film-007",
-                        "title": "Sentimental Value",
-                        "poster": {
-                            "path": "/films/2026/Sentimental-Value.jpg",
-                            "alt": "Sentimental Value poster"
-                        }
-                    },
-                    "metadata": {
-                        "country": "Norway"
-                    }
-                },
-                {
-                    "id": "nominee-054",
-                    "film": {
-                        "id": "film-022",
-                        "title": "Sirāt",
-                        "poster": {
-                            "path": "/films/2026/Sirat.jpg",
-                            "alt": "Sirāt poster"
-                        }
-                    },
-                    "metadata": {
-                        "country": "Spain"
-                    }
-                },
-                {
-                    "id": "nominee-055",
-                    "film": {
-                        "id": "film-023",
-                        "title": "The Voice of Hind Rajab",
-                        "poster": {
-                            "path": "/films/2026/The-Voice-of-Hind-Rajab.jpg",
-                            "alt": "The Voice of Hind Rajab poster"
-                        }
-                    },
-                    "metadata": {
-                        "country": "Tunisia"
-                    }
-                }
-            ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
             "id": "makeup-hairstyling",
             "name": "Makeup and Hairstyling",
             "nominees": [
@@ -1523,80 +934,61 @@
                     ]
                 }
             ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
-            "id": "music-score",
-            "name": "Music (Original Score)",
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
+            "id": "film-editing",
+            "name": "Film Editing",
             "nominees": [
                 {
-                    "id": "nominee-061",
+                    "id": "nominee-046",
                     "film": {
-                        "id": "film-011",
-                        "title": "Bugonia",
+                        "id": "film-020",
+                        "title": "F1",
                         "poster": {
-                            "path": "/films/2026/Bugonia.jpg",
-                            "alt": "Bugonia poster"
+                            "path": "/films/2026/F1.jpg",
+                            "alt": "F1 poster"
                         }
                     },
                     "person": {
-                        "id": "person-045",
-                        "name": "Jerskin Fendrix",
+                        "id": "person-041",
+                        "name": "Stephen Mirrione",
                         "images": {
                             "primary": {
-                                "path": "/actors/2026/Jerskin-Fendrix.jpg",
-                                "alt": "Jerskin Fendrix"
+                                "path": "/actors/2026/Stephen-Mirrione.jpg",
+                                "alt": "Stephen Mirrione"
                             }
                         }
                     }
                 },
                 {
-                    "id": "nominee-062",
+                    "id": "nominee-047",
                     "film": {
-                        "id": "film-006",
-                        "title": "Frankenstein",
+                        "id": "film-001",
+                        "title": "Marty Supreme",
                         "poster": {
-                            "path": "/films/2026/Frankenstein.jpg",
-                            "alt": "Frankenstein poster"
+                            "path": "/films/2026/Marty-Supreme.jpg",
+                            "alt": "Marty Supreme poster"
                         }
                     },
-                    "person": {
-                        "id": "person-046",
-                        "name": "Alexandre Desplat",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Alexandre-Desplat.jpg",
-                                "alt": "Alexandre Desplat"
-                            }
+                    "crew": [
+                        {
+                            "id": "crew-019",
+                            "name": "Ronald Bronstein",
+                            "role": "Editor"
+                        },
+                        {
+                            "id": "crew-020",
+                            "name": "Josh Safdie",
+                            "role": "Editor"
                         }
-                    }
+                    ]
                 },
                 {
-                    "id": "nominee-063",
-                    "film": {
-                        "id": "film-008",
-                        "title": "Hamnet",
-                        "poster": {
-                            "path": "/films/2026/Hamnet.jpg",
-                            "alt": "Hamnet poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-047",
-                        "name": "Max Richter",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Max-Richter.jpg",
-                                "alt": "Max Richter"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-064",
+                    "id": "nominee-048",
                     "film": {
                         "id": "film-002",
                         "title": "One Battle after Another",
@@ -1606,18 +998,39 @@
                         }
                     },
                     "person": {
-                        "id": "person-048",
-                        "name": "Jonny Greenwood",
+                        "id": "person-042",
+                        "name": "Andy Jurgensen",
                         "images": {
                             "primary": {
-                                "path": "/actors/2026/Jonny-Greenwood.jpg",
-                                "alt": "Jonny Greenwood"
+                                "path": "/actors/2026/Andy-Jurgensen.jpg",
+                                "alt": "Andy Jurgensen"
                             }
                         }
                     }
                 },
                 {
-                    "id": "nominee-065",
+                    "id": "nominee-049",
+                    "film": {
+                        "id": "film-007",
+                        "title": "Sentimental Value",
+                        "poster": {
+                            "path": "/films/2026/Sentimental-Value.jpg",
+                            "alt": "Sentimental Value poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-043",
+                        "name": "Olivier Bugge Coutté",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Olivier-Bugge-Coutte.jpg",
+                                "alt": "Olivier Bugge Coutté"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-050",
                     "film": {
                         "id": "film-004",
                         "title": "Sinners",
@@ -1627,23 +1040,338 @@
                         }
                     },
                     "person": {
-                        "id": "person-049",
-                        "name": "Ludwig Goransson",
+                        "id": "person-044",
+                        "name": "Michael P. Shawver",
                         "images": {
                             "primary": {
-                                "path": "/actors/2026/Ludwig-Goransson.jpg",
-                                "alt": "Ludwig Goransson"
+                                "path": "/actors/2026/Michael-P-Shawver.jpg",
+                                "alt": "Michael P. Shawver"
                             }
                         }
                     }
                 }
             ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
+            "id": "actress-supporting-role",
+            "name": "Actress in a Supporting Role",
+            "nominees": [
+                {
+                    "id": "nominee-016",
+                    "film": {
+                        "id": "film-007",
+                        "title": "Sentimental Value",
+                        "poster": {
+                            "path": "/films/2026/Sentimental-Value.jpg",
+                            "alt": "Sentimental Value poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-016",
+                        "name": "Elle Fanning",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Elle-Fanning.jpg",
+                                "alt": "Elle Fanning"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Elle-Fanning-1.jpg",
+                                "alt": "Elle Fanning - alternate"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-017",
+                    "film": {
+                        "id": "film-007",
+                        "title": "Sentimental Value",
+                        "poster": {
+                            "path": "/films/2026/Sentimental-Value.jpg",
+                            "alt": "Sentimental Value poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-017",
+                        "name": "Inga Ibsdotter Lilleaas",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Inga-Ibsdotter-Lilleaas.jpg",
+                                "alt": "Inga Ibsdotter Lilleaas"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Inga-Ibsdotter-Lilleaas-1.jpg",
+                                "alt": "Inga Ibsdotter Lilleaas - alternate"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-018",
+                    "film": {
+                        "id": "film-012",
+                        "title": "Weapons",
+                        "poster": {
+                            "path": "/films/2026/Weapons.jpg",
+                            "alt": "Weapons poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-018",
+                        "name": "Amy Madigan",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Amy-Madigan.jpg",
+                                "alt": "Amy Madigan"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Amy-Madigan-1.jpg",
+                                "alt": "Amy Madigan - alternate"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-019",
+                    "film": {
+                        "id": "film-004",
+                        "title": "Sinners",
+                        "poster": {
+                            "path": "/films/2026/Sinners.jpg",
+                            "alt": "Sinners poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-019",
+                        "name": "Wunmi Mosaku",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Wunmi-Mosaku.jpg",
+                                "alt": "Wunmi Mosaku"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Wunmi-Mosaku-1.jpg",
+                                "alt": "Wunmi Mosaku - alternate"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-020",
+                    "film": {
+                        "id": "film-002",
+                        "title": "One Battle after Another",
+                        "poster": {
+                            "path": "/films/2026/One-Battle-after-Another.jpg",
+                            "alt": "One Battle after Another poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-020",
+                        "name": "Teyana Taylor",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Teyana-Taylor.jpg",
+                                "alt": "Teyana Taylor"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Teyana-Taylor-1.jpg",
+                                "alt": "Teyana Taylor - alternate"
+                            }
+                        }
+                    }
+                }
+            ],
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
+            "id": "sound",
+            "name": "Sound",
+            "nominees": [
+                {
+                    "id": "nominee-086",
+                    "film": {
+                        "id": "film-020",
+                        "title": "F1",
+                        "poster": {
+                            "path": "/films/2026/F1.jpg",
+                            "alt": "F1 poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-094",
+                            "name": "Gareth John",
+                            "role": "Sound Designer"
+                        },
+                        {
+                            "id": "crew-095",
+                            "name": "Al Nelson",
+                            "role": "Sound Designer"
+                        },
+                        {
+                            "id": "crew-096",
+                            "name": "Gwendolyn Yates Whittle",
+                            "role": "Sound Designer"
+                        },
+                        {
+                            "id": "crew-097",
+                            "name": "Gary A. Rizzo",
+                            "role": "Sound Designer"
+                        },
+                        {
+                            "id": "crew-098",
+                            "name": "Juan Peralta",
+                            "role": "Sound Designer"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-087",
+                    "film": {
+                        "id": "film-006",
+                        "title": "Frankenstein",
+                        "poster": {
+                            "path": "/films/2026/Frankenstein.jpg",
+                            "alt": "Frankenstein poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-099",
+                            "name": "Greg Chapman",
+                            "role": "Sound Designer"
+                        },
+                        {
+                            "id": "crew-100",
+                            "name": "Nathan Robitaille",
+                            "role": "Sound Designer"
+                        },
+                        {
+                            "id": "crew-101",
+                            "name": "Nelson Ferreira",
+                            "role": "Sound Designer"
+                        },
+                        {
+                            "id": "crew-102",
+                            "name": "Christian Cooke",
+                            "role": "Sound Designer"
+                        },
+                        {
+                            "id": "crew-103",
+                            "name": "Brad Zoern",
+                            "role": "Sound Designer"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-088",
+                    "film": {
+                        "id": "film-002",
+                        "title": "One Battle after Another",
+                        "poster": {
+                            "path": "/films/2026/One-Battle-after-Another.jpg",
+                            "alt": "One Battle after Another poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-104",
+                            "name": "José Antonio García",
+                            "role": "Sound Designer"
+                        },
+                        {
+                            "id": "crew-105",
+                            "name": "Christopher Scarabosio",
+                            "role": "Sound Designer"
+                        },
+                        {
+                            "id": "crew-106",
+                            "name": "Tony Villaflor",
+                            "role": "Sound Designer"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-089",
+                    "film": {
+                        "id": "film-004",
+                        "title": "Sinners",
+                        "poster": {
+                            "path": "/films/2026/Sinners.jpg",
+                            "alt": "Sinners poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-107",
+                            "name": "Chris Welcker",
+                            "role": "Sound Designer"
+                        },
+                        {
+                            "id": "crew-108",
+                            "name": "Benjamin A. Burtt",
+                            "role": "Sound Designer"
+                        },
+                        {
+                            "id": "crew-109",
+                            "name": "Felipe Pacheco",
+                            "role": "Sound Designer"
+                        },
+                        {
+                            "id": "crew-110",
+                            "name": "Brandon Proctor",
+                            "role": "Sound Designer"
+                        },
+                        {
+                            "id": "crew-111",
+                            "name": "Steve Boeddeker",
+                            "role": "Sound Designer"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-090",
+                    "film": {
+                        "id": "film-022",
+                        "title": "Sirāt",
+                        "poster": {
+                            "path": "/films/2026/Sirat.jpg",
+                            "alt": "Sirāt poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-112",
+                            "name": "Amanda Villavieja",
+                            "role": "Sound Designer"
+                        },
+                        {
+                            "id": "crew-113",
+                            "name": "Laia Casanovas",
+                            "role": "Sound Designer"
+                        },
+                        {
+                            "id": "crew-114",
+                            "name": "Yasmina Praderas",
+                            "role": "Sound Designer"
+                        }
+                    ]
+                }
+            ],
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
             "id": "music-song",
             "name": "Music (Original Song)",
             "nominees": [
@@ -1799,12 +1527,1411 @@
                     ]
                 }
             ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
+            "id": "documentary-short",
+            "name": "Documentary Short Film",
+            "nominees": [
+                {
+                    "id": "nominee-116",
+                    "film": {
+                        "id": "film-041",
+                        "title": "All the Empty Rooms",
+                        "poster": {
+                            "path": "/films/2026/All-the-Empty-Rooms.jpg",
+                            "alt": "All the Empty Rooms poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-166",
+                            "name": "Joshua Seftel",
+                            "role": "Director"
+                        },
+                        {
+                            "id": "crew-167",
+                            "name": "Conall Jones",
+                            "role": "Producer"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-117",
+                    "film": {
+                        "id": "film-042",
+                        "title": "Armed Only with a Camera: The Life and Death of Brent Renaud",
+                        "poster": {
+                            "path": "/films/2026/Armed-Only-with-a-Camera.jpg",
+                            "alt": "Armed Only with a Camera: The Life and Death of Brent Renaud poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-168",
+                            "name": "Craig Renaud",
+                            "role": "Director"
+                        },
+                        {
+                            "id": "crew-169",
+                            "name": "Juan Arredondo",
+                            "role": "Producer"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-118",
+                    "film": {
+                        "id": "film-043",
+                        "title": "Children No More: \"Were and Are Gone\"",
+                        "poster": {
+                            "path": "/films/2026/Children-No-More.jpg",
+                            "alt": "Children No More: \"Were and Are Gone\" poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-170",
+                            "name": "Hilla Medalia",
+                            "role": "Director"
+                        },
+                        {
+                            "id": "crew-171",
+                            "name": "Sheila Nevins",
+                            "role": "Producer"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-119",
+                    "film": {
+                        "id": "film-044",
+                        "title": "The Devil Is Busy",
+                        "poster": {
+                            "path": "/films/2026/The-Devil-Is-Busy.jpg",
+                            "alt": "The Devil Is Busy poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-172",
+                            "name": "Christalyn Hampton",
+                            "role": "Director"
+                        },
+                        {
+                            "id": "crew-173",
+                            "name": "Geeta Gandbhir",
+                            "role": "Producer"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-120",
+                    "film": {
+                        "id": "film-045",
+                        "title": "Perfectly a Strangeness",
+                        "poster": {
+                            "path": "/films/2026/Perfectly-a-Strangeness.jpg",
+                            "alt": "Perfectly a Strangeness poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-057",
+                        "name": "Alison McAlpine",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Alison-McAlpine.jpg",
+                                "alt": "Alison McAlpine"
+                            }
+                        }
+                    }
+                }
+            ],
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
+            "id": "documentary-feature",
+            "name": "Documentary Feature Film",
+            "nominees": [
+                {
+                    "id": "nominee-111",
+                    "film": {
+                        "id": "film-036",
+                        "title": "The Alabama Solution",
+                        "poster": {
+                            "path": "/films/2026/The-Alabama-Solution.jpg",
+                            "alt": "The Alabama Solution poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-154",
+                            "name": "Andrew Jarecki",
+                            "role": "Director"
+                        },
+                        {
+                            "id": "crew-155",
+                            "name": "Charlotte Kaufman",
+                            "role": "Producer"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-112",
+                    "film": {
+                        "id": "film-037",
+                        "title": "Come See Me in the Good Light",
+                        "poster": {
+                            "path": "/films/2026/Come-See-Me-in-the-Good-Light.jpg",
+                            "alt": "Come See Me in the Good Light poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-156",
+                            "name": "Ryan White",
+                            "role": "Director"
+                        },
+                        {
+                            "id": "crew-157",
+                            "name": "Jessica Hargrave",
+                            "role": "Producer"
+                        },
+                        {
+                            "id": "crew-158",
+                            "name": "Tig Notaro",
+                            "role": "Producer"
+                        },
+                        {
+                            "id": "crew-159",
+                            "name": "Stef Willen",
+                            "role": "Producer"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-113",
+                    "film": {
+                        "id": "film-038",
+                        "title": "Cutting through Rocks",
+                        "poster": {
+                            "path": "/films/2026/Cutting-through-Rocks.jpg",
+                            "alt": "Cutting through Rocks poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-160",
+                            "name": "Sara Khaki",
+                            "role": "Director"
+                        },
+                        {
+                            "id": "crew-161",
+                            "name": "Mohammadreza Eyni",
+                            "role": "Producer"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-114",
+                    "film": {
+                        "id": "film-039",
+                        "title": "Mr. Nobody against Putin",
+                        "poster": {
+                            "path": "/films/2026/Mr-Nobody-against-Putin.jpg",
+                            "alt": "Mr. Nobody against Putin poster"
+                        }
+                    },
+                    "metadata": {
+                        "notes": "Nominees to be determined"
+                    }
+                },
+                {
+                    "id": "nominee-115",
+                    "film": {
+                        "id": "film-040",
+                        "title": "The Perfect Neighbor",
+                        "poster": {
+                            "path": "/films/2026/The-Perfect-Neighbor.jpg",
+                            "alt": "The Perfect Neighbor poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-162",
+                            "name": "Geeta Gandbhir",
+                            "role": "Director"
+                        },
+                        {
+                            "id": "crew-163",
+                            "name": "Alisa Payne",
+                            "role": "Producer"
+                        },
+                        {
+                            "id": "crew-164",
+                            "name": "Nikon Kwantu",
+                            "role": "Producer"
+                        },
+                        {
+                            "id": "crew-165",
+                            "name": "Sam Bisbee",
+                            "role": "Producer"
+                        }
+                    ]
+                }
+            ],
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
+            "id": "production-design",
+            "name": "Production Design",
+            "nominees": [
+                {
+                    "id": "nominee-081",
+                    "film": {
+                        "id": "film-006",
+                        "title": "Frankenstein",
+                        "poster": {
+                            "path": "/films/2026/Frankenstein.jpg",
+                            "alt": "Frankenstein poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-084",
+                            "name": "Tamara Deverell",
+                            "role": "Production Designer"
+                        },
+                        {
+                            "id": "crew-085",
+                            "name": "Shane Vieau",
+                            "role": "Set Decorator"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-082",
+                    "film": {
+                        "id": "film-008",
+                        "title": "Hamnet",
+                        "poster": {
+                            "path": "/films/2026/Hamnet.jpg",
+                            "alt": "Hamnet poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-086",
+                            "name": "Fiona Crombie",
+                            "role": "Production Designer"
+                        },
+                        {
+                            "id": "crew-087",
+                            "name": "Alice Felton",
+                            "role": "Set Decorator"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-083",
+                    "film": {
+                        "id": "film-001",
+                        "title": "Marty Supreme",
+                        "poster": {
+                            "path": "/films/2026/Marty-Supreme.jpg",
+                            "alt": "Marty Supreme poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-088",
+                            "name": "Jack Fisk",
+                            "role": "Production Designer"
+                        },
+                        {
+                            "id": "crew-089",
+                            "name": "Adam Willis",
+                            "role": "Set Decorator"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-084",
+                    "film": {
+                        "id": "film-002",
+                        "title": "One Battle after Another",
+                        "poster": {
+                            "path": "/films/2026/One-Battle-after-Another.jpg",
+                            "alt": "One Battle after Another poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-090",
+                            "name": "Florencia Martin",
+                            "role": "Production Designer"
+                        },
+                        {
+                            "id": "crew-091",
+                            "name": "Anthony Carlino",
+                            "role": "Set Decorator"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-085",
+                    "film": {
+                        "id": "film-004",
+                        "title": "Sinners",
+                        "poster": {
+                            "path": "/films/2026/Sinners.jpg",
+                            "alt": "Sinners poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-092",
+                            "name": "Hannah Beachler",
+                            "role": "Production Designer"
+                        },
+                        {
+                            "id": "crew-093",
+                            "name": "Monique Champagne",
+                            "role": "Set Decorator"
+                        }
+                    ]
+                }
+            ],
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
+            "id": "visual-effects",
+            "name": "Visual Effects",
+            "nominees": [
+                {
+                    "id": "nominee-091",
+                    "film": {
+                        "id": "film-019",
+                        "title": "Avatar: Fire and Ash",
+                        "poster": {
+                            "path": "/films/2026/Avatar-Fire-and-Ash.jpg",
+                            "alt": "Avatar: Fire and Ash poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-115",
+                            "name": "Joe Letteri",
+                            "role": "Visual Effects Supervisor"
+                        },
+                        {
+                            "id": "crew-116",
+                            "name": "Richard Baneham",
+                            "role": "Visual Effects Supervisor"
+                        },
+                        {
+                            "id": "crew-117",
+                            "name": "Eric Saindon",
+                            "role": "Visual Effects Supervisor"
+                        },
+                        {
+                            "id": "crew-118",
+                            "name": "Daniel Barrett",
+                            "role": "Visual Effects Supervisor"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-092",
+                    "film": {
+                        "id": "film-020",
+                        "title": "F1",
+                        "poster": {
+                            "path": "/films/2026/F1.jpg",
+                            "alt": "F1 poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-119",
+                            "name": "Ryan Tudhope",
+                            "role": "Visual Effects Supervisor"
+                        },
+                        {
+                            "id": "crew-120",
+                            "name": "Nicolas Chevallier",
+                            "role": "Visual Effects Supervisor"
+                        },
+                        {
+                            "id": "crew-121",
+                            "name": "Robert Harrington",
+                            "role": "Visual Effects Supervisor"
+                        },
+                        {
+                            "id": "crew-122",
+                            "name": "Keith Dawson",
+                            "role": "Visual Effects Supervisor"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-093",
+                    "film": {
+                        "id": "film-029",
+                        "title": "Jurassic World Rebirth",
+                        "poster": {
+                            "path": "/films/2026/Jurassic-World-Rebirth.jpg",
+                            "alt": "Jurassic World Rebirth poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-123",
+                            "name": "David Vickery",
+                            "role": "Visual Effects Supervisor"
+                        },
+                        {
+                            "id": "crew-124",
+                            "name": "Stephen Aplin",
+                            "role": "Visual Effects Supervisor"
+                        },
+                        {
+                            "id": "crew-125",
+                            "name": "Charmaine Chan",
+                            "role": "Visual Effects Supervisor"
+                        },
+                        {
+                            "id": "crew-126",
+                            "name": "Neil Corbould",
+                            "role": "Visual Effects Supervisor"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-094",
+                    "film": {
+                        "id": "film-030",
+                        "title": "The Lost Bus",
+                        "poster": {
+                            "path": "/films/2026/The-Lost-Bus.jpg",
+                            "alt": "The Lost Bus poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-127",
+                            "name": "Charlie Noble",
+                            "role": "Visual Effects Supervisor"
+                        },
+                        {
+                            "id": "crew-128",
+                            "name": "David Zaretti",
+                            "role": "Visual Effects Supervisor"
+                        },
+                        {
+                            "id": "crew-129",
+                            "name": "Russell Bowen",
+                            "role": "Visual Effects Supervisor"
+                        },
+                        {
+                            "id": "crew-130",
+                            "name": "Brandon K. McLaughlin",
+                            "role": "Visual Effects Supervisor"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-095",
+                    "film": {
+                        "id": "film-004",
+                        "title": "Sinners",
+                        "poster": {
+                            "path": "/films/2026/Sinners.jpg",
+                            "alt": "Sinners poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-131",
+                            "name": "Michael Ralla",
+                            "role": "Visual Effects Supervisor"
+                        },
+                        {
+                            "id": "crew-132",
+                            "name": "Espen Nordahl",
+                            "role": "Visual Effects Supervisor"
+                        },
+                        {
+                            "id": "crew-133",
+                            "name": "Guido Wolter",
+                            "role": "Visual Effects Supervisor"
+                        },
+                        {
+                            "id": "crew-134",
+                            "name": "Donnie Dean",
+                            "role": "Visual Effects Supervisor"
+                        }
+                    ]
+                }
+            ],
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
+            "id": "international-feature",
+            "name": "International Feature Film",
+            "nominees": [
+                {
+                    "id": "nominee-051",
+                    "film": {
+                        "id": "film-005",
+                        "title": "The Secret Agent",
+                        "poster": {
+                            "path": "/films/2026/The-Secret-Agent.jpg",
+                            "alt": "The Secret Agent poster"
+                        }
+                    },
+                    "metadata": {
+                        "country": "Brazil"
+                    }
+                },
+                {
+                    "id": "nominee-052",
+                    "film": {
+                        "id": "film-021",
+                        "title": "It Was Just an Accident",
+                        "poster": {
+                            "path": "/films/2026/It-Was-Just-an-Accident.jpg",
+                            "alt": "It Was Just an Accident poster"
+                        }
+                    },
+                    "metadata": {
+                        "country": "France"
+                    }
+                },
+                {
+                    "id": "nominee-053",
+                    "film": {
+                        "id": "film-007",
+                        "title": "Sentimental Value",
+                        "poster": {
+                            "path": "/films/2026/Sentimental-Value.jpg",
+                            "alt": "Sentimental Value poster"
+                        }
+                    },
+                    "metadata": {
+                        "country": "Norway"
+                    }
+                },
+                {
+                    "id": "nominee-054",
+                    "film": {
+                        "id": "film-022",
+                        "title": "Sirāt",
+                        "poster": {
+                            "path": "/films/2026/Sirat.jpg",
+                            "alt": "Sirāt poster"
+                        }
+                    },
+                    "metadata": {
+                        "country": "Spain"
+                    }
+                },
+                {
+                    "id": "nominee-055",
+                    "film": {
+                        "id": "film-023",
+                        "title": "The Voice of Hind Rajab",
+                        "poster": {
+                            "path": "/films/2026/The-Voice-of-Hind-Rajab.jpg",
+                            "alt": "The Voice of Hind Rajab poster"
+                        }
+                    },
+                    "metadata": {
+                        "country": "Tunisia"
+                    }
+                }
+            ],
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
+            "id": "live-action-short",
+            "name": "Live Action Short Film",
+            "nominees": [
+                {
+                    "id": "nominee-121",
+                    "film": {
+                        "id": "film-046",
+                        "title": "Butcher's Stain",
+                        "poster": {
+                            "path": "/films/2026/Butchers-Stain.jpg",
+                            "alt": "Butcher's Stain poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-174",
+                            "name": "Meyer Levinson-Blount",
+                            "role": "Director"
+                        },
+                        {
+                            "id": "crew-175",
+                            "name": "Oron Caspi",
+                            "role": "Producer"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-122",
+                    "film": {
+                        "id": "film-047",
+                        "title": "A Friend of Dorothy",
+                        "poster": {
+                            "path": "/films/2026/A-Friend-of-Dorothy.jpg",
+                            "alt": "A Friend of Dorothy poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-176",
+                            "name": "Lee Knight",
+                            "role": "Director"
+                        },
+                        {
+                            "id": "crew-177",
+                            "name": "James Dean",
+                            "role": "Producer"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-123",
+                    "film": {
+                        "id": "film-048",
+                        "title": "Jane Austen's Period Drama",
+                        "poster": {
+                            "path": "/films/2026/Jane-Austens-Period-Drama.jpg",
+                            "alt": "Jane Austen's Period Drama poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-178",
+                            "name": "Julia Aks",
+                            "role": "Director"
+                        },
+                        {
+                            "id": "crew-179",
+                            "name": "Steve Pinder",
+                            "role": "Producer"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-124",
+                    "film": {
+                        "id": "film-049",
+                        "title": "The Singers",
+                        "poster": {
+                            "path": "/films/2026/The-Singers.jpg",
+                            "alt": "The Singers poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-180",
+                            "name": "Sam A. Davis",
+                            "role": "Director"
+                        },
+                        {
+                            "id": "crew-181",
+                            "name": "Jack Piatt",
+                            "role": "Producer"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-125",
+                    "film": {
+                        "id": "film-050",
+                        "title": "Two People Exchanging Saliva",
+                        "poster": {
+                            "path": "/films/2026/Two-People-Exchanging-Saliva.jpg",
+                            "alt": "Two People Exchanging Saliva poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-182",
+                            "name": "Alexandre Singh",
+                            "role": "Director"
+                        },
+                        {
+                            "id": "crew-183",
+                            "name": "Natalie Musteata",
+                            "role": "Producer"
+                        }
+                    ]
+                }
+            ],
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
+            "id": "cinematography",
+            "name": "Cinematography",
+            "nominees": [
+                {
+                    "id": "nominee-031",
+                    "film": {
+                        "id": "film-006",
+                        "title": "Frankenstein",
+                        "poster": {
+                            "path": "/films/2026/Frankenstein.jpg",
+                            "alt": "Frankenstein poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-026",
+                        "name": "Dan Laustsen",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Dan-Laustsen.jpg",
+                                "alt": "Dan Laustsen"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-032",
+                    "film": {
+                        "id": "film-001",
+                        "title": "Marty Supreme",
+                        "poster": {
+                            "path": "/films/2026/Marty-Supreme.jpg",
+                            "alt": "Marty Supreme poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-027",
+                        "name": "Darius Khondji",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Darius-Khondji.jpg",
+                                "alt": "Darius Khondji"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-033",
+                    "film": {
+                        "id": "film-002",
+                        "title": "One Battle after Another",
+                        "poster": {
+                            "path": "/films/2026/One-Battle-after-Another.jpg",
+                            "alt": "One Battle after Another poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-028",
+                        "name": "Michael Bauman",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Michael-Bauman.jpg",
+                                "alt": "Michael Bauman"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-034",
+                    "film": {
+                        "id": "film-004",
+                        "title": "Sinners",
+                        "poster": {
+                            "path": "/films/2026/Sinners.jpg",
+                            "alt": "Sinners poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-029",
+                        "name": "Autumn Durald Arkapaw",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Autumn-Durald-Arkapaw.jpg",
+                                "alt": "Autumn Durald Arkapaw"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-035",
+                    "film": {
+                        "id": "film-018",
+                        "title": "Train Dreams",
+                        "poster": {
+                            "path": "/films/2026/Train-Dreams.jpg",
+                            "alt": "Train Dreams poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-030",
+                        "name": "Adolpho Veloso",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Adolpho-Veloso.jpg",
+                                "alt": "Adolpho Veloso"
+                            }
+                        }
+                    }
+                }
+            ],
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
+            "id": "music-score",
+            "name": "Music (Original Score)",
+            "nominees": [
+                {
+                    "id": "nominee-061",
+                    "film": {
+                        "id": "film-011",
+                        "title": "Bugonia",
+                        "poster": {
+                            "path": "/films/2026/Bugonia.jpg",
+                            "alt": "Bugonia poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-045",
+                        "name": "Jerskin Fendrix",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Jerskin-Fendrix.jpg",
+                                "alt": "Jerskin Fendrix"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-062",
+                    "film": {
+                        "id": "film-006",
+                        "title": "Frankenstein",
+                        "poster": {
+                            "path": "/films/2026/Frankenstein.jpg",
+                            "alt": "Frankenstein poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-046",
+                        "name": "Alexandre Desplat",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Alexandre-Desplat.jpg",
+                                "alt": "Alexandre Desplat"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-063",
+                    "film": {
+                        "id": "film-008",
+                        "title": "Hamnet",
+                        "poster": {
+                            "path": "/films/2026/Hamnet.jpg",
+                            "alt": "Hamnet poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-047",
+                        "name": "Max Richter",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Max-Richter.jpg",
+                                "alt": "Max Richter"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-064",
+                    "film": {
+                        "id": "film-002",
+                        "title": "One Battle after Another",
+                        "poster": {
+                            "path": "/films/2026/One-Battle-after-Another.jpg",
+                            "alt": "One Battle after Another poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-048",
+                        "name": "Jonny Greenwood",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Jonny-Greenwood.jpg",
+                                "alt": "Jonny Greenwood"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-065",
+                    "film": {
+                        "id": "film-004",
+                        "title": "Sinners",
+                        "poster": {
+                            "path": "/films/2026/Sinners.jpg",
+                            "alt": "Sinners poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-049",
+                        "name": "Ludwig Goransson",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Ludwig-Goransson.jpg",
+                                "alt": "Ludwig Goransson"
+                            }
+                        }
+                    }
+                }
+            ],
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
+            "id": "actor-leading-role",
+            "name": "Actor in a Leading Role",
+            "nominees": [
+                {
+                    "id": "nominee-001",
+                    "film": {
+                        "id": "film-001",
+                        "title": "Marty Supreme",
+                        "poster": {
+                            "path": "/films/2026/Marty-Supreme.jpg",
+                            "alt": "Marty Supreme poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-001",
+                        "name": "Timothée Chalamet",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Timothee-Chalamet.jpg",
+                                "alt": "Timothée Chalamet"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Timothee-Chalamet-1.jpg",
+                                "alt": "Timothée Chalamet - alternate"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-002",
+                    "film": {
+                        "id": "film-002",
+                        "title": "One Battle after Another",
+                        "poster": {
+                            "path": "/films/2026/One-Battle-after-Another.jpg",
+                            "alt": "One Battle after Another poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-002",
+                        "name": "Leonardo DiCaprio",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Leonardo-DiCaprio.jpg",
+                                "alt": "Leonardo DiCaprio"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Leonardo-DiCaprio-1.jpg",
+                                "alt": "Leonardo DiCaprio - alternate"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-003",
+                    "film": {
+                        "id": "film-003",
+                        "title": "Blue Moon",
+                        "poster": {
+                            "path": "/films/2026/Blue-Moon.jpg",
+                            "alt": "Blue Moon poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-003",
+                        "name": "Ethan Hawke",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Ethan-Hawke.jpg",
+                                "alt": "Ethan Hawke"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Ethan-Hawke-1.jpg",
+                                "alt": "Ethan Hawke - alternate"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-004",
+                    "film": {
+                        "id": "film-004",
+                        "title": "Sinners",
+                        "poster": {
+                            "path": "/films/2026/Sinners.jpg",
+                            "alt": "Sinners poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-004",
+                        "name": "Michael B. Jordan",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Michael-B-Jordan.jpg",
+                                "alt": "Michael B. Jordan"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Michael-B-Jordan-1.jpg",
+                                "alt": "Michael B. Jordan - alternate"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-005",
+                    "film": {
+                        "id": "film-005",
+                        "title": "The Secret Agent",
+                        "poster": {
+                            "path": "/films/2026/The-Secret-Agent.jpg",
+                            "alt": "The Secret Agent poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-005",
+                        "name": "Wagner Moura",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Wagner-Moura.jpg",
+                                "alt": "Wagner Moura"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Wagner-Moura-1.jpg",
+                                "alt": "Wagner Moura - alternate"
+                            }
+                        }
+                    }
+                }
+            ],
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
+            "id": "directing",
+            "name": "Directing",
+            "nominees": [
+                {
+                    "id": "nominee-041",
+                    "film": {
+                        "id": "film-008",
+                        "title": "Hamnet",
+                        "poster": {
+                            "path": "/films/2026/Hamnet.jpg",
+                            "alt": "Hamnet poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-036",
+                        "name": "Chloé Zhao",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Chloe-Zhao.jpg",
+                                "alt": "Chloé Zhao"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Chloe-Zhao-1.jpg",
+                                "alt": "Chloé Zhao - alternate"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-042",
+                    "film": {
+                        "id": "film-001",
+                        "title": "Marty Supreme",
+                        "poster": {
+                            "path": "/films/2026/Marty-Supreme.jpg",
+                            "alt": "Marty Supreme poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-037",
+                        "name": "Josh Safdie",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Josh-Safdie.jpg",
+                                "alt": "Josh Safdie"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Josh-Safdie-1.jpg",
+                                "alt": "Josh Safdie - alternate"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-043",
+                    "film": {
+                        "id": "film-002",
+                        "title": "One Battle after Another",
+                        "poster": {
+                            "path": "/films/2026/One-Battle-after-Another.jpg",
+                            "alt": "One Battle after Another poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-038",
+                        "name": "Paul Thomas Anderson",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Paul-Thomas-Anderson.jpg",
+                                "alt": "Paul Thomas Anderson"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Paul-Thomas-Anderson-1.jpg",
+                                "alt": "Paul Thomas Anderson - alternate"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-044",
+                    "film": {
+                        "id": "film-007",
+                        "title": "Sentimental Value",
+                        "poster": {
+                            "path": "/films/2026/Sentimental-Value.jpg",
+                            "alt": "Sentimental Value poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-039",
+                        "name": "Joachim Trier",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Joachim-Trier.jpg",
+                                "alt": "Joachim Trier"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Joachim-Trier-1.jpg",
+                                "alt": "Joachim Trier - alternate"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-045",
+                    "film": {
+                        "id": "film-004",
+                        "title": "Sinners",
+                        "poster": {
+                            "path": "/films/2026/Sinners.jpg",
+                            "alt": "Sinners poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-040",
+                        "name": "Ryan Coogler",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Ryan-Coogler.jpg",
+                                "alt": "Ryan Coogler"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Ryan-Coogler-1.jpg",
+                                "alt": "Ryan Coogler - alternate"
+                            }
+                        }
+                    }
+                }
+            ],
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
+            "id": "actress-leading-role",
+            "name": "Actress in a Leading Role",
+            "nominees": [
+                {
+                    "id": "nominee-011",
+                    "film": {
+                        "id": "film-008",
+                        "title": "Hamnet",
+                        "poster": {
+                            "path": "/films/2026/Hamnet.jpg",
+                            "alt": "Hamnet poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-011",
+                        "name": "Jessie Buckley",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Jessie-Buckley.jpg",
+                                "alt": "Jessie Buckley"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Jessie-Buckley-1.jpg",
+                                "alt": "Jessie Buckley - alternate"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-012",
+                    "film": {
+                        "id": "film-009",
+                        "title": "If I Had Legs I'd Kick You",
+                        "poster": {
+                            "path": "/films/2026/If-I-Had-Legs-Id-Kick-You.jpg",
+                            "alt": "If I Had Legs I'd Kick You poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-012",
+                        "name": "Rose Byrne",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Rose-Byrne.jpg",
+                                "alt": "Rose Byrne"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Rose-Byrne-1.jpg",
+                                "alt": "Rose Byrne - alternate"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-013",
+                    "film": {
+                        "id": "film-010",
+                        "title": "Song Sung Blue",
+                        "poster": {
+                            "path": "/films/2026/Song-Sung-Blue.jpg",
+                            "alt": "Song Sung Blue poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-013",
+                        "name": "Kate Hudson",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Kate-Hudson.jpg",
+                                "alt": "Kate Hudson"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Kate-Hudson-1.jpg",
+                                "alt": "Kate Hudson - alternate"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-014",
+                    "film": {
+                        "id": "film-007",
+                        "title": "Sentimental Value",
+                        "poster": {
+                            "path": "/films/2026/Sentimental-Value.jpg",
+                            "alt": "Sentimental Value poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-014",
+                        "name": "Renate Reinsve",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Renate-Reinsve.jpg",
+                                "alt": "Renate Reinsve"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Renate-Reinsve-1.jpg",
+                                "alt": "Renate Reinsve - alternate"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-015",
+                    "film": {
+                        "id": "film-011",
+                        "title": "Bugonia",
+                        "poster": {
+                            "path": "/films/2026/Bugonia.jpg",
+                            "alt": "Bugonia poster"
+                        }
+                    },
+                    "person": {
+                        "id": "person-015",
+                        "name": "Emma Stone",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Emma-Stone.jpg",
+                                "alt": "Emma Stone"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Emma-Stone-1.jpg",
+                                "alt": "Emma Stone - alternate"
+                            }
+                        }
+                    }
+                }
+            ],
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
             "id": "best-picture",
             "name": "Best Picture",
             "nominees": [
@@ -2127,1248 +3254,6 @@
                             "role": "Producer"
                         }
                     ]
-                }
-            ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
-            "id": "production-design",
-            "name": "Production Design",
-            "nominees": [
-                {
-                    "id": "nominee-081",
-                    "film": {
-                        "id": "film-006",
-                        "title": "Frankenstein",
-                        "poster": {
-                            "path": "/films/2026/Frankenstein.jpg",
-                            "alt": "Frankenstein poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-084",
-                            "name": "Tamara Deverell",
-                            "role": "Production Designer"
-                        },
-                        {
-                            "id": "crew-085",
-                            "name": "Shane Vieau",
-                            "role": "Set Decorator"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-082",
-                    "film": {
-                        "id": "film-008",
-                        "title": "Hamnet",
-                        "poster": {
-                            "path": "/films/2026/Hamnet.jpg",
-                            "alt": "Hamnet poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-086",
-                            "name": "Fiona Crombie",
-                            "role": "Production Designer"
-                        },
-                        {
-                            "id": "crew-087",
-                            "name": "Alice Felton",
-                            "role": "Set Decorator"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-083",
-                    "film": {
-                        "id": "film-001",
-                        "title": "Marty Supreme",
-                        "poster": {
-                            "path": "/films/2026/Marty-Supreme.jpg",
-                            "alt": "Marty Supreme poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-088",
-                            "name": "Jack Fisk",
-                            "role": "Production Designer"
-                        },
-                        {
-                            "id": "crew-089",
-                            "name": "Adam Willis",
-                            "role": "Set Decorator"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-084",
-                    "film": {
-                        "id": "film-002",
-                        "title": "One Battle after Another",
-                        "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-090",
-                            "name": "Florencia Martin",
-                            "role": "Production Designer"
-                        },
-                        {
-                            "id": "crew-091",
-                            "name": "Anthony Carlino",
-                            "role": "Set Decorator"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-085",
-                    "film": {
-                        "id": "film-004",
-                        "title": "Sinners",
-                        "poster": {
-                            "path": "/films/2026/Sinners.jpg",
-                            "alt": "Sinners poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-092",
-                            "name": "Hannah Beachler",
-                            "role": "Production Designer"
-                        },
-                        {
-                            "id": "crew-093",
-                            "name": "Monique Champagne",
-                            "role": "Set Decorator"
-                        }
-                    ]
-                }
-            ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
-            "id": "sound",
-            "name": "Sound",
-            "nominees": [
-                {
-                    "id": "nominee-086",
-                    "film": {
-                        "id": "film-020",
-                        "title": "F1",
-                        "poster": {
-                            "path": "/films/2026/F1.jpg",
-                            "alt": "F1 poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-094",
-                            "name": "Gareth John",
-                            "role": "Sound Designer"
-                        },
-                        {
-                            "id": "crew-095",
-                            "name": "Al Nelson",
-                            "role": "Sound Designer"
-                        },
-                        {
-                            "id": "crew-096",
-                            "name": "Gwendolyn Yates Whittle",
-                            "role": "Sound Designer"
-                        },
-                        {
-                            "id": "crew-097",
-                            "name": "Gary A. Rizzo",
-                            "role": "Sound Designer"
-                        },
-                        {
-                            "id": "crew-098",
-                            "name": "Juan Peralta",
-                            "role": "Sound Designer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-087",
-                    "film": {
-                        "id": "film-006",
-                        "title": "Frankenstein",
-                        "poster": {
-                            "path": "/films/2026/Frankenstein.jpg",
-                            "alt": "Frankenstein poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-099",
-                            "name": "Greg Chapman",
-                            "role": "Sound Designer"
-                        },
-                        {
-                            "id": "crew-100",
-                            "name": "Nathan Robitaille",
-                            "role": "Sound Designer"
-                        },
-                        {
-                            "id": "crew-101",
-                            "name": "Nelson Ferreira",
-                            "role": "Sound Designer"
-                        },
-                        {
-                            "id": "crew-102",
-                            "name": "Christian Cooke",
-                            "role": "Sound Designer"
-                        },
-                        {
-                            "id": "crew-103",
-                            "name": "Brad Zoern",
-                            "role": "Sound Designer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-088",
-                    "film": {
-                        "id": "film-002",
-                        "title": "One Battle after Another",
-                        "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-104",
-                            "name": "José Antonio García",
-                            "role": "Sound Designer"
-                        },
-                        {
-                            "id": "crew-105",
-                            "name": "Christopher Scarabosio",
-                            "role": "Sound Designer"
-                        },
-                        {
-                            "id": "crew-106",
-                            "name": "Tony Villaflor",
-                            "role": "Sound Designer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-089",
-                    "film": {
-                        "id": "film-004",
-                        "title": "Sinners",
-                        "poster": {
-                            "path": "/films/2026/Sinners.jpg",
-                            "alt": "Sinners poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-107",
-                            "name": "Chris Welcker",
-                            "role": "Sound Designer"
-                        },
-                        {
-                            "id": "crew-108",
-                            "name": "Benjamin A. Burtt",
-                            "role": "Sound Designer"
-                        },
-                        {
-                            "id": "crew-109",
-                            "name": "Felipe Pacheco",
-                            "role": "Sound Designer"
-                        },
-                        {
-                            "id": "crew-110",
-                            "name": "Brandon Proctor",
-                            "role": "Sound Designer"
-                        },
-                        {
-                            "id": "crew-111",
-                            "name": "Steve Boeddeker",
-                            "role": "Sound Designer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-090",
-                    "film": {
-                        "id": "film-022",
-                        "title": "Sirāt",
-                        "poster": {
-                            "path": "/films/2026/Sirat.jpg",
-                            "alt": "Sirāt poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-112",
-                            "name": "Amanda Villavieja",
-                            "role": "Sound Designer"
-                        },
-                        {
-                            "id": "crew-113",
-                            "name": "Laia Casanovas",
-                            "role": "Sound Designer"
-                        },
-                        {
-                            "id": "crew-114",
-                            "name": "Yasmina Praderas",
-                            "role": "Sound Designer"
-                        }
-                    ]
-                }
-            ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
-            "id": "visual-effects",
-            "name": "Visual Effects",
-            "nominees": [
-                {
-                    "id": "nominee-091",
-                    "film": {
-                        "id": "film-019",
-                        "title": "Avatar: Fire and Ash",
-                        "poster": {
-                            "path": "/films/2026/Avatar-Fire-and-Ash.jpg",
-                            "alt": "Avatar: Fire and Ash poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-115",
-                            "name": "Joe Letteri",
-                            "role": "Visual Effects Supervisor"
-                        },
-                        {
-                            "id": "crew-116",
-                            "name": "Richard Baneham",
-                            "role": "Visual Effects Supervisor"
-                        },
-                        {
-                            "id": "crew-117",
-                            "name": "Eric Saindon",
-                            "role": "Visual Effects Supervisor"
-                        },
-                        {
-                            "id": "crew-118",
-                            "name": "Daniel Barrett",
-                            "role": "Visual Effects Supervisor"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-092",
-                    "film": {
-                        "id": "film-020",
-                        "title": "F1",
-                        "poster": {
-                            "path": "/films/2026/F1.jpg",
-                            "alt": "F1 poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-119",
-                            "name": "Ryan Tudhope",
-                            "role": "Visual Effects Supervisor"
-                        },
-                        {
-                            "id": "crew-120",
-                            "name": "Nicolas Chevallier",
-                            "role": "Visual Effects Supervisor"
-                        },
-                        {
-                            "id": "crew-121",
-                            "name": "Robert Harrington",
-                            "role": "Visual Effects Supervisor"
-                        },
-                        {
-                            "id": "crew-122",
-                            "name": "Keith Dawson",
-                            "role": "Visual Effects Supervisor"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-093",
-                    "film": {
-                        "id": "film-029",
-                        "title": "Jurassic World Rebirth",
-                        "poster": {
-                            "path": "/films/2026/Jurassic-World-Rebirth.jpg",
-                            "alt": "Jurassic World Rebirth poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-123",
-                            "name": "David Vickery",
-                            "role": "Visual Effects Supervisor"
-                        },
-                        {
-                            "id": "crew-124",
-                            "name": "Stephen Aplin",
-                            "role": "Visual Effects Supervisor"
-                        },
-                        {
-                            "id": "crew-125",
-                            "name": "Charmaine Chan",
-                            "role": "Visual Effects Supervisor"
-                        },
-                        {
-                            "id": "crew-126",
-                            "name": "Neil Corbould",
-                            "role": "Visual Effects Supervisor"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-094",
-                    "film": {
-                        "id": "film-030",
-                        "title": "The Lost Bus",
-                        "poster": {
-                            "path": "/films/2026/The-Lost-Bus.jpg",
-                            "alt": "The Lost Bus poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-127",
-                            "name": "Charlie Noble",
-                            "role": "Visual Effects Supervisor"
-                        },
-                        {
-                            "id": "crew-128",
-                            "name": "David Zaretti",
-                            "role": "Visual Effects Supervisor"
-                        },
-                        {
-                            "id": "crew-129",
-                            "name": "Russell Bowen",
-                            "role": "Visual Effects Supervisor"
-                        },
-                        {
-                            "id": "crew-130",
-                            "name": "Brandon K. McLaughlin",
-                            "role": "Visual Effects Supervisor"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-095",
-                    "film": {
-                        "id": "film-004",
-                        "title": "Sinners",
-                        "poster": {
-                            "path": "/films/2026/Sinners.jpg",
-                            "alt": "Sinners poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-131",
-                            "name": "Michael Ralla",
-                            "role": "Visual Effects Supervisor"
-                        },
-                        {
-                            "id": "crew-132",
-                            "name": "Espen Nordahl",
-                            "role": "Visual Effects Supervisor"
-                        },
-                        {
-                            "id": "crew-133",
-                            "name": "Guido Wolter",
-                            "role": "Visual Effects Supervisor"
-                        },
-                        {
-                            "id": "crew-134",
-                            "name": "Donnie Dean",
-                            "role": "Visual Effects Supervisor"
-                        }
-                    ]
-                }
-            ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
-            "id": "writing-adapted",
-            "name": "Writing (Adapted Screenplay)",
-            "nominees": [
-                {
-                    "id": "nominee-096",
-                    "film": {
-                        "id": "film-011",
-                        "title": "Bugonia",
-                        "poster": {
-                            "path": "/films/2026/Bugonia.jpg",
-                            "alt": "Bugonia poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-052",
-                        "name": "Will Tracy",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Will-Tracy.jpg",
-                                "alt": "Will Tracy"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-097",
-                    "film": {
-                        "id": "film-006",
-                        "title": "Frankenstein",
-                        "poster": {
-                            "path": "/films/2026/Frankenstein.jpg",
-                            "alt": "Frankenstein poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-053",
-                        "name": "Guillermo del Toro",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Guillermo-del-Toro.jpg",
-                                "alt": "Guillermo del Toro"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-098",
-                    "film": {
-                        "id": "film-008",
-                        "title": "Hamnet",
-                        "poster": {
-                            "path": "/films/2026/Hamnet.jpg",
-                            "alt": "Hamnet poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-135",
-                            "name": "Chloé Zhao",
-                            "role": "Screenwriter"
-                        },
-                        {
-                            "id": "crew-136",
-                            "name": "Maggie O'Farrell",
-                            "role": "Screenwriter"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-099",
-                    "film": {
-                        "id": "film-002",
-                        "title": "One Battle after Another",
-                        "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-038",
-                        "name": "Paul Thomas Anderson",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Paul-Thomas-Anderson.jpg",
-                                "alt": "Paul Thomas Anderson"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-100",
-                    "film": {
-                        "id": "film-018",
-                        "title": "Train Dreams",
-                        "poster": {
-                            "path": "/films/2026/Train-Dreams.jpg",
-                            "alt": "Train Dreams poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-137",
-                            "name": "Clint Bentley",
-                            "role": "Screenwriter"
-                        },
-                        {
-                            "id": "crew-138",
-                            "name": "Greg Kwedar",
-                            "role": "Screenwriter"
-                        }
-                    ]
-                }
-            ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
-            "id": "animated-short",
-            "name": "Animated Short Film",
-            "nominees": [
-                {
-                    "id": "nominee-106",
-                    "film": {
-                        "id": "film-031",
-                        "title": "Butterfly",
-                        "poster": {
-                            "path": "/films/2026/Butterfly.jpg",
-                            "alt": "Butterfly poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-146",
-                            "name": "Florence Miailhe",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-147",
-                            "name": "Ron Dyens",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-107",
-                    "film": {
-                        "id": "film-032",
-                        "title": "Forevergreen",
-                        "poster": {
-                            "path": "/films/2026/Forevergreen.jpg",
-                            "alt": "Forevergreen poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-148",
-                            "name": "Nathan Engelhardt",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-149",
-                            "name": "Jeremy Spears",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-108",
-                    "film": {
-                        "id": "film-033",
-                        "title": "The Girl Who Cried Pearls",
-                        "poster": {
-                            "path": "/films/2026/The-Girl-Who-Cried-Pearls.jpg",
-                            "alt": "The Girl Who Cried Pearls poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-150",
-                            "name": "Chris Lavis",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-151",
-                            "name": "Maciek Szczerbowski",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-109",
-                    "film": {
-                        "id": "film-034",
-                        "title": "Retirement Plan",
-                        "poster": {
-                            "path": "/films/2026/Retirement-Plan.jpg",
-                            "alt": "Retirement Plan poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-152",
-                            "name": "John Kelly",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-153",
-                            "name": "Andrew Freedman",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-110",
-                    "film": {
-                        "id": "film-035",
-                        "title": "The Three Sisters",
-                        "poster": {
-                            "path": "/films/2026/The-Three-Sisters.jpg",
-                            "alt": "The Three Sisters poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-056",
-                        "name": "Konstantin Bronzit",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Konstantin-Bronzit.jpg",
-                                "alt": "Konstantin Bronzit"
-                            }
-                        }
-                    }
-                }
-            ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
-            "id": "documentary-feature",
-            "name": "Documentary Feature Film",
-            "nominees": [
-                {
-                    "id": "nominee-111",
-                    "film": {
-                        "id": "film-036",
-                        "title": "The Alabama Solution",
-                        "poster": {
-                            "path": "/films/2026/The-Alabama-Solution.jpg",
-                            "alt": "The Alabama Solution poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-154",
-                            "name": "Andrew Jarecki",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-155",
-                            "name": "Charlotte Kaufman",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-112",
-                    "film": {
-                        "id": "film-037",
-                        "title": "Come See Me in the Good Light",
-                        "poster": {
-                            "path": "/films/2026/Come-See-Me-in-the-Good-Light.jpg",
-                            "alt": "Come See Me in the Good Light poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-156",
-                            "name": "Ryan White",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-157",
-                            "name": "Jessica Hargrave",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-158",
-                            "name": "Tig Notaro",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-159",
-                            "name": "Stef Willen",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-113",
-                    "film": {
-                        "id": "film-038",
-                        "title": "Cutting through Rocks",
-                        "poster": {
-                            "path": "/films/2026/Cutting-through-Rocks.jpg",
-                            "alt": "Cutting through Rocks poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-160",
-                            "name": "Sara Khaki",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-161",
-                            "name": "Mohammadreza Eyni",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-114",
-                    "film": {
-                        "id": "film-039",
-                        "title": "Mr. Nobody against Putin",
-                        "poster": {
-                            "path": "/films/2026/Mr-Nobody-against-Putin.jpg",
-                            "alt": "Mr. Nobody against Putin poster"
-                        }
-                    },
-                    "metadata": {
-                        "notes": "Nominees to be determined"
-                    }
-                },
-                {
-                    "id": "nominee-115",
-                    "film": {
-                        "id": "film-040",
-                        "title": "The Perfect Neighbor",
-                        "poster": {
-                            "path": "/films/2026/The-Perfect-Neighbor.jpg",
-                            "alt": "The Perfect Neighbor poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-162",
-                            "name": "Geeta Gandbhir",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-163",
-                            "name": "Alisa Payne",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-164",
-                            "name": "Nikon Kwantu",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-165",
-                            "name": "Sam Bisbee",
-                            "role": "Producer"
-                        }
-                    ]
-                }
-            ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-        },
-        {
-            "id": "documentary-short",
-            "name": "Documentary Short Film",
-            "nominees": [
-                {
-                    "id": "nominee-116",
-                    "film": {
-                        "id": "film-041",
-                        "title": "All the Empty Rooms",
-                        "poster": {
-                            "path": "/films/2026/All-the-Empty-Rooms.jpg",
-                            "alt": "All the Empty Rooms poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-166",
-                            "name": "Joshua Seftel",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-167",
-                            "name": "Conall Jones",
-                            "role": "Producer"
-}
-]
-                },
-                {
-                    "id": "nominee-117",
-                    "film": {
-                        "id": "film-042",
-                        "title": "Armed Only with a Camera: The Life and Death of Brent Renaud",
-                        "poster": {
-                            "path": "/films/2026/Armed-Only-with-a-Camera.jpg",
-                            "alt": "Armed Only with a Camera: The Life and Death of Brent Renaud poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-168",
-                            "name": "Craig Renaud",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-169",
-                            "name": "Juan Arredondo",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-118",
-                    "film": {
-                        "id": "film-043",
-                        "title": "Children No More: \"Were and Are Gone\"",
-                        "poster": {
-                            "path": "/films/2026/Children-No-More.jpg",
-                            "alt": "Children No More: \"Were and Are Gone\" poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-170",
-                            "name": "Hilla Medalia",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-171",
-                            "name": "Sheila Nevins",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-119",
-                    "film": {
-                        "id": "film-044",
-                        "title": "The Devil Is Busy",
-                        "poster": {
-                            "path": "/films/2026/The-Devil-Is-Busy.jpg",
-                            "alt": "The Devil Is Busy poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-172",
-                            "name": "Christalyn Hampton",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-173",
-                            "name": "Geeta Gandbhir",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-120",
-                    "film": {
-                        "id": "film-045",
-                        "title": "Perfectly a Strangeness",
-                        "poster": {
-                            "path": "/films/2026/Perfectly-a-Strangeness.jpg",
-                            "alt": "Perfectly a Strangeness poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-057",
-                        "name": "Alison McAlpine",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Alison-McAlpine.jpg",
-                                "alt": "Alison McAlpine"
-                            }
-                        }
-                    }
-                }
-            ],
-            "winners": {
-                "my_choice": null,
-                "official": null
-            }
-        },
-        {
-            "id": "live-action-short",
-            "name": "Live Action Short Film",
-            "nominees": [
-                {
-                    "id": "nominee-121",
-                    "film": {
-                        "id": "film-046",
-                        "title": "Butcher's Stain",
-                        "poster": {
-                            "path": "/films/2026/Butchers-Stain.jpg",
-                            "alt": "Butcher's Stain poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-174",
-                            "name": "Meyer Levinson-Blount",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-175",
-                            "name": "Oron Caspi",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-122",
-                    "film": {
-                        "id": "film-047",
-                        "title": "A Friend of Dorothy",
-                        "poster": {
-                            "path": "/films/2026/A-Friend-of-Dorothy.jpg",
-                            "alt": "A Friend of Dorothy poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-176",
-                            "name": "Lee Knight",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-177",
-                            "name": "James Dean",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-123",
-                    "film": {
-                        "id": "film-048",
-                        "title": "Jane Austen's Period Drama",
-                        "poster": {
-                            "path": "/films/2026/Jane-Austens-Period-Drama.jpg",
-                            "alt": "Jane Austen's Period Drama poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-178",
-                            "name": "Julia Aks",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-179",
-                            "name": "Steve Pinder",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-124",
-                    "film": {
-                        "id": "film-049",
-                        "title": "The Singers",
-                        "poster": {
-                            "path": "/films/2026/The-Singers.jpg",
-                            "alt": "The Singers poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-180",
-                            "name": "Sam A. Davis",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-181",
-                            "name": "Jack Piatt",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-125",
-                    "film": {
-                        "id": "film-050",
-                        "title": "Two People Exchanging Saliva",
-                        "poster": {
-                            "path": "/films/2026/Two-People-Exchanging-Saliva.jpg",
-                            "alt": "Two People Exchanging Saliva poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-182",
-                            "name": "Alexandre Singh",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-183",
-                            "name": "Natalie Musteata",
-                            "role": "Producer"
-                        }
-                    ]
-                }
-            ],
-            "winners": {
-                "my_choice": null,
-                "official": null
-            }
-        },
-        {
-            "id": "writing-original",
-            "name": "Writing (Original Screenplay)",
-            "nominees": [
-                {
-                    "id": "nominee-101",
-                    "film": {
-                        "id": "film-003",
-                        "title": "Blue Moon",
-                        "poster": {
-                            "path": "/films/2026/Blue-Moon.jpg",
-                            "alt": "Blue Moon poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-054",
-                        "name": "Robert Kaplow",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Robert-Kaplow.jpg",
-                                "alt": "Robert Kaplow"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-102",
-                    "film": {
-                        "id": "film-021",
-                        "title": "It Was Just an Accident",
-                        "poster": {
-                            "path": "/films/2026/It-Was-Just-an-Accident.jpg",
-                            "alt": "It Was Just an Accident poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-055",
-                        "name": "Jafar Panahi",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Jafar-Panahi.jpg",
-                                "alt": "Jafar Panahi"
-                            }
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-139",
-                            "name": "Nader Saïvar",
-                            "role": "Script Collaborator"
-                        },
-                        {
-                            "id": "crew-140",
-                            "name": "Shadmehr Rastin",
-                            "role": "Script Collaborator"
-                        },
-                        {
-                            "id": "crew-141",
-                            "name": "Mehdi Mahmoudian",
-                            "role": "Script Collaborator"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-103",
-                    "film": {
-                        "id": "film-001",
-                        "title": "Marty Supreme",
-                        "poster": {
-                            "path": "/films/2026/Marty-Supreme.jpg",
-                            "alt": "Marty Supreme poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-142",
-                            "name": "Ronald Bronstein",
-                            "role": "Screenwriter"
-                        },
-                        {
-                            "id": "crew-143",
-                            "name": "Josh Safdie",
-                            "role": "Screenwriter"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-104",
-                    "film": {
-                        "id": "film-007",
-                        "title": "Sentimental Value",
-                        "poster": {
-                            "path": "/films/2026/Sentimental-Value.jpg",
-                            "alt": "Sentimental Value poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-144",
-                            "name": "Eskil Vogt",
-                            "role": "Screenwriter"
-                        },
-                        {
-                            "id": "crew-145",
-                            "name": "Joachim Trier",
-                            "role": "Screenwriter"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-105",
-                    "film": {
-                        "id": "film-004",
-                        "title": "Sinners",
-                        "poster": {
-                            "path": "/films/2026/Sinners.jpg",
-                            "alt": "Sinners poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-040",
-                        "name": "Ryan Coogler",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Ryan-Coogler.jpg",
-                                "alt": "Ryan Coogler"
-                            }
-                        }
-                    }
                 }
             ],
             "winners": {

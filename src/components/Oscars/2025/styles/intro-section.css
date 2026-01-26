@@ -1,0 +1,50 @@
+.intro-section-2025 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background: var(--oscar-white);
+  position: relative;
+  scroll-snap-align: start;
+  overflow: hidden;
+  gap: 4px;
+}
+
+.intro-section-2025::before {
+  content: '';
+  position: absolute;
+  top: auto;
+  left: 25%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 90%;
+  background-image: url('/Oscar Statuette Transparent Vert.png');
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+  transition: opacity 1s ease;
+}
+
+.intro-section-2025.fade-out::before {
+  opacity: 0;
+}
+
+.intro-section-2025 h1 {
+  font-family: 'Futura PT Medium', 'Futura', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--oscar-gold);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 90vw;
+}
+
+/* Shared classes are in ../../shared/Presentation.css */

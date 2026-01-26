@@ -1,4 +1,4 @@
-import './Presentation2025.css';
+import './styles/index.css';
 import { Nominee } from './types';
 
 type NomineeCardProps = {
@@ -42,20 +42,20 @@ export const NomineeCard = ({
   return (
     <div
       data-actor={nominee.actor}
-      className={`nominee-card ${isWinner ? 'winner-card' : ''} ${isNotSeen ? 'not-seen-card' : ''} ${
+      className={`nominee-card-2025 ${isWinner ? 'winner-card-2025' : ''} ${isNotSeen ? 'not-seen-card-2025' : ''} ${
         isLosingNominee ? 'losing-nominee' : ''
       } ${!nominee.actor ? 'with-film-image' : ''}`}
       onClick={onClick}
     >
-      <div className="nominee-info">
-        <div className="nominee-title">{getNomineeTitle()}</div>
-        <div className={needsSmallDescription ? 'nominee-description-sm' : 'nominee-description'}>
+      <div className="nominee-info-2025">
+        <div className="nominee-title-2025">{getNomineeTitle()}</div>
+        <div className={needsSmallDescription ? 'nominee-description-sm-2025' : 'nominee-description-2025'}>
           {getNomineeDescription()}
         </div>
       </div>
       {isNotSeen && (
         <div
-          className="not-seen-indicator"
+          className="not-seen-indicator-2025"
           style={{
             position: 'absolute',
             top: '4px',
@@ -78,7 +78,7 @@ export const NomineeCard = ({
         <img
           src={actorImagePath}
           alt={nominee.actor}
-          className="nominee-image"
+          className="nominee-image-2025"
           onError={(e) => {
             (e.target as HTMLImageElement).style.display = 'none';
           }}
@@ -88,7 +88,7 @@ export const NomineeCard = ({
         <img
           src={filmImagePath}
           alt={nominee.film}
-          className="nominee-image film-image"
+          className="nominee-image-2025 film-image"
           onError={(e) => {
             (e.target as HTMLImageElement).style.display = 'none';
           }}

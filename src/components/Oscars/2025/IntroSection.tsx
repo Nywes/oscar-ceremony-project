@@ -1,4 +1,4 @@
-import './Presentation2025.css';
+import './styles/index.css';
 import { LanguageToggle } from '../shared/LanguageToggle';
 import { ScrollIndicator } from '../shared/ScrollIndicator';
 
@@ -18,7 +18,7 @@ export const IntroSection = ({
   sectionRef,
 }: IntroSectionProps) => {
   return (
-    <div className="intro-section" ref={sectionRef}>
+    <div className="intro-section-2025" ref={sectionRef}>
       <div className="flex flex-col items-center justify-center mb-12 gap-4">
         <h1>The {year - 1928}th Academy Awards</h1>
         <div className="oscars-text-logo-container">

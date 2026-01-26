@@ -1,4 +1,4 @@
-import './Presentation2026.css';
+import './styles/index.css';
 import type { Nominee2026 } from './types';
 
 type NomineeCardProps = {

@@ -1,4 +1,4 @@
-import './Presentation2026.css';
+import './styles/index.css';
 import { LegalNotice } from '../shared/LegalNotice';
 
 type ThanksSectionProps = {
@@ -10,9 +10,9 @@ type ThanksSectionProps = {
 
 export const ThanksSection = ({ year, language, onHeartClick, sectionRef }: ThanksSectionProps) => {
   return (
-    <section className="thanks-section category-section" ref={sectionRef}>
-      <div className="thanks-content">
-        <h2 className="category-title">Thank You</h2>
+    <section className="thanks-section category-section-2026" ref={sectionRef}>
+      <div className="thanks-content-2026">
+        <h2 className="category-title-2026">Thank You</h2>
         <div className="thanks-text flex flex-col letter-spacing-0">
           {language === 'fr' ? (
             <>
@@ -45,7 +45,7 @@ export const ThanksSection = ({ year, language, onHeartClick, sectionRef }: Than
           </a>
         </p>
         <p>Eliott</p>
-        <button className="thanks-btn" onClick={onHeartClick}>
+        <button className="thanks-btn-2026" onClick={onHeartClick}>
           🫶
         </button>
       </div>

@@ -1,7 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
-import '../shared/Presentation.css';
-import './Presentation2025.css';
+import './styles/index.css';
 import oscarsData2025Json from './oscars-data-2025.json';
 import { YouTubeModal } from '../shared/YouTubeModal';
 import { MissingPoster } from '../shared/MissingPoster';
