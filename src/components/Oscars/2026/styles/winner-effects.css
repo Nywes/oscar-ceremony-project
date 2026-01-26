@@ -264,11 +264,7 @@
   visibility: visible;
 }
 
-.reveal-winner-btn-2026:hover:not(:disabled) {
-  background-color: var(--oscar-gold);
-  color: var(--oscar-white);
-  transform: none;
-}
+
 
 .reveal-winner-btn-2026:disabled {
   cursor: default;

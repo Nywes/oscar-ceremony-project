@@ -2944,34 +2944,7 @@
                             "path": "/films/2026/Bugonia.jpg",
                             "alt": "Bugonia poster"
                         }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-046",
-                            "name": "Ed Guiney",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-047",
-                            "name": "Andrew Lowe",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-048",
-                            "name": "Yorgos Lanthimos",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-049",
-                            "name": "Emma Stone",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-050",
-                            "name": "Lars Knudsen",
-                            "role": "Producer"
-                        }
-                    ]
+                    }
                 },
                 {
                     "id": "nominee-072",
@@ -2982,39 +2955,7 @@
                             "path": "/films/2026/F1.jpg",
                             "alt": "F1 poster"
                         }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-051",
-                            "name": "Chad Oman",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-052",
-                            "name": "Brad Pitt",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-053",
-                            "name": "Dede Gardner",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-054",
-                            "name": "Jeremy Kleiner",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-055",
-                            "name": "Joseph Kosinski",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-056",
-                            "name": "Jerry Bruckheimer",
-                            "role": "Producer"
-                        }
-                    ]
+                    }
                 },
                 {
                     "id": "nominee-073",
@@ -3025,24 +2966,7 @@
                             "path": "/films/2026/Frankenstein.jpg",
                             "alt": "Frankenstein poster"
                         }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-057",
-                            "name": "Guillermo del Toro",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-058",
-                            "name": "J. Miles Dale",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-059",
-                            "name": "Scott Stuber",
-                            "role": "Producer"
-                        }
-                    ]
+                    }
                 },
                 {
                     "id": "nominee-074",
@@ -3053,34 +2977,7 @@
                             "path": "/films/2026/Hamnet.jpg",
                             "alt": "Hamnet poster"
                         }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-060",
-                            "name": "Liza Marshall",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-061",
-                            "name": "Pippa Harris",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-062",
-                            "name": "Nicolas Gonda",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-063",
-                            "name": "Steven Spielberg",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-064",
-                            "name": "Sam Mendes",
-                            "role": "Producer"
-                        }
-                    ]
+                    }
                 },
                 {
                     "id": "nominee-075",
@@ -3091,34 +2988,7 @@
                             "path": "/films/2026/Marty-Supreme.jpg",
                             "alt": "Marty Supreme poster"
                         }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-065",
-                            "name": "Eli Bush",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-066",
-                            "name": "Ronald Bronstein",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-067",
-                            "name": "Josh Safdie",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-068",
-                            "name": "Anthony Katagas",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-069",
-                            "name": "Timothée Chalamet",
-                            "role": "Producer"
-                        }
-                    ]
+                    }
                 },
                 {
                     "id": "nominee-076",
@@ -3129,24 +2999,7 @@
                             "path": "/films/2026/One-Battle-after-Another.jpg",
                             "alt": "One Battle after Another poster"
                         }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-070",
-                            "name": "Adam Somner",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-071",
-                            "name": "Sara Murphy",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-072",
-                            "name": "Paul Thomas Anderson",
-                            "role": "Producer"
-                        }
-                    ]
+                    }
                 },
                 {
                     "id": "nominee-077",
@@ -3157,14 +3010,7 @@
                             "path": "/films/2026/The-Secret-Agent.jpg",
                             "alt": "The Secret Agent poster"
                         }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-073",
-                            "name": "Emilie Lesclaux",
-                            "role": "Producer"
-                        }
-                    ]
+                    }
                 },
                 {
                     "id": "nominee-078",
@@ -3175,19 +3021,7 @@
                             "path": "/films/2026/Sentimental-Value.jpg",
                             "alt": "Sentimental Value poster"
                         }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-074",
-                            "name": "Maria Ekerhovd",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-075",
-                            "name": "Andrea Berentsen Ottmar",
-                            "role": "Producer"
-                        }
-                    ]
+                    }
                 },
                 {
                     "id": "nominee-079",
@@ -3198,24 +3032,7 @@
                             "path": "/films/2026/Sinners.jpg",
                             "alt": "Sinners poster"
                         }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-076",
-                            "name": "Zinzi Coogler",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-077",
-                            "name": "Sev Ohanian",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-078",
-                            "name": "Ryan Coogler",
-                            "role": "Producer"
-                        }
-                    ]
+                    }
                 },
                 {
                     "id": "nominee-080",
@@ -3226,34 +3043,7 @@
                             "path": "/films/2026/Train-Dreams.jpg",
                             "alt": "Train Dreams poster"
                         }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-079",
-                            "name": "Marissa McMahon",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-080",
-                            "name": "Teddy Schwarzman",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-081",
-                            "name": "Will Janowitz",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-082",
-                            "name": "Ashley Schlaifer",
-                            "role": "Producer"
-                        },
-                        {
-                            "id": "crew-083",
-                            "name": "Michael Heimler",
-                            "role": "Producer"
-                        }
-                    ]
+                    }
                 }
             ],
             "winners": {

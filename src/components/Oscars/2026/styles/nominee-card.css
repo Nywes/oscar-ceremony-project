@@ -8,7 +8,7 @@
   padding: 0;
   height: min(12vh, 90px);
   min-height: min(12vh, 90px);
-  transition: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   overflow: hidden;
   border-radius: 12px;
   border: 1px solid rgba(212, 175, 55, 0.3);
@@ -63,10 +63,21 @@
   border-radius: 12px;
 }
 
+/* Selected state for 2026 cards */
+.nominee-card-2026.selected {
+  transform: scale(1.03) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
 /* Disable all hover effects for 2026 cards */
 .nominee-card-2026:hover {
   transform: none !important;
   box-shadow: none !important;
+}
+
+.nominee-card-2026.selected:hover {
+  transform: scale(1.03) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
 }
 
 .nominee-card-2026.winner-card:hover {

@@ -44,10 +44,12 @@ export const CategorySection = ({
     voteStats,
     hasVoted,
     showResults,
+    showMyVote,
     userChoiceId,
     selectNominee,
     submitVote,
     toggleShowResults,
+    toggleShowMyVote,
   } = useVoting(category.name, year);
 
   const isEliottChoiceRevealed = highlightedWinners[category.name];
@@ -78,7 +80,7 @@ export const CategorySection = ({
               : undefined;
             const isNomineeWinner = isWinner(category.name, nominee);
             const isLosing = highlightedWinners[category.name] && !isNomineeWinner;
-            const isUserChoice = userChoiceId === nominee.id && hasVoted;
+            const isUserChoice = userChoiceId === nominee.id && hasVoted && showMyVote;
 
             return (
               <NomineeCard
@@ -117,9 +119,21 @@ export const CategorySection = ({
                 Vote
               </button>
             )}
-            <button className="show-results-btn" onClick={toggleShowResults}>
-              {showResults ? 'Masquer Résultats' : 'Voir Résultats votes'}
-            </button>
+            {hasVoted ? (
+              <button
+                className={`show-results-btn ${showMyVote ? 'active' : ''}`}
+                onClick={toggleShowMyVote}
+              >
+                {showMyVote ? 'Hide my vote' : 'Show my vote'}
+              </button>
+            ) : (
+              <button
+                className={`show-results-btn ${showResults ? 'active' : ''}`}
+                onClick={toggleShowResults}
+              >
+                {showResults ? 'Masquer Résultats' : 'Voir Résultats votes'}
+              </button>
+            )}
           </div>
         </div>
 

@@ -9,6 +9,7 @@ type VotingState = {
   voteStats: VoteStats;
   hasVoted: boolean;
   showResults: boolean;
+  showMyVote: boolean;
   userChoiceId: string | null;
 };
 
@@ -30,6 +31,7 @@ export function useVoting(categoryName: string, year: number) {
       voteStats: categoryStats,
       hasVoted,
       showResults: false,
+      showMyVote: false,
       userChoiceId: userChoiceId || null,
     };
   });
@@ -67,6 +69,7 @@ export function useVoting(categoryName: string, year: number) {
         voteStats: categoryStats,
         userChoiceId: state.selectedNomineeId,
         selectedNomineeId: null,
+        showMyVote: true,
       }));
     } catch (error) {
       console.error('Error submitting vote:', error);
@@ -77,6 +80,13 @@ export function useVoting(categoryName: string, year: number) {
     setState((prev) => ({
       ...prev,
       showResults: !prev.showResults,
+    }));
+  }, []);
+
+  const toggleShowMyVote = useCallback(() => {
+    setState((prev) => ({
+      ...prev,
+      showMyVote: !prev.showMyVote,
     }));
   }, []);
 
@@ -98,9 +108,11 @@ export function useVoting(categoryName: string, year: number) {
     voteStats: state.voteStats,
     hasVoted: state.hasVoted,
     showResults: state.showResults,
+    showMyVote: state.showMyVote,
     userChoiceId: state.userChoiceId,
     selectNominee,
     submitVote,
     toggleShowResults,
+    toggleShowMyVote,
   };
 }
