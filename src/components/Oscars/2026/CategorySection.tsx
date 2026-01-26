@@ -10,7 +10,6 @@ type CategorySectionProps = {
   isActive: boolean;
   sectionRef: (el: HTMLElement | null) => void;
   isWinner: (categoryName: string, nominee: Nominee2026) => boolean;
-  isNotSeen: (filmTitle: string) => boolean;
   highlightedWinners: { [key: string]: boolean };
   showingReveal: string | null;
   onRevealClick: (categoryName: string) => void;
@@ -28,7 +27,6 @@ export const CategorySection = ({
   isActive,
   sectionRef,
   isWinner,
-  isNotSeen,
   highlightedWinners,
   showingReveal,
   onRevealClick,
@@ -89,7 +87,6 @@ export const CategorySection = ({
                 categoryName={category.name}
                 isWinner={isNomineeWinner}
                 isUserChoice={isUserChoice}
-                isNotSeen={isNotSeen(nominee.film.title)}
                 isLosingNominee={isLosing}
                 actorImagePath={actorImagePath}
                 filmImagePath={filmImagePath}

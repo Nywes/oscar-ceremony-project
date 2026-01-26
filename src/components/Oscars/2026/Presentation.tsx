@@ -11,7 +11,6 @@ import type { OscarsData2026, Nominee2026 } from './types';
 import {
   getActorImagePathSync,
   getFilmImagePathSync,
-  isNotSeen,
   checkImageExists,
   getNomineeImagePaths,
 } from './utils';
@@ -374,7 +373,7 @@ export const Presentation2026 = () => {
   };
 
   const searchTrailer = async (movieTitle: string) => {
-    const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
+    const apiKey = import.meta.env.VITE_YOUTUBE_API_KEY;
     if (!apiKey) {
       console.error('YouTube API key is not configured');
       return null;
@@ -415,7 +414,6 @@ export const Presentation2026 = () => {
           isActive={activeSection === index + 1}
           sectionRef={assignRef(index + 1)}
           isWinner={isWinner}
-          isNotSeen={isNotSeen}
           highlightedWinners={highlightedWinners}
           showingReveal={showingReveal}
           onRevealClick={revealWinner}

@@ -4,12 +4,12 @@ import { createClient } from '@supabase/supabase-js';
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
-if (!supabaseUrl || !supabaseAnonKey) {
-  throw new Error('Missing Supabase environment variables. Please check your .env file.');
-}
-
 // Créer et exporter le client Supabase
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+// Si les variables d'environnement ne sont pas définies, on crée un client avec des valeurs vides
+// Les appels Supabase échoueront de manière gracieuse si les variables ne sont pas configurées
+export const supabase = supabaseUrl && supabaseAnonKey
+  ? createClient(supabaseUrl, supabaseAnonKey)
+  : createClient('https://placeholder.supabase.co', 'placeholder-key');
 
 // Types pour TypeScript (optionnel, à adapter selon vos tables)
 export type Database = {

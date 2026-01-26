@@ -4,11 +4,9 @@ import './styles/index.css';
 import oscarsData2025Json from './oscars-data-2025.json';
 import { YouTubeModal } from '../shared/YouTubeModal';
 import { MissingPoster } from '../shared/MissingPoster';
-import { YearSelector } from '../shared/YearSelector';
 import { IntroSection } from './IntroSection';
 import { CategorySection } from './CategorySection';
 import { ThanksSection } from './ThanksSection';
-import { LegalNotice } from '../shared/LegalNotice';
 import { OscarsData, Nominee } from './types';
 import { getActorImagePathSync, getFilmImagePathSync, isNotSeen, checkImageExists } from './utils';
 
@@ -360,7 +358,7 @@ export const Presentation2025 = () => {
   };
 
   const searchTrailer = async (movieTitle: string) => {
-    const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
+    const apiKey = import.meta.env.VITE_YOUTUBE_API_KEY;
     if (!apiKey) {
       console.error('YouTube API key is not configured');
       return null;

@@ -46,8 +46,8 @@ export type Category2026 = {
   name: string;
   nominees: Nominee2026[];
   winners: {
-    my_choice?: string; // ID du nominee
-    official?: string; // ID du nominee
+    my_choice?: string | null; // ID du nominee
+    official?: string | null; // ID du nominee
   };
 };
 

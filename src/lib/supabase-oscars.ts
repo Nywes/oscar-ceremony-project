@@ -1,5 +1,5 @@
 import { supabase } from './supabase';
-import type { OscarsData, Category, Nominee } from '../components/Oscars/types';
+import type { OscarsData, Nominee } from '../components/Oscars/types';
 
 /**
  * Types pour la base de données Supabase

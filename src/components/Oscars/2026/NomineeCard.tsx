@@ -6,7 +6,6 @@ type NomineeCardProps = {
   categoryName: string;
   isWinner: boolean;
   isUserChoice?: boolean;
-  isNotSeen: boolean;
   isLosingNominee: boolean;
   actorImagePath?: string;
   filmImagePath?: string;
@@ -22,7 +21,6 @@ export const NomineeCard = ({
   categoryName,
   isWinner,
   isUserChoice = false,
-  isNotSeen,
   isLosingNominee,
   actorImagePath,
   filmImagePath,
