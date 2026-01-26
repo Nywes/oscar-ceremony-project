@@ -1,0 +1,302 @@
+{
+"year": 2026,
+"categories": [
+    {
+    "id": "actor-supporting-role",
+    "name": "Actor in a Supporting Role",
+    "nominees": [
+        {
+            "id": "nominee-001",
+            "film": {
+                "id": "film-001",
+                "title": "The Midnight Train",
+                "poster": {
+                    "path": "/films/The-Midnight-Train.jpg",
+                    "alt": "The Midnight Train poster"
+                }
+            },
+            "person": {
+                "id": "person-001",
+                "name": "Alexandre Dubois",
+                "images": {
+                    "primary": {
+                        "path": "/actors/Alexandre-Dubois.jpg",
+                        "alt": "Alexandre Dubois"
+                    },
+                    "secondary": {
+                        "path": "/actors/Alexandre-Dubois-1.jpg",
+                        "alt": "Alexandre Dubois - alternate"
+                    }
+                }
+            }
+        },
+        {
+            "id": "nominee-002",
+            "film": {
+                "id": "film-002",
+                "title": "Echoes of Tomorrow",
+                "poster": {
+                    "path": "/films/Echoes-of-Tomorrow.jpg",
+                    "alt": "Echoes of Tomorrow poster"
+                }
+            },
+            "person": {
+                "id": "person-002",
+                "name": "Marcus Chen",
+                "images": {
+                    "primary": {
+                        "path": "/actors/Marcus-Chen.jpg",
+                        "alt": "Marcus Chen"
+                    },
+                    "secondary": {
+                        "path": "/actors/Marcus-Chen-1.jpg",
+                        "alt": "Marcus Chen - alternate"
+                    }
+                }
+            }
+        },
+        {
+            "id": "nominee-003",
+            "film": {
+                "id": "film-003",
+                "title": "The Last Horizon",
+                "poster": {
+                    "path": "/films/The-Last-Horizon.jpg",
+                    "alt": "The Last Horizon poster"
+                }
+            },
+            "person": {
+                "id": "person-003",
+                "name": "Thomas Anderson",
+                "images": {
+                    "primary": {
+                        "path": "/actors/Thomas-Anderson.jpg",
+                        "alt": "Thomas Anderson"
+                    },
+                    "secondary": {
+                        "path": "/actors/Thomas-Anderson-1.jpg",
+                        "alt": "Thomas Anderson - alternate"
+                    }
+                }
+            }
+        },
+        {
+            "id": "nominee-004",
+            "film": {
+                "id": "film-004",
+                "title": "City of Shadows",
+                "poster": {
+                    "path": "/films/City-of-Shadows.jpg",
+                    "alt": "City of Shadows poster"
+                }
+            },
+            "person": {
+                "id": "person-004",
+                "name": "James Mitchell",
+                "images": {
+                    "primary": {
+                        "path": "/actors/James-Mitchell.jpg",
+                        "alt": "James Mitchell"
+                    },
+                    "secondary": {
+                        "path": "/actors/James-Mitchell-1.jpg",
+                        "alt": "James Mitchell - alternate"
+                    }
+                }
+            }
+        },
+        {
+            "id": "nominee-005",
+            "film": {
+                "id": "film-005",
+                "title": "The Forgotten Path",
+                "poster": {
+                    "path": "/films/The-Forgotten-Path.jpg",
+                    "alt": "The Forgotten Path poster"
+                }
+            },
+            "person": {
+                "id": "person-005",
+                "name": "David Rodriguez",
+                "images": {
+                    "primary": {
+                        "path": "/actors/David-Rodriguez.jpg",
+                        "alt": "David Rodriguez"
+                    },
+                    "secondary": {
+                        "path": "/actors/David-Rodriguez-1.jpg",
+                        "alt": "David Rodriguez - alternate"
+                    }
+                }
+            }
+        }
+    ],
+    "winners": {
+        "my_choice": "nominee-001",
+        "official": null
+    }
+},
+{
+    "id": "actress-supporting-role",
+    "name": "Actress in a Supporting Role",
+    "nominees": [],
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
+    "id": "animated-feature",
+    "name": "Animated Feature Film",
+    "nominees": [],
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
+    "id": "writing-adapted",
+    "name": "Writing (Adapted Screenplay)",
+    "nominees": [],
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
+    "id": "writing-original",
+    "name": "Writing (Original Screenplay)",
+    "nominees": [],
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
+    "id": "makeup-hairstyling",
+    "name": "Makeup and Hairstyling",
+    "nominees": [],
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
+    "id": "costume-design",
+    "name": "Costume Design",
+    "nominees": [],
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
+    "id": "production-design",
+    "name": "Production Design",
+    "nominees": [],
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
+    "id": "sound",
+    "name": "Sound",
+    "nominees": [],
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
+    "id": "visual-effects",
+    "name": "Visual Effects",
+    "nominees": [],
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
+    "id": "film-editing",
+    "name": "Film Editing",
+    "nominees": [],
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
+    "id": "cinematography",
+    "name": "Cinematography",
+    "nominees": [],
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
+    "id": "international-feature",
+    "name": "International Feature Film",
+    "nominees": [],
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
+    "id": "music-score",
+    "name": "Music (Original Score)",
+    "nominees": [],
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
+    "id": "music-song",
+    "name": "Music (Original Song)",
+    "nominees": [],
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
+    "id": "actor-leading-role",
+    "name": "Actor in a Leading Role",
+    "nominees": [],
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
+    "id": "actress-leading-role",
+    "name": "Actress in a Leading Role",
+    "nominees": [],
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
+    "id": "directing",
+    "name": "Directing",
+    "nominees": [],
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
+    "id": "best-picture",
+    "name": "Best Picture",
+    "nominees": [],
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+}
+]
+}

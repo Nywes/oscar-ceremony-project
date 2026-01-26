@@ -1,0 +1,47 @@
+.reveal-winner-btn-2025 {
+  background-color: transparent;
+  color: var(--oscar-gold);
+  border: 2px solid var(--oscar-gold);
+  padding: 1.5vh 4vw;
+  font-family: 'Futura PT Medium', 'Futura', sans-serif;
+  font-size: min(3.5vw, 1rem);
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 2vh auto;
+  display: block;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  box-shadow: none;
+  width: fit-content;
+  min-width: min(200px, 60vw);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1), visibility 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+  .reveal-winner-btn-2025 {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.85rem;
+    min-width: auto;
+    margin: 2vh auto;
+    display: block;
+  }
+}
+
+.reveal-winner-btn-2025:hover:not(:disabled) {
+  background-color: var(--oscar-gold);
+  color: var(--oscar-white);
+  transform: scale(1.05);
+}
+
+.reveal-winner-btn-2025:disabled {
+  cursor: default;
+}
+
+.reveal-winner-btn-2025.revealed {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

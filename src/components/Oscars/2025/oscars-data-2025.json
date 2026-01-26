@@ -1,0 +1,686 @@
+{
+    "year": 2025,
+    "categories": [
+        {
+            "name": "Actor in a Supporting Role",
+            "nominees": [
+                {
+                    "actor": "Yura Borisov",
+                    "film": "Anora",
+                    "photos": [
+                        "Yura-Borisov.jpg",
+                        "Yura-Borisov-1.jpg"
+                    ]
+                },
+                {
+                    "actor": "Kieran Culkin",
+                    "film": "A Real Pain",
+                    "photos": [
+                        "Kieran-Culkin.jpg",
+                        "Kieran-Culkin-1.jpg"
+                    ]
+                },
+                {
+                    "actor": "Edward Norton",
+                    "film": "A Complete Unknown",
+                    "photos": [
+                        "Edward-Norton.jpg",
+                        "Edward-Norton-1.jpg"
+                    ]
+                },
+                {
+                    "actor": "Guy Pearce",
+                    "film": "The Brutalist",
+                    "photos": [
+                        "Guy-Pearce.jpg",
+                        "Guy-Pearce-1.jpg"
+                    ]
+                },
+                {
+                    "actor": "Jeremy Strong",
+                    "film": "The Apprentice",
+                    "photos": [
+                        "Jeremy-Strong.jpg",
+                        "Jeremy-Strong-1.jpg"
+                    ]
+                }
+            ],
+            "my_winner": {
+                "actor": "Yura Borisov",
+                "film": "Anora"
+            },
+            "official_winner": null
+        },
+        {
+            "name": "Actress in a Supporting Role",
+            "nominees": [
+                {
+                    "actor": "Monica Barbaro",
+                    "film": "A Complete Unknown",
+                    "photos": [
+                        "Monica-Barbaro.jpg",
+                        "Monica-Barbaro-1.jpg"
+                    ]
+                },
+                {
+                    "actor": "Ariana Grande",
+                    "film": "Wicked",
+                    "photos": [
+                        "Ariana-Grande.jpg",
+                        "Ariana-Grande-1.jpg"
+                    ]
+                },
+                {
+                    "actor": "Felicity Jones",
+                    "film": "The Brutalist",
+                    "photos": [
+                        "Felicity-Jones.jpg",
+                        "Felicity-Jones-1.jpg"
+                    ]
+                },
+                {
+                    "actor": "Isabella Rossellini",
+                    "film": "Conclave",
+                    "photos": [
+                        "Isabella-Rossellini.jpg",
+                        "Isabella-Rossellini-1.jpg"
+                    ]
+                },
+                {
+                    "actor": "Zoe Saldaña",
+                    "film": "Emilia Pérez",
+                    "photos": [
+                        "Zoe-Saldana.jpg",
+                        "Zoe-Saldana-1.jpg"
+                    ]
+                }
+            ],
+            "my_winner": {
+                "actor": "Monica Barbaro",
+                "film": "A Complete Unknown"
+            },
+            "official_winner": null
+        },
+        {
+            "name": "Animated Feature Film",
+            "nominees": [
+                {
+                    "film": "Flow",
+                    "trailer": "https://www.youtube.com/watch?v=82WW9dVbglI&ab_channel=MadmanFilms"
+                },
+                {
+                    "film": "Inside Out 2",
+                    "trailer": "https://www.youtube.com/watch?v=LEjhY15eCx0&ab_channel=Pixar"
+                },
+                {
+                    "film": "Memoir of a Snail",
+                    "trailer": "https://www.youtube.com/watch?v=Ehc8cc7g31I&ab_channel=IFCFilms"
+                },
+                {
+                    "film": "Wallace & Gromit",
+                    "trailer": "https://www.youtube.com/watch?v=X0ZGf2B01uU&ab_channel=Netflix"
+                },
+                {
+                    "film": "The Wild Robot",
+                    "trailer": "https://www.youtube.com/watch?v=67vbA5ZJdKQ&ab_channel=UniversalPictures"
+                }
+            ],
+            "my_winner": {
+                "film": "Flow"
+            },
+            "official_winner": null
+        },
+        {
+            "name": "Writing (Adapted Screenplay)",
+            "nominees": [
+                {
+                    "film": "A Complete Unknown",
+                    "crew": "James Mangold & Jay Cocks"
+                },
+                {
+                    "film": "Conclave",
+                    "crew": "Peter Straughan"
+                },
+                {
+                    "film": "Emilia Pérez",
+                    "crew": "Jacques Audiard"
+                },
+                {
+                    "film": "Nickel Boys",
+                    "crew": "RaMell Ross & Joslyn Barnes"
+                },
+                {
+                    "film": "Sing Sing",
+                    "crew": "Clint Bentley & Greg Kwedar"
+                }
+            ],
+            "my_winner": {
+                "film": "A Complete Unknown",
+                "crew": "James Mangold & Jay Cocks"
+            },
+            "official_winner": null
+        },
+        {
+            "name": "Writing (Original Screenplay)",
+            "nominees": [
+                {
+                    "film": "Anora",
+                    "crew": "Sean Baker"
+                },
+                {
+                    "film": "The Brutalist",
+                    "crew": "Brady Corbet & Mona Fastvoldt"
+                },
+                {
+                    "film": "A Real Pain",
+                    "crew": "Jesse Eisenberg"
+                },
+                {
+                    "film": "September 5",
+                    "crew": "Moritz Binder & Tim Fehlbaum"
+                },
+                {
+                    "film": "The Substance",
+                    "crew": "Coralie Fargeat"
+                }
+            ],
+            "my_winner": {
+                "film": "The Brutalist",
+                "crew": "Brady Corbet & Mona Fastvoldt"
+            },
+            "official_winner": null
+        },
+        {
+            "name": "Makeup and Hairstyling",
+            "nominees": [
+                {
+                    "film": "A Different Man",
+                    "crew": "Mike Marino, David Presto & Crystal Jurado"
+                },
+                {
+                    "film": "Emilia Pérez",
+                    "crew": "Julia Floch Carbonel, Emmanuel Janvier & Jean-Christophe Spadaccini"
+                },
+                {
+                    "film": "Nosferatu",
+                    "crew": "David White, Traci Loader & Suzanne Stokes-Munton"
+                },
+                {
+                    "film": "The Substance",
+                    "crew": "Pierre-Olivier Persin, Stéphanie Guillon & Marilyne Scarselli"
+                },
+                {
+                    "film": "Wicked",
+                    "crew": "Frances Hannon, Laura Blount & Sarah Nuth"
+                }
+            ],
+            "my_winner": {
+                "film": "The Substance",
+                "crew": "Pierre-Olivier Persin, Stéphanie Guillon & Marilyne Scarselli"
+            },
+            "official_winner": null
+        },
+        {
+            "name": "Costume Design",
+            "nominees": [
+                {
+                    "film": "A Complete Unknown",
+                    "crew": "Arianne Phillips"
+                },
+                {
+                    "film": "Conclave",
+                    "crew": "Lisy Christl"
+                },
+                {
+                    "film": "Gladiator II",
+                    "crew": "Janty Yates & Dave Crossmans"
+                },
+                {
+                    "film": "Nosferatu",
+                    "crew": "Linda Muir"
+                },
+                {
+                    "film": "Wicked",
+                    "crew": "Paul Tazewell"
+                }
+            ],
+            "my_winner": {
+                "film": "Wicked",
+                "crew": "Paul Tazewell"
+            },
+            "official_winner": null
+        },
+        {
+            "name": "Production Design",
+            "nominees": [
+                {
+                    "film": "The Brutalist",
+                    "crew": "Judy Becker & Patricia Cuccia"
+                },
+                {
+                    "film": "Conclave",
+                    "crew": "Suzie Davies & Cynthia Sleiter"
+                },
+                {
+                    "film": "Dune Part Two",
+                    "crew": "Patrice Vermette & Shane Vieau"
+                },
+                {
+                    "film": "Nosferatu",
+                    "crew": "Craig Lathrop & Beatrice Brentnerová"
+                },
+                {
+                    "film": "Wicked",
+                    "crew": "Nathan Crowley & Lee Sandales"
+                }
+            ],
+            "my_winner": {
+                "film": "Conclave",
+                "crew": "Suzie Davies & Cynthia Sleiter"
+            },
+            "official_winner": null
+        },
+        {
+            "name": "Sound",
+            "nominees": [
+                {
+                    "film": "A Complete Unknown",
+                    "crew": "Tod A. Maitland, Donald Sylvester, Ted Caplan, Paul Massey & David Giammarco"
+                },
+                {
+                    "film": "Dune Part Two",
+                    "crew": "Gareth John, Richard King, Ron Bartlett & Doug Hemphill",
+                    "trailer": "https://www.youtube.com/watch?v=5-rbSwTv6tM&ab_channel=AFRFX"
+                },
+                {
+                    "film": "Emilia Pérez",
+                    "crew": "Erwan Kerzanet, Aymeric Devoldère, Maxence Dussère, Cyril Holtz & Niels Barletta"
+                },
+                {
+                    "film": "Wicked",
+                    "crew": "Simon Hayes, Nancy Nugent Title, Jack Dolman, Andy Nelson & John Marquis"
+                },
+                {
+                    "film": "The Wild Robot",
+                    "crew": "Randy Thom, Brian Chumney, Gary A. Rizzo & Leff Lefferts"
+                }
+            ],
+            "my_winner": {
+                "film": "Dune Part Two",
+                "crew": "Gareth John, Richard King, Ron Bartlett & Doug Hemphill"
+            },
+            "official_winner": null
+        },
+        {
+            "name": "Visual Effects",
+            "nominees": [
+                {
+                    "film": "Alien Romulus",
+                    "crew": "Eric Barba, Nelson Sepulveda-Fauser, Daniel Macarin & Shane Mahan"
+                },
+                {
+                    "film": "Better Man",
+                    "crew": "Luke Millar, David Clayton, Keith Herft & Peter Stubbs"
+                },
+                {
+                    "film": "Dune Part Two",
+                    "crew": "Paul Lambert, Stephen James, Rhys Salcombe & Gerd Nefzer"
+                },
+                {
+                    "film": "Kingdom of the Planet of the Apes",
+                    "crew": "Erik Winquist, Stephen Unterfranz, Paul Story & Rodney Burke"
+                },
+                {
+                    "film": "Wicked",
+                    "crew": "Pablo Helman, Jonathan Fawkner, David Shirk & Paul Corbould"
+                }
+            ],
+            "my_winner": {
+                "film": "Dune Part Two",
+                "crew": "Paul Lambert, Stephen James, Rhys Salcombe & Gerd Nefzer"
+            },
+            "official_winner": null
+        },
+        {
+            "name": "Film Editing",
+            "nominees": [
+                {
+                    "film": "Anora",
+                    "crew": "Sean Baker"
+                },
+                {
+                    "film": "The Brutalist",
+                    "crew": "David Jancso"
+                },
+                {
+                    "film": "Conclave",
+                    "crew": "Nick Emerson"
+                },
+                {
+                    "film": "Emilia Pérez",
+                    "crew": "Juliette Welfling"
+                },
+                {
+                    "film": "Wicked",
+                    "crew": "Myron Kerstein"
+                }
+            ],
+            "my_winner": {
+                "film": "Anora",
+                "crew": "Sean Baker"
+            },
+            "official_winner": null
+        },
+        {
+            "name": "Cinematography",
+            "nominees": [
+                {
+                    "film": "The Brutalist",
+                    "crew": "Lol Crawley"
+                },
+                {
+                    "film": "Dune Part Two",
+                    "crew": "Greig Fraser",
+                    "trailer": "https://www.youtube.com/watch?v=fnlKwBiHIGs&ab_channel=4KHDRMedia"
+                },
+                {
+                    "film": "Emilia Pérez",
+                    "crew": "Paul Guilhaume"
+                },
+                {
+                    "film": "Maria",
+                    "crew": "Ed Lachman"
+                },
+                {
+                    "film": "Nosferatu",
+                    "crew": "Jarin Blaschke"
+                }
+            ],
+            "my_winner": {
+                "film": "Dune Part Two",
+                "crew": "Greig Fraser"
+            },
+            "official_winner": null
+        },
+        {
+            "name": "International Feature Film",
+            "nominees": [
+                {
+                    "film": "I'm Still Here",
+                    "trailer": "https://www.youtube.com/watch?v=gDunV808Yf4&t=7s&ab_channel=SonyPicturesClassics"
+                },
+                {
+                    "film": "The Girl with the Needle",
+                    "trailer": "https://www.youtube.com/watch?v=NdjhUNH5v3Q&ab_channel=MUBI"
+                },
+                {
+                    "film": "Emilia Pérez",
+                    "trailer": "https://www.youtube.com/watch?v=lwH9f1jmkBc&ab_channel=Pathe"
+                },
+                {
+                    "film": "The Seed of the Sacred Fig",
+                    "trailer": "https://www.youtube.com/watch?v=HI6Ryvq8jcY&ab_channel=TIFFTrailers"
+                },
+                {
+                    "film": "Flow",
+                    "trailer": "https://www.youtube.com/watch?v=82WW9dVbglI&ab_channel=MadmanFilms"
+
+                }
+            ],
+            "my_winner": {
+                "film": "I'm Still Here"
+            },
+            "official_winner": null
+        },
+        {
+            "name": "Music (Original Score)",
+            "nominees": [
+                {
+                    "film": "The Brutalist",
+                    "crew": "Daniel Blumberg",
+                    "trailer": "https://www.youtube.com/watch?v=2olBDm1ekFQ&ab_channel=SonySoundtracksVEVO"
+                },
+                {
+                    "film": "Conclave",
+                    "crew": "Volker Bertelmann",
+                    "trailer": "https://www.youtube.com/watch?v=U4DR1D5wZ7g&ab_channel=VolkerBertelmann-Topic"
+                },
+                {
+                    "film": "Emilia Pérez",
+                    "crew": "Clément Ducol & Camille",
+                    "trailer": "https://www.youtube.com/watch?v=cxrLrymdV0k&ab_channel=Release-Topic"
+                },
+                {
+                    "film": "Wicked",
+                    "crew": "John Powell & Stephen Schwartz",
+                    "trailer": "https://www.youtube.com/watch?v=RwNX7IUdLfU&list=PLL7eixYHeVxDwz6jQZ0Ef4UA9Ly774PVk&index=27&ab_channel=JohnPowell-Topic"
+                },
+                {
+                    "film": "The Wild Robot",
+                    "crew": "Kris Bowers",
+                    "trailer": "https://www.youtube.com/watch?v=ng0R_4WkQ88&ab_channel=Release-Topic"
+                }
+            ],
+            "my_winner": {
+                "film": "The Brutalist",
+                "crew": "Daniel Blumberg"
+            },
+            "official_winner": null
+        },
+        {
+            "name": "Music (Original Song)",
+            "nominees": [
+                {
+                    "film": "El Mal",
+                    "crew": "Clément Ducol & Camille - Emilia Pérez",
+                    "trailer": "https://www.youtube.com/watch?v=IkLRuy3qFHY&ab_channel=SonySoundtracksVEVO"
+                },
+                {
+                    "film": "The Journey",
+                    "crew": "Diane Warren - The Six Triple Eight",
+                    "trailer": "https://www.youtube.com/watch?v=Tc3TYuMAjZY&ab_channel=StillWatchingNetflix"
+                },
+                {
+                    "film": "Like a Bird",
+                    "crew": "Abraham Alexander and Adrian Quesada - Sing Sing",
+                    "trailer": "https://www.youtube.com/watch?v=tAE8o7GalKg&ab_channel=A24"
+                },
+                {
+                    "film": "Mi Camino",
+                    "crew": "Camille and Clément Ducol - Emilia Pérez",
+                    "trailer": "https://www.youtube.com/watch?v=REM5u28nToc&ab_channel=SelenaGomez"
+                },
+                {
+                    "film": "Never Too Late",
+                    "crew": "Elton John, Brandi Carlile, Andrew Watt & Bernie Taupin - Elton John: Never Too Late",
+                    "trailer": "https://www.youtube.com/watch?v=UwL4UC_tLTI&ab_channel=EltonJohnVEVO"
+                }
+            ],
+            "my_winner": {
+                "film": "El Mal",
+                "crew": "Clément Ducol & Camille - Emilia Pérez"
+            },
+            "official_winner": null
+        },
+        {
+            "name": "Actor in a Leading Role",
+            "nominees": [
+                {
+                    "actor": "Adrien Brody",
+                    "film": "The Brutalist",
+                    "photos": [
+                        "Adrien-Brody.jpg",
+                        "Adrien-Brody-1.jpg"
+                    ]
+                },
+                {
+                    "actor": "Timothée Chalamet",
+                    "film": "A Complete Unknown",
+                    "photos": [
+                        "Timothée-Chalamet.jpg",
+                        "Timothée-Chalamet-1.jpg"
+                    ]
+                },
+                {
+                    "actor": "Colman Domingo",
+                    "film": "Sing Sing",
+                    "photos": [
+                        "Colman-Domingo.jpg",
+                        "Colman-Domingo-1.jpg"
+                    ]
+                },
+                {
+                    "actor": "Ralph Fiennes",
+                    "film": "Conclave",
+                    "photos": [
+                        "Ralph-Fiennes.jpg",
+                        "Ralph-Fiennes-1.jpg"
+                    ]
+                },
+                {
+                    "actor": "Sebastian Stan",
+                    "film": "The Apprentice",
+                    "photos": [
+                        "Sebastian-Stan.jpg",
+                        "Sebastian-Stan-1.jpg"
+                    ]
+                }
+            ],
+            "my_winner": {
+                "actor": "Ralph Fiennes",
+                "film": "Conclave"
+            },
+            "official_winner": null
+        },
+        {
+            "name": "Actress in a Leading Role",
+            "nominees": [
+                {
+                    "actor": "Cynthia Erivo",
+                    "film": "Wicked",
+                    "photos": [
+                        "Cynthia-Erivo.jpg",
+                        "Cynthia-Erivo-1.jpg"
+                    ]
+                },
+                {
+                    "actor": "Karla Sofía Gascón",
+                    "film": "Emilia Pérez",
+                    "photos": [
+                        "Karla-Sofia-Gascón.jpg",
+                        "Karla-Sofia-Gascón-1.jpg"
+                    ]
+                },
+                {
+                    "actor": "Mikey Madison",
+                    "film": "Anora",
+                    "photos": [
+                        "Mikey-Madison.jpg",
+                        "Mikey-Madison-1.jpg"
+                    ]
+                },
+                {
+                    "actor": "Demi Moore",
+                    "film": "The Substance",
+                    "photos": [
+                        "Demi-Moore.jpg",
+                        "Demi-Moore-1.jpg",
+                        "Demi-Moore-2.jpg"
+                    ]
+                },
+                {
+                    "actor": "Fernanda Torres",
+                    "film": "I'm Still Here",
+                    "photos": [
+                        "Fernanda-Torres.jpg",
+                        "Fernanda-Torres-1.jpg"
+                    ]
+                }
+            ],
+            "my_winner": {
+                "actor": "Fernanda Torres",
+                "film": "I'm Still Here"
+            },
+            "official_winner": null
+        },
+        {
+            "name": "Directing",
+            "nominees": [
+                {
+                    "actor": "Sean Baker",
+                    "film": "Anora"
+                },
+                {
+                    "actor": "Brady Corbet",
+                    "film": "The Brutalist"
+                },
+                {
+                    "actor": "James Mangold",
+                    "film": "A Complete Unknown"
+                },
+                {
+                    "actor": "Jacques Audiard",
+                    "film": "Emilia Pérez"
+                },
+                {
+                    "actor": "Coralie Fargeat",
+                    "film": "The Substance"
+                }
+            ],
+            "my_winner": {
+                "actor": "Coralie Fargeat",
+                "film": "The Substance"
+            },
+            "official_winner": null
+        },
+        {
+            "name": "Best Picture",
+            "nominees": [
+                {
+                    "film": "Anora",
+                    "trailer": "https://www.youtube.com/watch?v=p1HxTmV5i7c&ab_channel=NEON"
+                },
+                {
+                    "film": "The Brutalist",
+                    "trailer": "https://www.youtube.com/watch?v=GdRXPAHIEW4&t=23s&ab_channel=A24"
+                },
+                {
+                    "film": "A Complete Unknown",
+                    "trailer": "https://www.youtube.com/watch?v=FdV-Cs5o8mc&ab_channel=SearchlightPictures"
+                },
+                {
+                    "film": "Conclave",
+                    "trailer": "https://www.youtube.com/watch?v=t915aZmyEBg&ab_channel=FocusFeatures"
+                },
+                {
+                    "film": "Dune Part Two",
+                    "trailer": "https://www.youtube.com/watch?v=Way9Dexny3w&ab_channel=WarnerBros"
+                },
+                {
+                    "film": "Emilia Pérez",
+                    "trailer": "https://www.youtube.com/watch?v=lwH9f1jmkBc&ab_channel=Pathe"
+                },
+                {
+                    "film": "I'm Still Here",
+                    "trailer": "https://www.youtube.com/watch?v=gDunV808Yf4&t=7s&ab_channel=SonyPicturesClassics"
+                },
+                {
+                    "film": "Nickel Boys",
+                    "trailer": "https://www.youtube.com/watch?v=-2qZ429rUZw&t=3s&ab_channel=AmazonMGMStudios"
+                },
+                {
+                    "film": "The Substance",
+                    "trailer": "https://www.youtube.com/watch?v=LNlrGhBpYjc&ab_channel=MUBI"
+                },
+                {
+                    "film": "Wicked",
+                    "trailer": "https://www.youtube.com/watch?v=6COmYeLsz4c&ab_channel=UniversalPictures"
+                }
+            ],
+            "my_winner": {
+                "film": "Conclave"
+            },
+            "official_winner": null
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+/* 2025 Styles - Modular Structure */
+@import './variables.css';
+@import './base.css';
+@import '../../shared/Presentation.css';
+@import './intro-section.css';
+@import './category-section.css';
+@import './nominee-card.css';
+@import './oscar-statuette.css';
+@import './winner-effects.css';
+@import './reveal-button.css';
+@import './not-seen.css';
+@import './thanks-section.css';
+@import './footer.css';
+@import './responsive.css';

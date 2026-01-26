@@ -1,0 +1,142 @@
+@media (max-width: 768px) {
+  .nominees-container-2025 {
+    gap: 1.2vh;
+  }
+
+  .nominee-card-2025 {
+    height: min(10vh, 80px);
+  }
+
+  .nominee-info-2025 {
+    padding: 1.5vh 5vw;
+  }
+
+  .nominee-image-2025 {
+    width: min(8vh, 60px);
+    height: 100%;
+  }
+
+  .oscar-statuette.with-actor {
+    right: min(8vh, 60px);
+  }
+
+  .oscar-statuette.with-film {
+    right: calc(min(10vh, 80px) * 0.6);
+  }
+
+  .best-picture-container-2025 {
+    max-width: min(600px, 90vw);
+    gap: 1.2vh;
+  }
+
+  .best-picture-container-2025 .nominee-card-2025 {
+    height: min(9vh, 70px);
+  }
+
+  .best-picture-container-2025 .nominee-title-2025 {
+    font-size: min(3.5vw, 1.1rem);
+  }
+
+  .nominee-image-2025.film-image {
+    width: calc(min(10vh, 80px) * 0.6);
+    height: 100%;
+  }
+
+  .with-film-image .nominee-info-2025 {
+    padding-right: 2vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-content-2025 {
+    height: 80vh;
+    gap: 1.5vh;
+  }
+
+  .category-title-2025 {
+    font-size: 7vw;
+    margin-bottom: 1.5vh;
+  }
+
+  .nominees-container-2025 {
+    gap: 1vh;
+    max-width: 95vw;
+  }
+
+  .nominee-card-2025 {
+    height: min(9vh, 70px);
+  }
+
+  .nominee-info-2025 {
+    padding: 1.5vh 5vw;
+  }
+
+  .nominee-title-2025 {
+    font-size: min(4vw, 1.1rem);
+  }
+
+  .nominee-description-2025 {
+    font-size: min(3.5vw, 0.9rem);
+  }
+
+  .reveal-winner-btn-2025 {
+    padding: 1.2vh 5vw;
+    font-size: 3.5vw;
+    min-width: 50vw;
+  }
+
+  .nominee-image-2025 {
+    width: min(8vh, 60px);
+    height: 100%;
+  }
+
+  .oscar-statuette.with-actor {
+    right: min(8vh, 60px);
+  }
+
+  .oscar-statuette.with-film {
+    right: calc(min(9vh, 70px) * 0.667);
+  }
+
+  .nominee-image-2025.film-image {
+    width: calc(min(9vh, 70px) * 0.667);
+    height: 100%;
+  }
+
+  .with-film-image .nominee-info-2025 {
+    padding-right: 2vw;
+  }
+}
+
+@media (max-height: 600px) {
+  .category-content-2025 {
+    height: 80vh;
+    gap: 1vh;
+  }
+
+  .nominees-container-2025 {
+    gap: 0.8vh;
+  }
+
+  .nominee-card-2025 {
+    height: min(11vh, 60px);
+    padding: 1vh 4vw;
+  }
+
+  .category-title-2025 {
+    margin-bottom: 1vh;
+  }
+
+  .reveal-winner-btn-2025 {
+    padding: 1vh 4vw;
+    margin: 1vh auto;
+  }
+
+  .oscar-statuette.with-actor {
+    right: min(11vh, 60px);
+  }
+
+  .oscar-statuette.with-film {
+    right: calc(min(11vh, 60px) * 0.667);
+  }
+}

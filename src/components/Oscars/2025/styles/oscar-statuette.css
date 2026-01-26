@@ -1,0 +1,30 @@
+.oscar-statuette-wrapper {
+  position: relative;
+}
+
+.oscar-statuette {
+  position: absolute;
+  height: 75%;
+  object-fit: contain;
+}
+
+.statuette-copyright {
+  position: absolute;
+  bottom: -12px;
+  right: 0;
+  font-family: 'Futura PT Light Book', 'Futura', sans-serif;
+  font-size: 0.4rem;
+  color: var(--oscar-charcoal);
+  opacity: 0.4;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.oscar-statuette.with-actor {
+  right: min(10vh, 70px);
+}
+
+.oscar-statuette.with-film {
+  right: calc(min(12vh, 90px) * 0.667);
+}

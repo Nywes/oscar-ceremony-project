@@ -1,0 +1,11 @@
+/* 2026 Styles - Modular Structure */
+@import './variables.css';
+@import './base.css';
+@import '../../shared/Presentation.css';
+@import './intro-section.css';
+@import './category-section.css';
+@import './nominee-card.css';
+@import './winner-effects.css';
+@import './voting.css';
+@import './thanks-section.css';
+@import './responsive.css';

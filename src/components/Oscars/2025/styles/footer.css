@@ -1,0 +1,21 @@
+.oscars-footer {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.legal-notice {
+  margin-top: 40px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.legal-text {
+  font-family: 'Futura PT Light Book', 'Futura', sans-serif;
+  font-size: 0.55rem;
+  color: var(--oscar-charcoal);
+  opacity: 0.4;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  max-width: 800px;
+  margin: 0 auto;
+}
