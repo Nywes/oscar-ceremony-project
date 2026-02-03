@@ -438,16 +438,13 @@
                             "alt": "Avatar: Fire and Ash poster"
                         }
                     },
-                    "person": {
-                        "id": "person-031",
-                        "name": "Deborah L. Scott",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Deborah-L-Scott.jpg",
-                                "alt": "Deborah L. Scott"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-031",
+                            "name": "Deborah L. Scott",
+                            "role": "Costume Designer"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-037",
@@ -459,16 +456,13 @@
                             "alt": "Frankenstein poster"
                         }
                     },
-                    "person": {
-                        "id": "person-032",
-                        "name": "Kate Hawley",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Kate-Hawley.jpg",
-                                "alt": "Kate Hawley"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-032",
+                            "name": "Kate Hawley",
+                            "role": "Costume Designer"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-038",
@@ -480,16 +474,13 @@
                             "alt": "Hamnet poster"
                         }
                     },
-                    "person": {
-                        "id": "person-033",
-                        "name": "Malgosia Turzanska",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Malgosia-Turzanska.jpg",
-                                "alt": "Malgosia Turzanska"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-033",
+                            "name": "Malgosia Turzanska",
+                            "role": "Costume Designer"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-039",
@@ -501,16 +492,13 @@
                             "alt": "Marty Supreme poster"
                         }
                     },
-                    "person": {
-                        "id": "person-034",
-                        "name": "Miyako Bellizzi",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Miyako-Bellizzi.jpg",
-                                "alt": "Miyako Bellizzi"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-034",
+                            "name": "Miyako Bellizzi",
+                            "role": "Costume Designer"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-040",
@@ -522,16 +510,13 @@
                             "alt": "Sinners poster"
                         }
                     },
-                    "person": {
-                        "id": "person-035",
-                        "name": "Ruth E. Carter",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Ruth-E-Carter.jpg",
-                                "alt": "Ruth E. Carter"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-035",
+                            "name": "Ruth E. Carter",
+                            "role": "Costume Designer"
                         }
-                    }
+                    ]
                 }
             ],
             "winners": {
@@ -553,16 +538,13 @@
                             "alt": "Blue Moon poster"
                         }
                     },
-                    "person": {
-                        "id": "person-054",
-                        "name": "Robert Kaplow",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Robert-Kaplow.jpg",
-                                "alt": "Robert Kaplow"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-054",
+                            "name": "Robert Kaplow",
+                            "role": "Screenwriter"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-102",
@@ -574,17 +556,12 @@
                             "alt": "It Was Just an Accident poster"
                         }
                     },
-                    "person": {
-                        "id": "person-055",
-                        "name": "Jafar Panahi",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Jafar-Panahi.jpg",
-                                "alt": "Jafar Panahi"
-                            }
-                        }
-                    },
                     "crew": [
+                        {
+                            "id": "person-055",
+                            "name": "Jafar Panahi",
+                            "role": "Screenwriter"
+                        },
                         {
                             "id": "crew-139",
                             "name": "Nader Saïvar",
@@ -658,16 +635,13 @@
                             "alt": "Sinners poster"
                         }
                     },
-                    "person": {
-                        "id": "person-040",
-                        "name": "Ryan Coogler",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Ryan-Coogler.jpg",
-                                "alt": "Ryan Coogler"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-040",
+                            "name": "Ryan Coogler",
+                            "role": "Screenwriter"
                         }
-                    }
+                    ]
                 }
             ],
             "winners": {
@@ -689,16 +663,13 @@
                             "alt": "Bugonia poster"
                         }
                     },
-                    "person": {
-                        "id": "person-052",
-                        "name": "Will Tracy",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Will-Tracy.jpg",
-                                "alt": "Will Tracy"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-052",
+                            "name": "Will Tracy",
+                            "role": "Screenwriter"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-097",
@@ -710,16 +681,13 @@
                             "alt": "Frankenstein poster"
                         }
                     },
-                    "person": {
-                        "id": "person-053",
-                        "name": "Guillermo del Toro",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Guillermo-del-Toro.jpg",
-                                "alt": "Guillermo del Toro"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-053",
+                            "name": "Guillermo del Toro",
+                            "role": "Screenwriter"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-098",
@@ -754,16 +722,13 @@
                             "alt": "One Battle after Another poster"
                         }
                     },
-                    "person": {
-                        "id": "person-038",
-                        "name": "Paul Thomas Anderson",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Paul-Thomas-Anderson.jpg",
-                                "alt": "Paul Thomas Anderson"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-038",
+                            "name": "Paul Thomas Anderson",
+                            "role": "Screenwriter"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-100",
@@ -953,16 +918,13 @@
                             "alt": "F1 poster"
                         }
                     },
-                    "person": {
-                        "id": "person-041",
-                        "name": "Stephen Mirrione",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Stephen-Mirrione.jpg",
-                                "alt": "Stephen Mirrione"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-041",
+                            "name": "Stephen Mirrione",
+                            "role": "Editor"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-047",
@@ -997,16 +959,13 @@
                             "alt": "One Battle after Another poster"
                         }
                     },
-                    "person": {
-                        "id": "person-042",
-                        "name": "Andy Jurgensen",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Andy-Jurgensen.jpg",
-                                "alt": "Andy Jurgensen"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-042",
+                            "name": "Andy Jurgensen",
+                            "role": "Editor"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-049",
@@ -1018,16 +977,13 @@
                             "alt": "Sentimental Value poster"
                         }
                     },
-                    "person": {
-                        "id": "person-043",
-                        "name": "Olivier Bugge Coutté",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Olivier-Bugge-Coutte.jpg",
-                                "alt": "Olivier Bugge Coutté"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-043",
+                            "name": "Olivier Bugge Coutté",
+                            "role": "Editor"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-050",
@@ -1039,16 +995,13 @@
                             "alt": "Sinners poster"
                         }
                     },
-                    "person": {
-                        "id": "person-044",
-                        "name": "Michael P. Shawver",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Michael-P-Shawver.jpg",
-                                "alt": "Michael P. Shawver"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-044",
+                            "name": "Michael P. Shawver",
+                            "role": "Editor"
                         }
-                    }
+                    ]
                 }
             ],
             "winners": {
@@ -2310,16 +2263,13 @@
                             "alt": "Frankenstein poster"
                         }
                     },
-                    "person": {
-                        "id": "person-026",
-                        "name": "Dan Laustsen",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Dan-Laustsen.jpg",
-                                "alt": "Dan Laustsen"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-026",
+                            "name": "Dan Laustsen",
+                            "role": "Cinematographer"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-032",
@@ -2331,16 +2281,13 @@
                             "alt": "Marty Supreme poster"
                         }
                     },
-                    "person": {
-                        "id": "person-027",
-                        "name": "Darius Khondji",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Darius-Khondji.jpg",
-                                "alt": "Darius Khondji"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-027",
+                            "name": "Darius Khondji",
+                            "role": "Cinematographer"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-033",
@@ -2352,16 +2299,13 @@
                             "alt": "One Battle after Another poster"
                         }
                     },
-                    "person": {
-                        "id": "person-028",
-                        "name": "Michael Bauman",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Michael-Bauman.jpg",
-                                "alt": "Michael Bauman"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-028",
+                            "name": "Michael Bauman",
+                            "role": "Cinematographer"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-034",
@@ -2373,16 +2317,13 @@
                             "alt": "Sinners poster"
                         }
                     },
-                    "person": {
-                        "id": "person-029",
-                        "name": "Autumn Durald Arkapaw",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Autumn-Durald-Arkapaw.jpg",
-                                "alt": "Autumn Durald Arkapaw"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-029",
+                            "name": "Autumn Durald Arkapaw",
+                            "role": "Cinematographer"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-035",
@@ -2394,16 +2335,13 @@
                             "alt": "Train Dreams poster"
                         }
                     },
-                    "person": {
-                        "id": "person-030",
-                        "name": "Adolpho Veloso",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Adolpho-Veloso.jpg",
-                                "alt": "Adolpho Veloso"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-030",
+                            "name": "Adolpho Veloso",
+                            "role": "Cinematographer"
                         }
-                    }
+                    ]
                 }
             ],
             "winners": {
@@ -2425,16 +2363,13 @@
                             "alt": "Bugonia poster"
                         }
                     },
-                    "person": {
-                        "id": "person-045",
-                        "name": "Jerskin Fendrix",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Jerskin-Fendrix.jpg",
-                                "alt": "Jerskin Fendrix"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-045",
+                            "name": "Jerskin Fendrix",
+                            "role": "Music"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-062",
@@ -2446,16 +2381,13 @@
                             "alt": "Frankenstein poster"
                         }
                     },
-                    "person": {
-                        "id": "person-046",
-                        "name": "Alexandre Desplat",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Alexandre-Desplat.jpg",
-                                "alt": "Alexandre Desplat"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-046",
+                            "name": "Alexandre Desplat",
+                            "role": "Music"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-063",
@@ -2467,16 +2399,13 @@
                             "alt": "Hamnet poster"
                         }
                     },
-                    "person": {
-                        "id": "person-047",
-                        "name": "Max Richter",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Max-Richter.jpg",
-                                "alt": "Max Richter"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-047",
+                            "name": "Max Richter",
+                            "role": "Music"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-064",
@@ -2488,16 +2417,13 @@
                             "alt": "One Battle after Another poster"
                         }
                     },
-                    "person": {
-                        "id": "person-048",
-                        "name": "Jonny Greenwood",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Jonny-Greenwood.jpg",
-                                "alt": "Jonny Greenwood"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-048",
+                            "name": "Jonny Greenwood",
+                            "role": "Music"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-065",
@@ -2509,16 +2435,13 @@
                             "alt": "Sinners poster"
                         }
                     },
-                    "person": {
-                        "id": "person-049",
-                        "name": "Ludwig Goransson",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Ludwig-Goransson.jpg",
-                                "alt": "Ludwig Goransson"
-                            }
+                    "crew": [
+                        {
+                            "id": "person-049",
+                            "name": "Ludwig Goransson",
+                            "role": "Music"
                         }
-                    }
+                    ]
                 }
             ],
             "winners": {
