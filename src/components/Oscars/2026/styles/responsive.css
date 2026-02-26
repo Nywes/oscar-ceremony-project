@@ -1,4 +1,39 @@
 @media (max-width: 768px) {
+  /* Dès 768px : section scrollable + barre boutons sticky sur mobile */
+  .category-section-2026 {
+    padding: 2.5vh 3vw 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    min-height: 100dvh;
+    height: auto;
+    max-height: 100dvh;
+    align-items: flex-start;
+  }
+
+  .category-content-2026 {
+    height: auto;
+    min-height: 100%;
+  }
+
+  .category-actions {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    padding-top: 0.75rem;
+    padding-bottom: calc(env(safe-area-inset-bottom) + 52px);
+    background: var(--oscar-white);
+    flex-shrink: 0;
+    z-index: 2;
+  }
+
+  .category-title-2026 {
+    font-size: 6.5vw;
+    margin-bottom: 1vh;
+  }
+
   .nominees-container-2026 {
     gap: 1.2vh;
   }
@@ -23,14 +58,48 @@
 }
 
 @media (max-width: 480px) {
-  .category-content-2026 {
-    height: 80vh;
-    gap: 1.5vh;
+  /* Section scrollable, moins d’espace perdu en haut */
+  .category-section-2026 {
+    padding: 2vh 3vw 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    min-height: 100dvh;
+    height: auto;
+    max-height: 100dvh;
+    align-items: flex-start;
   }
 
+  .category-content-2026 {
+    height: auto;
+    min-height: 100%;
+    gap: 1vh;
+    padding-bottom: 0;
+  }
+
+  /* Titre plus compact sur 2 lignes */
   .category-title-2026 {
-    font-size: 7vw;
-    margin-bottom: 1.5vh;
+    font-size: 6vw;
+    margin-bottom: 1vh;
+    line-height: 1.2;
+  }
+
+  .category-title-2026:after {
+    bottom: -0.5vh;
+  }
+
+  /* Boutons toujours visibles au-dessus de la barre Safari/Arc */
+  .category-actions {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    padding-top: 0.75rem;
+    padding-bottom: calc(env(safe-area-inset-bottom) + 56px);
+    background: var(--oscar-white);
+    flex-shrink: 0;
+    z-index: 2;
   }
 
   .nominees-container {
@@ -53,16 +122,11 @@
 }
 
 @media (max-height: 600px) {
-  .category-content-2026 {
-    height: 80vh;
-    gap: 1vh;
-  }
-
   .nominees-container-2026 {
     gap: 0.8vh;
   }
 
   .category-title-2026 {
-    margin-bottom: 1vh;
+    margin-bottom: 0.75vh;
   }
 }
