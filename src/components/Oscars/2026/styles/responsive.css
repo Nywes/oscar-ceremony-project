@@ -4,8 +4,8 @@
   }
 
   .nominee-card-2026 {
-    height: min(14vh, 100px);
     min-height: min(14vh, 100px);
+    height: auto;
   }
 
   .nominee-info-grid-1 {
@@ -19,10 +19,6 @@
   .best-picture-container-2026 {
     max-width: min(600px, 90vw);
     gap: 1.2vh;
-  }
-
-  .best-picture-container-2026 .nominee-title {
-    font-size: min(3.5vw, 1.1rem);
   }
 }
 
@@ -43,8 +39,8 @@
   }
 
   .nominee-card-2026 {
-    height: min(12vh, 90px);
     min-height: min(12vh, 90px);
+    height: auto;
   }
 
   .nominee-info-grid-1 {
@@ -53,14 +49,6 @@
 
   .nominee-info-grid-2 {
     padding: 0 0.5rem;
-  }
-
-  .nominee-title {
-    font-size: min(4vw, 1.1rem);
-  }
-
-  .nominee-description {
-    font-size: min(3.5vw, 0.9rem);
   }
 }
 

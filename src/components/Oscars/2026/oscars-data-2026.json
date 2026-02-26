@@ -440,7 +440,7 @@
                     },
                     "crew": [
                         {
-                            "id": "person-031",
+                            "id": "crew-011",
                             "name": "Deborah L. Scott",
                             "role": "Costume Designer"
                         }
@@ -458,7 +458,7 @@
                     },
                     "crew": [
                         {
-                            "id": "person-032",
+                            "id": "crew-012",
                             "name": "Kate Hawley",
                             "role": "Costume Designer"
                         }
@@ -476,7 +476,7 @@
                     },
                     "crew": [
                         {
-                            "id": "person-033",
+                            "id": "crew-013",
                             "name": "Malgosia Turzanska",
                             "role": "Costume Designer"
                         }
@@ -494,7 +494,7 @@
                     },
                     "crew": [
                         {
-                            "id": "person-034",
+                            "id": "crew-014",
                             "name": "Miyako Bellizzi",
                             "role": "Costume Designer"
                         }
@@ -512,7 +512,7 @@
                     },
                     "crew": [
                         {
-                            "id": "person-035",
+                            "id": "crew-015",
                             "name": "Ruth E. Carter",
                             "role": "Costume Designer"
                         }
@@ -1339,7 +1339,8 @@
                         }
                     },
                     "metadata": {
-                        "songTitle": "Dear Me"
+                        "songTitle": "Dear Me",
+                        "notes": "from Diane Warren: Relentless; Music and Lyric by Diane Warren"
                     },
                     "person": {
                         "id": "person-050",
@@ -1363,7 +1364,8 @@
                         }
                     },
                     "metadata": {
-                        "songTitle": "Golden"
+                        "songTitle": "Golden",
+                        "notes": "from KPop Demon Hunters; Music and Lyric by EJAE, Mark Sonnenblick, Joong Gyu Kwak, Yu Han Lee, Hee Dong Nam, Jeong Hoon Seo and Teddy Park"
                     },
                     "crew": [
                         {
@@ -1414,7 +1416,8 @@
                         }
                     },
                     "metadata": {
-                        "songTitle": "I Lied To You"
+                        "songTitle": "I Lied To You",
+                        "notes": "from Sinners; Music and Lyric by Raphael Saadiq and Ludwig Goransson"
                     },
                     "crew": [
                         {
@@ -1440,7 +1443,8 @@
                         }
                     },
                     "metadata": {
-                        "songTitle": "Sweet Dreams Of Joy"
+                        "songTitle": "Sweet Dreams Of Joy",
+                        "notes": "from Viva Verdi!; Music and Lyric by Nicholas Pike"
                     },
                     "person": {
                         "id": "person-051",
@@ -1464,7 +1468,8 @@
                         }
                     },
                     "metadata": {
-                        "songTitle": "Train Dreams"
+                        "songTitle": "Train Dreams",
+                        "notes": "from Train Dreams; Music by Nick Cave and Bryce Dessner; Lyric by Nick Cave"
                     },
                     "crew": [
                         {

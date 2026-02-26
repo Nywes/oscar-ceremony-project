@@ -118,14 +118,14 @@ export const CategorySection = ({
             )}
             {hasVoted ? (
               <button
-                className={`show-results-btn ${showMyVote ? 'active' : ''}`}
+                className={`show-results-btn show-results-btn--my-vote ${showMyVote ? 'active' : ''}`}
                 onClick={toggleShowMyVote}
               >
                 {showMyVote ? 'Hide my vote' : 'Show my vote'}
               </button>
             ) : (
               <button
-                className={`show-results-btn ${showResults ? 'active' : ''}`}
+                className={`show-results-btn show-results-btn--results ${showResults ? 'active' : ''}`}
                 onClick={toggleShowResults}
               >
                 {showResults ? 'Masquer Résultats' : 'Voir Résultats votes'}

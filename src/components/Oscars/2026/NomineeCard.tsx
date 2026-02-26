@@ -1,5 +1,7 @@
 import './styles/index.css';
+import { useState, useEffect, useRef } from 'react';
 import type { Nominee2026 } from './types';
+import { getActorImagePathSync, checkImageExists } from './utils';
 
 type NomineeCardProps = {
   nominee: Nominee2026;
@@ -30,11 +32,26 @@ export const NomineeCard = ({
   voteCount = 0,
   showVoteCount = false,
 }: NomineeCardProps) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [hasSecondaryImage, setHasSecondaryImage] = useState(false);
+  const [isFlipping, setIsFlipping] = useState(false);
+  const imageRef = useRef<HTMLImageElement>(null);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const getNomineeTitle = () => {
+    // Cas spécial : Music (Original Song) → on affiche le titre de la chanson
+    if (categoryName === 'Music (Original Song)' && nominee.metadata?.songTitle) {
+      return nominee.metadata.songTitle;
+    }
+
     return nominee.person && nominee.film ? nominee.person.name : nominee.film.title;
   };
 
   const getNomineeDescription = () => {
+    // Cas spécial : Music (Original Song) → on affiche la phrase complète depuis les métadonnées
+    if (categoryName === 'Music (Original Song)' && nominee.metadata?.notes) {
+      return nominee.metadata.notes;
+    }
+
     if (nominee.person) return nominee.film.title;
     if (nominee.crew?.length) return nominee.crew.map((c) => c.name).join(', ');
     return '';
@@ -48,6 +65,47 @@ export const NomineeCard = ({
   ].includes(categoryName);
 
   const notSeen = nominee.metadata?.notSeen || false;
+
+  // Vérifier si l'image secondaire existe pour les acteurs
+  useEffect(() => {
+    if (nominee.person && actorImagePath) {
+      const secondaryImagePath = getActorImagePathSync(nominee.person.name, 1);
+      if (secondaryImagePath) {
+        checkImageExists(secondaryImagePath).then((exists) => {
+          setHasSecondaryImage(exists);
+        });
+      }
+    }
+  }, [nominee.person, actorImagePath]);
+
+  // Rotation automatique des images toutes les 6 secondes
+  useEffect(() => {
+    if (nominee.person && hasSecondaryImage) {
+      intervalRef.current = setInterval(() => {
+        setIsFlipping(true);
+        // Changer l'image au milieu de l'animation (quand elle est à 90 degrés)
+        setTimeout(() => {
+          setCurrentImageIndex((prev) => (prev === 0 ? 1 : 0));
+        }, 600); // Au milieu de l'animation (1200ms / 2)
+        // Réinitialiser l'état de flip après l'animation complète
+        setTimeout(() => {
+          setIsFlipping(false);
+        }, 1200); // Durée complète de l'animation (plus lente)
+      }, 6000); // 6 secondes
+
+      return () => {
+        if (intervalRef.current) {
+          clearInterval(intervalRef.current);
+        }
+      };
+    }
+  }, [nominee.person, hasSecondaryImage]);
+
+  // Obtenir le chemin de l'image actuelle
+  const getCurrentImagePath = () => {
+    if (!nominee.person) return filmImagePath;
+    return getActorImagePathSync(nominee.person.name, currentImageIndex) || actorImagePath;
+  };
 
   const handleCardClick = (e: React.MouseEvent) => {
     if (onSelect) {
@@ -86,7 +144,8 @@ export const NomineeCard = ({
       <div className="nominee-votes-2026 nominee-info-grid-2">
         {showVoteCount && (
           <div className="vote-count-badge">
-            {voteCount} {voteCount === 1 ? 'vote' : 'votes'}
+            <span className="vote-count-badge__number">{voteCount}</span>
+            <span className="vote-count-badge__label">{voteCount === 1 ? 'vote' : 'votes'}</span>
           </div>
         )}
       </div>
@@ -105,14 +164,17 @@ export const NomineeCard = ({
         </div>
       )}
       {nominee.person && actorImagePath && (
-        <img
-          src={actorImagePath}
-          alt={nominee.person.name}
-          className="nominee-image nominee-image-2026 nominee-info-grid-3"
-          onError={(e) => {
-            (e.target as HTMLImageElement).style.display = 'none';
-          }}
-        />
+        <div className="nominee-image-container nominee-info-grid-3">
+          <img
+            ref={imageRef}
+            src={getCurrentImagePath()}
+            alt={nominee.person.name}
+            className={`nominee-image nominee-image-2026 ${isFlipping ? 'flipping' : ''}`}
+            onError={(e) => {
+              (e.target as HTMLImageElement).style.display = 'none';
+            }}
+          />
+        </div>
       )}
       {!nominee.person && filmImagePath && (
         <img

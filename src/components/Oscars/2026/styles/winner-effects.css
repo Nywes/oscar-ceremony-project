@@ -17,6 +17,7 @@
   content: '';
   position: absolute;
   inset: 0;
+  z-index: 1;
   border-radius: 12px;
   padding: 2px;
   background: linear-gradient(
@@ -72,6 +73,7 @@
   content: '';
   position: absolute;
   inset: 0;
+  z-index: 1;
   border-radius: 12px;
   padding: 2px;
   background: linear-gradient(
@@ -140,6 +142,7 @@
   content: '';
   position: absolute;
   inset: 0;
+  z-index: 1;
   border-radius: 12px;
   padding: 2px;
   background: linear-gradient(
@@ -171,6 +174,7 @@
   content: '';
   position: absolute;
   inset: 2px;
+  z-index: 1;
   border-radius: 10px;
   padding: 2px;
   background: linear-gradient(
@@ -246,29 +250,33 @@
   opacity: 0.9;
 }
 
+/* Même minimal : contour fin, pilule, texte or */
 .reveal-winner-btn-2026 {
-  background-color: transparent;
+  background: transparent;
   color: var(--oscar-gold);
-  border: 2px solid var(--oscar-gold);
-  padding: 0.5rem 1rem;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 0.45rem 1.1rem;
   font-family: 'Futura PT Book', 'Futura', sans-serif;
   font-size: 0.75rem;
   font-weight: 500;
-  border-radius: 4px;
+  border-radius: 999px;
   cursor: pointer;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  box-shadow: none;
+  letter-spacing: 0.1em;
   width: fit-content;
   opacity: 1;
   visibility: visible;
+  transition: border-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
 }
 
-
+.reveal-winner-btn-2026:hover:not(:disabled) {
+  border-color: rgba(212, 175, 55, 0.5);
+}
 
 .reveal-winner-btn-2026:disabled {
   cursor: default;
-  opacity: 0.5;
+  opacity: 0.4;
+  border-color: rgba(212, 175, 55, 0.15);
 }
 
 .reveal-winner-btn-2026.revealed {

@@ -38,6 +38,7 @@ export type Nominee2026 = {
   metadata?: {
     notSeen?: boolean;
     notes?: string;
+    songTitle?: string;
   };
 };
 
