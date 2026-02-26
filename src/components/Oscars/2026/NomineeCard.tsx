@@ -38,10 +38,20 @@ export const NomineeCard = ({
   const imageRef = useRef<HTMLImageElement>(null);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const getNomineeTitle = () => {
+    // Cas spécial : Music (Original Song) → on affiche le titre de la chanson
+    if (categoryName === 'Music (Original Song)' && nominee.metadata?.songTitle) {
+      return nominee.metadata.songTitle;
+    }
+
     return nominee.person && nominee.film ? nominee.person.name : nominee.film.title;
   };
 
   const getNomineeDescription = () => {
+    // Cas spécial : Music (Original Song) → on affiche la phrase complète depuis les métadonnées
+    if (categoryName === 'Music (Original Song)' && nominee.metadata?.notes) {
+      return nominee.metadata.notes;
+    }
+
     if (nominee.person) return nominee.film.title;
     if (nominee.crew?.length) return nominee.crew.map((c) => c.name).join(', ');
     return '';
@@ -134,7 +144,8 @@ export const NomineeCard = ({
       <div className="nominee-votes-2026 nominee-info-grid-2">
         {showVoteCount && (
           <div className="vote-count-badge">
-            {voteCount} {voteCount === 1 ? 'vote' : 'votes'}
+            <span className="vote-count-badge__number">{voteCount}</span>
+            <span className="vote-count-badge__label">{voteCount === 1 ? 'vote' : 'votes'}</span>
           </div>
         )}
       </div>

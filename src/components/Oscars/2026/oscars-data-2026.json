@@ -438,16 +438,13 @@
                             "alt": "Avatar: Fire and Ash poster"
                         }
                     },
-                    "person": {
-                        "id": "person-031",
-                        "name": "Deborah L. Scott",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Deborah-L-Scott.jpg",
-                                "alt": "Deborah L. Scott"
-                            }
+                    "crew": [
+                        {
+                            "id": "crew-011",
+                            "name": "Deborah L. Scott",
+                            "role": "Costume Designer"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-037",
@@ -459,16 +456,13 @@
                             "alt": "Frankenstein poster"
                         }
                     },
-                    "person": {
-                        "id": "person-032",
-                        "name": "Kate Hawley",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Kate-Hawley.jpg",
-                                "alt": "Kate Hawley"
-                            }
+                    "crew": [
+                        {
+                            "id": "crew-012",
+                            "name": "Kate Hawley",
+                            "role": "Costume Designer"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-038",
@@ -480,16 +474,13 @@
                             "alt": "Hamnet poster"
                         }
                     },
-                    "person": {
-                        "id": "person-033",
-                        "name": "Malgosia Turzanska",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Malgosia-Turzanska.jpg",
-                                "alt": "Malgosia Turzanska"
-                            }
+                    "crew": [
+                        {
+                            "id": "crew-013",
+                            "name": "Malgosia Turzanska",
+                            "role": "Costume Designer"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-039",
@@ -501,16 +492,13 @@
                             "alt": "Marty Supreme poster"
                         }
                     },
-                    "person": {
-                        "id": "person-034",
-                        "name": "Miyako Bellizzi",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Miyako-Bellizzi.jpg",
-                                "alt": "Miyako Bellizzi"
-                            }
+                    "crew": [
+                        {
+                            "id": "crew-014",
+                            "name": "Miyako Bellizzi",
+                            "role": "Costume Designer"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-040",
@@ -522,16 +510,13 @@
                             "alt": "Sinners poster"
                         }
                     },
-                    "person": {
-                        "id": "person-035",
-                        "name": "Ruth E. Carter",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Ruth-E-Carter.jpg",
-                                "alt": "Ruth E. Carter"
-                            }
+                    "crew": [
+                        {
+                            "id": "crew-015",
+                            "name": "Ruth E. Carter",
+                            "role": "Costume Designer"
                         }
-                    }
+                    ]
                 }
             ],
             "winners": {
@@ -1386,7 +1371,8 @@
                         }
                     },
                     "metadata": {
-                        "songTitle": "Dear Me"
+                        "songTitle": "Dear Me",
+                        "notes": "from Diane Warren: Relentless; Music and Lyric by Diane Warren"
                     },
                     "person": {
                         "id": "person-050",
@@ -1410,7 +1396,8 @@
                         }
                     },
                     "metadata": {
-                        "songTitle": "Golden"
+                        "songTitle": "Golden",
+                        "notes": "from KPop Demon Hunters; Music and Lyric by EJAE, Mark Sonnenblick, Joong Gyu Kwak, Yu Han Lee, Hee Dong Nam, Jeong Hoon Seo and Teddy Park"
                     },
                     "crew": [
                         {
@@ -1461,7 +1448,8 @@
                         }
                     },
                     "metadata": {
-                        "songTitle": "I Lied To You"
+                        "songTitle": "I Lied To You",
+                        "notes": "from Sinners; Music and Lyric by Raphael Saadiq and Ludwig Goransson"
                     },
                     "crew": [
                         {
@@ -1487,7 +1475,8 @@
                         }
                     },
                     "metadata": {
-                        "songTitle": "Sweet Dreams Of Joy"
+                        "songTitle": "Sweet Dreams Of Joy",
+                        "notes": "from Viva Verdi!; Music and Lyric by Nicholas Pike"
                     },
                     "person": {
                         "id": "person-051",
@@ -1511,7 +1500,8 @@
                         }
                     },
                     "metadata": {
-                        "songTitle": "Train Dreams"
+                        "songTitle": "Train Dreams",
+                        "notes": "from Train Dreams; Music by Nick Cave and Bryce Dessner; Lyric by Nick Cave"
                     },
                     "crew": [
                         {

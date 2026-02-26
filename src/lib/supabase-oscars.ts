@@ -1,6 +1,77 @@
 import { supabase } from './supabase';
 import type { OscarsData, Nominee } from '../components/Oscars/types';
 
+/** Vérifie si Supabase est configuré (URL et clé réelles) */
+export function isSupabaseConfigured(): boolean {
+  const url = import.meta.env.VITE_SUPABASE_URL;
+  const key = import.meta.env.VITE_SUPABASE_ANON_KEY;
+  return !!(url && key && url !== 'https://placeholder.supabase.co' && key !== 'placeholder-key');
+}
+
+/**
+ * Ajouter un vote pour un nominee (schéma 2026 : year + category_name + nominee_id)
+ * Utilise la table votes avec colonnes year, category_name, nominee_id, voter_id
+ */
+export async function addVoteForNominee(
+  year: number,
+  categoryName: string,
+  nomineeId: string,
+  voterId?: string
+): Promise<boolean> {
+  try {
+    const { error } = await supabase.from('oscars_votes').insert({
+      year,
+      category_name: categoryName,
+      nominee_id: nomineeId,
+      voter_id: voterId ?? `anon_${Date.now()}_${Math.random().toString(36).slice(2, 9)}`,
+    });
+
+    if (error) {
+      console.error('Error adding vote:', error);
+      return false;
+    }
+    return true;
+  } catch (err) {
+    console.error('Error adding vote:', err);
+    return false;
+  }
+}
+
+/**
+ * Obtenir les comptages de votes par nominee_id pour une catégorie (schéma 2026).
+ * Appelle la RPC get_vote_counts(year, category_name).
+ * Retourne un objet { [nomineeId]: count } pour affichage dans les cards.
+ */
+export async function getVoteCountsByCategory(
+  year: number,
+  categoryName: string
+): Promise<Record<string, number>> {
+  try {
+    const { data, error } = await supabase.rpc('get_vote_counts', {
+      p_year: year,
+      p_category_name: categoryName,
+    });
+
+    if (error) {
+      console.error('Error fetching vote counts:', error);
+      return {};
+    }
+
+    const stats: Record<string, number> = {};
+    if (Array.isArray(data)) {
+      for (const row of data as { nominee_id: string; vote_count: number }[]) {
+        if (row?.nominee_id != null) {
+          stats[row.nominee_id] = Number(row.vote_count) || 0;
+        }
+      }
+    }
+    return stats;
+  } catch (err) {
+    console.error('Error fetching vote counts:', err);
+    return {};
+  }
+}
+
 /**
  * Types pour la base de données Supabase
  */
