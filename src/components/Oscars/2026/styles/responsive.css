@@ -1,13 +1,14 @@
 @media (max-width: 768px) {
-  /* Dès 768px : section scrollable + barre boutons sticky sur mobile */
+  /*
+   * Un seul scroll (document) pour garder le scroll-snap sans conflit.
+   * La section prend la hauteur de son contenu, pas de scroll interne.
+   */
   .category-section-2026 {
     padding: 2.5vh 3vw 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
+    overflow: visible;
     min-height: 100dvh;
     height: auto;
-    max-height: 100dvh;
+    max-height: none;
     align-items: flex-start;
   }
 
@@ -69,12 +70,10 @@
   /* Section scrollable, moins d’espace perdu en haut */
   .category-section-2026 {
     padding: 2vh 3vw 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
+    overflow: visible;
     min-height: 100dvh;
     height: auto;
-    max-height: 100dvh;
+    max-height: none;
     align-items: flex-start;
   }
 
