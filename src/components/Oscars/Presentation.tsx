@@ -1,28 +1,30 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { YearSelector } from './shared/YearSelector';
 import { Presentation2025 } from './2025/Presentation';
 import { Presentation2026 } from './2026/Presentation';
 
-type YearComponentMap = {
-  2025: React.ComponentType;
-  2026: React.ComponentType;
-};
-
-const yearComponents: YearComponentMap = {
-  2025: Presentation2025,
-  2026: Presentation2026,
-};
-
 export const Presentation = () => {
   const [selectedYear, setSelectedYear] = useState<2025 | 2026>(2026);
+  const [showYearSelector, setShowYearSelector] = useState(true);
 
-  const YearComponent = yearComponents[selectedYear];
+  useEffect(() => {
+    if (selectedYear === 2025) setShowYearSelector(true);
+  }, [selectedYear]);
+
+  const handleSectionChange = (show: boolean) => {
+    setShowYearSelector(show);
+  };
 
   return (
     <>
-      <YearSelector selectedYear={selectedYear} onYearChange={setSelectedYear} />
-      <YearComponent />
+      {showYearSelector && (
+        <YearSelector selectedYear={selectedYear} onYearChange={setSelectedYear} />
+      )}
+      {selectedYear === 2025 && <Presentation2025 />}
+      {selectedYear === 2026 && (
+        <Presentation2026 onActiveSectionChange={handleSectionChange} />
+      )}
     </>
   );
 };

@@ -15,7 +15,11 @@ import {
   getNomineeImagePaths,
 } from './utils';
 
-export const Presentation2026 = () => {
+type Presentation2026Props = {
+  onActiveSectionChange?: (showYearSelector: boolean) => void;
+};
+
+export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Props = {}) => {
   const [scrollY, setScrollY] = useState(0);
   const [activeSection, setActiveSection] = useState(0);
   const [highlightedWinners, setHighlightedWinners] = useState<{ [key: string]: boolean }>({});
@@ -113,7 +117,12 @@ export const Presentation2026 = () => {
   useEffect(() => {
     const sectionHeight = window.innerHeight;
     const currentSection = Math.floor(scrollY / sectionHeight);
-    setActiveSection(Math.min(currentSection, categories.length + 1));
+    const section = Math.min(currentSection, categories.length + 1);
+    setActiveSection(section);
+
+    const totalSections = categories.length + 2;
+    const isFirstOrLast = section === 0 || section === totalSections - 1;
+    onActiveSectionChange?.(isFirstOrLast);
 
     const introSection = document.querySelector('.intro-section');
     if (introSection) {
@@ -123,7 +132,7 @@ export const Presentation2026 = () => {
         introSection.classList.remove('fade-out');
       }
     }
-  }, [scrollY, categories.length]);
+  }, [scrollY, categories.length, onActiveSectionChange]);
 
   const navigateToSection = (index: number) => {
     if (sectionRefs.current[index]) {
