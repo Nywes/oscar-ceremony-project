@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from 'react';
 import './styles/index.css';
 import oscarsData2026Json from './oscars-data-2026.json';
 import { YouTubeModal } from '../shared/YouTubeModal';
-import { MissingPoster } from '../shared/MissingPoster';
 import { IntroSection } from './IntroSection';
 import { CategorySection } from './CategorySection';
 import { ThanksSection } from './ThanksSection';
@@ -23,14 +22,10 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
   const [scrollY, setScrollY] = useState(0);
   const [activeSection, setActiveSection] = useState(0);
   const [highlightedWinners, setHighlightedWinners] = useState<{ [key: string]: boolean }>({});
-  const [showingReveal, setShowingReveal] = useState<string | null>(null);
-  const [animatedCategories, setAnimatedCategories] = useState<{ [key: string]: boolean }>({});
-  const [lastScrollY, setLastScrollY] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
   const [validImagePaths, setValidImagePaths] = useState<{ [key: string]: boolean }>({});
   const [currentImageIndices, setCurrentImageIndices] = useState<{ [key: string]: number }>({});
+  const [actorRotationPhase, setActorRotationPhase] = useState(0);
   const sectionRefs = useRef<(HTMLElement | null)[]>([]);
-  const scrollTimeout = useRef<number | undefined>(undefined);
   const [selectedVideoId, setSelectedVideoId] = useState<string | null>(null);
   const [language, setLanguage] = useState<'fr' | 'en'>('fr');
 
@@ -82,37 +77,23 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      const scrollDiff = Math.abs(currentScrollY - lastScrollY);
-
-      if (isAnimating && scrollDiff > 50) {
-        if (showingReveal) {
-          handleRevealComplete();
-        }
-      }
-
-      setLastScrollY(currentScrollY);
-      setScrollY(currentScrollY);
-
-      if (scrollTimeout.current) {
-        window.clearTimeout(scrollTimeout.current);
-      }
-
-      scrollTimeout.current = window.setTimeout(() => {
-        setLastScrollY(window.scrollY);
-      }, 150);
+      setScrollY(window.scrollY);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      if (scrollTimeout.current) {
-        window.clearTimeout(scrollTimeout.current);
-      }
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [lastScrollY, isAnimating, showingReveal]);
+  }, []);
+
+  // Rotation synchronisée des images d'acteurs : toutes les cartes flip en même temps
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActorRotationPhase((prev) => (prev === 0 ? 1 : 0));
+    }, 6000);
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     const sectionHeight = window.innerHeight;
@@ -145,49 +126,22 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
 
   const revealWinner = (categoryName: string) => {
     const isCurrentlyRevealed = highlightedWinners[categoryName];
-    
+
     if (isCurrentlyRevealed) {
       setHighlightedWinners((prev) => {
         const newState = { ...prev };
         delete newState[categoryName];
         return newState;
       });
-      setShowingReveal(null);
       return;
     }
 
-    const categoryIndex = categories.findIndex((cat) => cat.name === categoryName);
-    const isLastFourCategories = categoryIndex >= categories.length - 4;
-
-    if (!animatedCategories[categoryName] && isLastFourCategories) {
-      setShowingReveal(categoryName);
-      setIsAnimating(true);
-      setAnimatedCategories((prev) => ({
-        ...prev,
-        [categoryName]: true,
-      }));
-    } else {
-      setHighlightedWinners((prev) => ({
-        ...prev,
-        [categoryName]: true,
-      }));
-      if (categoryName === 'Music (Original Score)') {
-        setSelectedVideoId('2TAZJHgGt_c');
-      }
-    }
-  };
-
-  const handleRevealComplete = () => {
-    if (showingReveal) {
-      setHighlightedWinners((prev) => ({
-        ...prev,
-        [showingReveal]: true,
-      }));
-      if (showingReveal === 'Music (Original Score)') {
-        setSelectedVideoId('2TAZJHgGt_c');
-      }
-      setShowingReveal(null);
-      setIsAnimating(false);
+    setHighlightedWinners((prev) => ({
+      ...prev,
+      [categoryName]: true,
+    }));
+    if (categoryName === 'Music (Original Score)') {
+      setSelectedVideoId('2TAZJHgGt_c');
     }
   };
 
@@ -424,13 +378,12 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
           sectionRef={assignRef(index + 1)}
           isWinner={isWinner}
           highlightedWinners={highlightedWinners}
-          showingReveal={showingReveal}
           onRevealClick={revealWinner}
-          onRevealComplete={handleRevealComplete}
           onNomineeClick={handleNomineeClick}
           getActorImagePath={getActorImagePathSync}
           getFilmImagePath={(filmName) => getFilmImagePathSync(filmName, validImagePaths)}
           currentImageIndices={currentImageIndices}
+          actorRotationPhase={actorRotationPhase}
           year={year}
         />
       ))}
@@ -443,15 +396,6 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
       />
 
       <YouTubeModal videoId={selectedVideoId} onClose={handleModalClose} />
-      <footer className="oscars-footer">
-        <div className="missing-poster-container pt-40" style={{ margin: '40px auto' }}>
-          <MissingPoster
-            name="CHALLENGERS"
-            lastSeen="APRIL 29, 2024"
-            photoUrl="/films/Challengers.jpg"
-          />
-        </div>
-      </footer>
     </div>
   );
 };
