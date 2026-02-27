@@ -57,13 +57,6 @@ export const NomineeCard = ({
     return '';
   };
 
-  const needsSmallDescription = [
-    'Sound',
-    'Visual Effects',
-    'Makeup and Hairstyling',
-    'Music (Original Song)',
-  ].includes(categoryName);
-
   const notSeen = nominee.metadata?.notSeen || false;
 
   // Vérifier si l'image secondaire existe pour les acteurs
@@ -137,7 +130,7 @@ export const NomineeCard = ({
     <div data-actor={nominee.person?.name} className={cardClasses} onClick={handleCardClick}>
       <div className="nominee-info-2026 nominee-info-grid-1">
         <div className="nominee-title">{getNomineeTitle()}</div>
-        <div className={needsSmallDescription ? 'nominee-description-sm' : 'nominee-description'}>
+        <div className="nominee-description">
           {getNomineeDescription()}
         </div>
       </div>
