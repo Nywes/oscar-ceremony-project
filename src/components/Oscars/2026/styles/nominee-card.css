@@ -1,51 +1,60 @@
 /* 2026 Grid Layout for Nominee Cards */
 .nominee-card-2026 {
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr auto min(10vh, 70px);
+  grid-template-columns: 1fr min(10vh, 70px);
   grid-template-rows: 1fr;
   gap: 0;
   align-items: center;
   padding: 0;
-  min-height: min(12vh, 90px);
+  height: min(13vh, 100px);
+  min-height: min(13vh, 100px);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  overflow: visible;
+  overflow: hidden;
   border-radius: 12px;
   border: 1px solid rgba(212, 175, 55, 0.3);
-  height: auto;
 }
 
 .nominee-card-2026.with-film-image {
-  grid-template-columns: 1fr auto calc(min(12vh, 90px) * 0.667);
+  grid-template-columns: 1fr calc(min(13vh, 100px) * 0.667);
 }
 
 .nominee-info-grid-1 {
   grid-column: 1;
-  padding: 1vh 4vw;
+  padding: 0.75vh 4vw 1.2vh 9vw;
   min-width: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   height: 100%;
-  overflow: visible;
+  overflow: hidden;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  container-type: inline-size;
-  container-name: card-text;
 }
 
+/* Votes en overlay : centrés dans l'espace entre texte (9vw) et image */
 .nominee-info-grid-2 {
-  grid-column: 2;
+  position: absolute;
+  left: calc(100% - min(10vh, 70px) - 9vw);
+  right: min(10vh, 70px);
+  top: 0;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 1rem;
-  height: 100%;
-  margin-right: 0.5rem;
+  padding: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.nominee-card-2026.with-film-image .nominee-info-grid-2 {
+  left: calc(100% - min(13vh, 100px) * 0.667 - 9vw);
+  right: calc(min(13vh, 100px) * 0.667);
 }
 
 .nominee-info-grid-3 {
-  grid-column: 3;
+  grid-column: 2;
   width: min(10vh, 70px);
   min-width: min(10vh, 70px);
   height: min(10vh, 70px);
@@ -82,10 +91,10 @@
 }
 
 .nominee-image-2026.film-image {
-  width: calc(min(12vh, 90px) * 0.667);
-  height: calc(min(12vh, 90px) * 0.667);
-  min-width: calc(min(12vh, 90px) * 0.667);
-  min-height: calc(min(12vh, 90px) * 0.667);
+  width: calc(min(13vh, 100px) * 0.667);
+  height: calc(min(13vh, 100px) * 0.667);
+  min-width: calc(min(13vh, 100px) * 0.667);
+  min-height: calc(min(13vh, 100px) * 0.667);
   object-fit: cover;
   object-position: center;
   border-radius: 12px;
@@ -97,6 +106,11 @@
   align-items: center;
   justify-content: center;
   min-width: 0;
+}
+
+/* Masquer la div votes quand vide pour éviter espace résiduel */
+.nominee-info-grid-2:empty {
+  display: none;
 }
 
 .nominee-card-2026 .nominee-image,
@@ -178,24 +192,25 @@
   box-shadow: none !important;
 }
 
-/* Tailles de base plus grandes pour mieux remplir l'espace disponible */
+/* Tailles ajustées pour tenir dans la hauteur fixe de la carte */
 .nominee-title {
   font-family: 'Futura PT Medium', 'Futura', sans-serif;
-  font-size: min(4.5vw, 1.4rem);
-  margin-bottom: 0.5vh;
+  font-size: min(4vw, 1.15rem);
+  margin-bottom: 0.2rem;
   color: var(--oscar-gold);
   position: relative;
   z-index: 2;
   text-align: left;
   width: 100%;
-  line-height: 1.25;
+  line-height: 1.2;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  flex-shrink: 0;
 }
 
 .nominee-description {
   font-family: 'Futura PT Light Book', 'Futura', sans-serif;
-  font-size: min(3.8vw, 1.15rem);
+  font-size: min(2.8vw, 0.75rem);
   color: var(--oscar-black);
   font-style: italic;
   position: relative;
@@ -203,44 +218,16 @@
   text-align: left;
   opacity: 0.8;
   width: 100%;
-  line-height: 1.25;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   word-wrap: break-word;
   overflow-wrap: break-word;
-}
-
-.nominee-description-sm {
-  font-family: 'Futura PT Light Book', 'Futura', sans-serif;
-  font-size: min(2.8vw, 1rem);
-  color: var(--oscar-black);
-  font-style: italic;
-  position: relative;
-  z-index: 2;
-  text-align: left;
-  opacity: 0.8;
-  width: 100%;
-  line-height: 1.25;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-/* Réduction uniquement quand l'espace texte est restreint (évite texte coupé) */
-@container card-text (max-width: 260px) {
-  .nominee-title {
-    font-size: min(3.2vw, 0.98rem);
-  }
-  .nominee-description,
-  .nominee-description-sm {
-    font-size: min(2.7vw, 0.88rem);
-  }
-}
-@container card-text (max-width: 200px) {
-  .nominee-title {
-    font-size: min(2.8vw, 0.82rem);
-  }
-  .nominee-description,
-  .nominee-description-sm {
-    font-size: min(2.2vw, 0.78rem);
-  }
+  min-height: 0;
+  padding-bottom: 0.15em;
 }
 
 .not-seen-card {

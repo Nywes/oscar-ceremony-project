@@ -1,6 +1,5 @@
 import './styles/index.css';
 import type { Category2026, Nominee2026 } from './types';
-import { OscarReveal } from '../shared/OscarReveal';
 import { NomineeCard } from './NomineeCard';
 import { useVoting } from '../shared/useVoting';
 
@@ -11,13 +10,12 @@ type CategorySectionProps = {
   sectionRef: (el: HTMLElement | null) => void;
   isWinner: (categoryName: string, nominee: Nominee2026) => boolean;
   highlightedWinners: { [key: string]: boolean };
-  showingReveal: string | null;
   onRevealClick: (categoryName: string) => void;
-  onRevealComplete: () => void;
   onNomineeClick: (nominee: Nominee2026) => void;
   getActorImagePath: (actorName: string | undefined, index: number) => string | undefined;
   getFilmImagePath: (filmName: string | undefined) => string | undefined;
   currentImageIndices: { [key: string]: number };
+  actorRotationPhase: number;
   year: number;
 };
 
@@ -28,13 +26,12 @@ export const CategorySection = ({
   sectionRef,
   isWinner,
   highlightedWinners,
-  showingReveal,
   onRevealClick,
-  onRevealComplete,
   onNomineeClick,
   getActorImagePath,
   getFilmImagePath,
   currentImageIndices,
+  actorRotationPhase,
   year,
 }: CategorySectionProps) => {
   const {
@@ -54,7 +51,7 @@ export const CategorySection = ({
 
   return (
     <section
-      className={`category-section-2026 ${isActive ? 'active' : ''}`}
+      className={`category-section-2026 ${category.name === 'Best Picture' ? 'category-best-picture' : ''} ${isActive ? 'active' : ''}`}
       id={`section-${index + 1}`}
       ref={sectionRef}
     >
@@ -95,6 +92,7 @@ export const CategorySection = ({
                 onSelect={() => selectNominee(nominee.id)}
                 voteCount={voteStats[nominee.id] || 0}
                 showVoteCount={showResults || hasVoted}
+                actorRotationPhase={actorRotationPhase}
               />
             );
           })}
@@ -103,7 +101,7 @@ export const CategorySection = ({
         <div className="category-actions">
           <button
             className={`reveal-winner-btn-2026 ${
-              showingReveal === category.name || highlightedWinners[category.name] ? 'revealed' : ''
+              highlightedWinners[category.name] ? 'revealed' : ''
             }`}
             onClick={() => onRevealClick(category.name)}
             disabled={!category.winners.my_choice}
@@ -133,10 +131,6 @@ export const CategorySection = ({
             )}
           </div>
         </div>
-
-        {showingReveal === category.name && (
-          <OscarReveal isActive={true} onAnimationComplete={onRevealComplete} />
-        )}
       </div>
     </section>
   );

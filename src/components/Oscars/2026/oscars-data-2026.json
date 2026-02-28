@@ -1,142 +1,142 @@
 {
-    "year": 2026,
-    "categories": [
+"year": 2026,
+"categories": [
+    {
+    "id": "actor-supporting-role",
+    "name": "Actor in a Supporting Role",
+    "nominees": [
         {
-            "id": "actor-supporting-role",
-            "name": "Actor in a Supporting Role",
-            "nominees": [
-                {
                     "id": "nominee-006",
-                    "film": {
+            "film": {
                         "id": "film-002",
                         "title": "One Battle after Another",
-                        "poster": {
+                "poster": {
                             "path": "/films/2026/One-Battle-after-Another.jpg",
                             "alt": "One Battle after Another poster"
-                        }
-                    },
-                    "person": {
+                }
+            },
+            "person": {
                         "id": "person-006",
                         "name": "Benicio Del Toro",
-                        "images": {
-                            "primary": {
+                "images": {
+                    "primary": {
                                 "path": "/actors/2026/Benicio-Del-Toro.jpg",
                                 "alt": "Benicio Del Toro"
-                            },
-                            "secondary": {
+                    },
+                    "secondary": {
                                 "path": "/actors/2026/Benicio-Del-Toro-1.jpg",
                                 "alt": "Benicio Del Toro - alternate"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-007",
-                    "film": {
-                        "id": "film-006",
-                        "title": "Frankenstein",
-                        "poster": {
-                            "path": "/films/2026/Frankenstein.jpg",
-                            "alt": "Frankenstein poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-007",
-                        "name": "Jacob Elordi",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Jacob-Elordi.jpg",
-                                "alt": "Jacob Elordi"
-                            },
-                            "secondary": {
-                                "path": "/actors/2026/Jacob-Elordi-1.jpg",
-                                "alt": "Jacob Elordi - alternate"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-008",
-                    "film": {
-                        "id": "film-004",
-                        "title": "Sinners",
-                        "poster": {
-                            "path": "/films/2026/Sinners.jpg",
-                            "alt": "Sinners poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-008",
-                        "name": "Delroy Lindo",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Delroy-Lindo.jpg",
-                                "alt": "Delroy Lindo"
-                            },
-                            "secondary": {
-                                "path": "/actors/2026/Delroy-Lindo-1.jpg",
-                                "alt": "Delroy Lindo - alternate"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-009",
-                    "film": {
-                        "id": "film-002",
-                        "title": "One Battle after Another",
-                        "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-009",
-                        "name": "Sean Penn",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Sean-Penn.jpg",
-                                "alt": "Sean Penn"
-                            },
-                            "secondary": {
-                                "path": "/actors/2026/Sean-Penn-1.jpg",
-                                "alt": "Sean Penn - alternate"
-                            }
-                        }
-                    }
-                },
-                {
-                    "id": "nominee-010",
-                    "film": {
-                        "id": "film-007",
-                        "title": "Sentimental Value",
-                        "poster": {
-                            "path": "/films/2026/Sentimental-Value.jpg",
-                            "alt": "Sentimental Value poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-010",
-                        "name": "Stellan Skarsgård",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Stellan-Skarsgard.jpg",
-                                "alt": "Stellan Skarsgård"
-                            },
-                            "secondary": {
-                                "path": "/actors/2026/Stellan-Skarsgard-1.jpg",
-                                "alt": "Stellan Skarsgård - alternate"
-                            }
-                        }
                     }
                 }
-            ],
-            "winners": {
-                "my_choice": "nominee-009",
-                "official": null
             }
         },
         {
+                    "id": "nominee-007",
+            "film": {
+                        "id": "film-006",
+                        "title": "Frankenstein",
+                "poster": {
+                            "path": "/films/2026/Frankenstein.jpg",
+                            "alt": "Frankenstein poster"
+                }
+            },
+            "person": {
+                        "id": "person-007",
+                        "name": "Jacob Elordi",
+                "images": {
+                    "primary": {
+                                "path": "/actors/2026/Jacob-Elordi.jpg",
+                                "alt": "Jacob Elordi"
+                    },
+                    "secondary": {
+                                "path": "/actors/2026/Jacob-Elordi-1.jpg",
+                                "alt": "Jacob Elordi - alternate"
+                    }
+                }
+            }
+        },
+        {
+                    "id": "nominee-008",
+            "film": {
+                        "id": "film-004",
+                        "title": "Sinners",
+                "poster": {
+                            "path": "/films/2026/Sinners.jpg",
+                            "alt": "Sinners poster"
+                }
+            },
+            "person": {
+                        "id": "person-008",
+                        "name": "Delroy Lindo",
+                "images": {
+                    "primary": {
+                                "path": "/actors/2026/Delroy-Lindo.jpg",
+                                "alt": "Delroy Lindo"
+                    },
+                    "secondary": {
+                                "path": "/actors/2026/Delroy-Lindo-1.jpg",
+                                "alt": "Delroy Lindo - alternate"
+                    }
+                }
+            }
+        },
+        {
+                    "id": "nominee-009",
+            "film": {
+                        "id": "film-002",
+                        "title": "One Battle after Another",
+                "poster": {
+                            "path": "/films/2026/One-Battle-after-Another.jpg",
+                            "alt": "One Battle after Another poster"
+                }
+            },
+            "person": {
+                        "id": "person-009",
+                        "name": "Sean Penn",
+                "images": {
+                    "primary": {
+                                "path": "/actors/2026/Sean-Penn.jpg",
+                                "alt": "Sean Penn"
+                    },
+                    "secondary": {
+                                "path": "/actors/2026/Sean-Penn-1.jpg",
+                                "alt": "Sean Penn - alternate"
+                    }
+                }
+            }
+        },
+        {
+                    "id": "nominee-010",
+            "film": {
+                        "id": "film-007",
+                        "title": "Sentimental Value",
+                "poster": {
+                            "path": "/films/2026/Sentimental-Value.jpg",
+                            "alt": "Sentimental Value poster"
+                }
+            },
+            "person": {
+                        "id": "person-010",
+                        "name": "Stellan Skarsgård",
+                "images": {
+                    "primary": {
+                                "path": "/actors/2026/Stellan-Skarsgard.jpg",
+                                "alt": "Stellan Skarsgård"
+                    },
+                    "secondary": {
+                                "path": "/actors/2026/Stellan-Skarsgard-1.jpg",
+                                "alt": "Stellan Skarsgård - alternate"
+                    }
+                }
+            }
+        }
+    ],
+    "winners": {
+                "my_choice": "nominee-009",
+        "official": null
+    }
+},
+{
             "id": "animated-feature",
             "name": "Animated Feature Film",
             "nominees": [
@@ -296,12 +296,12 @@
                     ]
                 }
             ],
-            "winners": {
+    "winners": {
                 "my_choice": "nominee-024",
-                "official": null
-            }
-        },
-        {
+        "official": null
+    }
+},
+{
             "id": "animated-short",
             "name": "Animated Short Film",
             "nominees": [
@@ -419,12 +419,12 @@
                     }
                 }
             ],
-            "winners": {
-                "my_choice": null,
-                "official": null
-            }
-        },
-        {
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
             "id": "costume-design",
             "name": "Costume Design",
             "nominees": [
@@ -519,14 +519,14 @@
                     ]
                 }
             ],
-            "winners": {
+    "winners": {
                 "my_choice": "nominee-037",
-                "official": null
-            }
-        },
-        {
-            "id": "writing-original",
-            "name": "Writing (Original Screenplay)",
+        "official": null
+    }
+},
+{
+    "id": "writing-original",
+    "name": "Writing (Original Screenplay)",
             "nominees": [
                 {
                     "id": "nominee-101",
@@ -644,7 +644,7 @@
                     ]
                 }
             ],
-            "winners": {
+    "winners": {
                 "my_choice": "nominee-104",
                 "official": null
             }
@@ -756,12 +756,12 @@
             ],
             "winners": {
                 "my_choice": "nominee-098",
-                "official": null
-            }
-        },
-        {
-            "id": "makeup-hairstyling",
-            "name": "Makeup and Hairstyling",
+        "official": null
+    }
+},
+{
+    "id": "makeup-hairstyling",
+    "name": "Makeup and Hairstyling",
             "nominees": [
                 {
                     "id": "nominee-056",
@@ -899,12 +899,12 @@
                     ]
                 }
             ],
-            "winners": {
+    "winners": {
                 "my_choice": "nominee-056",
-                "official": null
-            }
-        },
-        {
+        "official": null
+    }
+},
+{
             "id": "film-editing",
             "name": "Film Editing",
             "nominees": [
@@ -1004,12 +1004,12 @@
                     ]
                 }
             ],
-            "winners": {
+    "winners": {
                 "my_choice": "nominee-048",
-                "official": null
-            }
-        },
-        {
+        "official": null
+    }
+},
+{
             "id": "actress-supporting-role",
             "name": "Actress in a Supporting Role",
             "nominees": [
@@ -1139,14 +1139,14 @@
                     }
                 }
             ],
-            "winners": {
+    "winners": {
                 "my_choice": "nominee-020",
-                "official": null
-            }
-        },
-        {
-            "id": "sound",
-            "name": "Sound",
+        "official": null
+    }
+},
+{
+    "id": "sound",
+    "name": "Sound",
             "nominees": [
                 {
                     "id": "nominee-086",
@@ -1319,12 +1319,12 @@
                     ]
                 }
             ],
-            "winners": {
+    "winners": {
                 "my_choice": "nominee-089",
-                "official": null
-            }
-        },
-        {
+        "official": null
+    }
+},
+{
             "id": "music-song",
             "name": "Music (Original Song)",
             "nominees": [
@@ -1485,12 +1485,12 @@
                     ]
                 }
             ],
-            "winners": {
+    "winners": {
                 "my_choice": "nominee-068",
-                "official": null
-            }
-        },
-        {
+        "official": null
+    }
+},
+{
             "id": "documentary-short",
             "name": "Documentary Short Film",
             "nominees": [
@@ -1608,12 +1608,12 @@
                     }
                 }
             ],
-            "winners": {
-                "my_choice": null,
-                "official": null
-            }
-        },
-        {
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
             "id": "documentary-feature",
             "name": "Documentary Feature Film",
             "nominees": [
@@ -1744,11 +1744,11 @@
                     ]
                 }
             ],
-            "winners": {
-                "my_choice": null,
-                "official": null
-            }
-        },
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
         {
             "id": "production-design",
             "name": "Production Design",
@@ -2049,9 +2049,9 @@
                 "official": null
             }
         },
-        {
-            "id": "international-feature",
-            "name": "International Feature Film",
+{
+    "id": "international-feature",
+    "name": "International Feature Film",
             "nominees": [
                 {
                     "id": "nominee-051",
@@ -2124,12 +2124,12 @@
                     }
                 }
             ],
-            "winners": {
+    "winners": {
                 "my_choice": "nominee-053",
-                "official": null
-            }
-        },
-        {
+        "official": null
+    }
+},
+{
             "id": "live-action-short",
             "name": "Live Action Short Film",
             "nominees": [
@@ -2249,12 +2249,12 @@
                     ]
                 }
             ],
-            "winners": {
-                "my_choice": null,
-                "official": null
-            }
-        },
-        {
+    "winners": {
+        "my_choice": null,
+        "official": null
+    }
+},
+{
             "id": "cinematography",
             "name": "Cinematography",
             "nominees": [
@@ -2349,12 +2349,12 @@
                     ]
                 }
             ],
-            "winners": {
+    "winners": {
                 "my_choice": "nominee-031",
-                "official": null
-            }
-        },
-        {
+        "official": null
+    }
+},
+{
             "id": "music-score",
             "name": "Music (Original Score)",
             "nominees": [
@@ -2449,12 +2449,12 @@
                     ]
                 }
             ],
-            "winners": {
+    "winners": {
                 "my_choice": "nominee-065",
-                "official": null
-            }
-        },
-        {
+        "official": null
+    }
+},
+{
             "id": "actor-leading-role",
             "name": "Actor in a Leading Role",
             "nominees": [
@@ -2584,14 +2584,14 @@
                     }
                 }
             ],
-            "winners": {
+    "winners": {
                 "my_choice": "nominee-001",
-                "official": null
-            }
-        },
-        {
-            "id": "directing",
-            "name": "Directing",
+        "official": null
+    }
+},
+{
+    "id": "directing",
+    "name": "Directing",
             "nominees": [
                 {
                     "id": "nominee-041",
@@ -2719,7 +2719,7 @@
                     }
                 }
             ],
-            "winners": {
+    "winners": {
                 "my_choice": "nominee-043",
                 "official": null
             }
@@ -2856,12 +2856,12 @@
             ],
             "winners": {
                 "my_choice": "nominee-011",
-                "official": null
-            }
-        },
-        {
-            "id": "best-picture",
-            "name": "Best Picture",
+        "official": null
+    }
+},
+{
+    "id": "best-picture",
+    "name": "Best Picture",
             "nominees": [
                 {
                     "id": "nominee-071",
@@ -2974,10 +2974,10 @@
                     }
                 }
             ],
-            "winners": {
+    "winners": {
                 "my_choice": "nominee-078",
-                "official": null
-            }
-        }
-    ]
+        "official": null
+    }
+}
+]
 }

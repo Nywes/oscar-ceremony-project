@@ -16,6 +16,7 @@ type NomineeCardProps = {
   onSelect?: () => void;
   voteCount?: number;
   showVoteCount?: boolean;
+  actorRotationPhase?: number;
 };
 
 export const NomineeCard = ({
@@ -31,12 +32,13 @@ export const NomineeCard = ({
   onSelect,
   voteCount = 0,
   showVoteCount = false,
+  actorRotationPhase = 0,
 }: NomineeCardProps) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [displayedIndex, setDisplayedIndex] = useState(actorRotationPhase);
   const [hasSecondaryImage, setHasSecondaryImage] = useState(false);
   const [isFlipping, setIsFlipping] = useState(false);
   const imageRef = useRef<HTMLImageElement>(null);
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const prevPhaseRef = useRef(actorRotationPhase);
   const getNomineeTitle = () => {
     // Cas spécial : Music (Original Song) → on affiche le titre de la chanson
     if (categoryName === 'Music (Original Song)' && nominee.metadata?.songTitle) {
@@ -57,13 +59,6 @@ export const NomineeCard = ({
     return '';
   };
 
-  const needsSmallDescription = [
-    'Sound',
-    'Visual Effects',
-    'Makeup and Hairstyling',
-    'Music (Original Song)',
-  ].includes(categoryName);
-
   const notSeen = nominee.metadata?.notSeen || false;
 
   // Vérifier si l'image secondaire existe pour les acteurs
@@ -78,33 +73,32 @@ export const NomineeCard = ({
     }
   }, [nominee.person, actorImagePath]);
 
-  // Rotation automatique des images toutes les 6 secondes
+  // Synchronisation avec la phase globale : flip quand phase change
   useEffect(() => {
-    if (nominee.person && hasSecondaryImage) {
-      intervalRef.current = setInterval(() => {
-        setIsFlipping(true);
-        // Changer l'image au milieu de l'animation (quand elle est à 90 degrés)
-        setTimeout(() => {
-          setCurrentImageIndex((prev) => (prev === 0 ? 1 : 0));
-        }, 600); // Au milieu de l'animation (1200ms / 2)
-        // Réinitialiser l'état de flip après l'animation complète
-        setTimeout(() => {
-          setIsFlipping(false);
-        }, 1200); // Durée complète de l'animation (plus lente)
-      }, 6000); // 6 secondes
-
+    if (nominee.person && hasSecondaryImage && actorRotationPhase !== prevPhaseRef.current) {
+      prevPhaseRef.current = actorRotationPhase;
+      setIsFlipping(true);
+      const t1 = setTimeout(() => setDisplayedIndex(actorRotationPhase), 600);
+      const t2 = setTimeout(() => setIsFlipping(false), 1200);
       return () => {
-        if (intervalRef.current) {
-          clearInterval(intervalRef.current);
-        }
+        clearTimeout(t1);
+        clearTimeout(t2);
       };
     }
-  }, [nominee.person, hasSecondaryImage]);
+  }, [actorRotationPhase, hasSecondaryImage, nominee.person]);
+
+  // Sync initiale quand l'image secondaire devient disponible
+  useEffect(() => {
+    if (hasSecondaryImage && nominee.person) {
+      setDisplayedIndex(actorRotationPhase);
+      prevPhaseRef.current = actorRotationPhase;
+    }
+  }, [hasSecondaryImage, nominee.person, actorRotationPhase]);
 
   // Obtenir le chemin de l'image actuelle
   const getCurrentImagePath = () => {
     if (!nominee.person) return filmImagePath;
-    return getActorImagePathSync(nominee.person.name, currentImageIndex) || actorImagePath;
+    return getActorImagePathSync(nominee.person.name, displayedIndex) || actorImagePath;
   };
 
   const handleCardClick = (e: React.MouseEvent) => {
@@ -121,6 +115,7 @@ export const NomineeCard = ({
   const cardClasses = [
     'nominee-card',
     'nominee-card-2026',
+    categoryName === 'Best Picture' && 'best-picture-card',
     isBothWinnerAndUserChoice && 'winner-user-choice-card',
     !isBothWinnerAndUserChoice && isWinner && 'winner-card',
     !isBothWinnerAndUserChoice && isUserChoice && 'user-choice-card',
@@ -137,7 +132,7 @@ export const NomineeCard = ({
     <div data-actor={nominee.person?.name} className={cardClasses} onClick={handleCardClick}>
       <div className="nominee-info-2026 nominee-info-grid-1">
         <div className="nominee-title">{getNomineeTitle()}</div>
-        <div className={needsSmallDescription ? 'nominee-description-sm' : 'nominee-description'}>
+        <div className="nominee-description">
           {getNomineeDescription()}
         </div>
       </div>
@@ -177,14 +172,35 @@ export const NomineeCard = ({
         </div>
       )}
       {!nominee.person && filmImagePath && (
-        <img
-          src={filmImagePath}
-          alt={nominee.film.title}
-          className="nominee-image film-image nominee-image-2026 nominee-info-grid-3"
-          onError={(e) => {
-            (e.target as HTMLImageElement).style.display = 'none';
-          }}
-        />
+        categoryName === 'Best Picture' ? (
+          <div className="best-picture-poster-wrapper">
+            <img
+              src={filmImagePath}
+              alt={nominee.film.title}
+              className="nominee-image film-image nominee-image-2026"
+              onError={(e) => {
+                (e.target as HTMLImageElement).style.display = 'none';
+              }}
+            />
+            <div className="nominee-votes-2026 nominee-info-grid-2 best-picture-votes">
+              {showVoteCount && (
+                <div className="vote-count-badge">
+                  <span className="vote-count-badge__number">{voteCount}</span>
+                  <span className="vote-count-badge__label">{voteCount === 1 ? 'vote' : 'votes'}</span>
+                </div>
+              )}
+            </div>
+          </div>
+        ) : (
+          <img
+            src={filmImagePath}
+            alt={nominee.film.title}
+            className="nominee-image film-image nominee-image-2026 nominee-info-grid-3"
+            onError={(e) => {
+              (e.target as HTMLImageElement).style.display = 'none';
+            }}
+          />
+        )
       )}
     </div>
   );
