@@ -132,9 +132,7 @@ export const NomineeCard = ({
     <div data-actor={nominee.person?.name} className={cardClasses} onClick={handleCardClick}>
       <div className="nominee-info-2026 nominee-info-grid-1">
         <div className="nominee-title">{getNomineeTitle()}</div>
-        <div className="nominee-description">
-          {getNomineeDescription()}
-        </div>
+        <div className="nominee-description">{getNomineeDescription()}</div>
       </div>
       <div className="nominee-votes-2026 nominee-info-grid-2">
         {showVoteCount && (
@@ -171,8 +169,9 @@ export const NomineeCard = ({
           />
         </div>
       )}
-      {!nominee.person && filmImagePath && (
-        categoryName === 'Best Picture' ? (
+      {!nominee.person &&
+        filmImagePath &&
+        (categoryName === 'Best Picture' ? (
           <div className="best-picture-poster-wrapper">
             <img
               src={filmImagePath}
@@ -186,7 +185,9 @@ export const NomineeCard = ({
               {showVoteCount && (
                 <div className="vote-count-badge">
                   <span className="vote-count-badge__number">{voteCount}</span>
-                  <span className="vote-count-badge__label">{voteCount === 1 ? 'vote' : 'votes'}</span>
+                  <span className="vote-count-badge__label">
+                    {voteCount === 1 ? 'vote' : 'votes'}
+                  </span>
                 </div>
               )}
             </div>
@@ -200,8 +201,7 @@ export const NomineeCard = ({
               (e.target as HTMLImageElement).style.display = 'none';
             }}
           />
-        )
-      )}
+        ))}
     </div>
   );
 };
