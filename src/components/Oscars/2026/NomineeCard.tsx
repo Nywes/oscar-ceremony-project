@@ -39,6 +39,8 @@ export const NomineeCard = ({
   const [isFlipping, setIsFlipping] = useState(false);
   const imageRef = useRef<HTMLImageElement>(null);
   const prevPhaseRef = useRef(actorRotationPhase);
+  const phaseRef = useRef(actorRotationPhase);
+  phaseRef.current = actorRotationPhase;
   const getNomineeTitle = () => {
     // Cas spécial : Music (Original Song) → on affiche le titre de la chanson
     if (categoryName === 'Music (Original Song)' && nominee.metadata?.songTitle) {
@@ -87,13 +89,14 @@ export const NomineeCard = ({
     }
   }, [actorRotationPhase, hasSecondaryImage, nominee.person]);
 
-  // Sync initiale quand l'image secondaire devient disponible
+  // Sync initiale uniquement quand l'image secondaire devient disponible (pas quand phase change)
   useEffect(() => {
     if (hasSecondaryImage && nominee.person) {
-      setDisplayedIndex(actorRotationPhase);
-      prevPhaseRef.current = actorRotationPhase;
+      const phase = phaseRef.current;
+      setDisplayedIndex(phase);
+      prevPhaseRef.current = phase;
     }
-  }, [hasSecondaryImage, nominee.person, actorRotationPhase]);
+  }, [hasSecondaryImage, nominee.person]);
 
   // Obtenir le chemin de l'image actuelle
   const getCurrentImagePath = () => {
