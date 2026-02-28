@@ -43,9 +43,11 @@
     z-index: 2;
   }
 
+  /* Taille réduite pour tenir sur 1 ligne (évite que les cartes soient coupées par les boutons) */
   .category-title-2026 {
-    font-size: 6.5vw;
+    font-size: 5.5vw;
     margin-bottom: 1vh;
+    white-space: nowrap;
   }
 
   .nominees-container-2026 {
@@ -97,11 +99,12 @@
     min-height: 0;
   }
 
-  /* Titre plus compact sur 2 lignes */
+  /* Titre sur 1 ligne : taille réduite pour petits écrans (ex: "ACTRESS IN A LEADING ROLE") */
   .category-title-2026 {
-    font-size: 6vw;
+    font-size: 5vw;
     margin-bottom: 1vh;
     line-height: 1.2;
+    white-space: nowrap;
   }
 
   .category-title-2026:after {
