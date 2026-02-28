@@ -51,7 +51,7 @@ export const CategorySection = ({
 
   return (
     <section
-      className={`category-section-2026 ${isActive ? 'active' : ''}`}
+      className={`category-section-2026 ${category.name === 'Best Picture' ? 'category-best-picture' : ''} ${isActive ? 'active' : ''}`}
       id={`section-${index + 1}`}
       ref={sectionRef}
     >

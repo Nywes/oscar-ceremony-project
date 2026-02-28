@@ -19,9 +19,14 @@
   }
 
   /* Liste des cartes en hauteur naturelle, pas de scroll interne */
-  .nominees-container-2026,
-  .best-picture-container-2026 {
+  .nominees-container-2026 {
     flex: 0 0 auto;
+    min-height: 0;
+  }
+
+  /* Best Picture : remplit l'écran sans scroll */
+  .category-best-picture .best-picture-container-2026 {
+    flex: 1;
     min-height: 0;
   }
 
@@ -57,8 +62,7 @@
   }
 
   .best-picture-container-2026 {
-    max-width: min(600px, 90vw);
-    gap: 1.2vh;
+    max-width: min(1200px, 95vw);
   }
 }
 
@@ -82,9 +86,14 @@
   }
 
   /* Liste des cartes en hauteur naturelle, pas de scroll interne */
-  .nominees-container-2026,
-  .best-picture-container-2026 {
+  .nominees-container-2026 {
     flex: 0 0 auto;
+    min-height: 0;
+  }
+
+  /* Best Picture : remplit l'écran sans scroll */
+  .category-best-picture .best-picture-container-2026 {
+    flex: 1;
     min-height: 0;
   }
 

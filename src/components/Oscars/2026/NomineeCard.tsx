@@ -115,6 +115,7 @@ export const NomineeCard = ({
   const cardClasses = [
     'nominee-card',
     'nominee-card-2026',
+    categoryName === 'Best Picture' && 'best-picture-card',
     isBothWinnerAndUserChoice && 'winner-user-choice-card',
     !isBothWinnerAndUserChoice && isWinner && 'winner-card',
     !isBothWinnerAndUserChoice && isUserChoice && 'user-choice-card',
@@ -171,14 +172,35 @@ export const NomineeCard = ({
         </div>
       )}
       {!nominee.person && filmImagePath && (
-        <img
-          src={filmImagePath}
-          alt={nominee.film.title}
-          className="nominee-image film-image nominee-image-2026 nominee-info-grid-3"
-          onError={(e) => {
-            (e.target as HTMLImageElement).style.display = 'none';
-          }}
-        />
+        categoryName === 'Best Picture' ? (
+          <div className="best-picture-poster-wrapper">
+            <img
+              src={filmImagePath}
+              alt={nominee.film.title}
+              className="nominee-image film-image nominee-image-2026"
+              onError={(e) => {
+                (e.target as HTMLImageElement).style.display = 'none';
+              }}
+            />
+            <div className="nominee-votes-2026 nominee-info-grid-2 best-picture-votes">
+              {showVoteCount && (
+                <div className="vote-count-badge">
+                  <span className="vote-count-badge__number">{voteCount}</span>
+                  <span className="vote-count-badge__label">{voteCount === 1 ? 'vote' : 'votes'}</span>
+                </div>
+              )}
+            </div>
+          </div>
+        ) : (
+          <img
+            src={filmImagePath}
+            alt={nominee.film.title}
+            className="nominee-image film-image nominee-image-2026 nominee-info-grid-3"
+            onError={(e) => {
+              (e.target as HTMLImageElement).style.display = 'none';
+            }}
+          />
+        )
       )}
     </div>
   );
