@@ -79,6 +79,8 @@
   aspect-ratio: 1;
   min-width: 0;
   min-height: 0;
+  /* Isole l'animation du scroll-snap : évite que le flip casse le scroll entre catégories sur mobile */
+  contain: layout;
 }
 
 .nominee-image-2026 {
