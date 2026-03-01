@@ -64,7 +64,7 @@
   aspect-ratio: 7 / 10;
   height: auto;
   padding: 0;
-  border-radius: 12px;
+  border-radius: 14px;
   overflow: hidden;
   box-shadow: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -76,12 +76,14 @@
   box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
 }
 
-/* Poster : remplit la carte, titre en overlay */
+/* Poster : remplit la carte avec border-radius intérieur pour ne pas dépasser la bordure */
 .best-picture-container-2026 .best-picture-card .best-picture-poster-wrapper {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
+  border-radius: 14px;
+  overflow: hidden;
 }
 
 .best-picture-container-2026 .best-picture-card .best-picture-poster-wrapper img {
@@ -113,29 +115,13 @@
   pointer-events: none;
 }
 
-/* Titre en overlay en bas */
+/* Masquer le titre et le gradient overlay */
 .best-picture-container-2026 .best-picture-card .nominee-info-grid-1 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0.4rem 0.35rem 0.3rem;
-  z-index: 2;
-  pointer-events: none;
+  display: none;
 }
 
-.best-picture-container-2026 .best-picture-card .nominee-title {
-  font-size: clamp(0.5rem, 1.6vw, 0.8rem);
-  font-weight: 600;
-  color: #fff;
-  text-align: center;
-  width: 100%;
-  line-height: 1.2;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  display: -webkit-box;
-  overflow: hidden;
+.best-picture-container-2026 .best-picture-card .best-picture-poster-wrapper::after {
+  display: none;
 }
 
 .best-picture-container-2026 .best-picture-card .nominee-description {
@@ -183,20 +169,22 @@
   z-index: 3;
 }
 
-/* Eliott Choice / My Choice : bordures bien embriquées (radius imbriqués) */
+/* Eliott Choice / My Choice : bordures plus épaisses sur Best Picture */
 .best-picture-container-2026 .best-picture-card.winner-card::before,
 .best-picture-container-2026 .best-picture-card.user-choice-card::before,
 .best-picture-container-2026 .best-picture-card.winner-user-choice-card::before {
-  border-radius: 10px;
+  border-radius: 12px;
+  padding: 5px;
 }
 
-/* ::after (My vote) : radius 8px pour suivre la courbe intérieure du ::before (10px - 2px padding) */
+/* ::after (My vote) : radius ajusté pour suivre la courbe intérieure du ::before */
 .best-picture-container-2026 .best-picture-card.winner-user-choice-card::after {
-  border-radius: 8px;
-  inset: 2px;
+  border-radius: 7px;
+  inset: 5px;
+  padding: 5px;
 }
 
-/* Mobile - remplir l'espace vertical sans étirer les posters (ratio 7:10 conservé) */
+/* Mobile - disposition 3 colonnes en quinconce (3-4-3) */
 @media (max-width: 768px) {
   .category-best-picture.category-section-2026 {
     overflow: hidden;
@@ -212,35 +200,42 @@
     font-size: 5.5vw;
   }
 
-  /* Grille : lignes en 1fr, ligne du haut collée en bas / ligne du bas collée en haut */
+  /* Grille 3 colonnes x 8 rangées pour l'effet quinconce */
   .best-picture-container-2026 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-    align-content: stretch;
-    gap: 0.8vh 0.8vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, minmax(0, 1fr));
+    align-content: center;
+    gap: 0.6vh 2vw;
+    padding: 0 4vw;
   }
 
-  /* Carte : 60% de l'espace, ratio 7:10 conservé */
   .best-picture-container-2026 .best-picture-card {
-    width: auto;
-    height: 60%;
+    width: 100%;
+    height: auto;
     max-width: 100%;
     aspect-ratio: 7 / 10;
-  }
-
-  /* Ligne du haut : contenu collé en bas */
-  .best-picture-container-2026 .best-picture-card:nth-child(-n+5) {
-    align-self: end;
+    align-self: center;
     justify-self: center;
   }
 
-  /* Ligne du bas : contenu collé en haut */
-  .best-picture-container-2026 .best-picture-card:nth-child(n+6) {
-    align-self: start;
-    justify-self: center;
-  }
+  /* Colonne 1 (items 1-3) : rows 2-3, 4-5, 6-7 */
+  .best-picture-container-2026 .best-picture-card:nth-child(1) { grid-column: 1; grid-row: 2 / 4; }
+  .best-picture-container-2026 .best-picture-card:nth-child(2) { grid-column: 1; grid-row: 4 / 6; }
+  .best-picture-container-2026 .best-picture-card:nth-child(3) { grid-column: 1; grid-row: 6 / 8; }
+
+  /* Colonne 2 (items 4-7) : rows 1-2, 3-4, 5-6, 7-8 */
+  .best-picture-container-2026 .best-picture-card:nth-child(4) { grid-column: 2; grid-row: 1 / 3; }
+  .best-picture-container-2026 .best-picture-card:nth-child(5) { grid-column: 2; grid-row: 3 / 5; }
+  .best-picture-container-2026 .best-picture-card:nth-child(6) { grid-column: 2; grid-row: 5 / 7; }
+  .best-picture-container-2026 .best-picture-card:nth-child(7) { grid-column: 2; grid-row: 7 / 9; }
+
+  /* Colonne 3 (items 8-10) : rows 2-3, 4-5, 6-7 */
+  .best-picture-container-2026 .best-picture-card:nth-child(8) { grid-column: 3; grid-row: 2 / 4; }
+  .best-picture-container-2026 .best-picture-card:nth-child(9) { grid-column: 3; grid-row: 4 / 6; }
+  .best-picture-container-2026 .best-picture-card:nth-child(10) { grid-column: 3; grid-row: 6 / 8; }
 
   .best-picture-container-2026 .best-picture-card .nominee-title {
-    font-size: clamp(0.45rem, 1.4vw, 0.7rem);
+    font-size: clamp(0.45rem, 2.5vw, 0.7rem);
   }
 }
 
@@ -260,7 +255,8 @@
   }
 
   .best-picture-container-2026 {
-    gap: 0.6vh 1.2vw;
+    gap: 0.5vh 1.5vw;
+    padding: 0 3vw;
   }
 
   .best-picture-container-2026 .best-picture-card .nominee-info-grid-1 {
@@ -268,7 +264,7 @@
   }
 
   .best-picture-container-2026 .best-picture-card .nominee-title {
-    font-size: clamp(0.4rem, 2vw, 0.6rem);
+    font-size: clamp(0.4rem, 2.2vw, 0.6rem);
   }
 }
 
