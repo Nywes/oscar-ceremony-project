@@ -48,6 +48,7 @@ export type Nominee2026 = {
     notSeen?: boolean;
     notes?: Translatable;
     songTitle?: string;
+    country?: Translatable;
   };
 };
 

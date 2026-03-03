@@ -57,6 +57,7 @@ export const NomineeCard = ({
     }
 
     if (nominee.person) return t(nominee.film.title, language);
+    if (nominee.metadata?.country) return t(nominee.metadata.country, language);
     if (nominee.crew?.length) return nominee.crew.map((c) => c.name).join(', ');
     return '';
   };

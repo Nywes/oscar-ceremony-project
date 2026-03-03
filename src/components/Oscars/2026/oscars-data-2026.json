@@ -379,16 +379,16 @@
                     "film": {
                         "id": "film-031",
                         "title": {
-                            "en": "Butterfly",
+                            "en": "Papillon",
                             "fr": "Papillon"
                         },
                         "poster": {
                             "en": {
-                                "path": "/films/2026/Butterfly.jpg",
-                                "alt": "Butterfly poster"
+                                "path": "/films/2026/Papillon.jpg",
+                                "alt": "Papillon poster"
                             },
                             "fr": {
-                                "path": "/films/2026/Butterfly-FR.jpg",
+                                "path": "/films/2026/Papillon-FR.jpg",
                                 "alt": "Papillon poster"
                             }
                         }
@@ -438,7 +438,7 @@
                         "id": "film-033",
                         "title": {
                             "en": "The Girl Who Cried Pearls",
-                            "fr": "La fille qui pleurait des perles"
+                            "fr": "La jeune fille qui pleurait des perles"
                         },
                         "poster": {
                             "en": {
@@ -447,7 +447,7 @@
                             },
                             "fr": {
                                 "path": "/films/2026/The-Girl-Who-Cried-Pearls-FR.jpg",
-                                "alt": "La fille qui pleurait des perles poster"
+                                "alt": "La jeune fille qui pleurait des perles poster"
                             }
                         }
                     },
@@ -470,7 +470,7 @@
                         "id": "film-034",
                         "title": {
                             "en": "Retirement Plan",
-                            "fr": "Plan de retraite"
+                            "fr": "Retirement Plan"
                         },
                         "poster": {
                             "en": {
@@ -479,7 +479,7 @@
                             },
                             "fr": {
                                 "path": "/films/2026/Retirement-Plan-FR.jpg",
-                                "alt": "Plan de retraite poster"
+                                "alt": "Retirement Plan poster"
                             }
                         }
                     },
@@ -502,7 +502,7 @@
                         "id": "film-035",
                         "title": {
                             "en": "The Three Sisters",
-                            "fr": "Les Trois Sœurs"
+                            "fr": "The Three Sisters"
                         },
                         "poster": {
                             "en": {
@@ -511,20 +511,17 @@
                             },
                             "fr": {
                                 "path": "/films/2026/The-Three-Sisters-FR.jpg",
-                                "alt": "Les Trois Sœurs poster"
+                                "alt": "The Three Sisters poster"
                             }
                         }
                     },
-                    "person": {
-                        "id": "person-056",
-                        "name": "Konstantin Bronzit",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Konstantin-Bronzit.jpg",
-                                "alt": "Konstantin Bronzit"
-                            }
+                    "crew": [
+                        {
+                            "id": "crew-154",
+                            "name": "Konstantin Bronzit",
+                            "role": "Director"
                         }
-                    }
+                    ]
                 }
             ],
             "winners": {
@@ -989,11 +986,17 @@
                         "id": "film-024",
                         "title": {
                             "en": "Kokuho",
-                            "fr": "Kokuho"
+                            "fr": "Le maître du kabuki"
                         },
                         "poster": {
-                            "path": "/films/2026/Kokuho.jpg",
-                            "alt": "Kokuho poster"
+                            "en": {
+                                "path": "/films/2026/Kokuho.jpg",
+                                "alt": "Kokuho poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Kokuho-FR.jpg",
+                                "alt": "Le maître du kabuki poster"
+                            }
                         }
                     },
                     "crew": [
@@ -1051,11 +1054,17 @@
                         "id": "film-025",
                         "title": {
                             "en": "The Smashing Machine",
-                            "fr": "The Smashing Machine"
+                            "fr": "Smashing Machine"
                         },
                         "poster": {
-                            "path": "/films/2026/The-Smashing-Machine.jpg",
-                            "alt": "The Smashing Machine poster"
+                            "en": {
+                                "path": "/films/2026/The-Smashing-Machine.jpg",
+                                "alt": "The Smashing Machine poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/The-Smashing-Machine-FR.jpg",
+                                "alt": "Smashing Machine poster"
+                            }
                         }
                     },
                     "crew": [
@@ -1082,7 +1091,7 @@
                         "id": "film-026",
                         "title": {
                             "en": "The Ugly Stepsister",
-                            "fr": "La Belle-Sœur"
+                            "fr": "The Ugly Stepsister"
                         },
                         "poster": {
                             "en": {
@@ -1091,7 +1100,7 @@
                             },
                             "fr": {
                                 "path": "/films/2026/The-Ugly-Stepsister-FR.jpg",
-                                "alt": "La Belle-Sœur poster"
+                                "alt": "The Ugly Stepsister poster"
                             }
                         }
                     },
@@ -1330,11 +1339,17 @@
                         "id": "film-012",
                         "title": {
                             "en": "Weapons",
-                            "fr": "Weapons"
+                            "fr": "Évanouis"
                         },
                         "poster": {
-                            "path": "/films/2026/Weapons.jpg",
-                            "alt": "Weapons poster"
+                            "en": {
+                                "path": "/films/2026/Weapons.jpg",
+                                "alt": "Weapons poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Weapons-FR.jpg",
+                                "alt": "Évanouis poster"
+                            }
                         }
                     },
                     "person": {
@@ -2148,7 +2163,7 @@
                         "id": "film-019",
                         "title": {
                             "en": "Avatar: Fire and Ash",
-                            "fr": "Avatar : Le Feu et la Cendre"
+                            "fr": "Avatar: De feu et de cendres"
                         },
                         "poster": {
                             "en": {
@@ -2157,7 +2172,7 @@
                             },
                             "fr": {
                                 "path": "/films/2026/Avatar-Fire-and-Ash-FR.jpg",
-                                "alt": "Avatar : Le Feu et la Cendre poster"
+                                "alt": "Avatar : De feu et de cendres poster"
                             }
                         }
                     },
@@ -2268,7 +2283,7 @@
                         "id": "film-030",
                         "title": {
                             "en": "The Lost Bus",
-                            "fr": "Le Bus perdu"
+                            "fr": "The Lost Bus"
                         },
                         "poster": {
                             "en": {
@@ -2277,7 +2292,7 @@
                             },
                             "fr": {
                                 "path": "/films/2026/The-Lost-Bus-FR.jpg",
-                                "alt": "Le Bus perdu poster"
+                                "alt": "The Lost Bus poster"
                             }
                         }
                     },
@@ -2373,7 +2388,10 @@
                         }
                     },
                     "metadata": {
-                        "country": "Brazil"
+                        "country": {
+                            "en": "Brazil",
+                            "fr": "Brésil"
+                        }
                     }
                 },
                 {
@@ -2382,7 +2400,7 @@
                         "id": "film-021",
                         "title": {
                             "en": "It Was Just an Accident",
-                            "fr": "Ce n'était qu'un accident"
+                            "fr": "Un simple accident"
                         },
                         "poster": {
                             "en": {
@@ -2391,12 +2409,15 @@
                             },
                             "fr": {
                                 "path": "/films/2026/It-Was-Just-an-Accident-FR.jpg",
-                                "alt": "Ce n'était qu'un accident poster"
+                                "alt": "Un simple accident poster"
                             }
                         }
                     },
                     "metadata": {
-                        "country": "France"
+                        "country": {
+                            "en": "France",
+                            "fr": "France"
+                        }
                     }
                 },
                 {
@@ -2419,7 +2440,10 @@
                         }
                     },
                     "metadata": {
-                        "country": "Norway"
+                        "country": {
+                            "en": "Norway",
+                            "fr": "Norvège"
+                        }
                     }
                 },
                 {
@@ -2436,7 +2460,10 @@
                         }
                     },
                     "metadata": {
-                        "country": "Spain"
+                        "country": {
+                            "en": "Spain",
+                            "fr": "Espagne"
+                        }
                     }
                 },
                 {
@@ -2459,7 +2486,10 @@
                         }
                     },
                     "metadata": {
-                        "country": "Tunisia"
+                        "country": {
+                            "en": "Tunisia",
+                            "fr": "Tunisie"
+                        }
                     }
                 }
             ],

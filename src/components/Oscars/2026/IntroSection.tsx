@@ -61,6 +61,8 @@ export const IntroSection = ({
             <br />
             Vous pourrez donc voir mes choix ainsi que ceux des autres personnes ayant participé.
             <br />
+            <i>(Je vous conseille donc de voter avant de découvrir les autres avis pour éviter toute influence)</i>
+            <br />
             <br />
             Je vous laisse vous balader et explorer le site en défilant vers le bas, et je vous souhaite bonne découverte !
           </p>
@@ -77,6 +79,8 @@ export const IntroSection = ({
             <br />
             <br />
             You'll be able to see my choices as well as those of everyone who took part.
+            <br />
+            <i>(I recommend voting before discovering the other choices to avoid any influence)</i>  
             <br />
             <br />
             Feel free to browse and explore by scrolling down
