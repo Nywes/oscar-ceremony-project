@@ -143,9 +143,6 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
       ...prev,
       [categoryId]: true,
     }));
-    if (categoryId === 'music-score') {
-      setSelectedVideoId('2TAZJHgGt_c');
-    }
   };
 
   const isWinner = (categoryId: string, nominee: Nominee2026) => {

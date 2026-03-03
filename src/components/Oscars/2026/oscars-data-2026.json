@@ -1,22 +1,22 @@
 {
-"year": 2026,
-"categories": [
-    {
-    "id": "actor-supporting-role",
+    "year": 2026,
+    "categories": [
+        {
+            "id": "actor-supporting-role",
             "name": {
                 "en": "Actor in a Supporting Role",
                 "fr": "Meilleur acteur dans un second rôle"
             },
-    "nominees": [
-        {
+            "nominees": [
+                {
                     "id": "nominee-006",
-            "film": {
+                    "film": {
                         "id": "film-002",
                         "title": {
                             "en": "One Battle after Another",
                             "fr": "Une bataille après l'autre"
                         },
-                "poster": {
+                        "poster": {
                             "en": {
                                 "path": "/films/2026/One-Battle-after-Another.jpg",
                                 "alt": "One Battle after Another poster"
@@ -25,88 +25,88 @@
                                 "path": "/films/2026/One-Battle-after-Another-FR.jpg",
                                 "alt": "Une bataille après l'autre poster"
                             }
-                }
-            },
-            "person": {
+                        }
+                    },
+                    "person": {
                         "id": "person-006",
                         "name": "Benicio Del Toro",
-                "images": {
-                    "primary": {
+                        "images": {
+                            "primary": {
                                 "path": "/actors/2026/Benicio-Del-Toro.jpg",
                                 "alt": "Benicio Del Toro"
-                    },
-                    "secondary": {
+                            },
+                            "secondary": {
                                 "path": "/actors/2026/Benicio-Del-Toro-1.jpg",
                                 "alt": "Benicio Del Toro - alternate"
+                            }
+                        }
                     }
-                }
-            }
-        },
-        {
+                },
+                {
                     "id": "nominee-007",
-            "film": {
+                    "film": {
                         "id": "film-006",
                         "title": {
                             "en": "Frankenstein",
                             "fr": "Frankenstein"
                         },
-                "poster": {
+                        "poster": {
                             "path": "/films/2026/Frankenstein.jpg",
                             "alt": "Frankenstein poster"
-                }
-            },
-            "person": {
+                        }
+                    },
+                    "person": {
                         "id": "person-007",
                         "name": "Jacob Elordi",
-                "images": {
-                    "primary": {
+                        "images": {
+                            "primary": {
                                 "path": "/actors/2026/Jacob-Elordi.jpg",
                                 "alt": "Jacob Elordi"
-                    },
-                    "secondary": {
+                            },
+                            "secondary": {
                                 "path": "/actors/2026/Jacob-Elordi-1.jpg",
                                 "alt": "Jacob Elordi - alternate"
+                            }
+                        }
                     }
-                }
-            }
-        },
-        {
+                },
+                {
                     "id": "nominee-008",
-            "film": {
+                    "film": {
                         "id": "film-004",
                         "title": {
                             "en": "Sinners",
                             "fr": "Sinners"
                         },
-                "poster": {
+                        "poster": {
                             "path": "/films/2026/Sinners.jpg",
                             "alt": "Sinners poster"
-                }
-            },
-            "person": {
+                        }
+                    },
+                    "person": {
                         "id": "person-008",
                         "name": "Delroy Lindo",
-                "images": {
-                    "primary": {
+                        "images": {
+                            "primary": {
                                 "path": "/actors/2026/Delroy-Lindo.jpg",
                                 "alt": "Delroy Lindo"
-                    },
-                    "secondary": {
+                            },
+                            "secondary": {
                                 "path": "/actors/2026/Delroy-Lindo-1.jpg",
                                 "alt": "Delroy Lindo - alternate"
+                            }
+                        }
                     }
-                }
-            }
-        },
-        {
+                },
+                {
                     "id": "nominee-009",
-            "film": {
+                    "film": {
                         "id": "film-002",
                         "title": {
                             "en": "One Battle after Another",
                             "fr": "Une bataille après l'autre"
                         },
-                "poster": {
+                        "poster": {
                             "en": {
                                 "path": "/films/2026/One-Battle-after-Another.jpg",
                                 "alt": "One Battle after Another poster"
@@ -115,32 +115,32 @@
                                 "path": "/films/2026/One-Battle-after-Another-FR.jpg",
                                 "alt": "Une bataille après l'autre poster"
                             }
-                }
-            },
-            "person": {
+                        }
+                    },
+                    "person": {
                         "id": "person-009",
                         "name": "Sean Penn",
-                "images": {
-                    "primary": {
+                        "images": {
+                            "primary": {
                                 "path": "/actors/2026/Sean-Penn.jpg",
                                 "alt": "Sean Penn"
-                    },
-                    "secondary": {
+                            },
+                            "secondary": {
                                 "path": "/actors/2026/Sean-Penn-1.jpg",
                                 "alt": "Sean Penn - alternate"
+                            }
+                        }
                     }
-                }
-            }
-        },
-        {
+                },
+                {
                     "id": "nominee-010",
-            "film": {
+                    "film": {
                         "id": "film-007",
                         "title": {
                             "en": "Sentimental Value",
                             "fr": "Valeur sentimentale"
                         },
-                "poster": {
+                        "poster": {
                             "en": {
                                 "path": "/films/2026/Sentimental-Value.jpg",
                                 "alt": "Sentimental Value poster"
@@ -149,30 +149,30 @@
                                 "path": "/films/2026/Sentimental-Value-FR.jpg",
                                 "alt": "Valeur sentimentale poster"
                             }
-                }
-            },
-            "person": {
+                        }
+                    },
+                    "person": {
                         "id": "person-010",
                         "name": "Stellan Skarsgård",
-                "images": {
-                    "primary": {
+                        "images": {
+                            "primary": {
                                 "path": "/actors/2026/Stellan-Skarsgard.jpg",
                                 "alt": "Stellan Skarsgård"
-                    },
-                    "secondary": {
+                            },
+                            "secondary": {
                                 "path": "/actors/2026/Stellan-Skarsgard-1.jpg",
                                 "alt": "Stellan Skarsgård - alternate"
+                            }
+                        }
                     }
                 }
-            }
-        }
-    ],
-    "winners": {
+            ],
+            "winners": {
                 "my_choice": "nominee-009",
-        "official": null
-    }
-},
-{
+                "official": null
+            }
+        },
+        {
             "id": "animated-feature",
             "name": {
                 "en": "Animated Feature Film",
@@ -288,7 +288,7 @@
                         "id": "film-016",
                         "title": {
                             "en": "Little Amélie or the Character of Rain",
-                            "fr": "La petite Amélie ou le caractère de la pluie"
+                            "fr": "Amélie et la métaphysique des tubes"
                         },
                         "poster": {
                             "en": {
@@ -362,12 +362,12 @@
                     ]
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-024",
-        "official": null
-    }
-},
-{
+                "official": null
+            }
+        },
+        {
             "id": "animated-short",
             "name": {
                 "en": "Animated Short Film",
@@ -527,12 +527,12 @@
                     }
                 }
             ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
             "id": "costume-design",
             "name": {
                 "en": "Costume Design",
@@ -651,13 +651,13 @@
                     ]
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-037",
-        "official": null
-    }
-},
-{
-    "id": "writing-original",
+                "official": null
+            }
+        },
+        {
+            "id": "writing-original",
             "name": {
                 "en": "Writing (Original Screenplay)",
                 "fr": "Meilleur scénario original"
@@ -806,7 +806,7 @@
                     ]
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-104",
                 "official": null
             }
@@ -942,11 +942,11 @@
             ],
             "winners": {
                 "my_choice": "nominee-098",
-        "official": null
-    }
-},
-{
-    "id": "makeup-hairstyling",
+                "official": null
+            }
+        },
+        {
+            "id": "makeup-hairstyling",
             "name": {
                 "en": "Makeup and Hairstyling",
                 "fr": "Meilleurs maquillages et coiffures"
@@ -1109,12 +1109,12 @@
                     ]
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-056",
-        "official": null
-    }
-},
-{
+                "official": null
+            }
+        },
+        {
             "id": "film-editing",
             "name": {
                 "en": "Film Editing",
@@ -1244,12 +1244,12 @@
                     ]
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-048",
-        "official": null
-    }
-},
-{
+                "official": null
+            }
+        },
+        {
             "id": "actress-supporting-role",
             "name": {
                 "en": "Actress in a Supporting Role",
@@ -1415,13 +1415,13 @@
                     }
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-020",
-        "official": null
-    }
-},
-{
-    "id": "sound",
+                "official": null
+            }
+        },
+        {
+            "id": "sound",
             "name": {
                 "en": "Sound",
                 "fr": "Meilleur son"
@@ -1619,12 +1619,12 @@
                     ]
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-089",
-        "official": null
-    }
-},
-{
+                "official": null
+            }
+        },
+        {
             "id": "music-song",
             "name": {
                 "en": "Music (Original Song)",
@@ -1803,183 +1803,12 @@
                     ]
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-068",
-        "official": null
-    }
-},
-{
-            "id": "documentary-short",
-            "name": {
-                "en": "Documentary Short Film",
-                "fr": "Meilleur court-métrage documentaire"
-            },
-            "nominees": [
-                {
-                    "id": "nominee-116",
-                    "film": {
-                        "id": "film-041",
-                        "title": {
-                            "en": "All the Empty Rooms",
-                            "fr": "Toutes les pièces vides"
-                        },
-                        "poster": {
-                            "en": {
-                                "path": "/films/2026/All-the-Empty-Rooms.jpg",
-                                "alt": "All the Empty Rooms poster"
-                            },
-                            "fr": {
-                                "path": "/films/2026/All-the-Empty-Rooms-FR.jpg",
-                                "alt": "Toutes les pièces vides poster"
-                            }
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-166",
-                            "name": "Joshua Seftel",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-167",
-                            "name": "Conall Jones",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-117",
-                    "film": {
-                        "id": "film-042",
-                        "title": {
-                            "en": "Armed Only with a Camera: The Life and Death of Brent Renaud",
-                            "fr": "Armé seulement d'une caméra : La vie et la mort de Brent Renaud"
-                        },
-                        "poster": {
-                            "en": {
-                                "path": "/films/2026/Armed-Only-with-a-Camera.jpg",
-                                "alt": "Armed Only with a Camera: The Life and Death of Brent Renaud poster"
-                            },
-                            "fr": {
-                                "path": "/films/2026/Armed-Only-with-a-Camera-FR.jpg",
-                                "alt": "Armé seulement d'une caméra : La vie et la mort de Brent Renaud poster"
-                            }
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-168",
-                            "name": "Craig Renaud",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-169",
-                            "name": "Juan Arredondo",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-118",
-                    "film": {
-                        "id": "film-043",
-                        "title": {
-                            "en": "Children No More: \"Were and Are Gone\"",
-                            "fr": "Plus jamais enfants : \"Étaient et sont partis\""
-                        },
-                        "poster": {
-                            "en": {
-                                "path": "/films/2026/Children-No-More.jpg",
-                                "alt": "Children No More: \"Were and Are Gone\" poster"
-                            },
-                            "fr": {
-                                "path": "/films/2026/Children-No-More-FR.jpg",
-                                "alt": "Plus jamais enfants : \"Étaient et sont partis\" poster"
-                            }
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-170",
-                            "name": "Hilla Medalia",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-171",
-                            "name": "Sheila Nevins",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-119",
-                    "film": {
-                        "id": "film-044",
-                        "title": {
-                            "en": "The Devil Is Busy",
-                            "fr": "Le Diable est occupé"
-                        },
-                        "poster": {
-                            "en": {
-                                "path": "/films/2026/The-Devil-Is-Busy.jpg",
-                                "alt": "The Devil Is Busy poster"
-                            },
-                            "fr": {
-                                "path": "/films/2026/The-Devil-Is-Busy-FR.jpg",
-                                "alt": "Le Diable est occupé poster"
-                            }
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-172",
-                            "name": "Christalyn Hampton",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-173",
-                            "name": "Geeta Gandbhir",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-120",
-                    "film": {
-                        "id": "film-045",
-                        "title": {
-                            "en": "Perfectly a Strangeness",
-                            "fr": "Parfaitement une étrangeté"
-                        },
-                        "poster": {
-                            "en": {
-                                "path": "/films/2026/Perfectly-a-Strangeness.jpg",
-                                "alt": "Perfectly a Strangeness poster"
-                            },
-                            "fr": {
-                                "path": "/films/2026/Perfectly-a-Strangeness-FR.jpg",
-                                "alt": "Parfaitement une étrangeté poster"
-                            }
-                        }
-                    },
-                    "person": {
-                        "id": "person-057",
-                        "name": "Alison McAlpine",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Alison-McAlpine.jpg",
-                                "alt": "Alison McAlpine"
-                            }
-                        }
-                    }
-                }
-            ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
+                "official": null
+            }
+        },
+        {
             "id": "documentary-feature",
             "name": {
                 "en": "Documentary Feature Film",
@@ -2152,11 +1981,11 @@
                     ]
                 }
             ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
         {
             "id": "production-design",
             "name": {
@@ -2517,8 +2346,8 @@
                 "official": null
             }
         },
-{
-    "id": "international-feature",
+        {
+            "id": "international-feature",
             "name": {
                 "en": "International Feature Film",
                 "fr": "Meilleur film international"
@@ -2634,179 +2463,12 @@
                     }
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-053",
-        "official": null
-    }
-},
-{
-            "id": "live-action-short",
-            "name": {
-                "en": "Live Action Short Film",
-                "fr": "Meilleur court-métrage en prises de vues réelles"
-            },
-            "nominees": [
-                {
-                    "id": "nominee-121",
-                    "film": {
-                        "id": "film-046",
-                        "title": {
-                            "en": "Butcher's Stain",
-                            "fr": "La Tache du boucher"
-                        },
-                        "poster": {
-                            "en": {
-                                "path": "/films/2026/Butchers-Stain.jpg",
-                                "alt": "Butcher's Stain poster"
-                            },
-                            "fr": {
-                                "path": "/films/2026/Butchers-Stain-FR.jpg",
-                                "alt": "La Tache du boucher poster"
-                            }
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-174",
-                            "name": "Meyer Levinson-Blount",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-175",
-                            "name": "Oron Caspi",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-122",
-                    "film": {
-                        "id": "film-047",
-                        "title": {
-                            "en": "A Friend of Dorothy",
-                            "fr": "Un ami de Dorothy"
-                        },
-                        "poster": {
-                            "en": {
-                                "path": "/films/2026/A-Friend-of-Dorothy.jpg",
-                                "alt": "A Friend of Dorothy poster"
-                            },
-                            "fr": {
-                                "path": "/films/2026/A-Friend-of-Dorothy-FR.jpg",
-                                "alt": "Un ami de Dorothy poster"
-                            }
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-176",
-                            "name": "Lee Knight",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-177",
-                            "name": "James Dean",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-123",
-                    "film": {
-                        "id": "film-048",
-                        "title": {
-                            "en": "Jane Austen's Period Drama",
-                            "fr": "Jane Austen's Period Drama"
-                        },
-                        "poster": {
-                            "path": "/films/2026/Jane-Austens-Period-Drama.jpg",
-                            "alt": "Jane Austen's Period Drama poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-178",
-                            "name": "Julia Aks",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-179",
-                            "name": "Steve Pinder",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-124",
-                    "film": {
-                        "id": "film-049",
-                        "title": {
-                            "en": "The Singers",
-                            "fr": "Les Chanteurs"
-                        },
-                        "poster": {
-                            "en": {
-                                "path": "/films/2026/The-Singers.jpg",
-                                "alt": "The Singers poster"
-                            },
-                            "fr": {
-                                "path": "/films/2026/The-Singers-FR.jpg",
-                                "alt": "Les Chanteurs poster"
-                            }
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-180",
-                            "name": "Sam A. Davis",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-181",
-                            "name": "Jack Piatt",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-125",
-                    "film": {
-                        "id": "film-050",
-                        "title": {
-                            "en": "Two People Exchanging Saliva",
-                            "fr": "Deux personnes échangeant de la salive"
-                        },
-                        "poster": {
-                            "en": {
-                                "path": "/films/2026/Two-People-Exchanging-Saliva.jpg",
-                                "alt": "Two People Exchanging Saliva poster"
-                            },
-                            "fr": {
-                                "path": "/films/2026/Two-People-Exchanging-Saliva-FR.jpg",
-                                "alt": "Deux personnes échangeant de la salive poster"
-                            }
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-182",
-                            "name": "Alexandre Singh",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-183",
-                            "name": "Natalie Musteata",
-                            "role": "Producer"
-                        }
-                    ]
-                }
-            ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
+                "official": null
+            }
+        },
+        {
             "id": "cinematography",
             "name": {
                 "en": "Cinematography",
@@ -2925,12 +2587,12 @@
                     ]
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-031",
-        "official": null
-    }
-},
-{
+                "official": null
+            }
+        },
+        {
             "id": "music-score",
             "name": {
                 "en": "Music (Original Score)",
@@ -3049,12 +2711,12 @@
                     ]
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-065",
-        "official": null
-    }
-},
-{
+                "official": null
+            }
+        },
+        {
             "id": "actor-leading-role",
             "name": {
                 "en": "Actor in a Leading Role",
@@ -3214,13 +2876,13 @@
                     }
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-001",
-        "official": null
-    }
-},
-{
-    "id": "directing",
+                "official": null
+            }
+        },
+        {
+            "id": "directing",
             "name": {
                 "en": "Directing",
                 "fr": "Meilleure réalisation"
@@ -3379,7 +3041,7 @@
                     }
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-043",
                 "official": null
             }
@@ -3546,11 +3208,11 @@
             ],
             "winners": {
                 "my_choice": "nominee-011",
-        "official": null
-    }
-},
-{
-    "id": "best-picture",
+                "official": null
+            }
+        },
+        {
+            "id": "best-picture",
             "name": {
                 "en": "Best Picture",
                 "fr": "Meilleur film"
@@ -3715,10 +3377,10 @@
                     }
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-078",
-        "official": null
-    }
-}
-]
+                "official": null
+            }
+        }
+    ]
 }

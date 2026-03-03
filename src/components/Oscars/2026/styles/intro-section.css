@@ -1,5 +1,6 @@
 .intro-section-2026 {
   height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,6 +46,34 @@
   z-index: 1;
   width: 100%;
   max-width: 90vw;
+}
+
+/* Intro mobile : taille de texte adaptée à la hauteur disponible */
+@media (max-width: 768px) {
+  .intro-section-2026 {
+    padding: 2rem 1rem;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .intro-section-2026 h1 {
+    font-size: min(6.5vw, 4.5dvh, 2rem);
+    letter-spacing: 1px;
+  }
+
+  .intro-section-2026 .text-md {
+    font-size: min(3.2vw, 1.8dvh, 1rem);
+    line-height: 1.5;
+    margin: 1dvh auto;
+    max-width: 92vw;
+  }
+
+  .intro-section-2026 .scroll-indicator {
+    position: relative;
+    bottom: auto;
+    margin-top: auto;
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
 }
 
 /* Shared classes are in ../../shared/Presentation.css */
