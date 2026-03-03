@@ -10,6 +10,18 @@ type IntroSectionProps = {
   sectionRef: (el: HTMLDivElement | null) => void;
 };
 
+const getIntroTitle = (year: number, language: 'fr' | 'en') => {
+  const n = year - 1928;
+  if (language === 'fr') {
+    return `La ${n}e cérémonie des`;
+  }
+  const last = n % 10;
+  const lastTwo = n % 100;
+  const suffix =
+    lastTwo >= 11 && lastTwo <= 13 ? 'th' : last === 1 ? 'st' : last === 2 ? 'nd' : last === 3 ? 'rd' : 'th';
+  return `The ${n}${suffix} Academy Awards`;
+};
+
 export const IntroSection = ({
   year,
   language,
@@ -20,7 +32,7 @@ export const IntroSection = ({
   return (
     <div className="intro-section-2026" ref={sectionRef}>
       <div className="flex flex-col items-center justify-center mb-12 gap-4">
-        <h1>The {year - 1928}th Academy Awards</h1>
+        <h1>{getIntroTitle(year, language)}</h1>
         <div className="oscars-text-logo-container">
           <div className="oscars-text-logo" />
           <span className="academy-copyright">©A.M.P.A.S.®</span>

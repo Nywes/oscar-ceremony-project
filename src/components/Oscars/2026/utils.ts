@@ -1,5 +1,16 @@
-import type { Nominee2026 } from './types';
+import type { Nominee2026, Translatable, TranslatableImageAsset, ImageAsset, Lang } from './types';
 import { getNomineeImages } from '../data-adapter';
+
+export const t = (value: Translatable, lang: Lang): string => {
+  if (typeof value === 'string') return value;
+  return value[lang] || value['en'];
+};
+
+export const tImage = (value: TranslatableImageAsset | undefined, lang: Lang): ImageAsset | undefined => {
+  if (!value) return undefined;
+  if ('path' in value) return value as ImageAsset;
+  return value[lang] || value['en'];
+};
 
 export const getActorImagePathSync = (actorName: string | undefined, index: number = 0) => {
   if (!actorName) return undefined;
