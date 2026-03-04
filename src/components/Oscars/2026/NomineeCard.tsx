@@ -1,11 +1,11 @@
 import './styles/index.css';
 import { useState, useEffect, useRef } from 'react';
-import type { Nominee2026 } from './types';
-import { getActorImagePathSync, checkImageExists } from './utils';
+import type { Nominee2026, Lang } from './types';
+import { t, getActorImagePathSync } from './utils';
 
 type NomineeCardProps = {
   nominee: Nominee2026;
-  categoryName: string;
+  categoryId: string;
   isWinner: boolean;
   isUserChoice?: boolean;
   isLosingNominee: boolean;
@@ -17,11 +17,12 @@ type NomineeCardProps = {
   voteCount?: number;
   showVoteCount?: boolean;
   actorRotationPhase?: number;
+  language: Lang;
 };
 
 export const NomineeCard = ({
   nominee,
-  categoryName,
+  categoryId,
   isWinner,
   isUserChoice = false,
   isLosingNominee,
@@ -33,6 +34,7 @@ export const NomineeCard = ({
   voteCount = 0,
   showVoteCount = false,
   actorRotationPhase = 0,
+  language,
 }: NomineeCardProps) => {
   const [displayedIndex, setDisplayedIndex] = useState(actorRotationPhase);
   const [hasSecondaryImage, setHasSecondaryImage] = useState(false);
@@ -42,37 +44,34 @@ export const NomineeCard = ({
   const phaseRef = useRef(actorRotationPhase);
   phaseRef.current = actorRotationPhase;
   const getNomineeTitle = () => {
-    // Cas spécial : Music (Original Song) → on affiche le titre de la chanson
-    if (categoryName === 'Music (Original Song)' && nominee.metadata?.songTitle) {
+    if (categoryId === 'music-song' && nominee.metadata?.songTitle) {
       return nominee.metadata.songTitle;
     }
 
-    return nominee.person && nominee.film ? nominee.person.name : nominee.film.title;
+    return nominee.person && nominee.film ? nominee.person.name : t(nominee.film.title, language);
   };
 
   const getNomineeDescription = () => {
-    // Cas spécial : Music (Original Song) → on affiche la phrase complète depuis les métadonnées
-    if (categoryName === 'Music (Original Song)' && nominee.metadata?.notes) {
-      return nominee.metadata.notes;
+    if (categoryId === 'music-song' && nominee.metadata?.notes) {
+      return t(nominee.metadata.notes, language);
     }
 
-    if (nominee.person) return nominee.film.title;
+    if (nominee.person) return t(nominee.film.title, language);
+    if (nominee.metadata?.country) return t(nominee.metadata.country, language);
     if (nominee.crew?.length) return nominee.crew.map((c) => c.name).join(', ');
     return '';
   };
 
   const notSeen = nominee.metadata?.notSeen || false;
 
-  // Vérifier si l'image secondaire existe pour les acteurs
   useEffect(() => {
-    if (nominee.person && actorImagePath) {
-      const secondaryImagePath = getActorImagePathSync(nominee.person.name, 1);
-      if (secondaryImagePath) {
-        checkImageExists(secondaryImagePath).then((exists) => {
-          setHasSecondaryImage(exists);
-        });
-      }
-    }
+    if (!nominee.person || !actorImagePath) return;
+    const secondaryPath = getActorImagePathSync(nominee.person.name, 1);
+    if (!secondaryPath) return;
+    const img = new Image();
+    img.onload = () => setHasSecondaryImage(true);
+    img.onerror = () => setHasSecondaryImage(false);
+    img.src = secondaryPath;
   }, [nominee.person, actorImagePath]);
 
   // Synchronisation avec la phase globale : flip quand phase change
@@ -118,7 +117,7 @@ export const NomineeCard = ({
   const cardClasses = [
     'nominee-card',
     'nominee-card-2026',
-    categoryName === 'Best Picture' && 'best-picture-card',
+    categoryId === 'best-picture' && 'best-picture-card',
     isBothWinnerAndUserChoice && 'winner-user-choice-card',
     !isBothWinnerAndUserChoice && isWinner && 'winner-card',
     !isBothWinnerAndUserChoice && isUserChoice && 'user-choice-card',
@@ -174,11 +173,11 @@ export const NomineeCard = ({
       )}
       {!nominee.person &&
         filmImagePath &&
-        (categoryName === 'Best Picture' ? (
+        (categoryId === 'best-picture' ? (
           <div className="best-picture-poster-wrapper">
             <img
               src={filmImagePath}
-              alt={nominee.film.title}
+              alt={t(nominee.film.title, language)}
               className="nominee-image film-image nominee-image-2026"
               onError={(e) => {
                 (e.target as HTMLImageElement).style.display = 'none';
@@ -198,7 +197,7 @@ export const NomineeCard = ({
         ) : (
           <img
             src={filmImagePath}
-            alt={nominee.film.title}
+            alt={t(nominee.film.title, language)}
             className="nominee-image film-image nominee-image-2026 nominee-info-grid-3"
             onError={(e) => {
               (e.target as HTMLImageElement).style.display = 'none';

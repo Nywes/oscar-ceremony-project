@@ -179,19 +179,25 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
 }
 
-.nominee-card-2026.winner-card:hover {
-  transform: none !important;
-  box-shadow: none !important;
-}
-
-.nominee-card-2026.user-choice-card:hover {
-  transform: none !important;
-  box-shadow: none !important;
-}
-
+.nominee-card-2026.winner-card:hover,
+.nominee-card-2026.user-choice-card:hover,
 .nominee-card-2026.winner-user-choice-card:hover {
   transform: none !important;
   box-shadow: none !important;
+}
+
+.nominee-card-2026.winner-card.selected,
+.nominee-card-2026.user-choice-card.selected,
+.nominee-card-2026.winner-user-choice-card.selected {
+  transform: scale(1.03) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.nominee-card-2026.winner-card.selected:hover,
+.nominee-card-2026.user-choice-card.selected:hover,
+.nominee-card-2026.winner-user-choice-card.selected:hover {
+  transform: scale(1.03) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
 }
 
 /* Tailles ajustées pour tenir dans la hauteur fixe de la carte */

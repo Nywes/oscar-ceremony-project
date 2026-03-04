@@ -43,11 +43,15 @@
     z-index: 2;
   }
 
-  /* Taille réduite pour tenir sur 1 ligne (évite que les cartes soient coupées par les boutons) */
   .category-title-2026 {
-    font-size: 5.5vw;
-    margin-bottom: 1vh;
+    margin-bottom: 0;
+    padding-bottom: 6px;
     white-space: nowrap;
+    max-width: 94vw;
+  }
+
+  .category-title-2026:after {
+    bottom: 0;
   }
 
   .nominees-container-2026 {
@@ -99,16 +103,18 @@
     min-height: 0;
   }
 
-  /* Titre sur 1 ligne : taille réduite pour petits écrans (ex: "ACTRESS IN A LEADING ROLE") */
   .category-title-2026 {
-    font-size: 5vw;
-    margin-bottom: 1vh;
+    margin-bottom: 0;
+    padding-bottom: 6px;
     line-height: 1.2;
+    letter-spacing: 0.05em;
     white-space: nowrap;
+    max-width: 94vw;
+    border-radius: 10px;
   }
 
   .category-title-2026:after {
-    bottom: -0.5vh;
+    bottom: 0;
   }
 
   /* Boutons toujours visibles au-dessus de la barre Safari/Arc */

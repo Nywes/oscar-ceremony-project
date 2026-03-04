@@ -2,10 +2,19 @@
  * Types pour la structure 2026 (améliorée)
  */
 
+export type Lang = 'en' | 'fr';
+
+export type Translatable = { en: string; fr: string } | string;
+
 export type ImageAsset = {
   path: string;
   alt?: string;
 };
+
+export type TranslatableImageAsset = {
+  en: ImageAsset;
+  fr?: ImageAsset;
+} | ImageAsset;
 
 export type Person = {
   id: string;
@@ -19,8 +28,8 @@ export type Person = {
 
 export type Film = {
   id: string;
-  title: string;
-  poster?: ImageAsset;
+  title: Translatable;
+  poster?: TranslatableImageAsset;
   trailer?: string;
 };
 
@@ -37,18 +46,19 @@ export type Nominee2026 = {
   crew?: CrewMember[];
   metadata?: {
     notSeen?: boolean;
-    notes?: string;
+    notes?: Translatable;
     songTitle?: string;
+    country?: Translatable;
   };
 };
 
 export type Category2026 = {
   id: string;
-  name: string;
+  name: Translatable;
   nominees: Nominee2026[];
   winners: {
-    my_choice?: string | null; // ID du nominee
-    official?: string | null; // ID du nominee
+    my_choice?: string | null;
+    official?: string | null;
   };
 };
 

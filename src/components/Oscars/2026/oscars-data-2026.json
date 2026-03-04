@@ -1,150 +1,192 @@
 {
-"year": 2026,
-"categories": [
-    {
-    "id": "actor-supporting-role",
-    "name": "Actor in a Supporting Role",
-    "nominees": [
+    "year": 2026,
+    "categories": [
         {
-                    "id": "nominee-006",
-            "film": {
-                        "id": "film-002",
-                        "title": "One Battle after Another",
-                "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
-                }
+            "id": "actor-supporting-role",
+            "name": {
+                "en": "Actor in a Supporting Role",
+                "fr": "Meilleur acteur dans un second rôle"
             },
-            "person": {
+            "nominees": [
+                {
+                    "id": "nominee-006",
+                    "film": {
+                        "id": "film-002",
+                        "title": {
+                            "en": "One Battle after Another",
+                            "fr": "Une bataille après l'autre"
+                        },
+                        "poster": {
+                            "en": {
+                                "path": "/films/2026/One-Battle-after-Another.jpg",
+                                "alt": "One Battle after Another poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/One-Battle-after-Another-FR.jpg",
+                                "alt": "Une bataille après l'autre poster"
+                            }
+                        }
+                    },
+                    "person": {
                         "id": "person-006",
                         "name": "Benicio Del Toro",
-                "images": {
-                    "primary": {
+                        "images": {
+                            "primary": {
                                 "path": "/actors/2026/Benicio-Del-Toro.jpg",
                                 "alt": "Benicio Del Toro"
-                    },
-                    "secondary": {
+                            },
+                            "secondary": {
                                 "path": "/actors/2026/Benicio-Del-Toro-1.jpg",
                                 "alt": "Benicio Del Toro - alternate"
+                            }
+                        }
                     }
-                }
-            }
-        },
-        {
+                },
+                {
                     "id": "nominee-007",
-            "film": {
+                    "film": {
                         "id": "film-006",
-                        "title": "Frankenstein",
-                "poster": {
+                        "title": {
+                            "en": "Frankenstein",
+                            "fr": "Frankenstein"
+                        },
+                        "poster": {
                             "path": "/films/2026/Frankenstein.jpg",
                             "alt": "Frankenstein poster"
-                }
-            },
-            "person": {
+                        }
+                    },
+                    "person": {
                         "id": "person-007",
                         "name": "Jacob Elordi",
-                "images": {
-                    "primary": {
+                        "images": {
+                            "primary": {
                                 "path": "/actors/2026/Jacob-Elordi.jpg",
                                 "alt": "Jacob Elordi"
-                    },
-                    "secondary": {
+                            },
+                            "secondary": {
                                 "path": "/actors/2026/Jacob-Elordi-1.jpg",
                                 "alt": "Jacob Elordi - alternate"
+                            }
+                        }
                     }
-                }
-            }
-        },
-        {
+                },
+                {
                     "id": "nominee-008",
-            "film": {
+                    "film": {
                         "id": "film-004",
-                        "title": "Sinners",
-                "poster": {
+                        "title": {
+                            "en": "Sinners",
+                            "fr": "Sinners"
+                        },
+                        "poster": {
                             "path": "/films/2026/Sinners.jpg",
                             "alt": "Sinners poster"
-                }
-            },
-            "person": {
+                        }
+                    },
+                    "person": {
                         "id": "person-008",
                         "name": "Delroy Lindo",
-                "images": {
-                    "primary": {
+                        "images": {
+                            "primary": {
                                 "path": "/actors/2026/Delroy-Lindo.jpg",
                                 "alt": "Delroy Lindo"
-                    },
-                    "secondary": {
+                            },
+                            "secondary": {
                                 "path": "/actors/2026/Delroy-Lindo-1.jpg",
                                 "alt": "Delroy Lindo - alternate"
+                            }
+                        }
                     }
-                }
-            }
-        },
-        {
+                },
+                {
                     "id": "nominee-009",
-            "film": {
+                    "film": {
                         "id": "film-002",
-                        "title": "One Battle after Another",
-                "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
-                }
-            },
-            "person": {
+                        "title": {
+                            "en": "One Battle after Another",
+                            "fr": "Une bataille après l'autre"
+                        },
+                        "poster": {
+                            "en": {
+                                "path": "/films/2026/One-Battle-after-Another.jpg",
+                                "alt": "One Battle after Another poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/One-Battle-after-Another-FR.jpg",
+                                "alt": "Une bataille après l'autre poster"
+                            }
+                        }
+                    },
+                    "person": {
                         "id": "person-009",
                         "name": "Sean Penn",
-                "images": {
-                    "primary": {
+                        "images": {
+                            "primary": {
                                 "path": "/actors/2026/Sean-Penn.jpg",
                                 "alt": "Sean Penn"
-                    },
-                    "secondary": {
+                            },
+                            "secondary": {
                                 "path": "/actors/2026/Sean-Penn-1.jpg",
                                 "alt": "Sean Penn - alternate"
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "nominee-010",
+                    "film": {
+                        "id": "film-007",
+                        "title": {
+                            "en": "Sentimental Value",
+                            "fr": "Valeur sentimentale"
+                        },
+                        "poster": {
+                            "en": {
+                                "path": "/films/2026/Sentimental-Value.jpg",
+                                "alt": "Sentimental Value poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Sentimental-Value-FR.jpg",
+                                "alt": "Valeur sentimentale poster"
+                            }
+                        }
+                    },
+                    "person": {
+                        "id": "person-010",
+                        "name": "Stellan Skarsgård",
+                        "images": {
+                            "primary": {
+                                "path": "/actors/2026/Stellan-Skarsgard.jpg",
+                                "alt": "Stellan Skarsgård"
+                            },
+                            "secondary": {
+                                "path": "/actors/2026/Stellan-Skarsgard-1.jpg",
+                                "alt": "Stellan Skarsgård - alternate"
+                            }
+                        }
                     }
                 }
+            ],
+            "winners": {
+                "my_choice": "nominee-009",
+                "official": null
             }
         },
         {
-                    "id": "nominee-010",
-            "film": {
-                        "id": "film-007",
-                        "title": "Sentimental Value",
-                "poster": {
-                            "path": "/films/2026/Sentimental-Value.jpg",
-                            "alt": "Sentimental Value poster"
-                }
-            },
-            "person": {
-                        "id": "person-010",
-                        "name": "Stellan Skarsgård",
-                "images": {
-                    "primary": {
-                                "path": "/actors/2026/Stellan-Skarsgard.jpg",
-                                "alt": "Stellan Skarsgård"
-                    },
-                    "secondary": {
-                                "path": "/actors/2026/Stellan-Skarsgard-1.jpg",
-                                "alt": "Stellan Skarsgård - alternate"
-                    }
-                }
-            }
-        }
-    ],
-    "winners": {
-                "my_choice": "nominee-009",
-        "official": null
-    }
-},
-{
             "id": "animated-feature",
-            "name": "Animated Feature Film",
+            "name": {
+                "en": "Animated Feature Film",
+                "fr": "Meilleur film d'animation"
+            },
             "nominees": [
                 {
                     "id": "nominee-021",
                     "film": {
                         "id": "film-013",
-                        "title": "Arco",
+                        "title": {
+                            "en": "Arco",
+                            "fr": "Arco"
+                        },
                         "poster": {
                             "path": "/films/2026/Arco.jpg",
                             "alt": "Arco poster"
@@ -177,7 +219,10 @@
                     "id": "nominee-022",
                     "film": {
                         "id": "film-014",
-                        "title": "Elio",
+                        "title": {
+                            "en": "Elio",
+                            "fr": "Elio"
+                        },
                         "poster": {
                             "path": "/films/2026/Elio.jpg",
                             "alt": "Elio poster"
@@ -210,7 +255,10 @@
                     "id": "nominee-023",
                     "film": {
                         "id": "film-015",
-                        "title": "KPop Demon Hunters",
+                        "title": {
+                            "en": "KPop Demon Hunters",
+                            "fr": "KPop Demon Hunters"
+                        },
                         "poster": {
                             "path": "/films/2026/KPop-Demon-Hunters.jpg",
                             "alt": "KPop Demon Hunters poster"
@@ -238,10 +286,19 @@
                     "id": "nominee-024",
                     "film": {
                         "id": "film-016",
-                        "title": "Little Amélie or the Character of Rain",
+                        "title": {
+                            "en": "Little Amélie or the Character of Rain",
+                            "fr": "Amélie et la métaphysique des tubes"
+                        },
                         "poster": {
-                            "path": "/films/2026/Little-Amelie-or-the-Character-of-Rain.jpg",
-                            "alt": "Little Amélie or the Character of Rain poster"
+                            "en": {
+                                "path": "/films/2026/Little-Amelie-or-the-Character-of-Rain.jpg",
+                                "alt": "Little Amélie or the Character of Rain poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Little-Amelie-or-the-Character-of-Rain-FR.jpg",
+                                "alt": "La petite Amélie ou le caractère de la pluie poster"
+                            }
                         }
                     },
                     "crew": [
@@ -271,10 +328,19 @@
                     "id": "nominee-025",
                     "film": {
                         "id": "film-017",
-                        "title": "Zootopia 2",
+                        "title": {
+                            "en": "Zootopia 2",
+                            "fr": "Zootopie 2"
+                        },
                         "poster": {
-                            "path": "/films/2026/Zootopia-2.jpg",
-                            "alt": "Zootopia 2 poster"
+                            "en": {
+                                "path": "/films/2026/Zootopia-2.jpg",
+                                "alt": "Zootopia 2 poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Zootopia-2-FR.jpg",
+                                "alt": "Zootopie 2 poster"
+                            }
                         }
                     },
                     "crew": [
@@ -296,23 +362,35 @@
                     ]
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-024",
-        "official": null
-    }
-},
-{
+                "official": null
+            }
+        },
+        {
             "id": "animated-short",
-            "name": "Animated Short Film",
+            "name": {
+                "en": "Animated Short Film",
+                "fr": "Meilleur court-métrage d'animation"
+            },
             "nominees": [
                 {
                     "id": "nominee-106",
                     "film": {
                         "id": "film-031",
-                        "title": "Butterfly",
+                        "title": {
+                            "en": "Papillon",
+                            "fr": "Papillon"
+                        },
                         "poster": {
-                            "path": "/films/2026/Butterfly.jpg",
-                            "alt": "Butterfly poster"
+                            "en": {
+                                "path": "/films/2026/Papillon.jpg",
+                                "alt": "Papillon poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Papillon-FR.jpg",
+                                "alt": "Papillon poster"
+                            }
                         }
                     },
                     "crew": [
@@ -332,7 +410,10 @@
                     "id": "nominee-107",
                     "film": {
                         "id": "film-032",
-                        "title": "Forevergreen",
+                        "title": {
+                            "en": "Forevergreen",
+                            "fr": "Forevergreen"
+                        },
                         "poster": {
                             "path": "/films/2026/Forevergreen.jpg",
                             "alt": "Forevergreen poster"
@@ -355,10 +436,19 @@
                     "id": "nominee-108",
                     "film": {
                         "id": "film-033",
-                        "title": "The Girl Who Cried Pearls",
+                        "title": {
+                            "en": "The Girl Who Cried Pearls",
+                            "fr": "La jeune fille qui pleurait des perles"
+                        },
                         "poster": {
-                            "path": "/films/2026/The-Girl-Who-Cried-Pearls.jpg",
-                            "alt": "The Girl Who Cried Pearls poster"
+                            "en": {
+                                "path": "/films/2026/The-Girl-Who-Cried-Pearls.jpg",
+                                "alt": "The Girl Who Cried Pearls poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/The-Girl-Who-Cried-Pearls-FR.jpg",
+                                "alt": "La jeune fille qui pleurait des perles poster"
+                            }
                         }
                     },
                     "crew": [
@@ -378,10 +468,19 @@
                     "id": "nominee-109",
                     "film": {
                         "id": "film-034",
-                        "title": "Retirement Plan",
+                        "title": {
+                            "en": "Retirement Plan",
+                            "fr": "Retirement Plan"
+                        },
                         "poster": {
-                            "path": "/films/2026/Retirement-Plan.jpg",
-                            "alt": "Retirement Plan poster"
+                            "en": {
+                                "path": "/films/2026/Retirement-Plan.jpg",
+                                "alt": "Retirement Plan poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Retirement-Plan-FR.jpg",
+                                "alt": "Retirement Plan poster"
+                            }
                         }
                     },
                     "crew": [
@@ -401,41 +500,59 @@
                     "id": "nominee-110",
                     "film": {
                         "id": "film-035",
-                        "title": "The Three Sisters",
+                        "title": {
+                            "en": "The Three Sisters",
+                            "fr": "The Three Sisters"
+                        },
                         "poster": {
-                            "path": "/films/2026/The-Three-Sisters.jpg",
-                            "alt": "The Three Sisters poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-056",
-                        "name": "Konstantin Bronzit",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Konstantin-Bronzit.jpg",
-                                "alt": "Konstantin Bronzit"
+                            "en": {
+                                "path": "/films/2026/The-Three-Sisters.jpg",
+                                "alt": "The Three Sisters poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/The-Three-Sisters-FR.jpg",
+                                "alt": "The Three Sisters poster"
                             }
                         }
-                    }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-154",
+                            "name": "Konstantin Bronzit",
+                            "role": "Director"
+                        }
+                    ]
                 }
             ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
+        {
             "id": "costume-design",
-            "name": "Costume Design",
+            "name": {
+                "en": "Costume Design",
+                "fr": "Meilleurs costumes"
+            },
             "nominees": [
                 {
                     "id": "nominee-036",
                     "film": {
                         "id": "film-019",
-                        "title": "Avatar: Fire and Ash",
+                        "title": {
+                            "en": "Avatar: Fire and Ash",
+                            "fr": "Avatar : Le Feu et la Cendre"
+                        },
                         "poster": {
-                            "path": "/films/2026/Avatar-Fire-and-Ash.jpg",
-                            "alt": "Avatar: Fire and Ash poster"
+                            "en": {
+                                "path": "/films/2026/Avatar-Fire-and-Ash.jpg",
+                                "alt": "Avatar: Fire and Ash poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Avatar-Fire-and-Ash-FR.jpg",
+                                "alt": "Avatar : Le Feu et la Cendre poster"
+                            }
                         }
                     },
                     "crew": [
@@ -450,7 +567,10 @@
                     "id": "nominee-037",
                     "film": {
                         "id": "film-006",
-                        "title": "Frankenstein",
+                        "title": {
+                            "en": "Frankenstein",
+                            "fr": "Frankenstein"
+                        },
                         "poster": {
                             "path": "/films/2026/Frankenstein.jpg",
                             "alt": "Frankenstein poster"
@@ -468,7 +588,10 @@
                     "id": "nominee-038",
                     "film": {
                         "id": "film-008",
-                        "title": "Hamnet",
+                        "title": {
+                            "en": "Hamnet",
+                            "fr": "Hamnet"
+                        },
                         "poster": {
                             "path": "/films/2026/Hamnet.jpg",
                             "alt": "Hamnet poster"
@@ -486,7 +609,10 @@
                     "id": "nominee-039",
                     "film": {
                         "id": "film-001",
-                        "title": "Marty Supreme",
+                        "title": {
+                            "en": "Marty Supreme",
+                            "fr": "Marty Supreme"
+                        },
                         "poster": {
                             "path": "/films/2026/Marty-Supreme.jpg",
                             "alt": "Marty Supreme poster"
@@ -504,7 +630,10 @@
                     "id": "nominee-040",
                     "film": {
                         "id": "film-004",
-                        "title": "Sinners",
+                        "title": {
+                            "en": "Sinners",
+                            "fr": "Sinners"
+                        },
                         "poster": {
                             "path": "/films/2026/Sinners.jpg",
                             "alt": "Sinners poster"
@@ -519,20 +648,26 @@
                     ]
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-037",
-        "official": null
-    }
-},
-{
-    "id": "writing-original",
-    "name": "Writing (Original Screenplay)",
+                "official": null
+            }
+        },
+        {
+            "id": "writing-original",
+            "name": {
+                "en": "Writing (Original Screenplay)",
+                "fr": "Meilleur scénario original"
+            },
             "nominees": [
                 {
                     "id": "nominee-101",
                     "film": {
                         "id": "film-003",
-                        "title": "Blue Moon",
+                        "title": {
+                            "en": "Blue Moon",
+                            "fr": "Blue Moon"
+                        },
                         "poster": {
                             "path": "/films/2026/Blue-Moon.jpg",
                             "alt": "Blue Moon poster"
@@ -550,10 +685,19 @@
                     "id": "nominee-102",
                     "film": {
                         "id": "film-021",
-                        "title": "It Was Just an Accident",
+                        "title": {
+                            "en": "It Was Just an Accident",
+                            "fr": "Ce n'était qu'un accident"
+                        },
                         "poster": {
-                            "path": "/films/2026/It-Was-Just-an-Accident.jpg",
-                            "alt": "It Was Just an Accident poster"
+                            "en": {
+                                "path": "/films/2026/It-Was-Just-an-Accident.jpg",
+                                "alt": "It Was Just an Accident poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/It-Was-Just-an-Accident-FR.jpg",
+                                "alt": "Ce n'était qu'un accident poster"
+                            }
                         }
                     },
                     "crew": [
@@ -583,7 +727,10 @@
                     "id": "nominee-103",
                     "film": {
                         "id": "film-001",
-                        "title": "Marty Supreme",
+                        "title": {
+                            "en": "Marty Supreme",
+                            "fr": "Marty Supreme"
+                        },
                         "poster": {
                             "path": "/films/2026/Marty-Supreme.jpg",
                             "alt": "Marty Supreme poster"
@@ -606,10 +753,19 @@
                     "id": "nominee-104",
                     "film": {
                         "id": "film-007",
-                        "title": "Sentimental Value",
+                        "title": {
+                            "en": "Sentimental Value",
+                            "fr": "Valeur sentimentale"
+                        },
                         "poster": {
-                            "path": "/films/2026/Sentimental-Value.jpg",
-                            "alt": "Sentimental Value poster"
+                            "en": {
+                                "path": "/films/2026/Sentimental-Value.jpg",
+                                "alt": "Sentimental Value poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Sentimental-Value-FR.jpg",
+                                "alt": "Valeur sentimentale poster"
+                            }
                         }
                     },
                     "crew": [
@@ -629,7 +785,10 @@
                     "id": "nominee-105",
                     "film": {
                         "id": "film-004",
-                        "title": "Sinners",
+                        "title": {
+                            "en": "Sinners",
+                            "fr": "Sinners"
+                        },
                         "poster": {
                             "path": "/films/2026/Sinners.jpg",
                             "alt": "Sinners poster"
@@ -644,20 +803,26 @@
                     ]
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-104",
                 "official": null
             }
         },
         {
             "id": "writing-adapted",
-            "name": "Writing (Adapted Screenplay)",
+            "name": {
+                "en": "Writing (Adapted Screenplay)",
+                "fr": "Meilleur scénario adapté"
+            },
             "nominees": [
                 {
                     "id": "nominee-096",
                     "film": {
                         "id": "film-011",
-                        "title": "Bugonia",
+                        "title": {
+                            "en": "Bugonia",
+                            "fr": "Bugonia"
+                        },
                         "poster": {
                             "path": "/films/2026/Bugonia.jpg",
                             "alt": "Bugonia poster"
@@ -675,7 +840,10 @@
                     "id": "nominee-097",
                     "film": {
                         "id": "film-006",
-                        "title": "Frankenstein",
+                        "title": {
+                            "en": "Frankenstein",
+                            "fr": "Frankenstein"
+                        },
                         "poster": {
                             "path": "/films/2026/Frankenstein.jpg",
                             "alt": "Frankenstein poster"
@@ -693,7 +861,10 @@
                     "id": "nominee-098",
                     "film": {
                         "id": "film-008",
-                        "title": "Hamnet",
+                        "title": {
+                            "en": "Hamnet",
+                            "fr": "Hamnet"
+                        },
                         "poster": {
                             "path": "/films/2026/Hamnet.jpg",
                             "alt": "Hamnet poster"
@@ -716,10 +887,19 @@
                     "id": "nominee-099",
                     "film": {
                         "id": "film-002",
-                        "title": "One Battle after Another",
+                        "title": {
+                            "en": "One Battle after Another",
+                            "fr": "Une bataille après l'autre"
+                        },
                         "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
+                            "en": {
+                                "path": "/films/2026/One-Battle-after-Another.jpg",
+                                "alt": "One Battle after Another poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/One-Battle-after-Another-FR.jpg",
+                                "alt": "Une bataille après l'autre poster"
+                            }
                         }
                     },
                     "crew": [
@@ -734,7 +914,10 @@
                     "id": "nominee-100",
                     "film": {
                         "id": "film-018",
-                        "title": "Train Dreams",
+                        "title": {
+                            "en": "Train Dreams",
+                            "fr": "Train Dreams"
+                        },
                         "poster": {
                             "path": "/films/2026/Train-Dreams.jpg",
                             "alt": "Train Dreams poster"
@@ -756,18 +939,24 @@
             ],
             "winners": {
                 "my_choice": "nominee-098",
-        "official": null
-    }
-},
-{
-    "id": "makeup-hairstyling",
-    "name": "Makeup and Hairstyling",
+                "official": null
+            }
+        },
+        {
+            "id": "makeup-hairstyling",
+            "name": {
+                "en": "Makeup and Hairstyling",
+                "fr": "Meilleurs maquillages et coiffures"
+            },
             "nominees": [
                 {
                     "id": "nominee-056",
                     "film": {
                         "id": "film-006",
-                        "title": "Frankenstein",
+                        "title": {
+                            "en": "Frankenstein",
+                            "fr": "Frankenstein"
+                        },
                         "poster": {
                             "path": "/films/2026/Frankenstein.jpg",
                             "alt": "Frankenstein poster"
@@ -795,10 +984,19 @@
                     "id": "nominee-057",
                     "film": {
                         "id": "film-024",
-                        "title": "Kokuho",
+                        "title": {
+                            "en": "Kokuho",
+                            "fr": "Le maître du kabuki"
+                        },
                         "poster": {
-                            "path": "/films/2026/Kokuho.jpg",
-                            "alt": "Kokuho poster"
+                            "en": {
+                                "path": "/films/2026/Kokuho.jpg",
+                                "alt": "Kokuho poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Kokuho-FR.jpg",
+                                "alt": "Le maître du kabuki poster"
+                            }
                         }
                     },
                     "crew": [
@@ -823,7 +1021,10 @@
                     "id": "nominee-058",
                     "film": {
                         "id": "film-004",
-                        "title": "Sinners",
+                        "title": {
+                            "en": "Sinners",
+                            "fr": "Sinners"
+                        },
                         "poster": {
                             "path": "/films/2026/Sinners.jpg",
                             "alt": "Sinners poster"
@@ -851,10 +1052,19 @@
                     "id": "nominee-059",
                     "film": {
                         "id": "film-025",
-                        "title": "The Smashing Machine",
+                        "title": {
+                            "en": "The Smashing Machine",
+                            "fr": "Smashing Machine"
+                        },
                         "poster": {
-                            "path": "/films/2026/The-Smashing-Machine.jpg",
-                            "alt": "The Smashing Machine poster"
+                            "en": {
+                                "path": "/films/2026/The-Smashing-Machine.jpg",
+                                "alt": "The Smashing Machine poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/The-Smashing-Machine-FR.jpg",
+                                "alt": "Smashing Machine poster"
+                            }
                         }
                     },
                     "crew": [
@@ -879,10 +1089,19 @@
                     "id": "nominee-060",
                     "film": {
                         "id": "film-026",
-                        "title": "The Ugly Stepsister",
+                        "title": {
+                            "en": "The Ugly Stepsister",
+                            "fr": "The Ugly Stepsister"
+                        },
                         "poster": {
-                            "path": "/films/2026/The-Ugly-Stepsister.jpg",
-                            "alt": "The Ugly Stepsister poster"
+                            "en": {
+                                "path": "/films/2026/The-Ugly-Stepsister.jpg",
+                                "alt": "The Ugly Stepsister poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/The-Ugly-Stepsister-FR.jpg",
+                                "alt": "The Ugly Stepsister poster"
+                            }
                         }
                     },
                     "crew": [
@@ -899,20 +1118,26 @@
                     ]
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-056",
-        "official": null
-    }
-},
-{
+                "official": null
+            }
+        },
+        {
             "id": "film-editing",
-            "name": "Film Editing",
+            "name": {
+                "en": "Film Editing",
+                "fr": "Meilleur montage"
+            },
             "nominees": [
                 {
                     "id": "nominee-046",
                     "film": {
                         "id": "film-020",
-                        "title": "F1",
+                        "title": {
+                            "en": "F1",
+                            "fr": "F1"
+                        },
                         "poster": {
                             "path": "/films/2026/F1.jpg",
                             "alt": "F1 poster"
@@ -930,7 +1155,10 @@
                     "id": "nominee-047",
                     "film": {
                         "id": "film-001",
-                        "title": "Marty Supreme",
+                        "title": {
+                            "en": "Marty Supreme",
+                            "fr": "Marty Supreme"
+                        },
                         "poster": {
                             "path": "/films/2026/Marty-Supreme.jpg",
                             "alt": "Marty Supreme poster"
@@ -953,10 +1181,19 @@
                     "id": "nominee-048",
                     "film": {
                         "id": "film-002",
-                        "title": "One Battle after Another",
+                        "title": {
+                            "en": "One Battle after Another",
+                            "fr": "Une bataille après l'autre"
+                        },
                         "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
+                            "en": {
+                                "path": "/films/2026/One-Battle-after-Another.jpg",
+                                "alt": "One Battle after Another poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/One-Battle-after-Another-FR.jpg",
+                                "alt": "Une bataille après l'autre poster"
+                            }
                         }
                     },
                     "crew": [
@@ -971,10 +1208,19 @@
                     "id": "nominee-049",
                     "film": {
                         "id": "film-007",
-                        "title": "Sentimental Value",
+                        "title": {
+                            "en": "Sentimental Value",
+                            "fr": "Valeur sentimentale"
+                        },
                         "poster": {
-                            "path": "/films/2026/Sentimental-Value.jpg",
-                            "alt": "Sentimental Value poster"
+                            "en": {
+                                "path": "/films/2026/Sentimental-Value.jpg",
+                                "alt": "Sentimental Value poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Sentimental-Value-FR.jpg",
+                                "alt": "Valeur sentimentale poster"
+                            }
                         }
                     },
                     "crew": [
@@ -989,7 +1235,10 @@
                     "id": "nominee-050",
                     "film": {
                         "id": "film-004",
-                        "title": "Sinners",
+                        "title": {
+                            "en": "Sinners",
+                            "fr": "Sinners"
+                        },
                         "poster": {
                             "path": "/films/2026/Sinners.jpg",
                             "alt": "Sinners poster"
@@ -1004,23 +1253,35 @@
                     ]
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-048",
-        "official": null
-    }
-},
-{
+                "official": null
+            }
+        },
+        {
             "id": "actress-supporting-role",
-            "name": "Actress in a Supporting Role",
+            "name": {
+                "en": "Actress in a Supporting Role",
+                "fr": "Meilleure actrice dans un second rôle"
+            },
             "nominees": [
                 {
                     "id": "nominee-016",
                     "film": {
                         "id": "film-007",
-                        "title": "Sentimental Value",
+                        "title": {
+                            "en": "Sentimental Value",
+                            "fr": "Valeur sentimentale"
+                        },
                         "poster": {
-                            "path": "/films/2026/Sentimental-Value.jpg",
-                            "alt": "Sentimental Value poster"
+                            "en": {
+                                "path": "/films/2026/Sentimental-Value.jpg",
+                                "alt": "Sentimental Value poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Sentimental-Value-FR.jpg",
+                                "alt": "Valeur sentimentale poster"
+                            }
                         }
                     },
                     "person": {
@@ -1042,10 +1303,19 @@
                     "id": "nominee-017",
                     "film": {
                         "id": "film-007",
-                        "title": "Sentimental Value",
+                        "title": {
+                            "en": "Sentimental Value",
+                            "fr": "Valeur sentimentale"
+                        },
                         "poster": {
-                            "path": "/films/2026/Sentimental-Value.jpg",
-                            "alt": "Sentimental Value poster"
+                            "en": {
+                                "path": "/films/2026/Sentimental-Value.jpg",
+                                "alt": "Sentimental Value poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Sentimental-Value-FR.jpg",
+                                "alt": "Valeur sentimentale poster"
+                            }
                         }
                     },
                     "person": {
@@ -1067,10 +1337,19 @@
                     "id": "nominee-018",
                     "film": {
                         "id": "film-012",
-                        "title": "Weapons",
+                        "title": {
+                            "en": "Weapons",
+                            "fr": "Évanouis"
+                        },
                         "poster": {
-                            "path": "/films/2026/Weapons.jpg",
-                            "alt": "Weapons poster"
+                            "en": {
+                                "path": "/films/2026/Weapons.jpg",
+                                "alt": "Weapons poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Weapons-FR.jpg",
+                                "alt": "Évanouis poster"
+                            }
                         }
                     },
                     "person": {
@@ -1092,7 +1371,10 @@
                     "id": "nominee-019",
                     "film": {
                         "id": "film-004",
-                        "title": "Sinners",
+                        "title": {
+                            "en": "Sinners",
+                            "fr": "Sinners"
+                        },
                         "poster": {
                             "path": "/films/2026/Sinners.jpg",
                             "alt": "Sinners poster"
@@ -1117,10 +1399,19 @@
                     "id": "nominee-020",
                     "film": {
                         "id": "film-002",
-                        "title": "One Battle after Another",
+                        "title": {
+                            "en": "One Battle after Another",
+                            "fr": "Une bataille après l'autre"
+                        },
                         "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
+                            "en": {
+                                "path": "/films/2026/One-Battle-after-Another.jpg",
+                                "alt": "One Battle after Another poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/One-Battle-after-Another-FR.jpg",
+                                "alt": "Une bataille après l'autre poster"
+                            }
                         }
                     },
                     "person": {
@@ -1139,20 +1430,26 @@
                     }
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-020",
-        "official": null
-    }
-},
-{
-    "id": "sound",
-    "name": "Sound",
+                "official": null
+            }
+        },
+        {
+            "id": "sound",
+            "name": {
+                "en": "Sound",
+                "fr": "Meilleur son"
+            },
             "nominees": [
                 {
                     "id": "nominee-086",
                     "film": {
                         "id": "film-020",
-                        "title": "F1",
+                        "title": {
+                            "en": "F1",
+                            "fr": "F1"
+                        },
                         "poster": {
                             "path": "/films/2026/F1.jpg",
                             "alt": "F1 poster"
@@ -1190,7 +1487,10 @@
                     "id": "nominee-087",
                     "film": {
                         "id": "film-006",
-                        "title": "Frankenstein",
+                        "title": {
+                            "en": "Frankenstein",
+                            "fr": "Frankenstein"
+                        },
                         "poster": {
                             "path": "/films/2026/Frankenstein.jpg",
                             "alt": "Frankenstein poster"
@@ -1228,10 +1528,19 @@
                     "id": "nominee-088",
                     "film": {
                         "id": "film-002",
-                        "title": "One Battle after Another",
+                        "title": {
+                            "en": "One Battle after Another",
+                            "fr": "Une bataille après l'autre"
+                        },
                         "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
+                            "en": {
+                                "path": "/films/2026/One-Battle-after-Another.jpg",
+                                "alt": "One Battle after Another poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/One-Battle-after-Another-FR.jpg",
+                                "alt": "Une bataille après l'autre poster"
+                            }
                         }
                     },
                     "crew": [
@@ -1256,7 +1565,10 @@
                     "id": "nominee-089",
                     "film": {
                         "id": "film-004",
-                        "title": "Sinners",
+                        "title": {
+                            "en": "Sinners",
+                            "fr": "Sinners"
+                        },
                         "poster": {
                             "path": "/films/2026/Sinners.jpg",
                             "alt": "Sinners poster"
@@ -1294,7 +1606,10 @@
                     "id": "nominee-090",
                     "film": {
                         "id": "film-022",
-                        "title": "Sirāt",
+                        "title": {
+                            "en": "Sirāt",
+                            "fr": "Sirāt"
+                        },
                         "poster": {
                             "path": "/films/2026/Sirat.jpg",
                             "alt": "Sirāt poster"
@@ -1319,20 +1634,26 @@
                     ]
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-089",
-        "official": null
-    }
-},
-{
+                "official": null
+            }
+        },
+        {
             "id": "music-song",
-            "name": "Music (Original Song)",
+            "name": {
+                "en": "Music (Original Song)",
+                "fr": "Meilleure chanson originale"
+            },
             "nominees": [
                 {
                     "id": "nominee-066",
                     "film": {
                         "id": "film-027",
-                        "title": "Diane Warren: Relentless",
+                        "title": {
+                            "en": "Diane Warren: Relentless",
+                            "fr": "Diane Warren: Relentless"
+                        },
                         "poster": {
                             "path": "/films/2026/Diane-Warren-Relentless.jpg",
                             "alt": "Diane Warren: Relentless poster"
@@ -1357,7 +1678,10 @@
                     "id": "nominee-067",
                     "film": {
                         "id": "film-015",
-                        "title": "KPop Demon Hunters",
+                        "title": {
+                            "en": "KPop Demon Hunters",
+                            "fr": "KPop Demon Hunters"
+                        },
                         "poster": {
                             "path": "/films/2026/KPop-Demon-Hunters.jpg",
                             "alt": "KPop Demon Hunters poster"
@@ -1409,7 +1733,10 @@
                     "id": "nominee-068",
                     "film": {
                         "id": "film-004",
-                        "title": "Sinners",
+                        "title": {
+                            "en": "Sinners",
+                            "fr": "Sinners"
+                        },
                         "poster": {
                             "path": "/films/2026/Sinners.jpg",
                             "alt": "Sinners poster"
@@ -1436,7 +1763,10 @@
                     "id": "nominee-069",
                     "film": {
                         "id": "film-028",
-                        "title": "Viva Verdi!",
+                        "title": {
+                            "en": "Viva Verdi!",
+                            "fr": "Viva Verdi!"
+                        },
                         "poster": {
                             "path": "/films/2026/Viva-Verdi.jpg",
                             "alt": "Viva Verdi! poster"
@@ -1461,7 +1791,10 @@
                     "id": "nominee-070",
                     "film": {
                         "id": "film-018",
-                        "title": "Train Dreams",
+                        "title": {
+                            "en": "Train Dreams",
+                            "fr": "Train Dreams"
+                        },
                         "poster": {
                             "path": "/films/2026/Train-Dreams.jpg",
                             "alt": "Train Dreams poster"
@@ -1485,143 +1818,26 @@
                     ]
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-068",
-        "official": null
-    }
-},
-{
-            "id": "documentary-short",
-            "name": "Documentary Short Film",
-            "nominees": [
-                {
-                    "id": "nominee-116",
-                    "film": {
-                        "id": "film-041",
-                        "title": "All the Empty Rooms",
-                        "poster": {
-                            "path": "/films/2026/All-the-Empty-Rooms.jpg",
-                            "alt": "All the Empty Rooms poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-166",
-                            "name": "Joshua Seftel",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-167",
-                            "name": "Conall Jones",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-117",
-                    "film": {
-                        "id": "film-042",
-                        "title": "Armed Only with a Camera: The Life and Death of Brent Renaud",
-                        "poster": {
-                            "path": "/films/2026/Armed-Only-with-a-Camera.jpg",
-                            "alt": "Armed Only with a Camera: The Life and Death of Brent Renaud poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-168",
-                            "name": "Craig Renaud",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-169",
-                            "name": "Juan Arredondo",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-118",
-                    "film": {
-                        "id": "film-043",
-                        "title": "Children No More: \"Were and Are Gone\"",
-                        "poster": {
-                            "path": "/films/2026/Children-No-More.jpg",
-                            "alt": "Children No More: \"Were and Are Gone\" poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-170",
-                            "name": "Hilla Medalia",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-171",
-                            "name": "Sheila Nevins",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-119",
-                    "film": {
-                        "id": "film-044",
-                        "title": "The Devil Is Busy",
-                        "poster": {
-                            "path": "/films/2026/The-Devil-Is-Busy.jpg",
-                            "alt": "The Devil Is Busy poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-172",
-                            "name": "Christalyn Hampton",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-173",
-                            "name": "Geeta Gandbhir",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-120",
-                    "film": {
-                        "id": "film-045",
-                        "title": "Perfectly a Strangeness",
-                        "poster": {
-                            "path": "/films/2026/Perfectly-a-Strangeness.jpg",
-                            "alt": "Perfectly a Strangeness poster"
-                        }
-                    },
-                    "person": {
-                        "id": "person-057",
-                        "name": "Alison McAlpine",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Alison-McAlpine.jpg",
-                                "alt": "Alison McAlpine"
-                            }
-                        }
-                    }
-                }
-            ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
+                "official": null
+            }
+        },
+        {
             "id": "documentary-feature",
-            "name": "Documentary Feature Film",
+            "name": {
+                "en": "Documentary Feature Film",
+                "fr": "Meilleur documentaire"
+            },
             "nominees": [
                 {
                     "id": "nominee-111",
                     "film": {
                         "id": "film-036",
-                        "title": "The Alabama Solution",
+                        "title": {
+                            "en": "The Alabama Solution",
+                            "fr": "The Alabama Solution"
+                        },
                         "poster": {
                             "path": "/films/2026/The-Alabama-Solution.jpg",
                             "alt": "The Alabama Solution poster"
@@ -1644,10 +1860,19 @@
                     "id": "nominee-112",
                     "film": {
                         "id": "film-037",
-                        "title": "Come See Me in the Good Light",
+                        "title": {
+                            "en": "Come See Me in the Good Light",
+                            "fr": "Viens me voir sous mon meilleur jour"
+                        },
                         "poster": {
-                            "path": "/films/2026/Come-See-Me-in-the-Good-Light.jpg",
-                            "alt": "Come See Me in the Good Light poster"
+                            "en": {
+                                "path": "/films/2026/Come-See-Me-in-the-Good-Light.jpg",
+                                "alt": "Come See Me in the Good Light poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Come-See-Me-in-the-Good-Light-FR.jpg",
+                                "alt": "Viens me voir sous mon meilleur jour poster"
+                            }
                         }
                     },
                     "crew": [
@@ -1677,10 +1902,19 @@
                     "id": "nominee-113",
                     "film": {
                         "id": "film-038",
-                        "title": "Cutting through Rocks",
+                        "title": {
+                            "en": "Cutting through Rocks",
+                            "fr": "À travers la roche"
+                        },
                         "poster": {
-                            "path": "/films/2026/Cutting-through-Rocks.jpg",
-                            "alt": "Cutting through Rocks poster"
+                            "en": {
+                                "path": "/films/2026/Cutting-through-Rocks.jpg",
+                                "alt": "Cutting through Rocks poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Cutting-through-Rocks-FR.jpg",
+                                "alt": "À travers la roche poster"
+                            }
                         }
                     },
                     "crew": [
@@ -1700,10 +1934,19 @@
                     "id": "nominee-114",
                     "film": {
                         "id": "film-039",
-                        "title": "Mr. Nobody against Putin",
+                        "title": {
+                            "en": "Mr. Nobody against Putin",
+                            "fr": "Mr. Nobody contre Poutine"
+                        },
                         "poster": {
-                            "path": "/films/2026/Mr-Nobody-against-Putin.jpg",
-                            "alt": "Mr. Nobody against Putin poster"
+                            "en": {
+                                "path": "/films/2026/Mr-Nobody-against-Putin.jpg",
+                                "alt": "Mr. Nobody against Putin poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Mr-Nobody-against-Putin-FR.jpg",
+                                "alt": "Mr. Nobody contre Poutine poster"
+                            }
                         }
                     },
                     "metadata": {
@@ -1714,10 +1957,19 @@
                     "id": "nominee-115",
                     "film": {
                         "id": "film-040",
-                        "title": "The Perfect Neighbor",
+                        "title": {
+                            "en": "The Perfect Neighbor",
+                            "fr": "Le Voisin parfait"
+                        },
                         "poster": {
-                            "path": "/films/2026/The-Perfect-Neighbor.jpg",
-                            "alt": "The Perfect Neighbor poster"
+                            "en": {
+                                "path": "/films/2026/The-Perfect-Neighbor.jpg",
+                                "alt": "The Perfect Neighbor poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/The-Perfect-Neighbor-FR.jpg",
+                                "alt": "Le Voisin parfait poster"
+                            }
                         }
                     },
                     "crew": [
@@ -1744,20 +1996,26 @@
                     ]
                 }
             ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
+            "winners": {
+                "my_choice": null,
+                "official": null
+            }
+        },
         {
             "id": "production-design",
-            "name": "Production Design",
+            "name": {
+                "en": "Production Design",
+                "fr": "Meilleurs décors"
+            },
             "nominees": [
                 {
                     "id": "nominee-081",
                     "film": {
                         "id": "film-006",
-                        "title": "Frankenstein",
+                        "title": {
+                            "en": "Frankenstein",
+                            "fr": "Frankenstein"
+                        },
                         "poster": {
                             "path": "/films/2026/Frankenstein.jpg",
                             "alt": "Frankenstein poster"
@@ -1780,7 +2038,10 @@
                     "id": "nominee-082",
                     "film": {
                         "id": "film-008",
-                        "title": "Hamnet",
+                        "title": {
+                            "en": "Hamnet",
+                            "fr": "Hamnet"
+                        },
                         "poster": {
                             "path": "/films/2026/Hamnet.jpg",
                             "alt": "Hamnet poster"
@@ -1803,7 +2064,10 @@
                     "id": "nominee-083",
                     "film": {
                         "id": "film-001",
-                        "title": "Marty Supreme",
+                        "title": {
+                            "en": "Marty Supreme",
+                            "fr": "Marty Supreme"
+                        },
                         "poster": {
                             "path": "/films/2026/Marty-Supreme.jpg",
                             "alt": "Marty Supreme poster"
@@ -1826,10 +2090,19 @@
                     "id": "nominee-084",
                     "film": {
                         "id": "film-002",
-                        "title": "One Battle after Another",
+                        "title": {
+                            "en": "One Battle after Another",
+                            "fr": "Une bataille après l'autre"
+                        },
                         "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
+                            "en": {
+                                "path": "/films/2026/One-Battle-after-Another.jpg",
+                                "alt": "One Battle after Another poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/One-Battle-after-Another-FR.jpg",
+                                "alt": "Une bataille après l'autre poster"
+                            }
                         }
                     },
                     "crew": [
@@ -1849,7 +2122,10 @@
                     "id": "nominee-085",
                     "film": {
                         "id": "film-004",
-                        "title": "Sinners",
+                        "title": {
+                            "en": "Sinners",
+                            "fr": "Sinners"
+                        },
                         "poster": {
                             "path": "/films/2026/Sinners.jpg",
                             "alt": "Sinners poster"
@@ -1876,16 +2152,28 @@
         },
         {
             "id": "visual-effects",
-            "name": "Visual Effects",
+            "name": {
+                "en": "Visual Effects",
+                "fr": "Meilleurs effets visuels"
+            },
             "nominees": [
                 {
                     "id": "nominee-091",
                     "film": {
                         "id": "film-019",
-                        "title": "Avatar: Fire and Ash",
+                        "title": {
+                            "en": "Avatar: Fire and Ash",
+                            "fr": "Avatar: De feu et de cendres"
+                        },
                         "poster": {
-                            "path": "/films/2026/Avatar-Fire-and-Ash.jpg",
-                            "alt": "Avatar: Fire and Ash poster"
+                            "en": {
+                                "path": "/films/2026/Avatar-Fire-and-Ash.jpg",
+                                "alt": "Avatar: Fire and Ash poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Avatar-Fire-and-Ash-FR.jpg",
+                                "alt": "Avatar : De feu et de cendres poster"
+                            }
                         }
                     },
                     "crew": [
@@ -1915,7 +2203,10 @@
                     "id": "nominee-092",
                     "film": {
                         "id": "film-020",
-                        "title": "F1",
+                        "title": {
+                            "en": "F1",
+                            "fr": "F1"
+                        },
                         "poster": {
                             "path": "/films/2026/F1.jpg",
                             "alt": "F1 poster"
@@ -1948,10 +2239,19 @@
                     "id": "nominee-093",
                     "film": {
                         "id": "film-029",
-                        "title": "Jurassic World Rebirth",
+                        "title": {
+                            "en": "Jurassic World Rebirth",
+                            "fr": "Jurassic World: Renaissance"
+                        },
                         "poster": {
-                            "path": "/films/2026/Jurassic-World-Rebirth.jpg",
-                            "alt": "Jurassic World Rebirth poster"
+                            "en": {
+                                "path": "/films/2026/Jurassic-World-Rebirth.jpg",
+                                "alt": "Jurassic World Rebirth poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Jurassic-World-Rebirth-FR.jpg",
+                                "alt": "Jurassic World: Renaissance poster"
+                            }
                         }
                     },
                     "crew": [
@@ -1981,10 +2281,19 @@
                     "id": "nominee-094",
                     "film": {
                         "id": "film-030",
-                        "title": "The Lost Bus",
+                        "title": {
+                            "en": "The Lost Bus",
+                            "fr": "The Lost Bus"
+                        },
                         "poster": {
-                            "path": "/films/2026/The-Lost-Bus.jpg",
-                            "alt": "The Lost Bus poster"
+                            "en": {
+                                "path": "/films/2026/The-Lost-Bus.jpg",
+                                "alt": "The Lost Bus poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/The-Lost-Bus-FR.jpg",
+                                "alt": "The Lost Bus poster"
+                            }
                         }
                     },
                     "crew": [
@@ -2014,7 +2323,10 @@
                     "id": "nominee-095",
                     "film": {
                         "id": "film-004",
-                        "title": "Sinners",
+                        "title": {
+                            "en": "Sinners",
+                            "fr": "Sinners"
+                        },
                         "poster": {
                             "path": "/films/2026/Sinners.jpg",
                             "alt": "Sinners poster"
@@ -2046,223 +2358,161 @@
             ],
             "winners": {
                 "my_choice": "nominee-091",
-        "official": null
-    }
-},
-{
-    "id": "international-feature",
-    "name": "International Feature Film",
+                "official": null
+            }
+        },
+        {
+            "id": "international-feature",
+            "name": {
+                "en": "International Feature Film",
+                "fr": "Meilleur film international"
+            },
             "nominees": [
                 {
                     "id": "nominee-051",
                     "film": {
                         "id": "film-005",
-                        "title": "The Secret Agent",
+                        "title": {
+                            "en": "The Secret Agent",
+                            "fr": "L'Agent secret"
+                        },
                         "poster": {
-                            "path": "/films/2026/The-Secret-Agent.jpg",
-                            "alt": "The Secret Agent poster"
+                            "en": {
+                                "path": "/films/2026/The-Secret-Agent.jpg",
+                                "alt": "The Secret Agent poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/The-Secret-Agent-FR.jpg",
+                                "alt": "L'Agent secret poster"
+                            }
                         }
                     },
                     "metadata": {
-                        "country": "Brazil"
+                        "country": {
+                            "en": "Brazil",
+                            "fr": "Brésil"
+                        }
                     }
                 },
                 {
                     "id": "nominee-052",
                     "film": {
                         "id": "film-021",
-                        "title": "It Was Just an Accident",
+                        "title": {
+                            "en": "It Was Just an Accident",
+                            "fr": "Un simple accident"
+                        },
                         "poster": {
-                            "path": "/films/2026/It-Was-Just-an-Accident.jpg",
-                            "alt": "It Was Just an Accident poster"
+                            "en": {
+                                "path": "/films/2026/It-Was-Just-an-Accident.jpg",
+                                "alt": "It Was Just an Accident poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/It-Was-Just-an-Accident-FR.jpg",
+                                "alt": "Un simple accident poster"
+                            }
                         }
                     },
                     "metadata": {
-                        "country": "France"
+                        "country": {
+                            "en": "France",
+                            "fr": "France"
+                        }
                     }
                 },
                 {
                     "id": "nominee-053",
                     "film": {
                         "id": "film-007",
-                        "title": "Sentimental Value",
+                        "title": {
+                            "en": "Sentimental Value",
+                            "fr": "Valeur sentimentale"
+                        },
                         "poster": {
-                            "path": "/films/2026/Sentimental-Value.jpg",
-                            "alt": "Sentimental Value poster"
+                            "en": {
+                                "path": "/films/2026/Sentimental-Value.jpg",
+                                "alt": "Sentimental Value poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Sentimental-Value-FR.jpg",
+                                "alt": "Valeur sentimentale poster"
+                            }
                         }
                     },
                     "metadata": {
-                        "country": "Norway"
+                        "country": {
+                            "en": "Norway",
+                            "fr": "Norvège"
+                        }
                     }
                 },
                 {
                     "id": "nominee-054",
                     "film": {
                         "id": "film-022",
-                        "title": "Sirāt",
+                        "title": {
+                            "en": "Sirāt",
+                            "fr": "Sirāt"
+                        },
                         "poster": {
                             "path": "/films/2026/Sirat.jpg",
                             "alt": "Sirāt poster"
                         }
                     },
                     "metadata": {
-                        "country": "Spain"
+                        "country": {
+                            "en": "Spain",
+                            "fr": "Espagne"
+                        }
                     }
                 },
                 {
                     "id": "nominee-055",
                     "film": {
                         "id": "film-023",
-                        "title": "The Voice of Hind Rajab",
+                        "title": {
+                            "en": "The Voice of Hind Rajab",
+                            "fr": "La Voix de Hind Rajab"
+                        },
                         "poster": {
-                            "path": "/films/2026/The-Voice-of-Hind-Rajab.jpg",
-                            "alt": "The Voice of Hind Rajab poster"
+                            "en": {
+                                "path": "/films/2026/The-Voice-of-Hind-Rajab.jpg",
+                                "alt": "The Voice of Hind Rajab poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/The-Voice-of-Hind-Rajab-FR.jpg",
+                                "alt": "La Voix de Hind Rajab poster"
+                            }
                         }
                     },
                     "metadata": {
-                        "country": "Tunisia"
+                        "country": {
+                            "en": "Tunisia",
+                            "fr": "Tunisie"
+                        }
                     }
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-053",
-        "official": null
-    }
-},
-{
-            "id": "live-action-short",
-            "name": "Live Action Short Film",
-            "nominees": [
-                {
-                    "id": "nominee-121",
-                    "film": {
-                        "id": "film-046",
-                        "title": "Butcher's Stain",
-                        "poster": {
-                            "path": "/films/2026/Butchers-Stain.jpg",
-                            "alt": "Butcher's Stain poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-174",
-                            "name": "Meyer Levinson-Blount",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-175",
-                            "name": "Oron Caspi",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-122",
-                    "film": {
-                        "id": "film-047",
-                        "title": "A Friend of Dorothy",
-                        "poster": {
-                            "path": "/films/2026/A-Friend-of-Dorothy.jpg",
-                            "alt": "A Friend of Dorothy poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-176",
-                            "name": "Lee Knight",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-177",
-                            "name": "James Dean",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-123",
-                    "film": {
-                        "id": "film-048",
-                        "title": "Jane Austen's Period Drama",
-                        "poster": {
-                            "path": "/films/2026/Jane-Austens-Period-Drama.jpg",
-                            "alt": "Jane Austen's Period Drama poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-178",
-                            "name": "Julia Aks",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-179",
-                            "name": "Steve Pinder",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-124",
-                    "film": {
-                        "id": "film-049",
-                        "title": "The Singers",
-                        "poster": {
-                            "path": "/films/2026/The-Singers.jpg",
-                            "alt": "The Singers poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-180",
-                            "name": "Sam A. Davis",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-181",
-                            "name": "Jack Piatt",
-                            "role": "Producer"
-                        }
-                    ]
-                },
-                {
-                    "id": "nominee-125",
-                    "film": {
-                        "id": "film-050",
-                        "title": "Two People Exchanging Saliva",
-                        "poster": {
-                            "path": "/films/2026/Two-People-Exchanging-Saliva.jpg",
-                            "alt": "Two People Exchanging Saliva poster"
-                        }
-                    },
-                    "crew": [
-                        {
-                            "id": "crew-182",
-                            "name": "Alexandre Singh",
-                            "role": "Director"
-                        },
-                        {
-                            "id": "crew-183",
-                            "name": "Natalie Musteata",
-                            "role": "Producer"
-                        }
-                    ]
-                }
-            ],
-    "winners": {
-        "my_choice": null,
-        "official": null
-    }
-},
-{
+                "official": null
+            }
+        },
+        {
             "id": "cinematography",
-            "name": "Cinematography",
+            "name": {
+                "en": "Cinematography",
+                "fr": "Meilleure photographie"
+            },
             "nominees": [
                 {
                     "id": "nominee-031",
                     "film": {
                         "id": "film-006",
-                        "title": "Frankenstein",
+                        "title": {
+                            "en": "Frankenstein",
+                            "fr": "Frankenstein"
+                        },
                         "poster": {
                             "path": "/films/2026/Frankenstein.jpg",
                             "alt": "Frankenstein poster"
@@ -2280,7 +2530,10 @@
                     "id": "nominee-032",
                     "film": {
                         "id": "film-001",
-                        "title": "Marty Supreme",
+                        "title": {
+                            "en": "Marty Supreme",
+                            "fr": "Marty Supreme"
+                        },
                         "poster": {
                             "path": "/films/2026/Marty-Supreme.jpg",
                             "alt": "Marty Supreme poster"
@@ -2298,10 +2551,19 @@
                     "id": "nominee-033",
                     "film": {
                         "id": "film-002",
-                        "title": "One Battle after Another",
+                        "title": {
+                            "en": "One Battle after Another",
+                            "fr": "Une bataille après l'autre"
+                        },
                         "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
+                            "en": {
+                                "path": "/films/2026/One-Battle-after-Another.jpg",
+                                "alt": "One Battle after Another poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/One-Battle-after-Another-FR.jpg",
+                                "alt": "Une bataille après l'autre poster"
+                            }
                         }
                     },
                     "crew": [
@@ -2316,7 +2578,10 @@
                     "id": "nominee-034",
                     "film": {
                         "id": "film-004",
-                        "title": "Sinners",
+                        "title": {
+                            "en": "Sinners",
+                            "fr": "Sinners"
+                        },
                         "poster": {
                             "path": "/films/2026/Sinners.jpg",
                             "alt": "Sinners poster"
@@ -2334,7 +2599,10 @@
                     "id": "nominee-035",
                     "film": {
                         "id": "film-018",
-                        "title": "Train Dreams",
+                        "title": {
+                            "en": "Train Dreams",
+                            "fr": "Train Dreams"
+                        },
                         "poster": {
                             "path": "/films/2026/Train-Dreams.jpg",
                             "alt": "Train Dreams poster"
@@ -2349,20 +2617,26 @@
                     ]
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-031",
-        "official": null
-    }
-},
-{
+                "official": null
+            }
+        },
+        {
             "id": "music-score",
-            "name": "Music (Original Score)",
+            "name": {
+                "en": "Music (Original Score)",
+                "fr": "Meilleure musique de film"
+            },
             "nominees": [
                 {
                     "id": "nominee-061",
                     "film": {
                         "id": "film-011",
-                        "title": "Bugonia",
+                        "title": {
+                            "en": "Bugonia",
+                            "fr": "Bugonia"
+                        },
                         "poster": {
                             "path": "/films/2026/Bugonia.jpg",
                             "alt": "Bugonia poster"
@@ -2380,7 +2654,10 @@
                     "id": "nominee-062",
                     "film": {
                         "id": "film-006",
-                        "title": "Frankenstein",
+                        "title": {
+                            "en": "Frankenstein",
+                            "fr": "Frankenstein"
+                        },
                         "poster": {
                             "path": "/films/2026/Frankenstein.jpg",
                             "alt": "Frankenstein poster"
@@ -2398,7 +2675,10 @@
                     "id": "nominee-063",
                     "film": {
                         "id": "film-008",
-                        "title": "Hamnet",
+                        "title": {
+                            "en": "Hamnet",
+                            "fr": "Hamnet"
+                        },
                         "poster": {
                             "path": "/films/2026/Hamnet.jpg",
                             "alt": "Hamnet poster"
@@ -2416,10 +2696,19 @@
                     "id": "nominee-064",
                     "film": {
                         "id": "film-002",
-                        "title": "One Battle after Another",
+                        "title": {
+                            "en": "One Battle after Another",
+                            "fr": "Une bataille après l'autre"
+                        },
                         "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
+                            "en": {
+                                "path": "/films/2026/One-Battle-after-Another.jpg",
+                                "alt": "One Battle after Another poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/One-Battle-after-Another-FR.jpg",
+                                "alt": "Une bataille après l'autre poster"
+                            }
                         }
                     },
                     "crew": [
@@ -2434,7 +2723,10 @@
                     "id": "nominee-065",
                     "film": {
                         "id": "film-004",
-                        "title": "Sinners",
+                        "title": {
+                            "en": "Sinners",
+                            "fr": "Sinners"
+                        },
                         "poster": {
                             "path": "/films/2026/Sinners.jpg",
                             "alt": "Sinners poster"
@@ -2449,20 +2741,26 @@
                     ]
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-065",
-        "official": null
-    }
-},
-{
+                "official": null
+            }
+        },
+        {
             "id": "actor-leading-role",
-            "name": "Actor in a Leading Role",
+            "name": {
+                "en": "Actor in a Leading Role",
+                "fr": "Meilleur acteur"
+            },
             "nominees": [
                 {
                     "id": "nominee-001",
                     "film": {
                         "id": "film-001",
-                        "title": "Marty Supreme",
+                        "title": {
+                            "en": "Marty Supreme",
+                            "fr": "Marty Supreme"
+                        },
                         "poster": {
                             "path": "/films/2026/Marty-Supreme.jpg",
                             "alt": "Marty Supreme poster"
@@ -2487,10 +2785,19 @@
                     "id": "nominee-002",
                     "film": {
                         "id": "film-002",
-                        "title": "One Battle after Another",
+                        "title": {
+                            "en": "One Battle after Another",
+                            "fr": "Une bataille après l'autre"
+                        },
                         "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
+                            "en": {
+                                "path": "/films/2026/One-Battle-after-Another.jpg",
+                                "alt": "One Battle after Another poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/One-Battle-after-Another-FR.jpg",
+                                "alt": "Une bataille après l'autre poster"
+                            }
                         }
                     },
                     "person": {
@@ -2512,7 +2819,10 @@
                     "id": "nominee-003",
                     "film": {
                         "id": "film-003",
-                        "title": "Blue Moon",
+                        "title": {
+                            "en": "Blue Moon",
+                            "fr": "Blue Moon"
+                        },
                         "poster": {
                             "path": "/films/2026/Blue-Moon.jpg",
                             "alt": "Blue Moon poster"
@@ -2537,7 +2847,10 @@
                     "id": "nominee-004",
                     "film": {
                         "id": "film-004",
-                        "title": "Sinners",
+                        "title": {
+                            "en": "Sinners",
+                            "fr": "Sinners"
+                        },
                         "poster": {
                             "path": "/films/2026/Sinners.jpg",
                             "alt": "Sinners poster"
@@ -2562,10 +2875,19 @@
                     "id": "nominee-005",
                     "film": {
                         "id": "film-005",
-                        "title": "The Secret Agent",
+                        "title": {
+                            "en": "The Secret Agent",
+                            "fr": "L'Agent secret"
+                        },
                         "poster": {
-                            "path": "/films/2026/The-Secret-Agent.jpg",
-                            "alt": "The Secret Agent poster"
+                            "en": {
+                                "path": "/films/2026/The-Secret-Agent.jpg",
+                                "alt": "The Secret Agent poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/The-Secret-Agent-FR.jpg",
+                                "alt": "L'Agent secret poster"
+                            }
                         }
                     },
                     "person": {
@@ -2584,20 +2906,26 @@
                     }
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-001",
-        "official": null
-    }
-},
-{
-    "id": "directing",
-    "name": "Directing",
+                "official": null
+            }
+        },
+        {
+            "id": "directing",
+            "name": {
+                "en": "Directing",
+                "fr": "Meilleure réalisation"
+            },
             "nominees": [
                 {
                     "id": "nominee-041",
                     "film": {
                         "id": "film-008",
-                        "title": "Hamnet",
+                        "title": {
+                            "en": "Hamnet",
+                            "fr": "Hamnet"
+                        },
                         "poster": {
                             "path": "/films/2026/Hamnet.jpg",
                             "alt": "Hamnet poster"
@@ -2622,7 +2950,10 @@
                     "id": "nominee-042",
                     "film": {
                         "id": "film-001",
-                        "title": "Marty Supreme",
+                        "title": {
+                            "en": "Marty Supreme",
+                            "fr": "Marty Supreme"
+                        },
                         "poster": {
                             "path": "/films/2026/Marty-Supreme.jpg",
                             "alt": "Marty Supreme poster"
@@ -2647,10 +2978,19 @@
                     "id": "nominee-043",
                     "film": {
                         "id": "film-002",
-                        "title": "One Battle after Another",
+                        "title": {
+                            "en": "One Battle after Another",
+                            "fr": "Une bataille après l'autre"
+                        },
                         "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
+                            "en": {
+                                "path": "/films/2026/One-Battle-after-Another.jpg",
+                                "alt": "One Battle after Another poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/One-Battle-after-Another-FR.jpg",
+                                "alt": "Une bataille après l'autre poster"
+                            }
                         }
                     },
                     "person": {
@@ -2672,10 +3012,19 @@
                     "id": "nominee-044",
                     "film": {
                         "id": "film-007",
-                        "title": "Sentimental Value",
+                        "title": {
+                            "en": "Sentimental Value",
+                            "fr": "Valeur sentimentale"
+                        },
                         "poster": {
-                            "path": "/films/2026/Sentimental-Value.jpg",
-                            "alt": "Sentimental Value poster"
+                            "en": {
+                                "path": "/films/2026/Sentimental-Value.jpg",
+                                "alt": "Sentimental Value poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Sentimental-Value-FR.jpg",
+                                "alt": "Valeur sentimentale poster"
+                            }
                         }
                     },
                     "person": {
@@ -2697,7 +3046,10 @@
                     "id": "nominee-045",
                     "film": {
                         "id": "film-004",
-                        "title": "Sinners",
+                        "title": {
+                            "en": "Sinners",
+                            "fr": "Sinners"
+                        },
                         "poster": {
                             "path": "/films/2026/Sinners.jpg",
                             "alt": "Sinners poster"
@@ -2719,20 +3071,26 @@
                     }
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-043",
                 "official": null
             }
         },
         {
             "id": "actress-leading-role",
-            "name": "Actress in a Leading Role",
+            "name": {
+                "en": "Actress in a Leading Role",
+                "fr": "Meilleure actrice"
+            },
             "nominees": [
                 {
                     "id": "nominee-011",
                     "film": {
                         "id": "film-008",
-                        "title": "Hamnet",
+                        "title": {
+                            "en": "Hamnet",
+                            "fr": "Hamnet"
+                        },
                         "poster": {
                             "path": "/films/2026/Hamnet.jpg",
                             "alt": "Hamnet poster"
@@ -2757,10 +3115,19 @@
                     "id": "nominee-012",
                     "film": {
                         "id": "film-009",
-                        "title": "If I Had Legs I'd Kick You",
+                        "title": {
+                            "en": "If I Had Legs I'd Kick You",
+                            "fr": "Si j'en avais la force"
+                        },
                         "poster": {
-                            "path": "/films/2026/If-I-Had-Legs-Id-Kick-You.jpg",
-                            "alt": "If I Had Legs I'd Kick You poster"
+                            "en": {
+                                "path": "/films/2026/If-I-Had-Legs-Id-Kick-You.jpg",
+                                "alt": "If I Had Legs I'd Kick You poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/If-I-Had-Legs-Id-Kick-You-FR.jpg",
+                                "alt": "Si j'en avais la force poster"
+                            }
                         }
                     },
                     "person": {
@@ -2782,10 +3149,19 @@
                     "id": "nominee-013",
                     "film": {
                         "id": "film-010",
-                        "title": "Song Sung Blue",
+                        "title": {
+                            "en": "Song Sung Blue",
+                            "fr": "Sur un Air de Blues"
+                        },
                         "poster": {
-                            "path": "/films/2026/Song-Sung-Blue.jpg",
-                            "alt": "Song Sung Blue poster"
+                            "en": {
+                                "path": "/films/2026/Song-Sung-Blue.jpg",
+                                "alt": "Song Sung Blue poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Song-Sung-Blue-FR.jpg",
+                                "alt": "Sur un Air de Blues poster"
+                            }
                         }
                     },
                     "person": {
@@ -2807,10 +3183,19 @@
                     "id": "nominee-014",
                     "film": {
                         "id": "film-007",
-                        "title": "Sentimental Value",
+                        "title": {
+                            "en": "Sentimental Value",
+                            "fr": "Valeur sentimentale"
+                        },
                         "poster": {
-                            "path": "/films/2026/Sentimental-Value.jpg",
-                            "alt": "Sentimental Value poster"
+                            "en": {
+                                "path": "/films/2026/Sentimental-Value.jpg",
+                                "alt": "Sentimental Value poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Sentimental-Value-FR.jpg",
+                                "alt": "Valeur sentimentale poster"
+                            }
                         }
                     },
                     "person": {
@@ -2832,7 +3217,10 @@
                     "id": "nominee-015",
                     "film": {
                         "id": "film-011",
-                        "title": "Bugonia",
+                        "title": {
+                            "en": "Bugonia",
+                            "fr": "Bugonia"
+                        },
                         "poster": {
                             "path": "/films/2026/Bugonia.jpg",
                             "alt": "Bugonia poster"
@@ -2856,18 +3244,24 @@
             ],
             "winners": {
                 "my_choice": "nominee-011",
-        "official": null
-    }
-},
-{
-    "id": "best-picture",
-    "name": "Best Picture",
+                "official": null
+            }
+        },
+        {
+            "id": "best-picture",
+            "name": {
+                "en": "Best Picture",
+                "fr": "Meilleur film"
+            },
             "nominees": [
                 {
                     "id": "nominee-071",
                     "film": {
                         "id": "film-011",
-                        "title": "Bugonia",
+                        "title": {
+                            "en": "Bugonia",
+                            "fr": "Bugonia"
+                        },
                         "poster": {
                             "path": "/films/2026/Bugonia.jpg",
                             "alt": "Bugonia poster"
@@ -2878,7 +3272,10 @@
                     "id": "nominee-072",
                     "film": {
                         "id": "film-020",
-                        "title": "F1",
+                        "title": {
+                            "en": "F1",
+                            "fr": "F1"
+                        },
                         "poster": {
                             "path": "/films/2026/F1.jpg",
                             "alt": "F1 poster"
@@ -2889,7 +3286,10 @@
                     "id": "nominee-073",
                     "film": {
                         "id": "film-006",
-                        "title": "Frankenstein",
+                        "title": {
+                            "en": "Frankenstein",
+                            "fr": "Frankenstein"
+                        },
                         "poster": {
                             "path": "/films/2026/Frankenstein.jpg",
                             "alt": "Frankenstein poster"
@@ -2900,7 +3300,10 @@
                     "id": "nominee-074",
                     "film": {
                         "id": "film-008",
-                        "title": "Hamnet",
+                        "title": {
+                            "en": "Hamnet",
+                            "fr": "Hamnet"
+                        },
                         "poster": {
                             "path": "/films/2026/Hamnet.jpg",
                             "alt": "Hamnet poster"
@@ -2911,7 +3314,10 @@
                     "id": "nominee-075",
                     "film": {
                         "id": "film-001",
-                        "title": "Marty Supreme",
+                        "title": {
+                            "en": "Marty Supreme",
+                            "fr": "Marty Supreme"
+                        },
                         "poster": {
                             "path": "/films/2026/Marty-Supreme.jpg",
                             "alt": "Marty Supreme poster"
@@ -2922,10 +3328,19 @@
                     "id": "nominee-076",
                     "film": {
                         "id": "film-002",
-                        "title": "One Battle after Another",
+                        "title": {
+                            "en": "One Battle after Another",
+                            "fr": "Une bataille après l'autre"
+                        },
                         "poster": {
-                            "path": "/films/2026/One-Battle-after-Another.jpg",
-                            "alt": "One Battle after Another poster"
+                            "en": {
+                                "path": "/films/2026/One-Battle-after-Another.jpg",
+                                "alt": "One Battle after Another poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/One-Battle-after-Another-FR.jpg",
+                                "alt": "Une bataille après l'autre poster"
+                            }
                         }
                     }
                 },
@@ -2933,10 +3348,19 @@
                     "id": "nominee-077",
                     "film": {
                         "id": "film-005",
-                        "title": "The Secret Agent",
+                        "title": {
+                            "en": "The Secret Agent",
+                            "fr": "L'Agent secret"
+                        },
                         "poster": {
-                            "path": "/films/2026/The-Secret-Agent.jpg",
-                            "alt": "The Secret Agent poster"
+                            "en": {
+                                "path": "/films/2026/The-Secret-Agent.jpg",
+                                "alt": "The Secret Agent poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/The-Secret-Agent-FR.jpg",
+                                "alt": "L'Agent secret poster"
+                            }
                         }
                     }
                 },
@@ -2944,10 +3368,19 @@
                     "id": "nominee-078",
                     "film": {
                         "id": "film-007",
-                        "title": "Sentimental Value",
+                        "title": {
+                            "en": "Sentimental Value",
+                            "fr": "Valeur sentimentale"
+                        },
                         "poster": {
-                            "path": "/films/2026/Sentimental-Value.jpg",
-                            "alt": "Sentimental Value poster"
+                            "en": {
+                                "path": "/films/2026/Sentimental-Value.jpg",
+                                "alt": "Sentimental Value poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Sentimental-Value-FR.jpg",
+                                "alt": "Valeur sentimentale poster"
+                            }
                         }
                     }
                 },
@@ -2955,7 +3388,10 @@
                     "id": "nominee-079",
                     "film": {
                         "id": "film-004",
-                        "title": "Sinners",
+                        "title": {
+                            "en": "Sinners",
+                            "fr": "Sinners"
+                        },
                         "poster": {
                             "path": "/films/2026/Sinners.jpg",
                             "alt": "Sinners poster"
@@ -2966,7 +3402,10 @@
                     "id": "nominee-080",
                     "film": {
                         "id": "film-018",
-                        "title": "Train Dreams",
+                        "title": {
+                            "en": "Train Dreams",
+                            "fr": "Train Dreams"
+                        },
                         "poster": {
                             "path": "/films/2026/Train-Dreams.jpg",
                             "alt": "Train Dreams poster"
@@ -2974,10 +3413,10 @@
                     }
                 }
             ],
-    "winners": {
+            "winners": {
                 "my_choice": "nominee-078",
-        "official": null
-    }
-}
-]
+                "official": null
+            }
+        }
+    ]
 }

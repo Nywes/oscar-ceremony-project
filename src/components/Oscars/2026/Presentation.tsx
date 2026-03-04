@@ -6,12 +6,14 @@ import { YouTubeModal } from '../shared/YouTubeModal';
 import { IntroSection } from './IntroSection';
 import { CategorySection } from './CategorySection';
 import { ThanksSection } from './ThanksSection';
-import type { OscarsData2026, Nominee2026 } from './types';
+import type { OscarsData2026, Nominee2026, Lang } from './types';
 import {
+  t,
   getActorImagePathSync,
   getFilmImagePathSync,
-  checkImageExists,
   getNomineeImagePaths,
+  collectAllImageUrls,
+  preloadAllImages,
 } from './utils';
 
 type Presentation2026Props = {
@@ -33,48 +35,29 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
   const { year, categories } = oscarsData;
 
   useEffect(() => {
-    const preloadImages = async () => {
-      const actorNames = new Set<string>();
-      const filmNames = new Set<string>();
+    const allUrls = collectAllImageUrls(categories);
+
+    preloadAllImages(allUrls).then((results) => {
+      const validPaths: { [key: string]: boolean } = {};
 
       categories.forEach((category) => {
         category.nominees.forEach((nominee) => {
           if (nominee.person) {
-            actorNames.add(nominee.person.name);
+            const path = getActorImagePathSync(nominee.person.name, 0);
+            if (path) validPaths[nominee.person.name] = results.get(path) ?? false;
           }
-          if (nominee.film) {
-            filmNames.add(nominee.film.title);
-          }
+          const enTitle = t(nominee.film.title, 'en');
+          const filmPath = `/films/2026/${enTitle
+            .replace(/:\s*/g, '-')
+            .replace(/\s+/g, '-')
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')}.jpg`;
+          validPaths[enTitle] = results.get(filmPath) ?? false;
         });
       });
 
-      const results = await Promise.all([
-        ...Array.from(actorNames).map(async (actorName) => {
-          const path = await checkImageExists(
-            `/actors/2026/${actorName
-              .replace(/\./g, '')
-              .replace(/\s+/g, '-')
-              .normalize('NFD')
-              .replace(/[\u0300-\u036f]/g, '')}.jpg`
-          );
-          return [actorName, path] as [string, boolean];
-        }),
-        ...Array.from(filmNames).map(async (filmName) => {
-          const path = await checkImageExists(
-            `/films/2026/${filmName
-              .replace(/:\s*/g, '-')
-              .replace(/\s+/g, '-')
-              .normalize('NFD')
-              .replace(/[\u0300-\u036f]/g, '')}.jpg`
-          );
-          return [filmName, path] as [string, boolean];
-        }),
-      ]);
-
-      setValidImagePaths(Object.fromEntries(results));
-    };
-
-    preloadImages();
+      setValidImagePaths(validPaths);
+    });
   }, [categories]);
 
   useEffect(() => {
@@ -126,13 +109,13 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
     }
   };
 
-  const revealWinner = (categoryName: string) => {
-    const isCurrentlyRevealed = highlightedWinners[categoryName];
+  const revealWinner = (categoryId: string) => {
+    const isCurrentlyRevealed = highlightedWinners[categoryId];
 
     if (isCurrentlyRevealed) {
       setHighlightedWinners((prev) => {
         const newState = { ...prev };
-        delete newState[categoryName];
+        delete newState[categoryId];
         return newState;
       });
       return;
@@ -140,19 +123,16 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
 
     setHighlightedWinners((prev) => ({
       ...prev,
-      [categoryName]: true,
+      [categoryId]: true,
     }));
-    if (categoryName === 'Music (Original Score)') {
-      setSelectedVideoId('2TAZJHgGt_c');
-    }
   };
 
-  const isWinner = (categoryName: string, nominee: Nominee2026) => {
-    const category = categories.find((c) => c.name === categoryName);
+  const isWinner = (categoryId: string, nominee: Nominee2026) => {
+    const category = categories.find((c) => c.id === categoryId);
     if (!category || !category.winners.my_choice) return false;
 
     return (
-      category.winners.my_choice === nominee.id && highlightedWinners[categoryName]
+      category.winners.my_choice === nominee.id && highlightedWinners[categoryId]
     );
   };
 
@@ -257,7 +237,7 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
       }
     }
 
-    const videoId = await searchTrailer(nominee.film.title);
+    const videoId = await searchTrailer(t(nominee.film.title, 'en'));
     setSelectedVideoId(videoId);
   };
 
@@ -373,7 +353,7 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
 
       {categories.map((category, index) => (
         <CategorySection
-          key={category.id || category.name}
+          key={category.id}
           category={category}
           index={index}
           isActive={activeSection === index + 1}
@@ -387,6 +367,7 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
           currentImageIndices={currentImageIndices}
           actorRotationPhase={actorRotationPhase}
           year={year}
+          language={language}
         />
       ))}
 
