@@ -3117,7 +3117,7 @@
                         "id": "film-009",
                         "title": {
                             "en": "If I Had Legs I'd Kick You",
-                            "fr": "Si j'avais des jambes je te botterais"
+                            "fr": "Si j'en avais la force"
                         },
                         "poster": {
                             "en": {
@@ -3126,7 +3126,7 @@
                             },
                             "fr": {
                                 "path": "/films/2026/If-I-Had-Legs-Id-Kick-You-FR.jpg",
-                                "alt": "Si j'avais des jambes je te botterais poster"
+                                "alt": "Si j'en avais la force poster"
                             }
                         }
                     },
@@ -3151,11 +3151,17 @@
                         "id": "film-010",
                         "title": {
                             "en": "Song Sung Blue",
-                            "fr": "Song Sung Blue"
+                            "fr": "Sur un Air de Blues"
                         },
                         "poster": {
-                            "path": "/films/2026/Song-Sung-Blue.jpg",
-                            "alt": "Song Sung Blue poster"
+                            "en": {
+                                "path": "/films/2026/Song-Sung-Blue.jpg",
+                                "alt": "Song Sung Blue poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/Song-Sung-Blue-FR.jpg",
+                                "alt": "Sur un Air de Blues poster"
+                            }
                         }
                     },
                     "person": {

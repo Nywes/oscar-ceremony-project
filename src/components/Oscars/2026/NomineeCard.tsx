@@ -1,7 +1,7 @@
 import './styles/index.css';
 import { useState, useEffect, useRef } from 'react';
 import type { Nominee2026, Lang } from './types';
-import { t, getActorImagePathSync, checkImageExists } from './utils';
+import { t, getActorImagePathSync } from './utils';
 
 type NomineeCardProps = {
   nominee: Nominee2026;
@@ -64,16 +64,14 @@ export const NomineeCard = ({
 
   const notSeen = nominee.metadata?.notSeen || false;
 
-  // Vérifier si l'image secondaire existe pour les acteurs
   useEffect(() => {
-    if (nominee.person && actorImagePath) {
-      const secondaryImagePath = getActorImagePathSync(nominee.person.name, 1);
-      if (secondaryImagePath) {
-        checkImageExists(secondaryImagePath).then((exists) => {
-          setHasSecondaryImage(exists);
-        });
-      }
-    }
+    if (!nominee.person || !actorImagePath) return;
+    const secondaryPath = getActorImagePathSync(nominee.person.name, 1);
+    if (!secondaryPath) return;
+    const img = new Image();
+    img.onload = () => setHasSecondaryImage(true);
+    img.onerror = () => setHasSecondaryImage(false);
+    img.src = secondaryPath;
   }, [nominee.person, actorImagePath]);
 
   // Synchronisation avec la phase globale : flip quand phase change

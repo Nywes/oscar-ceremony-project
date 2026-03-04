@@ -11,8 +11,9 @@ import {
   t,
   getActorImagePathSync,
   getFilmImagePathSync,
-  checkImageExists,
   getNomineeImagePaths,
+  collectAllImageUrls,
+  preloadAllImages,
 } from './utils';
 
 type Presentation2026Props = {
@@ -34,48 +35,29 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
   const { year, categories } = oscarsData;
 
   useEffect(() => {
-    const preloadImages = async () => {
-      const actorNames = new Set<string>();
-      const filmNames = new Set<string>();
+    const allUrls = collectAllImageUrls(categories);
+
+    preloadAllImages(allUrls).then((results) => {
+      const validPaths: { [key: string]: boolean } = {};
 
       categories.forEach((category) => {
         category.nominees.forEach((nominee) => {
           if (nominee.person) {
-            actorNames.add(nominee.person.name);
+            const path = getActorImagePathSync(nominee.person.name, 0);
+            if (path) validPaths[nominee.person.name] = results.get(path) ?? false;
           }
-          if (nominee.film) {
-            filmNames.add(t(nominee.film.title, 'en'));
-          }
+          const enTitle = t(nominee.film.title, 'en');
+          const filmPath = `/films/2026/${enTitle
+            .replace(/:\s*/g, '-')
+            .replace(/\s+/g, '-')
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')}.jpg`;
+          validPaths[enTitle] = results.get(filmPath) ?? false;
         });
       });
 
-      const results = await Promise.all([
-        ...Array.from(actorNames).map(async (actorName) => {
-          const path = await checkImageExists(
-            `/actors/2026/${actorName
-              .replace(/\./g, '')
-              .replace(/\s+/g, '-')
-              .normalize('NFD')
-              .replace(/[\u0300-\u036f]/g, '')}.jpg`
-          );
-          return [actorName, path] as [string, boolean];
-        }),
-        ...Array.from(filmNames).map(async (filmName) => {
-          const path = await checkImageExists(
-            `/films/2026/${filmName
-              .replace(/:\s*/g, '-')
-              .replace(/\s+/g, '-')
-              .normalize('NFD')
-              .replace(/[\u0300-\u036f]/g, '')}.jpg`
-          );
-          return [filmName, path] as [string, boolean];
-        }),
-      ]);
-
-      setValidImagePaths(Object.fromEntries(results));
-    };
-
-    preloadImages();
+      setValidImagePaths(validPaths);
+    });
   }, [categories]);
 
   useEffect(() => {
