@@ -6,7 +6,7 @@ import { YouTubeModal } from '../shared/YouTubeModal';
 import { IntroSection } from './IntroSection';
 import { CategorySection } from './CategorySection';
 import { ThanksSection } from './ThanksSection';
-import type { OscarsData2026, Nominee2026, Lang } from './types';
+import type { OscarsData2026, Nominee2026 } from './types';
 import {
   t,
   getActorImagePathSync,

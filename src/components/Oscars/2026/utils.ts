@@ -1,5 +1,4 @@
 import type { Nominee2026, Category2026, Translatable, TranslatableImageAsset, ImageAsset, Lang } from './types';
-import { getNomineeImages } from '../data-adapter';
 
 export const t = (value: Translatable, lang: Lang): string => {
   if (typeof value === 'string') return value;
@@ -72,7 +71,17 @@ export const checkImageExists = (imagePath: string): Promise<boolean> => {
 };
 
 export const getNomineeImagePaths = (nominee: Nominee2026): string[] => {
-  return getNomineeImages(nominee);
+  const images: string[] = [];
+  if (nominee.person?.images) {
+    images.push(nominee.person.images.primary.path);
+    if (nominee.person.images.secondary) {
+      images.push(nominee.person.images.secondary.path);
+    }
+    if (nominee.person.images.additional) {
+      images.push(...nominee.person.images.additional.map((img) => img.path));
+    }
+  }
+  return images;
 };
 
 /**
