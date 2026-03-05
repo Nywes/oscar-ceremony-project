@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './styles/index.css';
 import oscarsData2026Json from './oscars-data-2026.json';
 import { YouTubeModal } from '../shared/YouTubeModal';
