@@ -1,7 +1,7 @@
 import './styles/index.css';
 import { useRef, useEffect, useCallback } from 'react';
 import type { Category2026, Nominee2026, Lang } from './types';
-import { t } from './utils';
+import { t, tImage } from './utils';
 import { NomineeCard } from './NomineeCard';
 import { useVoting } from '../shared/useVoting';
 
@@ -105,7 +105,8 @@ export const CategorySection = ({
                 )
               : undefined;
             const filmImagePath = !nominee.person
-              ? getFilmImagePath(t(nominee.film.title, 'en'))
+              ? (tImage(nominee.film.poster, language)?.path
+                || getFilmImagePath(t(nominee.film.title, 'en')))
               : undefined;
             const isNomineeWinner = isWinner(category.id, nominee);
             const isLosing = highlightedWinners[category.id] && !isNomineeWinner;

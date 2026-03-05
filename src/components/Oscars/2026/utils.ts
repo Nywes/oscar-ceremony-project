@@ -21,6 +21,7 @@ const sanitizeActorName = (name: string) =>
 const sanitizeFilmTitle = (title: string) =>
   title
     .replace(/:\s*/g, '-')
+    .replace(/[.!?']/g, '')
     .replace(/\s+/g, '-')
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '');

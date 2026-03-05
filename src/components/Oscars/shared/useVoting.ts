@@ -36,7 +36,7 @@ export function useVoting(categoryName: string, year: number) {
       voteStats: categoryStats,
       hasVoted,
       showResults: false,
-      showMyVote: false,
+      showMyVote: hasVoted,
       userChoiceId: userChoiceId || null,
     };
   });

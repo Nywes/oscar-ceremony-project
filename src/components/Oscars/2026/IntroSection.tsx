@@ -1,6 +1,5 @@
 import './styles/index.css';
 import { LanguageToggle } from '../shared/LanguageToggle';
-import { ScrollIndicator } from '../shared/ScrollIndicator';
 
 type IntroSectionProps = {
   year: number;
@@ -34,12 +33,11 @@ export const IntroSection = ({
   year,
   language,
   onLanguageChange,
-  onScrollClick,
   sectionRef,
 }: IntroSectionProps) => {
   return (
     <div className="intro-section-2026" ref={sectionRef}>
-      <div className="flex flex-col items-center justify-center mb-12 gap-4">
+      <div className="flex flex-col items-center justify-center mb-4 gap-4">
         <h1>{getIntroTitle(year, language)}</h1>
         <div className="oscars-text-logo-container">
           <div className="oscars-text-logo" />
@@ -90,7 +88,6 @@ export const IntroSection = ({
         )}
         <LanguageToggle language={language} onLanguageChange={onLanguageChange} />
       </div>
-      <ScrollIndicator onScrollClick={onScrollClick} />
     </div>
   );
 };

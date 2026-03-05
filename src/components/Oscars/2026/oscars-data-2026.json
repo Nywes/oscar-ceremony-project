@@ -473,14 +473,8 @@
                             "fr": "Retirement Plan"
                         },
                         "poster": {
-                            "en": {
-                                "path": "/films/2026/Retirement-Plan.jpg",
-                                "alt": "Retirement Plan poster"
-                            },
-                            "fr": {
-                                "path": "/films/2026/Retirement-Plan-FR.jpg",
-                                "alt": "Retirement Plan poster"
-                            }
+                            "path": "/films/2026/Retirement-Plan.jpg",
+                            "alt": "Retirement Plan poster"
                         }
                     },
                     "crew": [
@@ -505,14 +499,8 @@
                             "fr": "The Three Sisters"
                         },
                         "poster": {
-                            "en": {
-                                "path": "/films/2026/The-Three-Sisters.jpg",
-                                "alt": "The Three Sisters poster"
-                            },
-                            "fr": {
-                                "path": "/films/2026/The-Three-Sisters-FR.jpg",
-                                "alt": "The Three Sisters poster"
-                            }
+                            "path": "/films/2026/The-Three-Sisters.jpg",
+                            "alt": "The Three Sisters poster"
                         }
                     },
                     "crew": [
@@ -687,7 +675,7 @@
                         "id": "film-021",
                         "title": {
                             "en": "It Was Just an Accident",
-                            "fr": "Ce n'était qu'un accident"
+                            "fr": "Un simple accident"
                         },
                         "poster": {
                             "en": {
@@ -696,7 +684,7 @@
                             },
                             "fr": {
                                 "path": "/films/2026/It-Was-Just-an-Accident-FR.jpg",
-                                "alt": "Ce n'était qu'un accident poster"
+                                "alt": "Un simple accident poster"
                             }
                         }
                     },
@@ -1057,14 +1045,8 @@
                             "fr": "Smashing Machine"
                         },
                         "poster": {
-                            "en": {
-                                "path": "/films/2026/The-Smashing-Machine.jpg",
-                                "alt": "The Smashing Machine poster"
-                            },
-                            "fr": {
-                                "path": "/films/2026/The-Smashing-Machine-FR.jpg",
-                                "alt": "Smashing Machine poster"
-                            }
+                            "path": "/films/2026/The-Smashing-Machine.jpg",
+                            "alt": "The Smashing Machine poster"
                         }
                     },
                     "crew": [
@@ -1094,14 +1076,8 @@
                             "fr": "The Ugly Stepsister"
                         },
                         "poster": {
-                            "en": {
-                                "path": "/films/2026/The-Ugly-Stepsister.jpg",
-                                "alt": "The Ugly Stepsister poster"
-                            },
-                            "fr": {
-                                "path": "/films/2026/The-Ugly-Stepsister-FR.jpg",
-                                "alt": "The Ugly Stepsister poster"
-                            }
+                            "path": "/films/2026/The-Ugly-Stepsister.jpg",
+                            "alt": "The Ugly Stepsister poster"
                         }
                     },
                     "crew": [
@@ -1663,16 +1639,13 @@
                         "songTitle": "Dear Me",
                         "notes": "from Diane Warren: Relentless; Music and Lyric by Diane Warren"
                     },
-                    "person": {
-                        "id": "person-050",
-                        "name": "Diane Warren",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Diane-Warren.jpg",
-                                "alt": "Diane Warren"
-                            }
+                    "crew": [
+                        {
+                            "id": "crew-050",
+                            "name": "Diane Warren",
+                            "role": "Music & Lyric"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-067",
@@ -1776,16 +1749,13 @@
                         "songTitle": "Sweet Dreams Of Joy",
                         "notes": "from Viva Verdi!; Music and Lyric by Nicholas Pike"
                     },
-                    "person": {
-                        "id": "person-051",
-                        "name": "Nicholas Pike",
-                        "images": {
-                            "primary": {
-                                "path": "/actors/2026/Nicholas-Pike.jpg",
-                                "alt": "Nicholas Pike"
-                            }
+                    "crew": [
+                        {
+                            "id": "crew-051",
+                            "name": "Nicholas Pike",
+                            "role": "Music & Lyric"
                         }
-                    }
+                    ]
                 },
                 {
                     "id": "nominee-070",
@@ -1839,8 +1809,14 @@
                             "fr": "The Alabama Solution"
                         },
                         "poster": {
-                            "path": "/films/2026/The-Alabama-Solution.jpg",
-                            "alt": "The Alabama Solution poster"
+                            "en": {
+                                "path": "/films/2026/The-Alabama-Solution.jpg",
+                                "alt": "The Alabama Solution poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/The-Alabama-Solution-FR.jpg",
+                                "alt": "The Alabama Solution poster"
+                            }
                         }
                     },
                     "crew": [
@@ -1862,7 +1838,7 @@
                         "id": "film-037",
                         "title": {
                             "en": "Come See Me in the Good Light",
-                            "fr": "Viens me voir sous mon meilleur jour"
+                            "fr": "Espoir et bonheur l'histoire d'Andrea et Megan"
                         },
                         "poster": {
                             "en": {
@@ -1871,7 +1847,7 @@
                             },
                             "fr": {
                                 "path": "/films/2026/Come-See-Me-in-the-Good-Light-FR.jpg",
-                                "alt": "Viens me voir sous mon meilleur jour poster"
+                                "alt": "Espoir et bonheur l'histoire d'Andrea et Megan poster"
                             }
                         }
                     },
@@ -1904,17 +1880,11 @@
                         "id": "film-038",
                         "title": {
                             "en": "Cutting through Rocks",
-                            "fr": "À travers la roche"
+                            "fr": "Cutting Through Rocks"
                         },
                         "poster": {
-                            "en": {
-                                "path": "/films/2026/Cutting-through-Rocks.jpg",
-                                "alt": "Cutting through Rocks poster"
-                            },
-                            "fr": {
-                                "path": "/films/2026/Cutting-through-Rocks-FR.jpg",
-                                "alt": "À travers la roche poster"
-                            }
+                            "path": "/films/2026/Cutting-through-Rocks.jpg",
+                            "alt": "Cutting through Rocks poster"
                         }
                     },
                     "crew": [
@@ -1936,7 +1906,7 @@
                         "id": "film-039",
                         "title": {
                             "en": "Mr. Nobody against Putin",
-                            "fr": "Mr. Nobody contre Poutine"
+                            "fr": "Mister Nobody contre Poutine"
                         },
                         "poster": {
                             "en": {
@@ -1945,7 +1915,7 @@
                             },
                             "fr": {
                                 "path": "/films/2026/Mr-Nobody-against-Putin-FR.jpg",
-                                "alt": "Mr. Nobody contre Poutine poster"
+                                "alt": "Mister Nobody contre Poutine poster"
                             }
                         }
                     },
@@ -1959,7 +1929,7 @@
                         "id": "film-040",
                         "title": {
                             "en": "The Perfect Neighbor",
-                            "fr": "Le Voisin parfait"
+                            "fr": "La Voisine idéale"
                         },
                         "poster": {
                             "en": {
@@ -1968,7 +1938,7 @@
                             },
                             "fr": {
                                 "path": "/films/2026/The-Perfect-Neighbor-FR.jpg",
-                                "alt": "Le Voisin parfait poster"
+                                "alt": "La Voisine idéale poster"
                             }
                         }
                     },
@@ -2244,14 +2214,8 @@
                             "fr": "Jurassic World: Renaissance"
                         },
                         "poster": {
-                            "en": {
-                                "path": "/films/2026/Jurassic-World-Rebirth.jpg",
-                                "alt": "Jurassic World Rebirth poster"
-                            },
-                            "fr": {
-                                "path": "/films/2026/Jurassic-World-Rebirth-FR.jpg",
-                                "alt": "Jurassic World: Renaissance poster"
-                            }
+                            "path": "/films/2026/Jurassic-World-Rebirth.jpg",
+                            "alt": "Jurassic World Rebirth poster"
                         }
                     },
                     "crew": [
@@ -2286,14 +2250,8 @@
                             "fr": "The Lost Bus"
                         },
                         "poster": {
-                            "en": {
-                                "path": "/films/2026/The-Lost-Bus.jpg",
-                                "alt": "The Lost Bus poster"
-                            },
-                            "fr": {
-                                "path": "/films/2026/The-Lost-Bus-FR.jpg",
-                                "alt": "The Lost Bus poster"
-                            }
+                            "path": "/films/2026/The-Lost-Bus.jpg",
+                            "alt": "The Lost Bus poster"
                         }
                     },
                     "crew": [
