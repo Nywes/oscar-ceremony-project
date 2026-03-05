@@ -1,45 +1,40 @@
 @media (max-width: 768px) {
-  /*
-   * Un seul scroll (document) pour garder le scroll-snap sans conflit.
-   * La section prend la hauteur de son contenu, pas de scroll interne.
-   */
   .category-section-2026 {
-    padding: 2.5vh 3vw 0;
-    overflow: visible;
+    padding: 2vh 3vw calc(env(safe-area-inset-bottom) + 48px);
+    overflow: hidden;
+    height: 100dvh;
+    max-height: 100dvh;
     min-height: 100dvh;
-    height: auto;
-    max-height: none;
     align-items: flex-start;
+    box-sizing: border-box;
   }
 
   .category-content-2026 {
-    height: auto;
+    height: 100%;
     min-height: 0;
     justify-content: flex-start;
   }
 
-  /* Liste des cartes en hauteur naturelle, pas de scroll interne */
   .nominees-container-2026 {
-    flex: 0 0 auto;
+    flex: 1;
     min-height: 0;
+    gap: 1.2vh;
   }
 
-  /* Best Picture : remplit l'écran sans scroll */
+  .nominee-card-2026 {
+    flex: 1;
+    min-height: 0;
+    height: auto;
+  }
+
   .category-best-picture .best-picture-container-2026 {
     flex: 1;
     min-height: 0;
   }
 
   .category-actions {
-    position: sticky;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-top: auto;
-    padding-top: 0.75rem;
-    padding-bottom: calc(env(safe-area-inset-bottom) + 52px);
-    background: var(--oscar-white);
     flex-shrink: 0;
+    padding-top: 0.5rem;
     z-index: 2;
   }
 
@@ -48,19 +43,11 @@
     padding-bottom: 6px;
     white-space: nowrap;
     max-width: 94vw;
+    flex-shrink: 0;
   }
 
   .category-title-2026:after {
     bottom: 0;
-  }
-
-  .nominees-container-2026 {
-    gap: 1.2vh;
-  }
-
-  .nominee-card-2026 {
-    height: min(14vh, 100px);
-    min-height: min(14vh, 100px);
   }
 
   .nominee-info-grid-1 {
@@ -73,31 +60,37 @@
 }
 
 @media (max-width: 480px) {
-  /* Section scrollable, moins d’espace perdu en haut */
   .category-section-2026 {
-    padding: 2vh 3vw 0;
-    overflow: visible;
+    padding: 1.5vh 3vw calc(env(safe-area-inset-bottom) + 52px);
+    overflow: hidden;
+    height: 100dvh;
+    max-height: 100dvh;
     min-height: 100dvh;
-    height: auto;
-    max-height: none;
     align-items: flex-start;
+    box-sizing: border-box;
   }
 
   .category-content-2026 {
-    height: auto;
+    height: 100%;
     min-height: 0;
     justify-content: flex-start;
-    gap: 1vh;
+    gap: 0.8vh;
     padding-bottom: 0;
   }
 
-  /* Liste des cartes en hauteur naturelle, pas de scroll interne */
   .nominees-container-2026 {
-    flex: 0 0 auto;
+    flex: 1;
     min-height: 0;
+    gap: 1vh;
+    max-width: 95vw;
   }
 
-  /* Best Picture : remplit l'écran sans scroll */
+  .nominee-card-2026 {
+    flex: 1;
+    min-height: 0;
+    height: auto;
+  }
+
   .category-best-picture .best-picture-container-2026 {
     flex: 1;
     min-height: 0;
@@ -111,34 +104,17 @@
     white-space: nowrap;
     max-width: 94vw;
     border-radius: 10px;
+    flex-shrink: 0;
   }
 
   .category-title-2026:after {
     bottom: 0;
   }
 
-  /* Boutons toujours visibles au-dessus de la barre Safari/Arc */
   .category-actions {
-    position: sticky;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-top: auto;
-    padding-top: 0.75rem;
-    padding-bottom: calc(env(safe-area-inset-bottom) + 56px);
-    background: var(--oscar-white);
     flex-shrink: 0;
+    padding-top: 0.5rem;
     z-index: 2;
-  }
-
-  .nominees-container {
-    gap: 1vh;
-    max-width: 95vw;
-  }
-
-  .nominee-card-2026 {
-    height: min(13vh, 100px);
-    min-height: min(13vh, 100px);
   }
 
   .nominee-info-grid-1 {
@@ -152,6 +128,6 @@
   }
 
   .category-title-2026 {
-    margin-bottom: 0.75vh;
+    margin-bottom: 0;
   }
 }
