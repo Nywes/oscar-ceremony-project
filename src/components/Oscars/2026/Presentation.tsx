@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import './styles/index.css';
 import oscarsData2026Json from './oscars-data-2026.json';
 import { YouTubeModal } from '../shared/YouTubeModal';
@@ -70,6 +70,49 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  // Mobile : snap JS léger (remplace scroll-snap CSS qui bloque lors des changements de direction)
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 768px)');
+    if (!mq.matches) return;
+
+    let touchActive = false;
+    let scrollTimer: ReturnType<typeof setTimeout>;
+    let isSnapping = false;
+
+    const snapToNearest = () => {
+      if (touchActive || isSnapping) return;
+      const vh = window.innerHeight;
+      const y = window.scrollY;
+      const nearest = Math.round(y / vh) * vh;
+      if (Math.abs(y - nearest) < 5) return;
+
+      isSnapping = true;
+      window.scrollTo({ top: nearest, behavior: 'smooth' });
+      setTimeout(() => { isSnapping = false; }, 400);
+    };
+
+    const onTouchStart = () => { touchActive = true; clearTimeout(scrollTimer); };
+    const onTouchEnd = () => { touchActive = false; };
+    const onScroll = () => {
+      if (isSnapping) return;
+      clearTimeout(scrollTimer);
+      if (!touchActive) {
+        scrollTimer = setTimeout(snapToNearest, 120);
+      }
+    };
+
+    window.addEventListener('touchstart', onTouchStart, { passive: true });
+    window.addEventListener('touchend', onTouchEnd, { passive: true });
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    return () => {
+      clearTimeout(scrollTimer);
+      window.removeEventListener('touchstart', onTouchStart);
+      window.removeEventListener('touchend', onTouchEnd);
+      window.removeEventListener('scroll', onScroll);
     };
   }, []);
 

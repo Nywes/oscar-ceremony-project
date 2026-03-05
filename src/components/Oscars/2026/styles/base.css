@@ -21,6 +21,11 @@ html {
 @media (max-width: 768px) {
   html {
     scroll-behavior: auto;
-    scroll-snap-type: y proximity;
+    scroll-snap-type: none;
+  }
+
+  .category-section-2026,
+  .intro-section-2026 {
+    scroll-snap-align: none;
   }
 }
