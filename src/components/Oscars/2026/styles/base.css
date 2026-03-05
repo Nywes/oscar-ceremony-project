@@ -20,6 +20,7 @@ html {
 
 @media (max-width: 768px) {
   html {
+    scroll-behavior: auto;
     scroll-snap-type: y proximity;
   }
 }
