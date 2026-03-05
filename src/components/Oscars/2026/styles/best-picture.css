@@ -137,7 +137,7 @@
 .best-picture-container-2026 .best-picture-card .best-picture-votes {
   position: absolute;
   top: 0.25rem;
-  right: 0.25rem;
+  right: 0.5rem;
   left: auto;
   bottom: auto;
   z-index: 3;

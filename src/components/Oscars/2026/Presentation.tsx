@@ -49,6 +49,7 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
           const enTitle = t(nominee.film.title, 'en');
           const filmPath = `/films/2026/${enTitle
             .replace(/:\s*/g, '-')
+            .replace(/[.!?']/g, '')
             .replace(/\s+/g, '-')
             .normalize('NFD')
             .replace(/[\u0300-\u036f]/g, '')}.jpg`;
