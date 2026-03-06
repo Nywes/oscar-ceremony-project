@@ -351,6 +351,10 @@
 }
 
 @media (max-width: 768px) {
+  .thanks-section.category-section-2026 {
+    padding-bottom: calc(env(safe-area-inset-bottom) + 48px);
+  }
+
   .thanks-text-small {
     font-size: 0.75rem;
   }
@@ -359,6 +363,12 @@
     columns: 1;
     column-gap: 0.8rem;
     padding: 2vh 4vw 3vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .thanks-section.category-section-2026 {
+    padding-bottom: calc(env(safe-area-inset-bottom) + 52px);
   }
 }
 
