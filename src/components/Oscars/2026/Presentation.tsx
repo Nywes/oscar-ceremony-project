@@ -62,46 +62,65 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
   }, [categories]);
 
   useEffect(() => {
+    let rafId: number;
     const handleScroll = () => {
-      setScrollY(window.scrollY);
+      cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(() => {
+        setScrollY(window.scrollY);
+      });
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-
     return () => {
+      cancelAnimationFrame(rafId);
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  // Mobile : snap JS léger (remplace scroll-snap CSS qui bloque lors des changements de direction)
   useEffect(() => {
-    const mq = window.matchMedia('(max-width: 768px)');
-    if (!mq.matches) return;
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    if (!isMobile) return;
 
-    let touchActive = false;
-    let scrollTimer: ReturnType<typeof setTimeout>;
-    let isSnapping = false;
+    let isTouching = false;
+    let snapRafId: number;
+    let debounceTimer: ReturnType<typeof setTimeout>;
+
+    const cancelSnap = () => {
+      clearTimeout(debounceTimer);
+      cancelAnimationFrame(snapRafId);
+    };
 
     const snapToNearest = () => {
-      if (touchActive || isSnapping) return;
       const vh = window.innerHeight;
       const y = window.scrollY;
       const nearest = Math.round(y / vh) * vh;
-      if (Math.abs(y - nearest) < 5) return;
+      const distance = nearest - y;
+      if (Math.abs(distance) < 5) return;
 
-      isSnapping = true;
-      window.scrollTo({ top: nearest, behavior: 'smooth' });
-      setTimeout(() => { isSnapping = false; }, 400);
+      const start = y;
+      const duration = 300;
+      const t0 = performance.now();
+
+      const step = (now: number) => {
+        if (isTouching) return;
+        const progress = Math.min((now - t0) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        window.scrollTo(0, start + distance * eased);
+        if (progress < 1) snapRafId = requestAnimationFrame(step);
+      };
+
+      snapRafId = requestAnimationFrame(step);
     };
 
-    const onTouchStart = () => { touchActive = true; clearTimeout(scrollTimer); };
-    const onTouchEnd = () => { touchActive = false; };
+    const onTouchStart = () => {
+      isTouching = true;
+      cancelSnap();
+    };
+    const onTouchEnd = () => { isTouching = false; };
     const onScroll = () => {
-      if (isSnapping) return;
-      clearTimeout(scrollTimer);
-      if (!touchActive) {
-        scrollTimer = setTimeout(snapToNearest, 120);
-      }
+      if (isTouching) return;
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(snapToNearest, 150);
     };
 
     window.addEventListener('touchstart', onTouchStart, { passive: true });
@@ -109,7 +128,7 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
     window.addEventListener('scroll', onScroll, { passive: true });
 
     return () => {
-      clearTimeout(scrollTimer);
+      cancelSnap();
       window.removeEventListener('touchstart', onTouchStart);
       window.removeEventListener('touchend', onTouchEnd);
       window.removeEventListener('scroll', onScroll);
