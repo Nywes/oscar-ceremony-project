@@ -14,18 +14,11 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) {
   html {
-    scroll-behavior: auto;
-    scroll-snap-type: none;
-  }
-
-  .category-section-2026,
-  .intro-section-2026 {
-    scroll-snap-align: none;
+    scroll-behavior: smooth;
   }
 }
