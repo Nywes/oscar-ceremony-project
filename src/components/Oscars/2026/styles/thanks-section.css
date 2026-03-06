@@ -1,11 +1,15 @@
-/* Page remerciement : colonne pour mettre le legal en bas (éviter côte à côte sur mobile) */
+/* Thanks section : no fixed height, grows with messages */
 .thanks-section.category-section-2026 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding: 3vh 3vw 2vh;
-  overflow-y: auto;
+  overflow: visible !important;
+  overflow-y: visible !important;
+  height: auto !important;
+  max-height: none !important;
+  min-height: calc(var(--app-vh, 1svh) * 100);
 }
 
 .thanks-content-2026 {
@@ -18,9 +22,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2vh;
+  gap: 1.5vh;
   padding: 2vh 0;
   position: relative;
+}
+
+.thanks-text-small {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.thanks-text-small p {
+  margin: 0.15em 0;
+}
+
+.thanks-letterboxd {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.thanks-letterboxd a {
+  color: var(--oscar-gold);
+  text-decoration: none;
 }
 
 .thanks-btn-2026 {
@@ -32,7 +56,7 @@
   font-size: min(3.5vw, 1rem);
   border-radius: 50px;
   cursor: pointer;
-  margin: 2vh auto;
+  margin: 1vh auto;
   transition: all 0.3s ease;
   width: fit-content;
 }
@@ -100,7 +124,245 @@
   padding-bottom: 20px;
 }
 
-/* Texte légal tout en bas de la page remerciement */
+/* --- Guestbook --- */
+
+.guestbook-2026 {
+  width: 100%;
+  max-width: min(500px, 90vw);
+  margin: 0 auto;
+}
+
+.guestbook-title {
+  font-family: 'Futura PT Medium', 'Futura', sans-serif;
+  font-size: min(4vw, 0.9rem);
+  color: var(--oscar-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.8vh;
+}
+
+.guestbook-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.guestbook-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.guestbook-input {
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid rgba(184, 134, 11, 0.3);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  font-family: 'Futura PT Light Book', 'Futura', sans-serif;
+  font-size: 0.8rem;
+  color: var(--oscar-black);
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.guestbook-input:focus {
+  border-color: var(--oscar-gold);
+}
+
+.guestbook-input::placeholder {
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.guestbook-textarea {
+  resize: none;
+  min-height: 3rem;
+  padding-bottom: 1.4rem;
+}
+
+.guestbook-charcount {
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0.8rem;
+  font-family: 'Futura PT Light Book', 'Futura', sans-serif;
+  font-size: 0.65rem;
+  color: rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+}
+
+.guestbook-charcount.warn {
+  color: var(--oscar-gold);
+}
+
+.guestbook-charcount.limit {
+  color: var(--oscar-red);
+}
+
+.guestbook-send {
+  background: transparent;
+  color: var(--oscar-gold);
+  border: 1.5px solid var(--oscar-gold);
+  padding: 0.4rem 1.6rem;
+  font-family: 'Futura PT Medium', 'Futura', sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.guestbook-send:hover:not(:disabled) {
+  background: var(--oscar-gold);
+  color: var(--oscar-white);
+}
+
+.guestbook-send:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.guestbook-thankyou {
+  font-family: 'Futura PT Medium', 'Futura', sans-serif;
+  color: var(--oscar-gold);
+  font-size: 0.85rem;
+}
+
+/* Message wall — responsive masonry grid flowing downward */
+.guestbook-wall {
+  width: 100%;
+  max-width: min(900px, 95vw);
+  columns: 3;
+  column-gap: 1rem;
+  padding: 3vh 3vw 4vh;
+  margin: 0 auto;
+}
+
+.guestbook-card {
+  break-inside: avoid;
+  background: rgba(184, 134, 11, 0.05);
+  border: 1px solid rgba(184, 134, 11, 0.12);
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.guestbook-card-text {
+  font-family: 'Futura PT Light Book', 'Futura', sans-serif;
+  font-size: 0.8rem;
+  color: var(--oscar-black);
+  line-height: 1.5;
+  margin: 0;
+  word-break: break-word;
+}
+
+.guestbook-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.guestbook-card-author {
+  font-family: 'Futura PT Light Book', 'Futura', sans-serif;
+  font-size: 0.65rem;
+  color: rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+}
+
+/* Vote buttons */
+.guestbook-votes {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.gv-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 0.5rem;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.2);
+  transition: color 0.15s;
+}
+
+.gv-btn:hover {
+  color: var(--oscar-gold);
+}
+
+.gv-btn.gv-active {
+  color: var(--oscar-gold);
+}
+
+.gv-score {
+  font-family: 'Futura PT Medium', 'Futura', sans-serif;
+  font-size: 0.6rem;
+  color: rgba(0, 0, 0, 0.25);
+  min-width: 1rem;
+  text-align: center;
+}
+
+.gv-score.positive {
+  color: var(--oscar-gold);
+}
+
+.gv-score.negative {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Sort controls */
+.guestbook-sort {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.5vh 0 0.5vh;
+}
+
+.guestbook-sort-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Futura PT Light Book', 'Futura', sans-serif;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(0, 0, 0, 0.3);
+  padding: 0;
+  transition: color 0.15s;
+}
+
+.guestbook-sort-btn:hover {
+  color: var(--oscar-gold);
+}
+
+.guestbook-sort-btn.active {
+  color: var(--oscar-gold);
+}
+
+.guestbook-sort-sep {
+  color: rgba(0, 0, 0, 0.15);
+  font-size: 0.65rem;
+}
+
+@media (max-width: 768px) {
+  .thanks-text-small {
+    font-size: 0.75rem;
+  }
+
+  .guestbook-wall {
+    columns: 1;
+    column-gap: 0.8rem;
+    padding: 2vh 4vw 3vh;
+  }
+}
+
+/* Legal notice at the very bottom */
 .thanks-section .legal-notice {
   margin-top: auto;
   padding: 2vh 20px 1.5vh;

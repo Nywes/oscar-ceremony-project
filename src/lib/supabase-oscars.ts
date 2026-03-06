@@ -72,6 +72,86 @@ export async function getVoteCountsByCategory(
   }
 }
 
+// --- Guestbook ---
+
+export type GuestbookMessage = {
+  id: string;
+  year: number;
+  author: string;
+  message: string;
+  created_at: string;
+  upvotes: number;
+  downvotes: number;
+};
+
+export async function getGuestbookMessages(year: number): Promise<GuestbookMessage[]> {
+  if (!isSupabaseConfigured()) return [];
+  try {
+    const { data, error } = await supabase
+      .from('oscars_guestbook')
+      .select('*')
+      .eq('year', year)
+      .order('created_at', { ascending: false })
+      .limit(200);
+
+    if (error) {
+      console.error('Error fetching guestbook:', error);
+      return [];
+    }
+    return (data as GuestbookMessage[]) ?? [];
+  } catch (err) {
+    console.error('Error fetching guestbook:', err);
+    return [];
+  }
+}
+
+export async function addGuestbookMessage(
+  year: number,
+  author: string,
+  message: string
+): Promise<GuestbookMessage | null> {
+  if (!isSupabaseConfigured()) return null;
+  try {
+    const { data, error } = await supabase
+      .from('oscars_guestbook')
+      .insert({ year, author: author.trim(), message: message.trim() })
+      .select()
+      .single();
+
+    if (error) {
+      console.error('Error adding guestbook message:', error);
+      return null;
+    }
+    return data as GuestbookMessage;
+  } catch (err) {
+    console.error('Error adding guestbook message:', err);
+    return null;
+  }
+}
+
+export async function voteGuestbookMessage(
+  messageId: string,
+  column: 'upvotes' | 'downvotes',
+  delta: 1 | -1
+): Promise<boolean> {
+  if (!isSupabaseConfigured()) return false;
+  try {
+    const { error } = await supabase.rpc('vote_guestbook', {
+      msg_id: messageId,
+      col: column,
+      delta,
+    });
+    if (error) {
+      console.error('Error voting guestbook:', error);
+      return false;
+    }
+    return true;
+  } catch (err) {
+    console.error('Error voting guestbook:', err);
+    return false;
+  }
+}
+
 /**
  * Types pour la base de données Supabase
  */
