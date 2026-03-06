@@ -40,9 +40,21 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
       document.documentElement.style.setProperty('--app-vh', `${window.innerHeight * 0.01}px`);
     };
     setVh();
-    // Only recalculate on orientation change — NOT on resize (toolbar show/hide triggers resize)
-    window.addEventListener('orientationchange', () => setTimeout(setVh, 150));
-    return () => window.removeEventListener('orientationchange', setVh);
+
+    let resizeTid: ReturnType<typeof setTimeout>;
+    const onResize = () => {
+      clearTimeout(resizeTid);
+      resizeTid = setTimeout(setVh, 150);
+    };
+    const onOrientationChange = () => setTimeout(setVh, 150);
+
+    window.addEventListener('orientationchange', onOrientationChange);
+    window.addEventListener('resize', onResize);
+    return () => {
+      window.removeEventListener('orientationchange', onOrientationChange);
+      window.removeEventListener('resize', onResize);
+      clearTimeout(resizeTid);
+    };
   }, []);
 
   useEffect(() => {
