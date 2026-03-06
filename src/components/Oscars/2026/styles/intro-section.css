@@ -1,6 +1,5 @@
 .intro-section-2026 {
   height: 100vh;
-  height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,14 +56,14 @@
   }
 
   .intro-section-2026 h1 {
-    font-size: min(6.5vw, 4.5dvh, 2rem);
+    font-size: min(6.5vw, 4.5svh, 2rem);
     letter-spacing: 1px;
   }
 
   .intro-section-2026 .text-md {
-    font-size: min(3.2vw, 1.8dvh, 1rem);
+    font-size: min(3.2vw, 1.8svh, 1rem);
     line-height: 1.5;
-    margin: 1dvh auto;
+    margin: 1svh auto;
     max-width: 92vw;
   }
 
