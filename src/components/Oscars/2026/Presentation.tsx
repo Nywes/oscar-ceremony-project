@@ -21,7 +21,6 @@ type Presentation2026Props = {
 };
 
 export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Props = {}) => {
-  const [scrollY, setScrollY] = useState(0);
   const [activeSection, setActiveSection] = useState(0);
   const [highlightedWinners, setHighlightedWinners] = useState<{ [key: string]: boolean }>({});
   const [validImagePaths, setValidImagePaths] = useState<{ [key: string]: boolean }>({});
@@ -30,6 +29,7 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
   const sectionRefs = useRef<(HTMLElement | null)[]>([]);
   const [selectedVideoId, setSelectedVideoId] = useState<string | null>(null);
   const [language, setLanguage] = useState<'fr' | 'en'>('fr');
+  const activeSectionRef = useRef(0);
 
   const oscarsData: OscarsData2026 = oscarsData2026Json as OscarsData2026;
   const { year, categories } = oscarsData;
@@ -61,107 +61,47 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
     });
   }, [categories]);
 
+  // Section tracking via IntersectionObserver — zero re-renders during scroll
   useEffect(() => {
-    let rafId: number;
-    const handleScroll = () => {
-      cancelAnimationFrame(rafId);
-      rafId = requestAnimationFrame(() => {
-        setScrollY(window.scrollY);
-      });
-    };
+    const totalSections = categories.length + 2;
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => {
-      cancelAnimationFrame(rafId);
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const idx = sectionRefs.current.indexOf(entry.target as HTMLElement);
+          if (idx === -1 || idx === activeSectionRef.current) return;
 
-  useEffect(() => {
-    const isMobile = window.matchMedia('(max-width: 768px)').matches;
-    if (!isMobile) return;
+          activeSectionRef.current = idx;
+          setActiveSection(idx);
 
-    let isTouching = false;
-    let snapRafId: number;
-    let debounceTimer: ReturnType<typeof setTimeout>;
+          const isFirstOrLast = idx === 0 || idx === totalSections - 1;
+          onActiveSectionChange?.(isFirstOrLast);
 
-    const cancelSnap = () => {
-      clearTimeout(debounceTimer);
-      cancelAnimationFrame(snapRafId);
-    };
+          // Intro fade-out
+          const introEl = sectionRefs.current[0];
+          if (introEl) {
+            introEl.classList.toggle('fade-out', idx > 0);
+          }
+        });
+      },
+      { threshold: 0.6 }
+    );
 
-    const snapToNearest = () => {
-      const vh = window.innerHeight;
-      const y = window.scrollY;
-      const nearest = Math.round(y / vh) * vh;
-      const distance = nearest - y;
-      if (Math.abs(distance) < 5) return;
+    sectionRefs.current.forEach((el) => {
+      if (el) observer.observe(el);
+    });
 
-      const start = y;
-      const duration = 300;
-      const t0 = performance.now();
+    return () => observer.disconnect();
+  }, [categories.length, onActiveSectionChange]);
 
-      const step = (now: number) => {
-        if (isTouching) return;
-        const progress = Math.min((now - t0) / duration, 1);
-        const eased = 1 - Math.pow(1 - progress, 3);
-        window.scrollTo(0, start + distance * eased);
-        if (progress < 1) snapRafId = requestAnimationFrame(step);
-      };
-
-      snapRafId = requestAnimationFrame(step);
-    };
-
-    const onTouchStart = () => {
-      isTouching = true;
-      cancelSnap();
-    };
-    const onTouchEnd = () => { isTouching = false; };
-    const onScroll = () => {
-      if (isTouching) return;
-      clearTimeout(debounceTimer);
-      debounceTimer = setTimeout(snapToNearest, 150);
-    };
-
-    window.addEventListener('touchstart', onTouchStart, { passive: true });
-    window.addEventListener('touchend', onTouchEnd, { passive: true });
-    window.addEventListener('scroll', onScroll, { passive: true });
-
-    return () => {
-      cancelSnap();
-      window.removeEventListener('touchstart', onTouchStart);
-      window.removeEventListener('touchend', onTouchEnd);
-      window.removeEventListener('scroll', onScroll);
-    };
-  }, []);
-
-  // Rotation synchronisée des images d'acteurs : toutes les cartes flip en même temps
+  // Rotation synchronisée des images d'acteurs
   useEffect(() => {
     const interval = setInterval(() => {
       setActorRotationPhase((prev) => (prev === 0 ? 1 : 0));
     }, 6000);
     return () => clearInterval(interval);
   }, []);
-
-  useEffect(() => {
-    const sectionHeight = window.innerHeight;
-    const currentSection = Math.floor(scrollY / sectionHeight);
-    const section = Math.min(currentSection, categories.length + 1);
-    setActiveSection(section);
-
-    const totalSections = categories.length + 2;
-    const isFirstOrLast = section === 0 || section === totalSections - 1;
-    onActiveSectionChange?.(isFirstOrLast);
-
-    const introSection = document.querySelector('.intro-section');
-    if (introSection) {
-      if (scrollY > window.innerHeight * 0.3) {
-        introSection.classList.add('fade-out');
-      } else {
-        introSection.classList.remove('fade-out');
-      }
-    }
-  }, [scrollY, categories.length, onActiveSectionChange]);
 
   const navigateToSection = (index: number) => {
     if (sectionRefs.current[index]) {
