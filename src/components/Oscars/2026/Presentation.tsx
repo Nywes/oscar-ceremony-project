@@ -40,21 +40,9 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
       document.documentElement.style.setProperty('--app-vh', `${window.innerHeight * 0.01}px`);
     };
     setVh();
-
-    let resizeTid: ReturnType<typeof setTimeout>;
-    const onResize = () => {
-      clearTimeout(resizeTid);
-      resizeTid = setTimeout(setVh, 150);
-    };
-    const onOrientationChange = () => setTimeout(setVh, 150);
-
-    window.addEventListener('orientationchange', onOrientationChange);
-    window.addEventListener('resize', onResize);
-    return () => {
-      window.removeEventListener('orientationchange', onOrientationChange);
-      window.removeEventListener('resize', onResize);
-      clearTimeout(resizeTid);
-    };
+    // Only recalculate on orientation change — NOT on resize (toolbar show/hide triggers resize)
+    window.addEventListener('orientationchange', () => setTimeout(setVh, 150));
+    return () => window.removeEventListener('orientationchange', setVh);
   }, []);
 
   useEffect(() => {
@@ -108,7 +96,7 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
           }
         });
       },
-      { threshold: 0.6 }
+      { threshold: 0.6 },
     );
 
     sectionRefs.current.forEach((el) => {
@@ -157,9 +145,7 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
     const category = categories.find((c) => c.id === categoryId);
     if (!category || !category.winners.my_choice) return false;
 
-    return (
-      category.winners.my_choice === nominee.id && highlightedWinners[categoryId]
-    );
+    return category.winners.my_choice === nominee.id && highlightedWinners[categoryId];
   };
 
   const assignRef = (index: number) => (el: HTMLElement | null) => {
@@ -244,7 +230,8 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
             void image.offsetWidth;
             image.classList.add('spinning');
 
-            const newImagePath = imagePaths[nextIndex] || getActorImagePathSync(actorName, nextIndex);
+            const newImagePath =
+              imagePaths[nextIndex] || getActorImagePathSync(actorName, nextIndex);
             if (newImagePath) {
               image.setAttribute('src', newImagePath);
             }
@@ -255,7 +242,7 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
 
     if (nominee.film.trailer) {
       const videoId = nominee.film.trailer.match(
-        /(?:youtube\.com\/(?:[^/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?/\s]{11})/
+        /(?:youtube\.com\/(?:[^/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?/\s]{11})/,
       )?.[1];
       if (videoId) {
         setSelectedVideoId(videoId);
@@ -353,8 +340,8 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
     try {
       const response = await fetch(
         `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${encodeURIComponent(
-          movieTitle + ' trailer official'
-        )}&type=video&key=${apiKey}`
+          movieTitle + ' trailer official',
+        )}&type=video&key=${apiKey}`,
       );
       const data = await response.json();
       if (data.items && data.items.length > 0) {
