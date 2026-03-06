@@ -34,6 +34,17 @@ export const Presentation2026 = ({ onActiveSectionChange }: Presentation2026Prop
   const oscarsData: OscarsData2026 = oscarsData2026Json as OscarsData2026;
   const { year, categories } = oscarsData;
 
+  // Lock viewport height to stabilize snap points across all mobile browsers
+  useEffect(() => {
+    const setVh = () => {
+      document.documentElement.style.setProperty('--app-vh', `${window.innerHeight * 0.01}px`);
+    };
+    setVh();
+    // Only recalculate on orientation change — NOT on resize (toolbar show/hide triggers resize)
+    window.addEventListener('orientationchange', () => setTimeout(setVh, 150));
+    return () => window.removeEventListener('orientationchange', setVh);
+  }, []);
+
   useEffect(() => {
     const allUrls = collectAllImageUrls(categories);
 

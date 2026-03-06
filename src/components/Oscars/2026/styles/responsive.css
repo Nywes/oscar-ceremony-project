@@ -2,15 +2,15 @@
   .category-section-2026 {
     padding: 2vh 3vw calc(env(safe-area-inset-bottom) + 48px);
     overflow: hidden;
-    height: 100svh;
-    max-height: 100svh;
-    min-height: 100svh;
+    height: calc(var(--app-vh, 1svh) * 100);
+    max-height: calc(var(--app-vh, 1svh) * 100);
+    min-height: calc(var(--app-vh, 1svh) * 100);
     align-items: flex-start;
     box-sizing: border-box;
   }
 
   .intro-section-2026 {
-    height: 100svh;
+    height: calc(var(--app-vh, 1svh) * 100);
   }
 
   .category-content-2026 {
@@ -67,9 +67,9 @@
   .category-section-2026 {
     padding: 1.5vh 3vw calc(env(safe-area-inset-bottom) + 52px);
     overflow: hidden;
-    height: 100svh;
-    max-height: 100svh;
-    min-height: 100svh;
+    height: calc(var(--app-vh, 1svh) * 100);
+    max-height: calc(var(--app-vh, 1svh) * 100);
+    min-height: calc(var(--app-vh, 1svh) * 100);
     align-items: flex-start;
     box-sizing: border-box;
   }
