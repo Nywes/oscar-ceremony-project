@@ -513,7 +513,7 @@
                 }
             ],
             "winners": {
-                "my_choice": null,
+                "my_choice": "nominee-108",
                 "official": null
             }
         },
@@ -2701,6 +2701,136 @@
             ],
             "winners": {
                 "my_choice": "nominee-065",
+                "official": null
+            }
+        },
+        {
+            "id": "casting",
+            "name": {
+                "en": "Best Casting",
+                "fr": "Meilleur casting"
+            },
+            "nominees": [
+                {
+                    "id": "nominee-116",
+                    "film": {
+                        "id": "film-008",
+                        "title": {
+                            "en": "Hamnet",
+                            "fr": "Hamnet"
+                        },
+                        "poster": {
+                            "path": "/films/2026/Hamnet.jpg",
+                            "alt": "Hamnet poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-161",
+                            "name": "Nina Gold",
+                            "role": "Casting Director"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-117",
+                    "film": {
+                        "id": "film-001",
+                        "title": {
+                            "en": "Marty Supreme",
+                            "fr": "Marty Supreme"
+                        },
+                        "poster": {
+                            "path": "/films/2026/Marty-Supreme.jpg",
+                            "alt": "Marty Supreme poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-162",
+                            "name": "Jennifer Venditti",
+                            "role": "Casting Director"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-118",
+                    "film": {
+                        "id": "film-002",
+                        "title": {
+                            "en": "One Battle after Another",
+                            "fr": "Une bataille après l'autre"
+                        },
+                        "poster": {
+                            "en": {
+                                "path": "/films/2026/One-Battle-after-Another.jpg",
+                                "alt": "One Battle after Another poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/One-Battle-after-Another-FR.jpg",
+                                "alt": "Une bataille après l'autre poster"
+                            }
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-163",
+                            "name": "Cassandra Kulukundis",
+                            "role": "Casting Director"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-119",
+                    "film": {
+                        "id": "film-005",
+                        "title": {
+                            "en": "The Secret Agent",
+                            "fr": "L'Agent secret"
+                        },
+                        "poster": {
+                            "en": {
+                                "path": "/films/2026/The-Secret-Agent.jpg",
+                                "alt": "The Secret Agent poster"
+                            },
+                            "fr": {
+                                "path": "/films/2026/The-Secret-Agent-FR.jpg",
+                                "alt": "L'Agent secret poster"
+                            }
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-164",
+                            "name": "Gabriel Domingues",
+                            "role": "Casting Director"
+                        }
+                    ]
+                },
+                {
+                    "id": "nominee-120",
+                    "film": {
+                        "id": "film-004",
+                        "title": {
+                            "en": "Sinners",
+                            "fr": "Sinners"
+                        },
+                        "poster": {
+                            "path": "/films/2026/Sinners.jpg",
+                            "alt": "Sinners poster"
+                        }
+                    },
+                    "crew": [
+                        {
+                            "id": "crew-165",
+                            "name": "Francine Maisler",
+                            "role": "Casting Director"
+                        }
+                    ]
+                }
+            ],
+            "winners": {
+                "my_choice": "nominee-118",
                 "official": null
             }
         },
